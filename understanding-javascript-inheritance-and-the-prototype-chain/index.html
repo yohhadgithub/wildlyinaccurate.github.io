@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <title>Understanding JavaScript: Inheritance and the prototype chain | Wildly Inaccurate</title>
+    <meta name="description" content="This is the first post in a series on JavaScript. In this post I’m going to explain how JavaScript’s prototype chain works, and how you can use it to achieve...">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,700|Merriweather:300italic,300,700">
+    <link rel="canonical" href="https://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain">
+    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml">
+</head>
+
+
+    <body>
+
+        <nav class="navbar">
+    <div class="container">
+        <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a>
+
+        <ul class="navbar-nav">
+        
+            
+            <li class="navbar-nav__item">
+                <a class="navbar-nav__item-link navbar__link" href="/about/">About</a>
+            </li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <li class="navbar-nav__item">
+                <a class="navbar-nav__item-link navbar__link" href="/projects/">Projects</a>
+            </li>
+            
+        
+        </ul>
+    </div>
+</nav>
+
+
+        <header class="page-header">
+    
+        
+    
+
+    <img class="page-header__featured-image" src="/assets/default-featured-image.jpg" srcset="/assets/resized/default-featured-image-290x145.jpg 290w, /assets/resized/default-featured-image-315x158.jpg 315w, /assets/resized/default-featured-image-720x360.jpg 720w, /assets/resized/default-featured-image-940x470.jpg 940w, /assets/resized/default-featured-image-1140x570.jpg 1140w, /assets/resized/default-featured-image-1280x640.jpg 1280w, /assets/resized/default-featured-image-1360x680.jpg 1360w, /assets/resized/default-featured-image-1680x840.jpg 1680w, /assets/resized/default-featured-image-1840x920.jpg 1840w,  /assets/default-featured-image.jpg 2600w">
+
+
+    <div class="container">
+        <h1 class="page-header__title">Understanding JavaScript: Inheritance and the prototype chain</h1>
+        <p class="page-header__meta">
+            May 9, 2014
+
+            
+                • by Joseph Wynn
+            
+
+            
+        </p>
+    </div>
+</header>
+
+<article class="post-content">
+    <p><em>This is the first post in a series on JavaScript. In this post I’m going to explain how JavaScript’s prototype chain works, and how you can use it to achieve inheritance.</em></p>
+
+<p>First, it’s important to understand that while JavaScript is an object-oriented language, it is prototype-based and does not implement a traditional class system. Keep in mind that when I mention a <em>class</em> in this post, I am simply referring to JavaScript objects and the prototype chain – more on this in a bit.</p>
+
+<p>Almost everything in JavaScript is an object, which you can think of as sort of like associative arrays - objects contain named properties which can be accessed with <code>obj.propName</code> or <code>obj['propName']</code>. Each object has an internal property called <em>prototype</em>, which links to another object. The prototype object has a prototype object of its own, and so on – this is referred to as the <em>prototype chain</em>. If you follow an object’s prototype chain, you will eventually reach the core <code>Object</code> prototype whose prototype is <code>null</code>, signalling the end of the chain.</p>
+
+<p>So what is the prototype chain used for? When you request a property which the object does not contain, JavaScript will look down the prototype chain until it either finds the requested property, or until it reaches the end of the chain. This behaviour is what allows us to create “classes”, and implement inheritance.<!--more--></p>
+
+<p>Don’t worry if this doesn’t make sense yet. To see prototypes in action, let’s take a look at the simplest example of a “class” within JavaScript, which is created with a function object:</p>
+
+<pre><code class="language-js">function Animal() {}
+
+var animal = new Animal();
+</code></pre>
+
+<p>We can add properties to the <code>Animal</code> class in two ways: either by setting them as <em>instance properties</em>, or by adding them to the <code>Animal</code> prototype.</p>
+
+<pre><code class="language-js">function Animal(name) {
+    // Instance properties can be set on each instance of the class
+    this.name = name;
+}
+
+// Prototype properties are shared across all instances of the class. However, they can still be overwritten on a per-instance basis with the `this` keyword.
+Animal.prototype.speak = function() {
+    console.log("My name is " + this.name);
+};
+
+var animal = new Animal('Monty');
+animal.speak(); // My name is Monty
+</code></pre>
+
+<p>The structure of the <code>Animal</code> object becomes clear when we inspect it in the console. We can see that the <code>name</code> property belongs to the object itself, while <code>speak</code> is part of the <code>Animal</code> prototype.</p>
+
+<div class="thumbnail">
+    <img class="thumbnail__image" alt="Animal Prototype" src="/assets/Animal.png" srcset="/assets/resized/Animal-290x71.png 290w, /assets/resized/Animal-315x78.png 315w,  /assets/Animal.png 430w" />
+
+    
+    <div class="thumbnail__caption">
+        Animal Prototype
+    </div>
+    
+</div>
+
+<p>Now let’s look at how we can extend the <code>Animal</code> class to create a <code>Cat</code> class:</p>
+
+<pre><code class="language-js">function Cat(name) {
+    Animal.call(this, name);
+}
+
+Cat.prototype = new Animal();
+
+var cat = new Cat('Monty');
+cat.speak(); // My name is Monty
+</code></pre>
+
+<p>What we are doing here is setting <code>Cat</code>’s prototype to an instance of <code>Animal</code>, so that <code>Cat</code> inherits all of <code>Animal's</code> properties. We’re also using <code>Animal.call</code> to inherit the <code>Animal</code> constructor (sort of like <code>parent</code> or <code>super</code> in other languages). <code>call</code> is a special function which lets us call a function and specify the value of <code>this</code> <em>within that function</em>. So when <code>this.name</code> is set inside the <code>Animal</code> constructor, it’s the <code>Cat</code>’s name property being set, not the <code>Animal</code>’s.</p>
+
+<p>Let’s take a look at the <code>Cat</code> object to get a better view of what’s going on.</p>
+
+<div class="thumbnail">
+    <img class="thumbnail__image" alt="Cat" src="/assets/Cat.png" srcset="/assets/resized/Cat-290x90.png 290w, /assets/resized/Cat-315x98.png 315w,  /assets/Cat.png 430w" />
+
+    
+    <div class="thumbnail__caption">
+        Cat
+    </div>
+    
+</div>
+
+<p>The <code>Cat</code> object has its own <code>name</code> instance property, like we expected. When we look at the object’s prototype we see that it has also inherited <code>Animal</code>’s <code>name</code> instance property as well as the <code>speak</code> prototype property. This is where the prototype chain comes in – when we request <code>cat.name</code>, JavaScript finds the <code>name</code> instance property and doesn’t bother going down the prototype chain. However when we request <code>cat.speak</code>, JavaScript has to travel down the prototype chain until it finds the <code>speak</code> property inherited from <code>Animal</code>.</p>
+
+<p>At this point I would recommend going through a few slides of <a href="http://ejohn.org/apps/learn/#64">John Resig’s JavaScript Ninja</a> as they go into more detail about how JavaScript prototypes work, and provide some good interactive examples.</p>
+
+</article>
+
+
+        <footer class="page-footer">
+
+    <ul class="social-media">
+        
+        <li>
+            <a href="https://github.com/wildlyinaccurate">
+                <span class="social-media__icon">
+                    <svg viewBox="0 0 16 16">
+                        <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                    </svg>
+                </span>
+                <span class="username">wildlyinaccurate</span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a href="https://twitter.com/Joseph_Wynn">
+                <span class="social-media__icon">
+                    <svg viewBox="0 0 16 16">
+                        <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                        c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                    </svg>
+                </span>
+
+                <span class="username">Joseph_Wynn</span>
+            </a>
+        </li>
+        
+    </ul>
+
+    <p class="site-description">Guides &amp; opinions about programming and the state of the web.
+</p>
+
+</footer>
+
+
+    </body>
+
+</html>
