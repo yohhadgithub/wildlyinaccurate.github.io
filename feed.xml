@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wildly Inaccurate</title>
-    <description>Guides &amp;amp; opinions about programming and the state of the web.
+    <description>A collection of guides &amp;amp; opinions from a BBC News developer about programming and the state of the web.
 </description>
     <link>https://wildlyinaccurate.github.io/</link>
     <atom:link href="https://wildlyinaccurate.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Dec 2014 20:38:30 +0000</pubDate>
-    <lastBuildDate>Sat, 20 Dec 2014 20:38:30 +0000</lastBuildDate>
+    <pubDate>Sat, 20 Dec 2014 20:51:13 +0000</pubDate>
+    <lastBuildDate>Sat, 20 Dec 2014 20:51:13 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
