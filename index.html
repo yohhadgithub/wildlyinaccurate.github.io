@@ -73,7 +73,7 @@
 
 <p>Thinking back, I probably started teaching myself to type at a reasonable speed around age 10. I’m now in my mid-twenties. My typing technique (or lack thereof) never really bothered me, but 15 years of typing with poor technique has started to take its toll. Recently I’ve started experiencing hand fatigue, and I’m beginning to see early signs of RSI. So I figure now is the perfect time to make some changes to the way I type.</p>
 
-</p>
+ <a href="/transitioning-to-a-new-keyboard-layout">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -85,7 +85,7 @@
 
             <p><p>Initializing variables properly in JavaScript can have significant performance benefits. This can be shown with a simple synthetic benchmark.</p>
 
-</p>
+ <a href="/javascript-performance-variable-initialization">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -107,19 +107,7 @@
 
 <p>This statement probably doesn’t ring true straight away because on the surface, Git is pretty simple. It’s really easy to pick up if you’ve come from another VCS like Subversion or Mercurial. It’s even relatively easy to pick up if you’ve never used a VCS before. Everybody understands adding, committing, pushing and pulling; but this is about as far as Git’s simplicity goes. Past this point, Git is shrouded by fear, uncertainty and doubt.</p>
 
-<p>Once you start talking about branching, merging, rebasing, multiple remotes, remote-tracking branches, detached HEAD states… Git becomes less of an easily-understood tool and more of a feared deity. Anybody who talks about no-fast-forward merges is regarded with quiet superstition, and even veteran hackers would rather stay away from rebasing “just to be safe”.</p>
-
-<p>I think a big part of this is due to many people coming to Git from a conceptually simpler VCS – probably Subversion – and trying to apply their past knowledge to Git. It’s easy to understand why people want to do this. Subversion is simple, right? It’s just files and folders. Commits are numbered sequentially. Even branching and tagging is simple – it’s just like taking a backup of a folder.</p>
-
-<p>Basically, Subversion fits in nicely with our existing computing paradigms. Everybody understands files and folders. Everybody knows that revision #10 was the one after #9 and before #11. But these paradigms break down when you try to apply them to Git.</p>
-
-<p>That’s why trying to understand Git in this way is wrong. Git doesn’t work like Subversion at all. Which can be pretty confusing. You can add and remove files. You can commit your changes. You can generate diffs and patches which look just like the ones that Subversion generates. So how can something which appears so similar really be so different?</p>
-
-<p>Complex systems like Git become much easier to understand once you figure out how they really work. The goal of this guide is to shed some light on how Git works under the hood. We’re going to take a look at some of Git’s core concepts including its basic object storage, how commits work, how branches and tags work, and we’ll look at the different kinds of merging in Git including the much-feared rebase. Hopefully at the end of it all, you’ll have a solid understanding of these concepts and will be able to use some of Git’s more advanced features with confidence.</p>
-
-<p>It’s worth noting at this point that this guide is not intended to be a beginner’s introduction to Git. This guide was written for people who already use Git, but would like to better understand it by taking a peek under the hood, and learn a few neat tricks along the way. With that said, let’s begin.</p>
-
-</p>
+ <a href="/a-hackers-guide-to-git">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -137,7 +125,7 @@
 
 <p>So what is the prototype chain used for? When you request a property which the object does not contain, JavaScript will look down the prototype chain until it either finds the requested property, or until it reaches the end of the chain. This behaviour is what allows us to create “classes”, and implement inheritance.</p>
 
-</p>
+ <a href="/understanding-javascript-inheritance-and-the-prototype-chain">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -169,7 +157,7 @@
 
 <p>Readability sits between these two. This level is a little harder to define, but I believe it comes down to two main factors: <strong>structure</strong> and <strong>line density</strong>.</p>
 
-</p>
+ <a href="/what-makes-code-readable">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -220,7 +208,7 @@ Not Found%
 
 <p>*Well, you could use anything really. I’m just using Node.js since JavaScript is my language of choice.</p>
 
-</p>
+ <a href="/http-status-as-a-service">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -248,7 +236,7 @@ Not Found%
 
 <p>This is all I’ve found in the themes that I’ve tried.</p>
 
-</p>
+ <a href="/converting-bootswatch-themes-to-sass">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -274,7 +262,7 @@ Not Found%
 
 <p>The annoying thing is that OSX seems to restore the BIND config the next time you turn Internet Sharing off, so you need to remember to change it each time.</p>
 
-</p>
+ <a href="/getting-internet-sharing-to-work-on-osx-10-8">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -291,7 +279,7 @@ Not Found%
 <pre><code>git config --global url.https://.insteadOf git://
 </code></pre>
 
-</p>
+ <a href="/force-bower-to-clone-from-https-instead-of-git">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -327,7 +315,7 @@ Not Found%
 
 <p>This is pretty common practice; a developer will leave a comment so that the next person understands why the <code>e.stopPropagation()</code> is gone.</p>
 
-</p>
+ <a href="/dishonest-comments">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -364,7 +352,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
 <p>Update: m_bright pointed out that the value of <code>help.autocorrect</code> is actually how many tenths of a second Git will wait before automatically executing the command. So something like <code>git config --global help.autocorrect 10</code> would give you 1 second before the command is executed, which is probably slow enough to let you cancel any mistakes, and quick enough to still be useful.</p>
 
-</p>
+ <a href="/dont-use-gits-autocorrect-feature">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -380,7 +368,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
 <p>You can get around this by installing one of the other dependencies <em>before</em> <code>php5</code>. For example, <code>apt-get install php5-fpm php5</code> or <code>apt-get install php5-cgi php5</code>.</p>
 
-</p>
+ <a href="/installing-php-on-debian-without-apache">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -409,7 +397,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
 <p>That’s all it takes. You can make sure it worked by comparing the output of <code>ssh-add -L</code> on both the host machine and the guest box.</p>
 
-</p>
+ <a href="/using-ssh-agent-forwarding-with-vagrant">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -421,63 +409,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
             <p><p>There are plenty of discussions about which font is the best for programming. The problem is, there are so many “best” fonts that it’s difficult to choose one. Rather than have an exhaustive list of “best” fonts for programming, wouldn’t it be easier to simply know which fonts to avoid?</p>
 
- Brush Script MT 
-
-<p>This font was created in 1942 by Robert E. Smith. It’s designed to look like the characters have been handwritten with an ink brush. This font will make you feel right at home if you grew up writing your code with an ink brush. Otherwise, don’t use it.</p>
-
- 
-    
-
-    
-     
-        Brush Script MT
-     
-    
- 
-
- Chiller 
-
-<p>A relatively modern font (1995), Chiller is supposed to be very legible even at small sizes. This font is great for giving your code that “spooky” feel. However if you prefer emotionless, monospaced fonts, Chiller is probably not for you.</p>
-
- 
-    
-
-    
-     
-        Chiller
-     
-    
- 
-
- Comic Sans MS 
-
-<p>By far the most loved font on the web, Comic Sans has been bringing joy to peoples’ lives since its inception in 1994. Coding in Comic Sans is fun, and reading code in Comic Sans is even funner-er. Unfortunately, some people don’t like Comic Sans, so you should avoid using it unless you enjoy being ridiculed by your colleagues.</p>
-
- 
-    
-
-    
-     
-        Comic Sans MS
-     
-    
- 
-
- Impact 
-
-<p>Created in the Swinging Sixties by a fellow named Geoffrey Lee, Impact was intended for headlines. Why should headlines be the only text with emphasis, though? Using Impact will give your code the emphasis it deserves by making every single line a headline. The downside is that prolonged exposure to Impact can cause developers to read everything in a yelling voice. If this is a problem for you, avoid using this font.</p>
-
- 
-    
-
-    
-     
-        Impact
-     
-    
- 
-
-</p>
+ <a href="/worst-fonts-for-programming">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -493,7 +425,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
 <p>Nope. Now npm is throwing some errors with unhelpful messages, but that’s fine, I’ll just trawl through the error log. 5 minutes later, I figure out that ~/tmp belongs to root (probably from running <code>npm update</code> as root). Ok, fine, I’ll change the permissions and try again. This time <code>npm install</code> works! But of course, my connection is so horribly slow and grunt has so many dependencies that the install process takes <strong>over 15 minutes</strong>.</p>
 
-</p>
+ <a href="/when-did-dependency-management-get-so-complicated">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -519,7 +451,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
    Average hit rate 
  
 
-</p>
+ <a href="/blazing-fast-wordpress-with-nginx-and-memcached">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -531,41 +463,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
             <p><p>If you’ve used Linode’s LISH console to get remote access to your server, you’re probably familiar with the way the console wraps everything to 60x20 (columns x rows) - even when you’re connected via ssh in a much larger terminal.</p>
 
- 
-    
-
-    
-     
-        LISH Wrapping
-     
-    
- 
-<p>Everything looks fine until…</p>
-
- 
-    
-
-    
-     
-        LISH Wrapping
-     
-    
- 
-<p>… The terminal wraps on itself</p>
-
-<p>Luckily, the fix is easy. The LISH console is essentially emulating a raw serial port connected to the server. The serial port itself has no natural size, so the terminal gives it a default safe size (60x20). We can tell the terminal to change this size, using the [`stty`](http://unixhelp.ed.ac.uk/CGI/man-cgi?stty) command:
-
-```bash
-stty cols 200 rows 75
-```
-
-It's as simple as that. Just set the `cols` and `rows` values to whatever size suits you.
-
-If you're having to do this a lot, you might consider putting this into your `~/.bashrc` so that it runs each time you open a connection.
-
-
-</p>
-</p>
+ <a href="/increasing-the-size-of-the-lish-console">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -577,21 +475,7 @@ If you're having to do this a lot, you might consider putting this into your `~/
 
             <p><p>I understand what people mean when they say that they want to hire a <em>hacker</em>. It means that they want to hire a developer; probably one who is enthusiastic and good at solving problems. The thing is, to me, the term <em>hacker _is no different from terms like _rock star</em> or <em>ninja</em>. When I see these terms in a job advertisement, a few red flags are raised in my mind:</p>
 
- You’re probably a start-up 
-
-<p>This isn’t necessarily a bad thing, but it often means that whoever posted the job advertisement has a lack of technical knowledge, which probably also means…</p>
-
- You don’t actually know what kind of developer you want 
-
-<p><em>Hacker</em>, <em>rock star</em>, <em>ninja</em> - these don’t actually mean anything in the context of programming. Do you want a front-end web developer who can make complex JavaScript apps, or a Ruby developer with a working knowledge in system administration, or do you just want an all-rounder? If the title of your job advertisement has no context, I (and many other people) will simply ignore it.</p>
-
- The job requires more than one person 
-
-<p>You really need 2 or 3 people for this job, but budgeting concerns have forced you to go for a single super-developer instead. This also leads me to believe that the job will have ill-defined requirements, and that I’m likely to be over-worked and under-paid.</p>
-
-<p>For the most part, I think that if you find yourself posting an ad for a <em>hacker</em>, <em>rock star</em>, or <em>ninja</em>, you should take it as a sign that you need to re-think your hiring requirements. Take a little extra time to figure out what kind of developer you <em>really</em> want to hire, and write the advertisement accordingly.</p>
-
-</p>
+ <a href="/stop-posting-jobs-for-hackers">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -611,7 +495,7 @@ If you're having to do this a lot, you might consider putting this into your `~/
    Or, failing the above, have a way to quickly switch between indentation styles. 
  
 
-</p>
+ <a href="/setting-up-your-editor">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -635,7 +519,7 @@ If you're having to do this a lot, you might consider putting this into your `~/
 
 <p>Ham on Rye by Charles Bukowski</p>
 
-</p>
+ <a href="/non-tech-books-i-should-read">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -669,7 +553,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
 <p>Restart php-fpm with <code>sudo service php5-fpm restart</code> and everything should work normally again.</p>
 
-</p>
+ <a href="/solving-502-bad-gateway-with-nginx-php-fpm">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -683,17 +567,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
 <p>Below are some Sublime Text packages that I have found to be useful for web development.</p>
 
- 
-   <strong>All Autocomplete</strong> extends the Sublime Text autocompletion to find matches in all open files. 
-   <strong>ApacheConf.tmLanguage</strong> provides ApacheConf syntax highlighting (for .htaccess, vhosts, etc). 
-   <strong>DocBlockr</strong> simplifies and automates writing DocBlock comments in many languages including PHP and Javascript. 
-   <strong>Sass</strong> and <strong>LESS</strong> both provide syntax highlighting for the Sass and LESS dynamic stylesheet languages. <strong>Compass </strong>also provides a watch/build system for Sass. 
-   <strong>SideBarEnhancements</strong> provides many useful enhancements to the default Sublime Text sidebar, including <em>Copy Path</em> and <em>Open With…</em> 
-   <strong>SublimeCodeIntel</strong> is a full-featured code intelligence engine that provides smart autocomplete and jump-to-symbol functionality. 
-   <strong>SublimeLinter</strong> automatically runs your code through a linter and highlights lines that it deems to contain (potential) errors. SublimeLinter has built-in linters for most popular languages. 
- 
-
-</p>
+ <a href="/sublime-text-packages-for-web-development">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -705,7 +579,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
             <p><p>In the early hours of 4 September 2010, I was sound asleep in my house on Mount Pleasant hill in Christchurch, New Zealand. At 4:35am I was woken by a deep rumbling sound. Seconds later, the floor and walls began to shake as my house was rocked back and forth on its foundations. I scrambled out of bed and hid in a doorway until the shaking stopped. After checking that my family was okay, I went upstairs and stepped onto the balcony to look out over Christchurch. The city was silent save for a few car alarms, and it was in this relative quiet that I came to understand the significance of this event. I didn’t realise it then, but that earthquake would become a catalyst for change in my life.</p>
 
-</p>
+ <a href="/september-4-looking-back-on-the-christchurch-earthquakes">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -734,7 +608,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
    Ruby Rogues podcasts 
  
 
-</p>
+ <a href="/programming-books-and-resources">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -748,7 +622,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
 <p>I casually slide into the biologist debating hall and take a seat near the front. People are staring at my roller-feet, but I don’t care. I put my shades on.</p>
 
-</p>
+ <a href="/the-man-who-could-turn-his-feet-into-roller-blades">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -762,7 +636,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
 <p>Laravel’s Controller class has the <code>call()</code> method, which essentially makes a GET request to a controller method. In order to make POST requests, it’s necessary to inject some extra parameters into the <code>HttpFoundation</code> components. To make this easier, I created a <code>ControllerTestCase</code> class with convenient <code>get()</code> and <code>post()</code> methods:</p>
 
-</p>
+ <a href="/testing-laravel-controllers">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -781,7 +655,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
 <p>Using Marco Arment’s PHP Bcrypt class, I performed some benchmarks to determine how long it takes to hash a string with various work factors:</p>
 
-</p>
+ <a href="/bcrypt-choosing-a-work-factor">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -804,7 +678,7 @@ GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
 
 <p>Don’t forget to change <strong>dbname</strong> to the name of the database that you want to backup. And that’s it - you’re done! This cron job will create a backup of your database and save it to <code>/var/backups</code> with a filename based on the current date, e.g. <code>/var/backups/**dbname**-20120503.sql.gz</code></p>
 
-</p>
+ <a href="/automatic-mysql-backups">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -831,7 +705,7 @@ GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
 
 <p>Unfortunately there is no real solution to this. Your only options are to either reduce the size of the column, use a different character set (like UTF-8), or use a different engine (like MyISAM). In this case I switched the character set to UTF-8 which raised the maximum key length to 255 characters.</p>
 
-</p>
+ <a href="/mysql-specified-key-was-too-long-max-key-length-is-767-bytes">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -855,7 +729,7 @@ GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
 
 <p>Easy!</p>
 
-</p>
+ <a href="/git-ignore-changes-in-already-tracked-files">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -877,7 +751,7 @@ git push origin master
 
 <p>If anybody knows whether SVN branches can be converted to Git branches, please get in touch!</p>
 
-</p>
+ <a href="/converting-an-svn-repository-to-git">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -897,7 +771,7 @@ git push origin master
 
 <p>I tried all of these extensions, but none of them felt simple or lightweight enough for my application. What I wanted to do was have a Category entity which could have a tree of sub-categories, e.g:</p>
 
-</p>
+ <a href="/simple-nested-sets-in-doctrine-2">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -909,24 +783,7 @@ git push origin master
 
             <p><p>Everybody wants to write “good code”, right? So why is it that nearly every time we pick up another developer’s work, our WTF-o-meter goes crazy?</p>
 
-<p>[&lt;div class="thumbnail"&gt;<br>
-    </p>
-
-<p>&lt;/div&gt;</p>
-
-<p>Everybody has a different idea of what “good code” is. Below are a few ways that I believe we can increase the quality of our code and reduce the number of WTFs our code generates.</p>
-
- 
-   Keep it simple; refactor overly-complex methods… 
-   …Or if refactoring isn’t feasible, document complex methods. 
-   Use descriptive variable and method names. 
-   Follow code conventions. 
-   Don’t commit unfinished or broken code. 
- 
-
-<p>Most of these are just common sense. The trouble is, we throw good coding practices – and common sense – out the window when we’re under pressure from things like slipping deadlines and scope creep. If you ever find this happening, just remember to** write your code as if the person who has to maintain it is a violent psychopath who knows where you live. **What would you rather: miss a deadline, or be hacked up into little pieces by an angry developer?</p>
-
-</p>
+ <a href="/writing-good-code-is-easy">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -955,7 +812,7 @@ $platform-&gt;registerDoctrineTypeMapping('enum', 'string');
 <pre><code>$platform-&gt;registerDoctrineTypeMapping('set', 'string');
 </code></pre>
 
-</p>
+ <a href="/doctrine-2-resolving-unknown-database-type-enum-requested">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -974,7 +831,7 @@ $platform-&gt;registerDoctrineTypeMapping('enum', 'string');
 
 <p>… So what are you waiting for? Go out and grab yourself a hunky web developer!</p>
 
-</p>
+ <a href="/why-you-should-date-a-web-developer">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -999,7 +856,7 @@ git config --global user.email you@yourdomain.com
 <pre><code>git config --global core.excludesfile /path/to/.gitignore_global
 </code></pre>
 
-</p>
+ <a href="/useful-git-configuration-items">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1011,7 +868,7 @@ git config --global user.email you@yourdomain.com
 
             <p><p>Git’s <code>archive</code> command is basically the equivalent of SVN’s <code>export</code> – it dumps a copy of the entire repository without any of the version control files, making it perfect for deploying to a testing or production server.</p>
 
-</p>
+ <a href="/deploying-a-git-repository-to-a-remote-server">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1023,7 +880,7 @@ git config --global user.email you@yourdomain.com
 
             <p><p>Setting up a web server with Apache, PHP, and MySQL on any Debian-based system is really easy thanks to APT (Advanced Packaging Tool). Follow along and you’ll have a web server set up within fifteen minutes.</p>
 
-</p>
+ <a href="/setting-up-a-web-server-on-ubuntudebian">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1044,36 +901,17 @@ git config --global user.email you@yourdomain.com
 &lt;?=$2?&gt;
 </code></pre>
 
-</p>
+ <a href="/convert-print-and-echo-statements-to-short-syntax">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
             <span class="post-summary__meta">May 22, 2011</span>
 
             <h3>
-                <a class="post-summary__link" href="/recursively-chmod-directories-only">Recursively Chmod Directories Only</a>
+                <a class="post-summary__link" href="/recursively-chmod-directories-only">Recursively chmod Directories Only</a>
             </h3>
 
-            <p><p>`—<br>
-layout: post<br>
-title: Recursively chmod Directories Only<br>
-date: 2011-05-22 23:09:38.000000000 +01:00<br>
-categories:<br>
-- Server Administration<br>
-tags:<br>
-- chmod<br>
-- directory<br>
-- find<br>
-- linux<br>
-- permissions<br>
-- unix<br>
-status: publish<br>
-type: post<br>
-published: true<br>
-author: Joseph Wynn<br>
-—</p>
-
-<p>The <code>find</code> utility’s -exec flag makes it very easy to recursively perform operations on specific files or directories.</p>
+            <p><p>The <code>find</code> utility’s -exec flag makes it very easy to recursively perform operations on specific files or directories.</p>
 
 <pre><code>find . -type d -exec chmod 755 {} \;
 </code></pre>
@@ -1089,7 +927,7 @@ author: Joseph Wynn<br>
 
 <p>Thanks to moveabletripe for the info.</p>
 
-</p>
+ <a href="/recursively-chmod-directories-only">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1103,7 +941,7 @@ author: Joseph Wynn<br>
 
 <p>Because all of my virtual hosts are sub-directories of my web server’s base directory, I prefer to dynamically allocate the virtual host directory based on the host name. For example, I want wildlyinaccurate.localhost to point to /var/www/wildlyinaccurate. This can be achieved by modifying the .htaccess file of your web server’s base directory:</p>
 
-</p>
+ <a href="/dynamic-virtual-hosts-using-htaccess">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1123,7 +961,7 @@ author: Joseph Wynn<br>
 
 <p>For more information, read my post on integrating Doctrine 2 with CodeIgniter 2</p>
 
-</p>
+ <a href="/codeigniter-2doctrine-2-installation">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1137,7 +975,7 @@ author: Joseph Wynn<br>
 
 <p>I have recently been working on a remix of a Shapeshifter song called Longest Day. To give you an idea of the music production process and how it is much more than looping a few sounds, I’m going to share with you some of the work that I’ve put into this remix.</p>
 
-</p>
+ <a href="/the-music-production-process">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1149,7 +987,7 @@ author: Joseph Wynn<br>
 
             <p><p>Doctrine 2’s console is really powerful when you know how to use it. You can generate entity classes and their method stubs, reverse-engineer a database, validate your entity schemas, and much more. In this post, I’m going to cover some of the Doctrine console’s more useful commands and explain how you can use them to reduce development time. For a full overview of the Doctrine 2 console, read the Doctrine Tools documentation.</p>
 
-</p>
+ <a href="/useful-doctrine-2-console-commands">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1161,7 +999,7 @@ author: Joseph Wynn<br>
 
             <p><p>I touched briefly on the Renaissance brewery while writing about their Craftsman stout, in My Top Five Beers. Founded by Californians Andy Deuchars and Brian Thiel in 2005, Renaissance is located in the historic Grove Mill in Blenheim, New Zealand. Their beers have been available to the general public since 2006, and have been winning awards ever since. The Elemental porter is Renaissance’s most awarded beer, having won gold medals in New Zealand and Australia. More recently the Elemental received a silver medal at the Australia International Beers Awards in May 2010.</p>
 
-</p>
+ <a href="/beer-review-renaissance-elemental">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1173,7 +1011,7 @@ author: Joseph Wynn<br>
 
             <p><p>A word of warning: eAccelerator does not play well with Doctrine 2. This came to my attention today after I installed eAccelerator so that I could measure the performance gains (if any). As it turns out, one of eAccelerator’s “features” is to remove Docblocks from PHP scripts - probably to reduce compile times. Suddenly my application was throwing exceptions with the message “Class <em>X</em> is not a valid entity or mapped super class”.</p>
 
-</p>
+ <a href="/eaccelerator-and-doctrine-2">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1185,7 +1023,7 @@ author: Joseph Wynn<br>
 
             <p><p>My latest CodeIgniter 2 project requires that I use query strings in some of my URLs. CodeIgniter 1 was notoriously difficult to work with when you enabled query strings, and unfortunately CodeIgniter 2 is no different. Whereas in CodeIgniter 1 you could change two configuration options to enable a combination of segment-based URLs and query strings, this same approach only makes matters worse in CodeIgniter 2.</p>
 
-</p>
+ <a href="/segment-based-urls-with-query-strings-in-codeigniter-2">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1201,7 +1039,7 @@ author: Joseph Wynn<br>
 
 <p>I could not find a command to load data from fixtures, so I made a very basic command that recursively executes native SQL. If you want to load data from YAML files, you will need to search elsewhere for a YAML interpreter or even a way to convert YAML to SQL.</p>
 
-</p>
+ <a href="/custom-doctrine-2-console-commands">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1215,7 +1053,7 @@ author: Joseph Wynn<br>
 
 <p>Well then, what beers <em>do</em> I like? Stouts and dark ales, of course! So really, this isn’t a list of my top five beers. It’s a list of my top five dark ales and stouts.</p>
 
-</p>
+ <a href="/my-top-five-beers">(Read more)</a></p>
         </article>
     
         <article class="post-summary">
@@ -1233,7 +1071,7 @@ author: Joseph Wynn<br>
 
 <p>To get started, download CodeIgniter 2 and Doctrine 2 – make sure you use the ‘Download Archive’ link when downloading Doctrine.</p>
 
-</p>
+ <a href="/integrating-doctrine-2-with-codeigniter-2">(Read more)</a></p>
         </article>
     
 
