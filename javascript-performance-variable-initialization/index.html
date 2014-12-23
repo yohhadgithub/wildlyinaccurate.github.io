@@ -191,7 +191,7 @@ node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
                 p = document.createElement('p');
                 p.appendChild(s);
 
-                n = document.querySelector('.post-content > p:nth-child(3)');
+                n = document.querySelector('.post-content > p:nth-of-type(3)');
 
                 if (n) {
                     n.parentNode.insertBefore(p, n.nextSibling);
