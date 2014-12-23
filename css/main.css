@@ -567,6 +567,25 @@ pre code {
   margin-left: -48px;
 }
 
+#carbonads {
+  max-width: 200px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#carbonads,
+.carbon-img>img {
+  margin: 0 auto;
+}
+
+.carbon-text,
+.carbon-poweredby {
+  color: #878787;
+  display: block;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
 @font-face {
   font-family: 'Merriweather';
   font-style: normal;
