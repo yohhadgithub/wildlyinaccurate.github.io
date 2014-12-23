@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.github.io/</link>
     <atom:link href="https://wildlyinaccurate.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Dec 2014 14:31:46 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Dec 2014 14:31:46 +0000</lastBuildDate>
+    <pubDate>Tue, 23 Dec 2014 21:23:18 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Dec 2014 21:23:18 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -29,7 +29,11 @@
 &lt;p&gt;I built the keyboard in short bursts when I had spare time on the weekends. All up I probably invested about 10 hours over a period of two months. I made good use of the electronics station at &lt;a href=&quot;https://london.hackspace.org.uk/&quot;&gt;London Hackspace&lt;/a&gt;, and learned a lot about soldering and about electronics in general. I’m fairly confident that I could build another ErgoDox in a matter of hours.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/resized/ergodox-1024x551-290x156.jpg 290w, /assets/resized/ergodox-1024x551-315x169.jpg 315w, /assets/resized/ergodox-1024x551-720x387.jpg 720w, /assets/resized/ergodox-1024x551-940x506.jpg 940w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -43,7 +47,11 @@
 &lt;p&gt;Using the ErgoDox, I still felt like my fingers were moving just as much as on a regular keyboard. I used Patrick Gillespie’s amazing &lt;a href=&quot;http://patorjk.com/keyboard-layout-analyzer&quot;&gt;Keyboard Layout Analyzer&lt;/a&gt; to help me figure out what the problem was.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-qwerty-heatmap-290x111.png 290w, /assets/resized/ergodox-qwerty-heatmap-315x120.png 315w, /assets/resized/ergodox-qwerty-heatmap-720x274.png 720w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -66,7 +74,11 @@
 &lt;/ul&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-heatmap1-290x111.png 290w, /assets/resized/ergodox-colemak-heatmap1-315x120.png 315w, /assets/resized/ergodox-colemak-heatmap1-720x274.png 720w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -78,7 +90,11 @@
 &lt;p&gt;An article about &lt;a href=&quot;http://jjt.io/2013/11/25/why-any-developer-should-check-out-the-ergodox-keyboard/&quot;&gt;Jason Trill’s experience with the ErgoDox&lt;/a&gt; convinced me at the last minute to use a modified version of Colemak which puts the symbols on a separate layer around the home row, so you don’t need to move your fingers to the top row to type symbols. In case you’re wondering what I mean by a “separate layer”: layers on a keyboard are a way to have one key type different characters. You actually use layers all the time, even if you don’t realise it. When you hold down the Shift key, you’re activating another layer on your keyboard. When you hit the Caps Lock key, you’re toggling that layer. Layers differ from key combinations (like Control + Alt + Delete) in that they’re implemented in the keyboard’s firmware rather than at the software level.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-symbolmod-heatmap-290x111.png 290w, /assets/resized/ergodox-colemak-symbolmod-heatmap-315x120.png 315w, /assets/resized/ergodox-colemak-symbolmod-heatmap-720x274.png 720w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -107,7 +123,11 @@ The quick brown fox jumps over the lazy fox.
 &lt;p&gt;In theory, the more I use each key, the less I’ll have to look at my guide.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I&#39;m using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-290x169.jpg 290w, /assets/resized/ergodox-layout-guide-1024x598-315x184.jpg 315w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -147,7 +167,7 @@ The quick brown fox jumps over the lazy fox.
     
       <item>
         <title>JavaScript Performance: Variable Initialization</title>
-        <description>&lt;p&gt;Initializing variables properly in JavaScript can have significant performance benefits. This can be shown with a simple synthetic benchmark.&lt;!--more--&gt;&lt;/p&gt;
+        <description>&lt;p&gt;Initializing variables properly in JavaScript can have significant performance benefits. This can be shown with a simple synthetic benchmark.&lt;/p&gt;
 
 &lt;h3 id=&quot;notypejs&quot;&gt;notype.js&lt;/h3&gt;
 
@@ -166,6 +186,7 @@ for (var i = 0; i &amp;lt; 1e8; i++) {
     x = 1 + x;
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;!--more--&gt;
 
 &lt;h3 id=&quot;benchmark-results&quot;&gt;Benchmark Results&lt;/h3&gt;
 
@@ -354,7 +375,11 @@ src/
 &lt;p&gt;If we draw the blobs (in green) as well as the tree objects (in blue), we end up with a diagram that looks a lot like our directory structure.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Git tree graph&quot; src=&quot;/assets/tree-graph.png&quot; srcset=&quot;/assets/resized/tree-graph-290x225.png 290w, /assets/resized/tree-graph-315x244.png 315w,  /assets/tree-graph.png 591w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -582,7 +607,11 @@ $ git commit -am &quot;Fixed some wording&quot;
 &lt;p&gt;At this point, the history will look something like this.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- hotfix and feature branch&quot; src=&quot;/assets/branch-feature-hotfix.png&quot; srcset=&quot;/assets/resized/branch-feature-hotfix-290x124.png 290w, /assets/resized/branch-feature-hotfix-315x134.png 315w,  /assets/branch-feature-hotfix.png 631w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -605,7 +634,11 @@ Fast-forward
 &lt;p&gt;Notice how Git mentions &lt;strong&gt;fast-forward&lt;/strong&gt; during the merge. What this means is that all of the commits in &lt;code&gt;hotfix&lt;/code&gt; were directly upstream from &lt;code&gt;master&lt;/code&gt;. This allows Git to simply move the &lt;code&gt;master&lt;/code&gt; pointer up the tree to &lt;code&gt;hotfix&lt;/code&gt;. What you end up with looks like this.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- after merging hotfix&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -650,7 +683,11 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;p&gt;This means that our history graph now looks something like this (commit &lt;strong&gt;E&lt;/strong&gt; is the new merge commit).&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- after merging feature-branch&quot; src=&quot;/assets/branch-merge-feature.png&quot; srcset=&quot;/assets/resized/branch-merge-feature-290x149.png 290w, /assets/resized/branch-merge-feature-315x161.png 315w,  /assets/branch-merge-feature.png 656w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -672,7 +709,11 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;p&gt;What &lt;code&gt;git cherry-pick&lt;/code&gt; does is take one or more commits, and replay them on top of the current commit. Imagine a repository with the following history graph.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- before cherry-pick&quot; src=&quot;/assets/cherry-pick-before.png&quot; srcset=&quot;/assets/resized/cherry-pick-before-290x114.png 290w, /assets/resized/cherry-pick-before-315x123.png 315w,  /assets/cherry-pick-before.png 467w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -684,7 +725,11 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;p&gt;If you are on commit &lt;strong&gt;D&lt;/strong&gt; and you run &lt;code&gt;git cherry-pick F&lt;/code&gt;, Git will take the changes that were introduced in commit &lt;strong&gt;F&lt;/strong&gt; and replay them &lt;em&gt;as a new commit&lt;/em&gt; (shown as &lt;strong&gt;F’&lt;/strong&gt;) on top of commit &lt;strong&gt;D.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after cherry-pick&quot; src=&quot;/assets/cherry-pick-after.png&quot; srcset=&quot;/assets/resized/cherry-pick-after-290x89.png 290w, /assets/resized/cherry-pick-after-315x96.png 315w,  /assets/cherry-pick-after.png 555w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -698,7 +743,11 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;p&gt;A common workflow in Git is to develop features on small branches, and merge the features one at a time into the master branch. Let’s recreate this scenario by adding some branch labels to the graphs.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- with branch labels&quot; src=&quot;/assets/graph-branch-labels.png&quot; srcset=&quot;/assets/resized/graph-branch-labels-290x81.png 290w, /assets/resized/graph-branch-labels-315x88.png 315w,  /assets/graph-branch-labels.png 623w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -716,7 +765,11 @@ $ git checkout -b foo-tmp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after creating foo-tmp&quot; src=&quot;/assets/foo-tmp.png&quot; srcset=&quot;/assets/resized/foo-tmp-290x81.png 290w, /assets/resized/foo-tmp-315x88.png 315w,  /assets/foo-tmp.png 623w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -731,7 +784,11 @@ $ git checkout -b foo-tmp
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after cherry-picking C and D&quot; src=&quot;/assets/cherry-pick-c-d.png&quot; srcset=&quot;/assets/resized/cherry-pick-c-d-290x92.png 290w, /assets/resized/cherry-pick-c-d-315x100.png 315w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -750,7 +807,11 @@ $ git branch -D foo-tmp
 &lt;p&gt;This gives the desired result of &lt;code&gt;foo&lt;/code&gt;’s commits being upstream of &lt;code&gt;master&lt;/code&gt;. Note that the original &lt;strong&gt;C&lt;/strong&gt; and &lt;strong&gt;D&lt;/strong&gt; commits are no longer reachable because no branch points to them.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after resetting foo&quot; src=&quot;/assets/cherry-pick-final.png&quot; srcset=&quot;/assets/resized/cherry-pick-final-290x58.png 290w, /assets/resized/cherry-pick-final-315x62.png 315w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -783,7 +844,11 @@ $ git branch -D foo-tmp
 &lt;p&gt;Let’s take a look again at the example graph from &lt;em&gt;Merging&lt;/em&gt; to see how rebasing can prevent us from having to do a non-fast-forward merge.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- after merging hotfix&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -802,7 +867,11 @@ Applying: Finished the new feature
 &lt;p&gt;This has brought &lt;code&gt;feature-branch&lt;/code&gt; directly upstream of &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Rebasing -- rebase feature-branch with master&quot; src=&quot;/assets/rebase-feature.png&quot; srcset=&quot;/assets/resized/rebase-feature-290x81.png 290w, /assets/resized/rebase-feature-315x88.png 315w,  /assets/rebase-feature.png 680w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -1326,7 +1395,11 @@ f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
 &lt;p&gt;This gives us a history that looks a little like this:&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Stashing&quot; src=&quot;/assets/stash.png&quot; srcset=&quot;/assets/resized/stash-290x153.png 290w, /assets/resized/stash-315x166.png 315w,  /assets/stash.png 504w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -1442,7 +1515,11 @@ animal.speak(); // My name is Monty
 &lt;p&gt;The structure of the &lt;code&gt;Animal&lt;/code&gt; object becomes clear when we inspect it in the console. We can see that the &lt;code&gt;name&lt;/code&gt; property belongs to the object itself, while &lt;code&gt;speak&lt;/code&gt; is part of the &lt;code&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Animal Prototype&quot; src=&quot;/assets/Animal.png&quot; srcset=&quot;/assets/resized/Animal-290x71.png 290w, /assets/resized/Animal-315x78.png 315w,  /assets/Animal.png 430w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -1468,7 +1545,11 @@ cat.speak(); // My name is Monty
 &lt;p&gt;Let’s take a look at the &lt;code&gt;Cat&lt;/code&gt; object to get a better view of what’s going on.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Cat&quot; src=&quot;/assets/Cat.png&quot; srcset=&quot;/assets/resized/Cat-290x90.png 290w, /assets/resized/Cat-315x98.png 315w,  /assets/Cat.png 430w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -1507,7 +1588,11 @@ cat.speak(); // My name is Monty
 &lt;p&gt; &lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Legibility - Readability - Comprehension&quot; src=&quot;/assets/legibility-readability-comprehension.png&quot; srcset=&quot;/assets/resized/legibility-readability-comprehension-290x251.png 290w, /assets/resized/legibility-readability-comprehension-315x273.png 315w,  /assets/legibility-readability-comprehension.png 508w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -1856,7 +1941,11 @@ Not Found%
 &lt;p&gt;I think this ends up coming back to the way that syntax highlighting hides comments from us. It’s really difficult to spot dishonest comments because we’ve trained our brains to focus on the bright &amp;amp; colourful text, and ignore the dull grey text.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Greyed-out comments&quot; src=&quot;/assets/hidden-comments.png&quot; srcset=&quot;/assets/resized/hidden-comments-290x276.png 290w, /assets/resized/hidden-comments-315x300.png 315w,  /assets/hidden-comments.png 430w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
@@ -1870,7 +1959,11 @@ Not Found%
 &lt;p&gt;I’m currently experimenting with my own variation of the Monokai colour scheme which draws comments in a bright colour.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail&quot;&gt;
+    
+
     &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Bright comments&quot; src=&quot;/assets/bright-comments.png&quot; srcset=&quot;/assets/resized/bright-comments-290x276.png 290w, /assets/resized/bright-comments-315x300.png 315w,  /assets/bright-comments.png 430w&quot; /&gt;
+
+    
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;

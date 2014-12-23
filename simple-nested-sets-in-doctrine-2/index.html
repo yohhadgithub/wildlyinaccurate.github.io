@@ -99,15 +99,19 @@
 
 <p>The simplest way I found of doing this without using any extensions was to make use of <abbr title="Standard PHP Library">SPL</abbr>’s <a href="http://php.net/manual/en/class.recursiveiterator.php">RecursiveIterator</a> and <a href="http://www.php.net/manual/en/class.recursiveiteratoriterator.php">RecursiveIteratorIterator</a> classes. Here’s the final code, to output a drop-down menu like this one:</p>
 
-<p>[&lt;div class="thumbnail"&gt;<br />
-    <img class="thumbnail__image" alt="" src="/assets/dropdown.png" srcset=" /assets/dropdown.png 162w" /></p>
-
-<pre><code>&lt;div class="thumbnail__caption"&gt;
+<div class="thumbnail">
     
-&lt;/div&gt;
-</code></pre>
 
-<p>&lt;/div&gt;</p>
+    <img class="thumbnail__image" alt="Hierarchical Dropdown" src="/assets/dropdown.png" srcset=" /assets/dropdown.png 162w" />
+
+    
+
+    
+    <div class="thumbnail__caption">
+        Hierarchical Dropdown
+    </div>
+    
+</div>
 
 <pre><code class="language-php">/** @var $em \Doctrine\ORM\EntityManager */
 $root_categories = $em-&gt;getRepository('Entity\Category')-&gt;findBy(array('parent_category' =&gt; null));

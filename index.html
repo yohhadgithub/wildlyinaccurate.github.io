@@ -91,6 +91,24 @@
 
             <p><p>Initializing variables properly in JavaScript can have significant performance benefits. This can be shown with a simple synthetic benchmark.</p>
 
+<h3>notype.js</h3>
+
+<pre><code>var x = null;
+
+for (var i = 0; i &lt; 1e8; i++) {
+    x = 1 + x;
+}
+</code></pre>
+
+<h3>withtype.js</h3>
+
+<pre><code>var x = 0;
+
+for (var i = 0; i &lt; 1e8; i++) {
+    x = 1 + x;
+}
+</code></pre>
+
  <a href="/javascript-performance-variable-initialization">(Read more)</a></p>
         </article>
     
@@ -103,7 +121,9 @@
 
             <p><p><em>A Hacker’s Guide to Git</em> is now available as an e-book. You can purchase it <a>on LeanPub</a>.</p>
 
-  
+<ul>
+  <li><a>Introduction</a></li>
+</ul>
 
 <h2>Introduction</h2>
 

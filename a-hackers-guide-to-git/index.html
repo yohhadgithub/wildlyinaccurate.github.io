@@ -208,7 +208,11 @@ src/
 <p>If we draw the blobs (in green) as well as the tree objects (in blue), we end up with a diagram that looks a lot like our directory structure.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Git tree graph" src="/assets/tree-graph.png" srcset="/assets/resized/tree-graph-290x225.png 290w, /assets/resized/tree-graph-315x244.png 315w,  /assets/tree-graph.png 591w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -436,7 +440,11 @@ $ git commit -am "Fixed some wording"
 <p>At this point, the history will look something like this.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Branching -- hotfix and feature branch" src="/assets/branch-feature-hotfix.png" srcset="/assets/resized/branch-feature-hotfix-290x124.png 290w, /assets/resized/branch-feature-hotfix-315x134.png 315w,  /assets/branch-feature-hotfix.png 631w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -459,7 +467,11 @@ Fast-forward
 <p>Notice how Git mentions <strong>fast-forward</strong> during the merge. What this means is that all of the commits in <code>hotfix</code> were directly upstream from <code>master</code>. This allows Git to simply move the <code>master</code> pointer up the tree to <code>hotfix</code>. What you end up with looks like this.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Branching -- after merging hotfix" src="/assets/branch-merge-hotfix.png" srcset="/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -504,7 +516,11 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <p>This means that our history graph now looks something like this (commit <strong>E</strong> is the new merge commit).</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Branching -- after merging feature-branch" src="/assets/branch-merge-feature.png" srcset="/assets/resized/branch-merge-feature-290x149.png 290w, /assets/resized/branch-merge-feature-315x161.png 315w,  /assets/branch-merge-feature.png 656w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -526,7 +542,11 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <p>What <code>git cherry-pick</code> does is take one or more commits, and replay them on top of the current commit. Imagine a repository with the following history graph.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Node graph -- before cherry-pick" src="/assets/cherry-pick-before.png" srcset="/assets/resized/cherry-pick-before-290x114.png 290w, /assets/resized/cherry-pick-before-315x123.png 315w,  /assets/cherry-pick-before.png 467w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -538,7 +558,11 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <p>If you are on commit <strong>D</strong> and you run <code>git cherry-pick F</code>, Git will take the changes that were introduced in commit <strong>F</strong> and replay them <em>as a new commit</em> (shown as <strong>F’</strong>) on top of commit <strong>D.</strong></p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Node graph -- after cherry-pick" src="/assets/cherry-pick-after.png" srcset="/assets/resized/cherry-pick-after-290x89.png 290w, /assets/resized/cherry-pick-after-315x96.png 315w,  /assets/cherry-pick-after.png 555w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -552,7 +576,11 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <p>A common workflow in Git is to develop features on small branches, and merge the features one at a time into the master branch. Let’s recreate this scenario by adding some branch labels to the graphs.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Node graph -- with branch labels" src="/assets/graph-branch-labels.png" srcset="/assets/resized/graph-branch-labels-290x81.png 290w, /assets/resized/graph-branch-labels-315x88.png 315w,  /assets/graph-branch-labels.png 623w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -570,7 +598,11 @@ $ git checkout -b foo-tmp
 </code></pre>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Node graph -- after creating foo-tmp" src="/assets/foo-tmp.png" srcset="/assets/resized/foo-tmp-290x81.png 290w, /assets/resized/foo-tmp-315x88.png 315w,  /assets/foo-tmp.png 623w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -585,7 +617,11 @@ $ git checkout -b foo-tmp
 </code></pre>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Node graph -- after cherry-picking C and D" src="/assets/cherry-pick-c-d.png" srcset="/assets/resized/cherry-pick-c-d-290x92.png 290w, /assets/resized/cherry-pick-c-d-315x100.png 315w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -604,7 +640,11 @@ $ git branch -D foo-tmp
 <p>This gives the desired result of <code>foo</code>’s commits being upstream of <code>master</code>. Note that the original <strong>C</strong> and <strong>D</strong> commits are no longer reachable because no branch points to them.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Node graph -- after resetting foo" src="/assets/cherry-pick-final.png" srcset="/assets/resized/cherry-pick-final-290x58.png 290w, /assets/resized/cherry-pick-final-315x62.png 315w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -637,7 +677,11 @@ $ git branch -D foo-tmp
 <p>Let’s take a look again at the example graph from <em>Merging</em> to see how rebasing can prevent us from having to do a non-fast-forward merge.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Branching -- after merging hotfix" src="/assets/branch-merge-hotfix.png" srcset="/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -656,7 +700,11 @@ Applying: Finished the new feature
 <p>This has brought <code>feature-branch</code> directly upstream of <code>master</code>.</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Rebasing -- rebase feature-branch with master" src="/assets/rebase-feature.png" srcset="/assets/resized/rebase-feature-290x81.png 290w, /assets/resized/rebase-feature-315x88.png 315w,  /assets/rebase-feature.png 680w" />
+
+    
 
     
     <div class="thumbnail__caption">
@@ -1180,7 +1228,11 @@ f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
 <p>This gives us a history that looks a little like this:</p>
 
 <div class="thumbnail">
+    
+
     <img class="thumbnail__image" alt="Stashing" src="/assets/stash.png" srcset="/assets/resized/stash-290x153.png 290w, /assets/resized/stash-315x166.png 315w,  /assets/stash.png 504w" />
+
+    
 
     
     <div class="thumbnail__caption">
