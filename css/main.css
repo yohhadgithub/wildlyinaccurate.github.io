@@ -335,6 +335,22 @@ table>tbody>tr>td {
   border: 1px solid #ddd;
 }
 
+.navbar__title,
+.pagination__link {
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 16px 22px;
+}
+
+.navbar__title:hover,
+.pagination__link:hover,
+.navbar__title:focus,
+.pagination__link:focus {
+  background-color: rgba(142,68,173,0.8);
+  color: #fff;
+  text-decoration: none;
+}
+
 ::-moz-selection {
   background-color: #8e44ad;
   color: #fff;
@@ -392,19 +408,9 @@ p {
 }
 
 .navbar__title {
-  background-color: #8e44ad;
-  color: #fff;
   float: left;
   font-size: 27px;
   font-weight: bold;
-  padding: 16px 22px;
-}
-
-.navbar__title:hover,
-.navbar__title:focus {
-  background-color: rgba(142,68,173,0.8);
-  color: #fff;
-  text-decoration: none;
 }
 
 .navbar-nav {
@@ -528,6 +534,18 @@ p {
   font-size: 18px;
 }
 
+.pagination__link {
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.pagination__link--next {
+  float: left;
+}
+
+.pagination__link--previous {
+  float: right;
+}
+
 code,
 pre {
   background: #f7f7f7;
@@ -569,7 +587,6 @@ pre code {
 
 #carbonads {
   max-width: 200px;
-  padding-top: 12px;
   text-align: center;
 }
 
