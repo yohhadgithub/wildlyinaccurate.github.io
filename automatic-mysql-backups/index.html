@@ -78,14 +78,13 @@
 <article class="post-content">
     <p>It’s really easy to set up automatic MySQL backups using <code>mysqldump</code>. First, you need to set up a user with <code>SELECT</code> and <code>LOCK TABLES</code> privileges. In this example the user doesn’t have a password.</p>
 
-<pre><code class="language-sql">CREATE USER 'autobackup'@'localhost';
-GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
-</code></pre>
+<div class="highlight"><pre><code class="language-sql"><span class="k">CREATE</span> <span class="k">USER</span> <span class="s1">&#39;autobackup&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+<span class="k">GRANT</span> <span class="k">SELECT</span><span class="p">,</span> <span class="k">LOCK</span> <span class="n">TABLES</span> <span class="k">ON</span> <span class="o">*</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;autobackup&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span></code></pre></div>
 
 <p>Next create the cron job with <code>crontab -e</code>. This job is set to run every day at 5:20am.</p>
 
-<pre><code>20 5 * * * mysqldump --user=autobackup **dbname** | gzip -c &gt; /var/backups/**dbname**-`/bin/date +\%Y\%m\%d`.sql.gz
-</code></pre>
+<div class="highlight"><pre><code>20 5 * * * mysqldump --user=autobackup **dbname** | gzip -c &gt; /var/backups/**dbname**-`/bin/date +\%Y\%m\%d`.sql.gz
+</code></pre></div>
 
 <p>Don’t forget to change <strong>dbname</strong> to the name of the database that you want to backup. And that’s it - you’re done! This cron job will create a backup of your database and save it to <code>/var/backups</code> with a filename based on the current date, e.g. <code>/var/backups/**dbname**-20120503.sql.gz</code></p>
 

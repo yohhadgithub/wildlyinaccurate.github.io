@@ -80,9 +80,8 @@
 
 <!--more-->
 
-<pre><code class="language-php">$config['uri_protocol'] = "PATH_INFO";
-$config['enable_query_strings'] = TRUE;
-</code></pre>
+<div class="highlight"><pre><code class="language-php"><span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;uri_protocol&#39;</span><span class="p">]</span> <span class="o">=</span><span class="nx"> </span><span class="s2">&quot;PATH_INFO&quot;</span><span class="p">;</span>
+<span class="nv">$config</span><span class="p">[</span><span class="s1">&#39;enable_query_strings&#39;</span><span class="p">]</span><span class="nx"> </span><span class="o">=</span><span class="nx"> TRUE</span><span class="p">;</span></code></pre></div>
 
 <p>You would expect that using this configuration would allow you to use query strings, while still using the PATH_INFO URI protocol for your segment-based URLs. In CodeIgniter 1 this would produce URLs like <code>example.com/users/profile?user=Joseph&amp;edit=true</code>. CodeIgniter 2 however would produce <code>example.com/?users/profile?user=Joseph&amp;edit=true</code> - and the reason for this becomes apparent when you compare CodeIgniter 2’s CI_Config::site_url() method with the same method in CodeIgniter 1.</p>
 
@@ -90,82 +89,81 @@ $config['enable_query_strings'] = TRUE;
 
 <p>Getting around this is a very simple task; only one line needs to be modified. In <code>system/core/Config.php</code>, change line 221 from:</p>
 
-<pre><code>if ($this-&gt;item('enable_query_strings') == FALSE)
-</code></pre>
+<div class="highlight"><pre><code>if ($this-&gt;item('enable_query_strings') == FALSE)
+</code></pre></div>
 
 <p>To:</p>
 
-<pre><code>if ($this-&gt;item('enable_query_strings') == FALSE OR $this-&gt;item('uri_protocol') == 'PATH_INFO')
-</code></pre>
+<div class="highlight"><pre><code>if ($this-&gt;item('enable_query_strings') == FALSE OR $this-&gt;item('uri_protocol') == 'PATH_INFO')
+</code></pre></div>
 
 <p>And there you have it. Setting uri_protocol to PATH_INFO and enabling query strings will allow you to have  attractive segment-based URLs and still make use of query strings.</p>
 
 <p>Note: It is considered good practice to extend core classes rather than modify them. I highly recommend doing this, as it will prevent your changes from being overwritten when you update CodeIgniter. To extend the CI_Config class, create the file <code>application/core/MY_Config.php</code> and paste the following code into it:</p>
 
-<pre><code class="language-php">class MY_Config extends CI_Config
-{
-    /**
-     * Site URL
-     *
-     * Extended to allow a combination segment-based URLs and query strings when using the
-     * uri_protocol = PATH_INFO / enable_query_strings = TRUE configuration setting.
-     *
-     * @access    public
-     * @param    string    the URI string
-     * @return    string
-     */
-    function site_url($uri = '')
-    {
-        if ($uri == '')
-        {
-            if ($this-&gt;item('base_url') == '')
-            {
-                return $this-&gt;item('index_page');
-            }
-            else
-            {
-                return $this-&gt;slash_item('base_url').$this-&gt;item('index_page');
-            }
-        }
+<div class="highlight"><pre><code class="language-php"><span class="k">class</span> <span class="nc">MY_Config</span> <span class="k">extends</span> <span class="nx">CI_Config</span>
+<span class="p">{</span>
+    <span class="sd">/**</span>
+<span class="sd">     * Site URL</span>
+<span class="sd">     *</span>
+<span class="sd">     * Extended to allow a combination segment-based URLs and query strings when using the</span>
+<span class="sd">     * uri_protocol = PATH_INFO / enable_query_strings = TRUE configuration setting.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @access    public</span>
+<span class="sd">     * @param    string    the URI string</span>
+<span class="sd">     * @return    string</span>
+<span class="sd">     */</span>
+    <span class="k">function</span> <span class="nf">site_url</span><span class="p">(</span><span class="nv">$uri</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$uri</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;base_url&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;index_page&#39;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slash_item</span><span class="p">(</span><span class="s1">&#39;base_url&#39;</span><span class="p">)</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;index_page&#39;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
 
-        if ($this-&gt;item('enable_query_strings') == FALSE OR $this-&gt;item('uri_protocol') == 'PATH_INFO')
-        {
-            if (is_array($uri))
-            {
-                $uri = implode('/', $uri);
-            }
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;enable_query_strings&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="k">FALSE</span> <span class="k">OR</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;uri_protocol&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;PATH_INFO&#39;</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$uri</span><span class="p">))</span>
+            <span class="p">{</span>
+                <span class="nv">$uri</span> <span class="o">=</span> <span class="nb">implode</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nv">$uri</span><span class="p">);</span>
+            <span class="p">}</span>
 
-            $suffix = ($this-&gt;item('url_suffix') == FALSE) ? '' : $this-&gt;item('url_suffix');
-            return $this-&gt;slash_item('base_url').$this-&gt;slash_item('index_page').trim($uri, '/').$suffix;
-        }
-        else
-        {
-            if (is_array($uri))
-            {
-                $i = 0;
-                $str = '';
-                foreach ($uri as $key =&gt; $val)
-                {
-                    $prefix = ($i == 0) ? '' : '&amp;';
-                    $str .= $prefix.$key.'='.$val;
-                    $i++;
-                }
+            <span class="nv">$suffix</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;url_suffix&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="k">FALSE</span><span class="p">)</span> <span class="o">?</span> <span class="s1">&#39;&#39;</span> <span class="o">:</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;url_suffix&#39;</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slash_item</span><span class="p">(</span><span class="s1">&#39;base_url&#39;</span><span class="p">)</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slash_item</span><span class="p">(</span><span class="s1">&#39;index_page&#39;</span><span class="p">)</span><span class="o">.</span><span class="nb">trim</span><span class="p">(</span><span class="nv">$uri</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span><span class="o">.</span><span class="nv">$suffix</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$uri</span><span class="p">))</span>
+            <span class="p">{</span>
+                <span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="nv">$str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+                <span class="k">foreach</span> <span class="p">(</span><span class="nv">$uri</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$val</span><span class="p">)</span>
+                <span class="p">{</span>
+                    <span class="nv">$prefix</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="s1">&#39;&#39;</span> <span class="o">:</span> <span class="s1">&#39;&amp;&#39;</span><span class="p">;</span>
+                    <span class="nv">$str</span> <span class="o">.=</span> <span class="nv">$prefix</span><span class="o">.</span><span class="nv">$key</span><span class="o">.</span><span class="s1">&#39;=&#39;</span><span class="o">.</span><span class="nv">$val</span><span class="p">;</span>
+                    <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+                <span class="p">}</span>
 
-                $uri = $str;
-            }
+                <span class="nv">$uri</span> <span class="o">=</span> <span class="nv">$str</span><span class="p">;</span>
+            <span class="p">}</span>
 
-            if ($this-&gt;item('base_url') == '')
-            {
-                return $this-&gt;item('index_page').'?'.$uri;
-            }
-            else
-            {
-                return $this-&gt;slash_item('base_url').$this-&gt;item('index_page').'?'.$uri;
-            }
-        }
-    }
-}
-</code></pre>
+            <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;base_url&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;index_page&#39;</span><span class="p">)</span><span class="o">.</span><span class="s1">&#39;?&#39;</span><span class="o">.</span><span class="nv">$uri</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">slash_item</span><span class="p">(</span><span class="s1">&#39;base_url&#39;</span><span class="p">)</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">item</span><span class="p">(</span><span class="s1">&#39;index_page&#39;</span><span class="p">)</span><span class="o">.</span><span class="s1">&#39;?&#39;</span><span class="o">.</span><span class="nv">$uri</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
 
 </article>
 

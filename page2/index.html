@@ -75,17 +75,21 @@
                 <a class="post-summary__link" href="/blazing-fast-wordpress-with-nginx-and-memcached">Blazing fast WordPress with Nginx and Memcached</a>
             </h3>
 
-            <p><p>Inspired by Eric Mann’s post on <a>caching WordPress with Redis</a>, I thought I’d experiment with a similar setup using Memcached. Any in-memory caching system should work just as well, but I’ve chosen Memcached because it’s already running on my server and because PHP already has a <a>built-in libmemcached API</a>.</p>
+            <p><p>Inspired by Eric Mann’s post on <a href="http://eamann.com/tech/ludicrous-speed-wordpress-caching-with-redis/">caching WordPress with Redis</a>, I thought I’d experiment with a similar setup using Memcached. Any in-memory caching system should work just as well, but I’ve chosen Memcached because it’s already running on my server and because PHP already has a <a href="http://www.php.net/manual/en/class.memcached.php">built-in libmemcached API</a>.</p>
 
-<p>My current setup is Nginx and PHP-FPM, with WP Super Cache. The cache is saved to the filesystem, allowing Nginx to serve static files (which it is <a>very good at</a>) without needing to pass any requests to PHP. This setup has worked very well, so I’ll be using it as a baseline.</p>
+<p>My current setup is Nginx and PHP-FPM, with WP Super Cache. The cache is saved to the filesystem, allowing Nginx to serve static files (which it is <a href="http://nbonvin.wordpress.com/2011/03/14/apache-vs-nginx-vs-varnish-vs-gwan/">very good at</a>) without needing to pass any requests to PHP. This setup has worked very well, so I’ll be using it as a baseline.</p>
 
 <p>To use Memcached, every request needs to be passed to PHP. My gut feeling was that this would be slower than serving static files with Nginx due to the overhead of spinning up a PHP process for each request.</p>
 
 <h2>Benchmarks</h2>
 
-<p>To find out which of the two setups was faster, I measured the following metrics using <a>WebPagetest</a> and <a>Blitz</a> :</p>
+<p>To find out which of the two setups was faster, I measured the following metrics using <a href="http://www.webpagetest.org/">WebPagetest</a> and <a href="http://www.blitz.io/bhm0Fw2xDFNoGcFXNKJaQSu">Blitz</a> :</p>
 
-  
+<ul>
+  <li>Time To First Byte (although CloudFlare has speculated that <a href="http://blog.cloudflare.com/ttfb-time-to-first-byte-considered-meaningles">TTFB is a meaningless metric</a>)</li>
+  <li>Average response time</li>
+  <li>Average hit rate</li>
+</ul>
 
  <a href="/blazing-fast-wordpress-with-nginx-and-memcached">(Read more)</a></p>
         </article>
@@ -123,7 +127,13 @@
 
             <p><p>Setting up your editor correctly can make working with other developers much less painful. Below are some things that I believe every developer should do when editing source code. Any good IDE or editor should have settings to do these things automatically - the points below are paired with their Sublime Text setting.</p>
 
-  
+<ul>
+  <li>Trim trailing whitespace - <code>"trim_trailing_white_space_on_save": true</code></li>
+  <li>Always use Unix line endings (LF) - <code>"default_line_ending": "unix"</code></li>
+  <li>Ensure files end with a new line - <code>"ensure_newline_at_eof_on_save": true</code></li>
+  <li>Automatically detect indentation style - <code>"detect_indentation": true</code></li>
+  <li>Or, failing the above, have a way to quickly switch between indentation styles.</li>
+</ul>
 
  <a href="/setting-up-your-editor">(Read more)</a></p>
         </article>
@@ -137,17 +147,17 @@
 
             <p><p>This post is to help me keep track of non-tech books that I would like to read.</p>
 
-<p><a>Breakfast of Champions by Kurt Vonnegut</a></p>
+<p><a href="http://www.amazon.com/Breakfast-Champions-Vonnegut-Series-ebook/dp/B003XRELEI">Breakfast of Champions by Kurt Vonnegut</a></p>
 
-<p><a>Slaughterhouse-Five by Kurt Vonnegut</a></p>
+<p><a href="http://www.amazon.com/Slaughterhouse-Five-Kurt-Vonnegut/dp/0440180295">Slaughterhouse-Five by Kurt Vonnegut</a></p>
 
-<p><a>Cat’s Cradle by Kurt Vonnegut</a></p>
+<p><a href="http://www.amazon.com/Cats-Cradle-Novel-Kurt-Vonnegut/dp/038533348X">Cat’s Cradle by Kurt Vonnegut</a></p>
 
-<p><a>Do Androids Dream Of Electric Sheep by Philip K Dick</a></p>
+<p><a href="http://www.amazon.co.uk/Androids-Dream-Electric-Sheep-Masterworks/dp/1857988132">Do Androids Dream Of Electric Sheep by Philip K Dick</a></p>
 
-<p><a>Neuromancer by William Gibson</a></p>
+<p><a href="http://www.amazon.co.uk/Neuromancer-William-Gibson/dp/0006480411">Neuromancer by William Gibson</a></p>
 
-<p><a>Ham on Rye by Charles Bukowski</a></p>
+<p><a href="http://www.amazon.com/Ham-On-Rye-Charles-Bukowski/dp/0876855575">Ham on Rye by Charles Bukowski</a></p>
 
  <a href="/non-tech-books-i-should-read">(Read more)</a></p>
         </article>
@@ -163,21 +173,21 @@
 
 <p>Check to make sure that php-fpm is running with <code>ps aux | grep php</code> - if you can’t see any php-fpm processes in the output, then you may need to re-install php-fpm. If php-fpm is running okay, then skip this first step.</p>
 
-<pre><code>sudo apt-get remove php5 php5-cgi php5-fpm
+<div><pre><code>sudo apt-get remove php5 php5-cgi php5-fpm
 sudo apt-get install php5 php5-cgi php5-fpm
-</code></pre>
+</code></pre></div>
 
 <p>The thing to notice here is that the order in which you install the packages is important. In the past I have found that installing them in the wrong order causes the packages to be configured incorrectly.</p>
 
 <p>Next, get php-fpm to listen on the correct host/port. In <code>/etc/php5/fpm/pool.d/www.conf</code> change the <code>listen</code> value to match the <code>fastcgi_pass</code> location in your Nginx configuration. For example, I changed mine from:</p>
 
-<pre><code>listen = /var/run/php5-fpm.sock
-</code></pre>
+<div><pre><code>listen = /var/run/php5-fpm.sock
+</code></pre></div>
 
 <p>To:</p>
 
-<pre><code>listen = 127.0.0.1:9000
-</code></pre>
+<div><pre><code>listen = 127.0.0.1:9000
+</code></pre></div>
 
 <p>If you are configuring php-fpm to listen on a Unix socket, you should also check that the socket file has the correct owner and permissions. While I wouldn’t recommend it, you can simply give read-write permissions to all with <code>sudo chmod go+rw /var/run/php5-fpm.sock</code>.</p>
 
@@ -193,7 +203,7 @@ sudo apt-get install php5 php5-cgi php5-fpm
                 <a class="post-summary__link" href="/sublime-text-packages-for-web-development">Sublime Text packages for web development</a>
             </h3>
 
-            <p><p>Coming from <a>PhpStorm</a> (a full-featured IDE), I felt that Sublime Text was missing a few useful features. Luckily, one of the great things about Sublime is that it can be easily extended with <a>plugins</a> and packages. Perhaps the most useful package for Sublime is <a>Sublime Package Control</a>, which allows you to easily install and manage packages (it can even uninstall itself - über meta).</p>
+            <p><p>Coming from <a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a> (a full-featured IDE), I felt that Sublime Text was missing a few useful features. Luckily, one of the great things about Sublime is that it can be easily extended with <a href="http://docs.sublimetext.info/en/latest/extensibility/plugins.html">plugins</a> and packages. Perhaps the most useful package for Sublime is <a href="http://wbond.net/sublime_packages/package_control">Sublime Package Control</a>, which allows you to easily install and manage packages (it can even uninstall itself - über meta).</p>
 
 <p>Below are some Sublime Text packages that I have found to be useful for web development.</p>
 
@@ -221,11 +231,23 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
             <p><p>This post is a list of programming-related books that I intend to read at some point (in no particular order).</p>
 
-  
+<ul>
+  <li><a href="http://www.amazon.co.uk/Patterns-Enterprise-Application-Architecture-ebook/dp/B008OHVDFM">Patterns of Enterprise Application Architecture</a></li>
+  <li><a href="http://www.amazon.com/Class-Construction-Object-Oriented-Programming-Fundamentals/dp/0136301045">Class Construction in C and C++</a></li>
+  <li><a href="http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X">The Pragmatic Programmer</a></li>
+  <li><a href="http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X">Smalltalk Best Practice Patterns</a></li>
+  <li><a href="http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional-Series/dp/0321584104">Eloquent Ruby</a></li>
+  <li><a href="http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052">Working Effectively with Legacy Code</a></li>
+  <li><a href="http://www.amazon.com/Land-Lisp-Learn-Program-Game/dp/1593272812">Land of Lisp</a></li>
+  <li><a href="http://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627">Growing Object-Oriented Software, Guided by Tests</a></li>
+  <li><a href="https://leanpub.com/fp-oo">Functional Programming for the Object-Oriented Programmer</a></li>
+</ul>
 
 <p>And some other resources that aren’t books:</p>
 
-  
+<ul>
+  <li><a href="http://rubyrogues.com/">Ruby Rogues podcasts</a></li>
+</ul>
 
  <a href="/programming-books-and-resources">(Read more)</a></p>
         </article>
@@ -267,12 +289,12 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
             <p><p>Bcrypt is a Blowfish-based hashing algorithm which is commonly used for password hashing because of its potentially expensive key setup phase. A Bcrypt hash has the following structure:</p>
 
-<pre><code>$2a$(2 chars work)$(22 chars salt)(31 chars hash)
-</code></pre>
+<div><pre><code>$2a$(2 chars work)$(22 chars salt)(31 chars hash)
+</code></pre></div>
 
 <p>The reason that the key setup phase can be potentially expensive is because it is run <code>2&lt;sup&gt;work&lt;/sup&gt;</code> times. As password hashing is usually associated with common tasks like logging a user into a system, it’s important to find the right balance between security and performance. Using a high work factor makes it incredibly difficult to execute a brute-force attack, but can put unnecessary load on the system.</p>
 
-<p>Using <a>Marco Arment’s PHP Bcrypt class</a>, I performed some benchmarks to determine how long it takes to hash a string with various work factors:</p>
+<p>Using <a href="https://gist.github.com/1053158/">Marco Arment’s PHP Bcrypt class</a>, I performed some benchmarks to determine how long it takes to hash a string with various work factors:</p>
 
  <a href="/bcrypt-choosing-a-work-factor">(Read more)</a></p>
         </article>
@@ -286,14 +308,13 @@ sudo apt-get install php5 php5-cgi php5-fpm
 
             <p><p>It’s really easy to set up automatic MySQL backups using <code>mysqldump</code>. First, you need to set up a user with <code>SELECT</code> and <code>LOCK TABLES</code> privileges. In this example the user doesn’t have a password.</p>
 
-<pre><code>CREATE USER 'autobackup'@'localhost';
-GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
-</code></pre>
+<div><pre><code>CREATE USER 'autobackup'@'localhost';
+GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';</code></pre></div>
 
 <p>Next create the cron job with <code>crontab -e</code>. This job is set to run every day at 5:20am.</p>
 
-<pre><code>20 5 * * * mysqldump --user=autobackup **dbname** | gzip -c &gt; /var/backups/**dbname**-`/bin/date +\%Y\%m\%d`.sql.gz
-</code></pre>
+<div><pre><code>20 5 * * * mysqldump --user=autobackup **dbname** | gzip -c &gt; /var/backups/**dbname**-`/bin/date +\%Y\%m\%d`.sql.gz
+</code></pre></div>
 
 <p>Don’t forget to change <strong>dbname</strong> to the name of the database that you want to backup. And that’s it - you’re done! This cron job will create a backup of your database and save it to <code>/var/backups</code> with a filename based on the current date, e.g. <code>/var/backups/**dbname**-20120503.sql.gz</code></p>
 
@@ -307,9 +328,9 @@ GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
                 <a class="post-summary__link" href="/mysql-specified-key-was-too-long-max-key-length-is-767-bytes">MySQL: Specified key was too long; max key length is 767 bytes</a>
             </h3>
 
-            <p><p>MySQL has a <a>prefix limitation</a> of 767 bytes in InnoDB, and 1000 bytes in MyISAM. This has never been a problem for me, until I started using UTF-16 as the character set for one of my databases. UTF-16 can use up to 4 bytes per character which means that in an InnoDB table, you can’t have any keys longer than 191 characters. Take this <code>CREATE</code> statement for example:</p>
+            <p><p>MySQL has a <a href="http://dev.mysql.com/doc/refman/5.1/en/create-index.html">prefix limitation</a> of 767 bytes in InnoDB, and 1000 bytes in MyISAM. This has never been a problem for me, until I started using UTF-16 as the character set for one of my databases. UTF-16 can use up to 4 bytes per character which means that in an InnoDB table, you can’t have any keys longer than 191 characters. Take this <code>CREATE</code> statement for example:</p>
 
-<pre><code>CREATE TABLE `user` (
+<div><pre><code>CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(32) NOT NULL,
   `password` varchar(64) NOT NULL,
@@ -317,8 +338,7 @@ GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_8D93D649F85E0677` (`username`),
   UNIQUE KEY `UNIQ_8D93D649E7927C74` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf16 AUTO_INCREMENT=1 ;
-</code></pre>
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 AUTO_INCREMENT=1 ;</code></pre></div>
 
 <p>This will fail with an error like <code>Specified key was too long; max key length is 767 bytes</code>, because the <code>UNIQUE INDEX</code> on the email field requires at least 1020 bytes (255 * 4).</p>
 
@@ -338,13 +358,13 @@ GRANT SELECT, LOCK TABLES ON *.* TO 'autobackup'@'localhost';
 
 <p>Adding the file to .gitignore doesn’t work, because the file is already tracked. Luckily, Git will allow you to manually “ignore” changes to a file or directory:</p>
 
-<pre><code>git update-index --assume-unchanged &lt;file&gt;
-</code></pre>
+<div><pre><code>git update-index --assume-unchanged &lt;file&gt;
+</code></pre></div>
 
 <p>And if you want to start tracking changes again, you can undo the previous command using:</p>
 
-<pre><code>git update-index --no-assume-unchanged &lt;file&gt;
-</code></pre>
+<div><pre><code>git update-index --no-assume-unchanged &lt;file&gt;
+</code></pre></div>
 
 <p>Easy!</p>
 

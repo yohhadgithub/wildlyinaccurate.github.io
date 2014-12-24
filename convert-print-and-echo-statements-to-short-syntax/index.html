@@ -80,12 +80,12 @@
 
 <p>The regular expression below will find all one-liner <code>print</code> and <code>echo</code> statements (e.g. <code>&lt;?php print $var; ?&gt;</code>) and convert them to <code>&lt;?=$var?&gt;</code> statements. It will not match statements containing closing brackets, for example when using ternary operators: <code>&lt;?=($foo == $bar) ? 'Foobar' : 'Foo'?&gt;</code></p>
 
-<pre><code>Find:
+<div class="highlight"><pre><code>Find:
 &lt;\?php[\s]*(print|echo)[\s]*\(?([^&gt;\)]+?)\)?[\s]*;?[\s]*\?&gt;
-</code></pre>
-<pre><code>Replace:
+</code></pre></div>
+<div class="highlight"><pre><code>Replace:
 &lt;?=$2?&gt;
-</code></pre>
+</code></pre></div>
 
 </article>
 

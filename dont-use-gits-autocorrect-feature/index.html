@@ -78,22 +78,22 @@
 <article class="post-content">
     <p>Quite often I’ve accidentally typed “git” twice. Usually this is fine, and Git just does something like this:</p>
 
-<pre><code>$ git git diff
+<div class="highlight"><pre><code>$ git git diff
 git: 'git' is not a git command. See 'git --help'.
 
 Did you mean this?
     init
-</code></pre>
+</code></pre></div>
 
 <p>But I recently turned on Git’s autocorrect feature, to see what it was like (<code>git config --global help.autocorrect 1</code>). The results were… <em>interesting</em>:</p>
 
-<pre><code>$ git git diff
+<div class="highlight"><pre><code>$ git git diff
 WARNING: You called a Git command named 'git', which does not exist.
 Continuing under the assumption that you meant 'init' in **0.1 seconds** automatically...
 fatal: internal error: work tree has already been set
 Current worktree: /nfs/personaldev/vagrant/mobileweb-v2
 New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
-</code></pre>
+</code></pre></div>
 
 <p>This is really bizarre behaviour. The fact that it wants to autocorrect it to <code>git init</code> is <em>sort-of</em> okay. But rather than giving me the option to confirm that this is what I want, Git gives me a whole <strong>0.1 seconds</strong> to hit Ctrl+C before it automatically runs the command for me.</p>
 

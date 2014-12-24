@@ -86,54 +86,47 @@
 
 <p>Don’t worry if this doesn’t make sense yet. To see prototypes in action, let’s take a look at the simplest example of a “class” within JavaScript, which is created with a function object:</p>
 
-<pre><code class="language-js">function Animal() {}
+<div class="highlight"><pre><code class="language-js"><span class="kd">function</span> <span class="nx">Animal</span><span class="p">()</span> <span class="p">{}</span>
 
-var animal = new Animal();
-</code></pre>
+<span class="kd">var</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span></code></pre></div>
 
 <p>We can add properties to the <code>Animal</code> class in two ways: either by setting them as <em>instance properties</em>, or by adding them to the <code>Animal</code> prototype.</p>
 
-<pre><code class="language-js">function Animal(name) {
-    // Instance properties can be set on each instance of the class
-    this.name = name;
-}
+<div class="highlight"><pre><code class="language-js"><span class="kd">function</span> <span class="nx">Animal</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Instance properties can be set on each instance of the class</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+<span class="p">}</span>
 
-// Prototype properties are shared across all instances of the class. However, they can still be overwritten on a per-instance basis with the `this` keyword.
-Animal.prototype.speak = function() {
-    console.log("My name is " + this.name);
-};
+<span class="c1">// Prototype properties are shared across all instances of the class. However, they can still be overwritten on a per-instance basis with the `this` keyword.</span>
+<span class="nx">Animal</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">speak</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;My name is &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="p">};</span>
 
-var animal = new Animal('Monty');
-animal.speak(); // My name is Monty
-</code></pre>
+<span class="kd">var</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">(</span><span class="s1">&#39;Monty&#39;</span><span class="p">);</span>
+<span class="nx">animal</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">// My name is Monty</span></code></pre></div>
 
 <p>The structure of the <code>Animal</code> object becomes clear when we inspect it in the console. We can see that the <code>name</code> property belongs to the object itself, while <code>speak</code> is part of the <code>Animal</code> prototype.</p>
 
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Animal Prototype" src="/assets/Animal.png" srcset="/assets/resized/Animal-290x71.png 290w, /assets/resized/Animal-315x78.png 315w,  /assets/Animal.png 430w" />
+    <img class="thumbnail__image" alt="" src="/assets/Animal.png" srcset="/assets/resized/Animal-290x71.png 290w, /assets/resized/Animal-315x78.png 315w,  /assets/Animal.png 430w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Animal Prototype
-    </div>
     
 </div>
 
 <p>Now let’s look at how we can extend the <code>Animal</code> class to create a <code>Cat</code> class:</p>
 
-<pre><code class="language-js">function Cat(name) {
-    Animal.call(this, name);
-}
+<div class="highlight"><pre><code class="language-js"><span class="kd">function</span> <span class="nx">Cat</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">Animal</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span>
+<span class="p">}</span>
 
-Cat.prototype = new Animal();
+<span class="nx">Cat</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span>
 
-var cat = new Cat('Monty');
-cat.speak(); // My name is Monty
-</code></pre>
+<span class="kd">var</span> <span class="nx">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Cat</span><span class="p">(</span><span class="s1">&#39;Monty&#39;</span><span class="p">);</span>
+<span class="nx">cat</span><span class="p">.</span><span class="nx">speak</span><span class="p">();</span> <span class="c1">// My name is Monty</span></code></pre></div>
 
 <p>What we are doing here is setting <code>Cat</code>’s prototype to an instance of <code>Animal</code>, so that <code>Cat</code> inherits all of <code>Animal's</code> properties. We’re also using <code>Animal.call</code> to inherit the <code>Animal</code> constructor (sort of like <code>parent</code> or <code>super</code> in other languages). <code>call</code> is a special function which lets us call a function and specify the value of <code>this</code> <em>within that function</em>. So when <code>this.name</code> is set inside the <code>Animal</code> constructor, it’s the <code>Cat</code>’s name property being set, not the <code>Animal</code>’s.</p>
 
@@ -142,14 +135,10 @@ cat.speak(); // My name is Monty
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Cat" src="/assets/Cat.png" srcset="/assets/resized/Cat-290x90.png 290w, /assets/resized/Cat-315x98.png 315w,  /assets/Cat.png 430w" />
+    <img class="thumbnail__image" alt="" src="/assets/Cat.png" srcset="/assets/resized/Cat-290x90.png 290w, /assets/resized/Cat-315x98.png 315w,  /assets/Cat.png 430w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Cat
-    </div>
     
 </div>
 

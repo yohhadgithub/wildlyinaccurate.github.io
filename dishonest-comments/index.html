@@ -82,48 +82,44 @@
 
 <p>Take this code, for example:</p>
 
-<pre><code class="language-js">$('a').click(function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-});
-</code></pre>
+<div class="highlight"><pre><code class="language-js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
 
 <p>If you’re not familiar with JavaScript events, <code>e.stopPropagation()</code> will stop this event from bubbling up to other event handlers. Now, what if somebody decides that the event <em>should</em> bubble up? They might do something like this:</p>
 
-<pre><code class="language-diff">--- a/example.js
-+++ b/example.js
-@@ -1,4 +1,4 @@
- $('a').click(function(e) {
-+    // Let the event bubble up to the next handler
--    e.stopPropagation();
+<div class="highlight"><pre><code class="language-diff"><span class="gd">--- a/example.js</span>
+<span class="gi">+++ b/example.js</span>
+<span class="gu">@@ -1,4 +1,4 @@</span>
+ $(&#39;a&#39;).click(function(e) {
+<span class="gi">+    // Let the event bubble up to the next handler</span>
+<span class="gd">-    e.stopPropagation();</span>
      e.preventDefault();
- });
-</code></pre>
+ });</code></pre></div>
 
 <p>This is pretty common practice; a developer will leave a comment so that the next person understands why the <code>e.stopPropagation()</code> is gone.<!--more--></p>
 
 <p>So far this isn’t too bad. But what happens when somebody changes their mind again, and doesn’t want the event to bubble up anymore? Quite often, this is what happens:</p>
 
-<pre><code class="language-diff">--- a/example.js
-+++ b/example.js
-@@ -1,4 +1,5 @@
- $('a').click(function(e) {
+<div class="highlight"><pre><code class="language-diff"><span class="gd">--- a/example.js</span>
+<span class="gi">+++ b/example.js</span>
+<span class="gu">@@ -1,4 +1,5 @@</span>
+ $(&#39;a&#39;).click(function(e) {
      // Let the event bubble up to the next handler
-+    e.stopPropagation();
+<span class="gi">+    e.stopPropagation();</span>
      e.preventDefault();
- });
-</code></pre>
+ });</code></pre></div>
 
 <p>The <code>e.stopPropagation()</code> call is added back in, right where it was before. You can see the problem here: the comment explaining that the event will bubble up is still there.</p>
 
 <p>A lot of developers tend to ignore comments in code, especially comments that were written by somebody else. Modern text editors and IDEs are partly to blame for this, since their syntax highlighting tends to de-emphasise comments by greying them out.</p>
 
-<pre><code class="language-js">$('a').click(function(e) {
-    // Let the event bubble up to the next handler
-    e.stopPropagation();
-    e.preventDefault();
-});
-</code></pre>
+<div class="highlight"><pre><code class="language-js"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Let the event bubble up to the next handler</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
 
 <p>What we’ve ended up with is a comment which says one thing, and some code which does something <em>entirely different</em>. This is surprisingly common – most codebases are absolutely <em>littered</em> with dishonest comments.</p>
 

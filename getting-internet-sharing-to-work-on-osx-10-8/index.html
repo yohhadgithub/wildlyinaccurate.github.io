@@ -80,13 +80,13 @@
 
 <p>For me, the fix was pretty simple. Edit <code>/etc/com.apple.named.proxy.conf</code> by running <code>sudo nano /etc/com.apple.named.proxy.conf</code> in a terminal, and change</p>
 
-<pre><code>forward first;
-</code></pre>
+<div class="highlight"><pre><code>forward first;
+</code></pre></div>
 
 <p>to</p>
 
-<pre><code>forward only;
-</code></pre>
+<div class="highlight"><pre><code>forward only;
+</code></pre></div>
 
 <p>Then turn Internet Sharing off and on again.</p>
 

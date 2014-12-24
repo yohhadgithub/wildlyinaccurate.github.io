@@ -80,20 +80,18 @@
 
 <p>The symptom? When using the SchemaTool to create, update, or drop the schema; an exception is thrown:</p>
 
-<pre><code>**Fatal error**: Uncaught exception 'Doctrine\DBAL\DBALException' with message 'Unknown database type enum requested, Doctrine\DBAL\Platforms\MySqlPlatform may not support it.'
-</code></pre>
+<div class="highlight"><pre><code>**Fatal error**: Uncaught exception 'Doctrine\DBAL\DBALException' with message 'Unknown database type enum requested, Doctrine\DBAL\Platforms\MySqlPlatform may not support it.'
+</code></pre></div>
 
 <p>Thankfully, the fix is very easy. There is even a <a href="http://www.doctrine-project.org/docs/orm/2.1/en/cookbook/mysql-enums.html">Doctrine Cookbook article</a> about it. All you have to do is register the ENUM type as a Doctrine varchar (string):</p>
 
-<pre><code class="language-php">/** @var $em \Doctrine\ORM\EntityManager */
-$platform = $em-&gt;getConnection()-&gt;getDatabasePlatform();
-$platform-&gt;registerDoctrineTypeMapping('enum', 'string');
-</code></pre>
+<div class="highlight"><pre><code class="language-php"><span class="sd">/** @var $em \Doctrine\ORM\EntityManager */</span>
+<span class="nv">$platform</span> <span class="o">=</span> <span class="nv">$em</span><span class="o">-&gt;</span><span class="na">getConnection</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getDatabasePlatform</span><span class="p">();</span>
+<span class="nv">$platform</span><span class="o">-&gt;</span><span class="na">registerDoctrineTypeMapping</span><span class="p">(</span><span class="s1">&#39;enum&#39;</span><span class="p">,</span> <span class="s1">&#39;string&#39;</span><span class="p">);</span></code></pre></div>
 
 <p>This fix can be applied to any unsupported data type, for example SET (which is also used in PyroCMS):</p>
 
-<pre><code class="language-php">$platform-&gt;registerDoctrineTypeMapping('set', 'string');
-</code></pre>
+<div class="highlight"><pre><code class="language-php"><span class="nv">$platform</span><span class="o">-&gt;</span><span class="na">registerDoctrineTypeMapping</span><span class="p">(</span><span class="s1">&#39;set&#39;</span><span class="p">,</span> <span class="s1">&#39;string&#39;</span><span class="p">);</span></code></pre></div>
 
 </article>
 

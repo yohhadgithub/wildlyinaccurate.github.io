@@ -80,94 +80,91 @@
 
 <p>Laravel’s Controller class has the <code>call()</code> method, which essentially makes a GET request to a controller method. In order to make POST requests, it’s necessary to inject some extra parameters into the <code>HttpFoundation</code> components. To make this easier, I created a <code>ControllerTestCase</code> class with convenient <code>get()</code> and <code>post()</code> methods:<!--more--></p>
 
-<pre><code class="language-php">abstract class ControllerTestCase extends PHPUnit_Framework_TestCase
-{
+<div class="highlight"><pre><code class="language-php"><span class="k">abstract</span> <span class="k">class</span> <span class="nc">ControllerTestCase</span> <span class="k">extends</span> <span class="nx">PHPUnit_Framework_TestCase</span>
+<span class="p">{</span>
 
-    public function call($destination, $parameters = array(), $method = 'GET')
-    {
-        $old_method = Request::foundation()-&gt;getMethod();
-        \Laravel\Request::foundation()-&gt;setMethod($method);
-        $response = Controller::call($destination, $parameters);
-        Request::foundation()-&gt;setMethod($old_method);
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">call</span><span class="p">(</span><span class="nv">$destination</span><span class="p">,</span> <span class="nv">$parameters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(),</span> <span class="nv">$method</span> <span class="o">=</span> <span class="s1">&#39;GET&#39;</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$old_method</span> <span class="o">=</span> <span class="nx">Request</span><span class="o">::</span><span class="na">foundation</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getMethod</span><span class="p">();</span>
+        <span class="nx">\Laravel\Request</span><span class="o">::</span><span class="na">foundation</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">setMethod</span><span class="p">(</span><span class="nv">$method</span><span class="p">);</span>
+        <span class="nv">$response</span> <span class="o">=</span> <span class="nx">Controller</span><span class="o">::</span><span class="na">call</span><span class="p">(</span><span class="nv">$destination</span><span class="p">,</span> <span class="nv">$parameters</span><span class="p">);</span>
+        <span class="nx">Request</span><span class="o">::</span><span class="na">foundation</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">setMethod</span><span class="p">(</span><span class="nv">$old_method</span><span class="p">);</span>
 
-        return $response;
-    }
+        <span class="k">return</span> <span class="nv">$response</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    public function get($destination, $parameters = array())
-    {
-        return $this-&gt;call($destination, $parameters, 'GET');
-    }
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get</span><span class="p">(</span><span class="nv">$destination</span><span class="p">,</span> <span class="nv">$parameters</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">call</span><span class="p">(</span><span class="nv">$destination</span><span class="p">,</span> <span class="nv">$parameters</span><span class="p">,</span> <span class="s1">&#39;GET&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    public function post($destination, $post_data, $parameters = array())
-    {
-        $this-&gt;clean_request();
-        \Laravel\Request::foundation()-&gt;request-&gt;add($post_data);
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">post</span><span class="p">(</span><span class="nv">$destination</span><span class="p">,</span> <span class="nv">$post_data</span><span class="p">,</span> <span class="nv">$parameters</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">clean_request</span><span class="p">();</span>
+        <span class="nx">\Laravel\Request</span><span class="o">::</span><span class="na">foundation</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">request</span><span class="o">-&gt;</span><span class="na">add</span><span class="p">(</span><span class="nv">$post_data</span><span class="p">);</span>
 
-        return $this-&gt;call($destination, $parameters, 'POST');
-    }
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">call</span><span class="p">(</span><span class="nv">$destination</span><span class="p">,</span> <span class="nv">$parameters</span><span class="p">,</span> <span class="s1">&#39;POST&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    private function clean_request()
-    {
-        $request = \Laravel\Request::foundation()-&gt;request;
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">clean_request</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$request</span> <span class="o">=</span> <span class="nx">\Laravel\Request</span><span class="o">::</span><span class="na">foundation</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">;</span>
 
-        foreach ($request-&gt;keys() as $key)
-        {
-            $request-&gt;remove($key);
-        }
-    }
+        <span class="k">foreach</span> <span class="p">(</span><span class="nv">$request</span><span class="o">-&gt;</span><span class="na">keys</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$key</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">remove</span><span class="p">(</span><span class="nv">$key</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
 
-}
-</code></pre>
+<span class="p">}</span></code></pre></div>
 
 <p>Note that each POST request must be “cleaned” so that the POST data from previous requests isn’t retained (thanks <a href="https://wildlyinaccurate.com/testing-laravel-controllers/comment-page-1#comment-4153">wahyudinata</a> for this tip!).</p>
 
 <p>This makes it easy to write functional tests for Laravel controllers, for example checking the session for errors after a POST request:</p>
 
-<pre><code class="language-php">require_once('ControllerTestCase.php');
+<div class="highlight"><pre><code class="language-php"><span class="k">require_once</span><span class="p">(</span><span class="s1">&#39;ControllerTestCase.php&#39;</span><span class="p">);</span>
 
-class AccountControllerTest extends ControllerTestCase
-{
+<span class="k">class</span> <span class="nc">AccountControllerTest</span> <span class="k">extends</span> <span class="nx">ControllerTestCase</span>
+<span class="p">{</span>
 
-    public function testSignupWithNoData()
-    {
-        $response = $this-&gt;post('account@signup', array());
-        $this-&gt;assertEquals('302', $response-&gt;foundation-&gt;getStatusCode());
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">testSignupWithNoData</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;account@signup&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">());</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="s1">&#39;302&#39;</span><span class="p">,</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">foundation</span><span class="o">-&gt;</span><span class="na">getStatusCode</span><span class="p">());</span>
 
-        $session_errors = \Laravel\Session::instance()-&gt;get('errors')-&gt;all();
-        $this-&gt;assertNotEmpty($session_errors);
-    }
+        <span class="nv">$session_errors</span> <span class="o">=</span> <span class="nx">\Laravel\Session</span><span class="o">::</span><span class="na">instance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;errors&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">all</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertNotEmpty</span><span class="p">(</span><span class="nv">$session_errors</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    public function testSignupWithValidData()
-    {
-        $response = $this-&gt;post('account@signup', array(
-            'username' =&gt; 'validusername',
-            'email' =&gt; 'some@validemail.com',
-            'password' =&gt; 'passw0rd',
-            'password_confirm' =&gt; 'passw0rd',
-        ));
-        $this-&gt;assertEquals('302', $response-&gt;foundation-&gt;getStatusCode());
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">testSignupWithValidData</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">post</span><span class="p">(</span><span class="s1">&#39;account@signup&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">&#39;username&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;validusername&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;some@validemail.com&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;password&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;passw0rd&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;password_confirm&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;passw0rd&#39;</span><span class="p">,</span>
+        <span class="p">));</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="s1">&#39;302&#39;</span><span class="p">,</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">foundation</span><span class="o">-&gt;</span><span class="na">getStatusCode</span><span class="p">());</span>
 
-        $session_errors = \Laravel\Session::instance()-&gt;get('errors');
-        $this-&gt;assertNull($session_errors);
-    }
+        <span class="nv">$session_errors</span> <span class="o">=</span> <span class="nx">\Laravel\Session</span><span class="o">::</span><span class="na">instance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;errors&#39;</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertNull</span><span class="p">(</span><span class="nv">$session_errors</span><span class="p">);</span>
+    <span class="p">}</span>
 
-}
-</code></pre>
+<span class="p">}</span></code></pre></div>
 
 <p>But here is where the session state tripped me up. In <code>testSignupWithValidData</code>, the Laravel session state from <code>testSignupWithNoData</code> is retained and the test fails. To get around this, I simply reload the session before each test, in a <code>setUp</code> method in <code>ControllerTestCase</code>:</p>
 
-<pre><code class="language-php">abstract class ControllerTestCase extends PHPUnit_Framework_TestCase
-{
+<div class="highlight"><pre><code class="language-php"><span class="k">abstract</span> <span class="k">class</span> <span class="nc">ControllerTestCase</span> <span class="k">extends</span> <span class="nx">PHPUnit_Framework_TestCase</span>
+<span class="p">{</span>
 
-    // ...
+    <span class="c1">// ...</span>
 
-    public function setUp()
-    {
-        \Laravel\Session::load();
-    }
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">setUp</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nx">\Laravel\Session</span><span class="o">::</span><span class="na">load</span><span class="p">();</span>
+    <span class="p">}</span>
 
-}
-</code></pre>
+<span class="p">}</span></code></pre></div>
 
 <p>And that’s it! A fairly simple <code>ControllerTestCase</code> class which solves the POST request and session state problems. See this Gist for <a href="https://gist.github.com/3079291">the full code with comments</a>.</p>
 

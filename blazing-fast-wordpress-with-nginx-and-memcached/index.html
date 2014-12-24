@@ -96,10 +96,10 @@
 
 <h3 id="nginx--wpsc">Nginx + WPSC</h3>
 
-<pre><code>TTFB            0.244 seconds
+<div class="highlight"><pre><code>TTFB            0.244 seconds
 Response Time   310 ms
 Hit Rate        89 hits/second
-</code></pre>
+</code></pre></div>
 
 <div class="thumbnail">
     <a class="thumbnail__link" href="https://www.blitz.io/report/ecce61c2da008b383a5640d7f76593e7">
@@ -117,10 +117,10 @@ Hit Rate        89 hits/second
 
 <h3 id="nginx--php-fpm--memcached">Nginx + PHP-FPM + Memcached</h3>
 
-<pre><code>TTFB            0.126 seconds
+<div class="highlight"><pre><code>TTFB            0.126 seconds
 Response Time   241 ms
 Hit Rate        94 hits/second
-</code></pre>
+</code></pre></div>
 
 <div class="thumbnail">
     <a class="thumbnail__link" href="https://www.blitz.io/report/ecce61c2da008b383a5640d7f7857f5b">
@@ -146,39 +146,38 @@ Hit Rate        94 hits/second
 
 <p>First you’ll need to create the PHP script that handles the caching. I’ve called mine <code>index-cached.php</code>. The script below will cache pages with the key <code>fullpage:your.domain.com/the/page/uri</code> for 1 day. It will also append a comment to the end of the response, specifying whether the page was served from cache or generated dynamically and how long the execution took.</p>
 
-<pre><code class="language-php">&lt;?php
+<div class="highlight"><pre><code class="language-php"><span class="o">&lt;?</span><span class="nx">php</span>
 
-$start = microtime(true);
+<span class="nv">$start</span> <span class="o">=</span> <span class="nb">microtime</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
 
-$memcached = new Memcached;
-$memcached-&gt;addServer('127.0.0.1', 11211);
+<span class="nv">$memcached</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Memcached</span><span class="p">;</span>
+<span class="nv">$memcached</span><span class="o">-&gt;</span><span class="na">addServer</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">11211</span><span class="p">);</span>
 
-// Cache time in seconds (1 day)
-$cacheTime = 60 * 60 * 24 * 1;
-$cacheKey = "fullpage:{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+<span class="c1">// Cache time in seconds (1 day)</span>
+<span class="nv">$cacheTime</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$cacheKey</span> <span class="o">=</span> <span class="s2">&quot;fullpage:</span><span class="si">{</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;HTTP_HOST&#39;</span><span class="p">]</span><span class="si">}{</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_URI&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span>
 
-$debugMessage = 'Page retrieved from cache in %f seconds';
-$html = $memcached-&gt;get($cacheKey);
+<span class="nv">$debugMessage</span> <span class="o">=</span> <span class="s1">&#39;Page retrieved from cache in %f seconds&#39;</span><span class="p">;</span>
+<span class="nv">$html</span> <span class="o">=</span> <span class="nv">$memcached</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="nv">$cacheKey</span><span class="p">);</span>
 
-if ( ! $html) {
-    $debugMessage = 'Page generated in %f seconds';
+<span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nv">$html</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$debugMessage</span> <span class="o">=</span> <span class="s1">&#39;Page generated in %f seconds&#39;</span><span class="p">;</span>
 
-    ob_start();
+    <span class="nb">ob_start</span><span class="p">();</span>
 
-    require 'index.php';
-    $html = ob_get_contents();
+    <span class="k">require</span> <span class="s1">&#39;index.php&#39;</span><span class="p">;</span>
+    <span class="nv">$html</span> <span class="o">=</span> <span class="nb">ob_get_contents</span><span class="p">();</span>
 
-    $memcached-&gt;set($cacheKey, $html, $cacheTime);
+    <span class="nv">$memcached</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="nv">$cacheKey</span><span class="p">,</span> <span class="nv">$html</span><span class="p">,</span> <span class="nv">$cacheTime</span><span class="p">);</span>
 
-    ob_end_clean();
-}
+    <span class="nb">ob_end_clean</span><span class="p">();</span>
+<span class="p">}</span>
 
-$finish = microtime(true);
+<span class="nv">$finish</span> <span class="o">=</span> <span class="nb">microtime</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
 
-echo $html;
-echo '&lt;!-- ' . sprintf($debugMessage, $finish - $start) . ' --&gt;';
-exit;
-</code></pre>
+<span class="k">echo</span> <span class="nv">$html</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s1">&#39;&lt;!-- &#39;</span> <span class="o">.</span> <span class="nb">sprintf</span><span class="p">(</span><span class="nv">$debugMessage</span><span class="p">,</span> <span class="nv">$finish</span> <span class="o">-</span> <span class="nv">$start</span><span class="p">)</span> <span class="o">.</span> <span class="s1">&#39; --&gt;&#39;</span><span class="p">;</span>
+<span class="k">exit</span><span class="p">;</span></code></pre></div>
 
 <p>You also need to modify your Nginx site configuration to use this new script instead of the usual <code>index.php</code>. The configuration below is an example of how to do this. <strong>It is not a fully-working site configuration</strong>.</p>
 
@@ -190,58 +189,57 @@ exit;
   <li>The cache isn’t used for the admin panel (/wp-admin).</li>
 </ul>
 
-<pre><code class="language-nginx">server {
-    server_name yourdomain.com;
-    root /var/www/yourdomain;
-    error_page 404 = /index.php;
+<div class="highlight"><pre><code class="language-nginx"><span class="k">server</span> <span class="p">{</span>
+    <span class="kn">server_name</span> <span class="s">yourdomain.com</span><span class="p">;</span>
+    <span class="kn">root</span> <span class="s">/var/www/yourdomain</span><span class="p">;</span>
+    <span class="kn">error_page</span> <span class="mi">404</span> <span class="p">=</span> <span class="s">/index.php</span><span class="p">;</span>
 
-    set $cache_flags "";
+    <span class="kn">set</span> <span class="nv">$cache_flags</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
 
-    # Is this a mobile browser?
-    if ($http_user_agent ~* "(2.0 MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo Wii|Nitro|Nokia|Opera Mini|Palm|PlayStation Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows CE|WinWAP|YahooSeeker/M1A1-R2D2|NF-Browser|iPhone|iPod|Mobile|BlackBerry9530|G-TU915 Obigo|LGE VX|webOS|Nokia5800)" ) {
-        set $cache_flags "{$cache_flags}M";
-    }
+    <span class="c1"># Is this a mobile browser?</span>
+    <span class="kn">if</span> <span class="s">(</span><span class="nv">$http_user_agent</span> <span class="p">~</span><span class="sr">*</span> <span class="s">&quot;(2.0</span> <span class="s">MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo</span> <span class="s">Wii|Nitro|Nokia|Opera</span> <span class="s">Mini|Palm|PlayStation</span> <span class="s">Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian</span> <span class="s">OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows</span> <span class="s">CE|WinWAP|YahooSeeker/M1A1-R2D2|NF-Browser|iPhone|iPod|Mobile|BlackBerry9530|G-TU915</span> <span class="s">Obigo|LGE</span> <span class="s">VX|webOS|Nokia5800)&quot;</span> <span class="s">)</span> <span class="p">{</span>
+        <span class="kn">set</span> <span class="nv">$cache_flags</span> <span class="s">&quot;</span><span class="p">{</span><span class="kn">$cache_flags}M&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    # Is the user logged in?
-    if ($http_cookie ~* "(comment_author_|wordpress_logged_in_|wp-postpass_)" ) {
-        set $cache_flags "${cache_flags}C";
-    }
+    <span class="c1"># Is the user logged in?</span>
+    <span class="kn">if</span> <span class="s">(</span><span class="nv">$http_cookie</span> <span class="p">~</span><span class="sr">*</span> <span class="s">&quot;(comment_author_|wordpress_logged_in_|wp-postpass_)&quot;</span> <span class="s">)</span> <span class="p">{</span>
+        <span class="kn">set</span> <span class="nv">$cache_flags</span> <span class="s">&quot;</span><span class="nv">${cache_flags}C&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    # Do we have query arguments?
-    if ($is_args) {
-        set $cache_flags "${cache_flags}Q";
-    }
+    <span class="c1"># Do we have query arguments?</span>
+    <span class="kn">if</span> <span class="s">(</span><span class="nv">$is_args</span><span class="s">)</span> <span class="p">{</span>
+        <span class="kn">set</span> <span class="nv">$cache_flags</span> <span class="s">&quot;</span><span class="nv">${cache_flags}Q&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    # If none of the rules above were matched, we can use the cache
-    if ($cache_flags = "") {
-        set $index_file /index-cached.php;
-    }
+    <span class="c1"># If none of the rules above were matched, we can use the cache</span>
+    <span class="kn">if</span> <span class="s">(</span><span class="nv">$cache_flags</span> <span class="p">=</span> <span class="s">&quot;&quot;)</span> <span class="p">{</span>
+        <span class="kn">set</span> <span class="nv">$index_file</span> <span class="s">/index-cached.php</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    # Otherwise we'll just use index.php
-    if ($cache_flags != "") {
-        set $index_file /index.php;
-    }
+    <span class="c1"># Otherwise we&#39;ll just use index.php</span>
+    <span class="kn">if</span> <span class="s">(</span><span class="nv">$cache_flags</span> <span class="s">!=</span> <span class="s">&quot;&quot;)</span> <span class="p">{</span>
+        <span class="kn">set</span> <span class="nv">$index_file</span> <span class="s">/index.php</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    location / {
-        index $index_file index.html;
-        try_files $uri $uri/ $index_file?$args;
-    }
+    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+        <span class="kn">index</span> <span class="nv">$index_file</span> <span class="s">index.html</span><span class="p">;</span>
+        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="nv">$index_file?$args</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    # Force /wp-admin requests to always use index.php
-    location /wp-admin/ {
-        index index.php;
-        try_files $uri $uri/ /index.php?$args;
-    }
+    <span class="c1"># Force /wp-admin requests to always use index.php</span>
+    <span class="kn">location</span> <span class="s">/wp-admin/</span> <span class="p">{</span>
+        <span class="kn">index</span> <span class="s">index.php</span><span class="p">;</span>
+        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="s">/index.php?</span><span class="nv">$args</span><span class="p">;</span>
+    <span class="p">}</span>
 
-    # Pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-    location ~ \.php$ {
-        try_files $uri =404;
-        include fastcgi_params;
-        fastcgi_split_path_info ^(.+\.php)(/.+)$;
-        fastcgi_pass 127.0.0.1:9000;
-    }
-}
-</code></pre>
+    <span class="c1"># Pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
+    <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.php$</span> <span class="p">{</span>
+        <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+        <span class="kn">include</span> <span class="s">fastcgi_params</span><span class="p">;</span>
+        <span class="kn">fastcgi_split_path_info</span> <span class="s">^(.+\.php)(/.+)</span>$<span class="p">;</span>
+        <span class="kn">fastcgi_pass</span> <span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">9000</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
 
 <h2 id="future-plans">Future Plans</h2>
 
@@ -253,10 +251,10 @@ exit;
 
 <p><strong>Update: I’ve run the benchmarks with CloudFlare. Here are the results:</strong></p>
 
-<pre><code>TTFB            0.188 seconds
+<div class="highlight"><pre><code>TTFB            0.188 seconds
 Response Time   131 ms
 Hit Rate        101 hits/second
-</code></pre>
+</code></pre></div>
 
 <div class="thumbnail">
     

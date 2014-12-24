@@ -80,31 +80,29 @@
 
 <h3 id="notypejs">notype.js</h3>
 
-<pre><code class="language-js">var x = null;
+<div class="highlight"><pre><code class="language-js"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
 
-for (var i = 0; i &lt; 1e8; i++) {
-    x = 1 + x;
-}
-</code></pre>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="nx">e8</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="nx">x</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
 
 <h3 id="withtypejs">withtype.js</h3>
 
-<pre><code class="language-js">var x = 0;
+<div class="highlight"><pre><code class="language-js"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-for (var i = 0; i &lt; 1e8; i++) {
-    x = 1 + x;
-}
-</code></pre>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="nx">e8</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="nx">x</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
 <!--more-->
 
 <h3 id="benchmark-results">Benchmark Results</h3>
 
-<pre><code>$ time node notype.js
+<div class="highlight"><pre><code>$ time node notype.js
 node notype.js  **0.30s** user 0.01s system 100% cpu 0.301 total
 
 $ time node withtype.js
 node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
-</code></pre>
+</code></pre></div>
 
 <p>This particular benchmark may be trivial, but it demonstrates an important point. In <code>notype.js</code>, <code>x</code> is initialized as <code>null</code>. This makes it impossible for V8 to optimize the arithmetic within the loop, since the type of <code>x</code> must be inferred during the first arithmetic operation. By contrast, the compiler can optimize <code>withtype.js</code> because <code>x</code> is known to be a number.</p>
 
@@ -112,22 +110,22 @@ node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
 
 <h3 id="notypejs-1">notype.js</h3>
 
-<pre><code> [JavaScript]:
+<div class="highlight"><pre><code> [JavaScript]:
    ticks  total  nonlib   name
     181   63.3%   71.8%  LazyCompile: * /home/joseph/dev/jsperf/var_init_value/notype.js:1
      68   23.8%   27.0%  Stub: BinaryOpStub_ADD_Alloc_SMI
       1    0.3%    0.4%  LazyCompile: ~PropertyDescriptor native v8natives.js:482
       1    0.3%    0.4%  KeyedLoadIC: A keyed load IC from the snapshot
       1    0.3%    0.4%  CallInitialize: args_count: 3
-</code></pre>
+</code></pre></div>
 
 <h3 id="withtypejs-1">withtype.js</h3>
 
-<pre><code> [JavaScript]:
+<div class="highlight"><pre><code> [JavaScript]:
    ticks  total  nonlib   name
      72   66.7%   98.6%  LazyCompile: * /home/joseph/dev/jsperf/var_init_value/withtype.js:1
       1    0.9%    1.4%  LazyCompile: RegExpConstructor native regexp.js:86
-</code></pre>
+</code></pre></div>
 
 <p>The profiler doesn’t give us the full picture here, but we can see that <code>notype.js</code> is spending a fair amount of time in <code>BinaryOpStub_ADD_Alloc_SMI</code>, which V8 uses to create SMI (small integer) values.</p>
 

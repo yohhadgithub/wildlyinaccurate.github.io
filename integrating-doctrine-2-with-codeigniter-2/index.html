@@ -102,69 +102,66 @@
   <li>Copy the following code into Doctrine.php:</li>
 </ol>
 
-<pre><code class="language-php">&lt;?php
+<div class="highlight"><pre><code class="language-php"><span class="o">&lt;?</span><span class="nx">php</span>
 
-use Doctrine\Common\ClassLoader,
-    Doctrine\ORM\Tools\Setup,
-    Doctrine\ORM\EntityManager;
+<span class="k">use</span> <span class="nx">Doctrine\Common\ClassLoader</span><span class="p">,</span>
+    <span class="nx">Doctrine\ORM\Tools\Setup</span><span class="p">,</span>
+    <span class="nx">Doctrine\ORM\EntityManager</span><span class="p">;</span>
 
-class Doctrine
-{
-    public $em;
+<span class="k">class</span> <span class="nc">Doctrine</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="nv">$em</span><span class="p">;</span>
 
-    public function __construct()
-    {
-        require_once __DIR__ . '/Doctrine/ORM/Tools/Setup.php';
-        Setup::registerAutoloadDirectory(__DIR__);
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">require_once</span> <span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/Doctrine/ORM/Tools/Setup.php&#39;</span><span class="p">;</span>
+        <span class="nx">Setup</span><span class="o">::</span><span class="na">registerAutoloadDirectory</span><span class="p">(</span><span class="nx">__DIR__</span><span class="p">);</span>
 
-        // Load the database configuration from CodeIgniter
-        require APPPATH . 'config/database.php';
+        <span class="c1">// Load the database configuration from CodeIgniter</span>
+        <span class="k">require</span> <span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;config/database.php&#39;</span><span class="p">;</span>
 
-        $connection_options = array(
-            'driver'        =&gt; 'pdo_mysql',
-            'user'          =&gt; $db['default']['username'],
-            'password'      =&gt; $db['default']['password'],
-            'host'          =&gt; $db['default']['hostname'],
-            'dbname'        =&gt; $db['default']['database'],
-            'charset'       =&gt; $db['default']['char_set'],
-            'driverOptions' =&gt; array(
-                'charset'   =&gt; $db['default']['char_set'],
-            ),
-        );
+        <span class="nv">$connection_options</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">&#39;driver&#39;</span>        <span class="o">=&gt;</span> <span class="s1">&#39;pdo_mysql&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;user&#39;</span>          <span class="o">=&gt;</span> <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;username&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;password&#39;</span>      <span class="o">=&gt;</span> <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;password&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;host&#39;</span>          <span class="o">=&gt;</span> <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;hostname&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;dbname&#39;</span>        <span class="o">=&gt;</span> <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;database&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;charset&#39;</span>       <span class="o">=&gt;</span> <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;char_set&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;driverOptions&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;charset&#39;</span>   <span class="o">=&gt;</span> <span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;char_set&#39;</span><span class="p">],</span>
+            <span class="p">),</span>
+        <span class="p">);</span>
 
-        // With this configuration, your model files need to be in application/models/Entity
-        // e.g. Creating a new Entity\User loads the class from application/models/Entity/User.php
-        $models_namespace = 'Entity';
-        $models_path = APPPATH . 'models';
-        $proxies_dir = APPPATH . 'models/Proxies';
-        $metadata_paths = array(APPPATH . 'models');
+        <span class="c1">// With this configuration, your model files need to be in application/models/Entity</span>
+        <span class="c1">// e.g. Creating a new Entity\User loads the class from application/models/Entity/User.php</span>
+        <span class="nv">$models_namespace</span> <span class="o">=</span> <span class="s1">&#39;Entity&#39;</span><span class="p">;</span>
+        <span class="nv">$models_path</span> <span class="o">=</span> <span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;models&#39;</span><span class="p">;</span>
+        <span class="nv">$proxies_dir</span> <span class="o">=</span> <span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;models/Proxies&#39;</span><span class="p">;</span>
+        <span class="nv">$metadata_paths</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;models&#39;</span><span class="p">);</span>
 
-        // Set $dev_mode to TRUE to disable caching while you develop
-        $config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $dev_mode = true, $proxies_dir);
-        $this-&gt;em = EntityManager::create($connection_options, $config);
+        <span class="c1">// Set $dev_mode to TRUE to disable caching while you develop</span>
+        <span class="nv">$config</span> <span class="o">=</span> <span class="nx">Setup</span><span class="o">::</span><span class="na">createAnnotationMetadataConfiguration</span><span class="p">(</span><span class="nv">$metadata_paths</span><span class="p">,</span> <span class="nv">$dev_mode</span> <span class="o">=</span> <span class="k">true</span><span class="p">,</span> <span class="nv">$proxies_dir</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">em</span> <span class="o">=</span> <span class="nx">EntityManager</span><span class="o">::</span><span class="na">create</span><span class="p">(</span><span class="nv">$connection_options</span><span class="p">,</span> <span class="nv">$config</span><span class="p">);</span>
 
-        $loader = new ClassLoader($models_namespace, $models_path);
-        $loader-&gt;register();
-    }
-}
-</code></pre>
+        <span class="nv">$loader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ClassLoader</span><span class="p">(</span><span class="nv">$models_namespace</span><span class="p">,</span> <span class="nv">$models_path</span><span class="p">);</span>
+        <span class="nv">$loader</span><span class="o">-&gt;</span><span class="na">register</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
 
 <p>There are some parts of this file that you might like to modify to suit your needs:</p>
 
 <p><strong>Lines 34-37:</strong></p>
 
-<pre><code class="language-php">$models_namespace = 'Entity';
-$models_path = APPPATH . 'models';
-$proxies_dir = APPPATH . 'models/Proxies';
-$metadata_paths = array(APPPATH . 'models');
-</code></pre>
+<div class="highlight"><pre><code class="language-php"><span class="nv">$models_namespace</span> <span class="o">=</span> <span class="s1">&#39;Entity&#39;</span><span class="p">;</span>
+<span class="nv">$models_path</span> <span class="o">=</span> <span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;models&#39;</span><span class="p">;</span>
+<span class="nv">$proxies_dir</span> <span class="o">=</span> <span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;models/Proxies&#39;</span><span class="p">;</span>
+<span class="nv">$metadata_paths</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;models&#39;</span><span class="p">);</span></code></pre></div>
 
 <p>These lines determine where you need to put your model files, and how you instantiate your model classes. With these settings, your models must live in <code>application/models/Entity</code> and be in the <code>Entity</code> namespace. For example instantiating a <code>new Entity\User</code> would load the User class from <code>application/models/Entity/User.php</code></p>
 
 <p><strong>Line 40</strong></p>
 
-<pre><code class="language-php">$config = Setup::createAnnotationMetadataConfiguration($metadata_paths, $dev_mode = true, $proxies_dir);
-</code></pre>
+<div class="highlight"><pre><code class="language-php"><span class="nv">$config</span> <span class="o">=</span> <span class="nx">Setup</span><span class="o">::</span><span class="na">createAnnotationMetadataConfiguration</span><span class="p">(</span><span class="nv">$metadata_paths</span><span class="p">,</span> <span class="nv">$dev_mode</span> <span class="o">=</span> <span class="k">true</span><span class="p">,</span> <span class="nv">$proxies_dir</span><span class="p">);</span></code></pre></div>
 
 <p>This line uses Doctrine’s <code>Setup</code> class to automatically create the metadata configuration. The <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/metadata-drivers.html">Metadata Driver</a> is what Doctrine uses to interpret your models and map them to the database. In this tutorial I have used the <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/annotations-reference.html">Annotations Driver</a>. If you would like to use a different metadata driver, change <code>createAnnotationMetadataConfiguration</code> to one of the methods below:</p>
 
@@ -195,31 +192,28 @@ $metadata_paths = array(APPPATH . 'models');
 
 <p>Doctrine can now be loaded in the same way as any other CodeIgniter library:</p>
 
-<pre><code class="language-php">$this-&gt;load-&gt;library('doctrine');
-</code></pre>
+<div class="highlight"><pre><code class="language-php"><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;doctrine&#39;</span><span class="p">);</span></code></pre></div>
 
 <p>Once the Doctrine library is loaded, you can retrieve the Entity Manage like so:</p>
 
-<pre><code class="language-php">$em = $this-&gt;doctrine-&gt;em;
-</code></pre>
+<div class="highlight"><pre><code class="language-php"><span class="nv">$em</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">doctrine</span><span class="o">-&gt;</span><span class="na">em</span><span class="p">;</span></code></pre></div>
 
 <h2 id="defining-models">Defining Models</h2>
 
 <p>Building models using the AnnotationDriver is simple. You can build your classes as if they were regular PHP classes, and define the Doctrine metadata in Docblock annotations.</p>
 
-<pre><code class="language-php">&lt;?php
+<div class="highlight"><pre><code class="language-php"><span class="o">&lt;?</span><span class="nx">php</span>
 
-namespace Entity;
+<span class="k">namespace</span> <span class="nx">Entity</span><span class="p">;</span>
 
-/**
- * @Entity
- * @Table(name="user")
- */
-class User
-{
-     // ...
-}
-</code></pre>
+<span class="sd">/**</span>
+<span class="sd"> * @Entity</span>
+<span class="sd"> * @Table(name=&quot;user&quot;)</span>
+<span class="sd"> */</span>
+<span class="k">class</span> <span class="nc">User</span>
+<span class="p">{</span>
+     <span class="c1">// ...</span>
+<span class="p">}</span></code></pre></div>
 
 <p>The <code>@Entity</code> annotation marks this class for <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#persistent-classes">object-relational persistence</a>. If the table name is not specified (using the <code>@Table</code> annotation), Doctrine will create a table with the same name as the class.</p>
 
@@ -235,88 +229,86 @@ class User
 
 <p>Below are two sample entities that show a basic one-to-many relationship:</p>
 
-<pre><code class="language-php">&lt;?php
+<div class="highlight"><pre><code class="language-php"><span class="o">&lt;?</span><span class="nx">php</span>
 
-namespace Entity;
+<span class="k">namespace</span> <span class="nx">Entity</span><span class="p">;</span>
 
-use Doctrine\Common\Collections\ArrayCollection;
+<span class="k">use</span> <span class="nx">Doctrine\Common\Collections\ArrayCollection</span><span class="p">;</span>
 
-/**
- * @Entity
- * @Table(name="user")
- */
-class User
-{
-    /**
-     * @Id
-     * @Column(type="integer", nullable=false)
-     * @GeneratedValue(strategy="AUTO")
-     */
-    protected $id;
+<span class="sd">/**</span>
+<span class="sd"> * @Entity</span>
+<span class="sd"> * @Table(name=&quot;user&quot;)</span>
+<span class="sd"> */</span>
+<span class="k">class</span> <span class="nc">User</span>
+<span class="p">{</span>
+    <span class="sd">/**</span>
+<span class="sd">     * @Id</span>
+<span class="sd">     * @Column(type=&quot;integer&quot;, nullable=false)</span>
+<span class="sd">     * @GeneratedValue(strategy=&quot;AUTO&quot;)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$id</span><span class="p">;</span>
 
-    /**
-     * @Column(type="string", length=32, unique=true, nullable=false)
-     */
-    protected $username;
+    <span class="sd">/**</span>
+<span class="sd">     * @Column(type=&quot;string&quot;, length=32, unique=true, nullable=false)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$username</span><span class="p">;</span>
 
-    /**
-     * @Column(type="string", length=64, nullable=false)
-     */
-    protected $password;
+    <span class="sd">/**</span>
+<span class="sd">     * @Column(type=&quot;string&quot;, length=64, nullable=false)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$password</span><span class="p">;</span>
 
-    /**
-     * @Column(type="string", length=255, unique=true, nullable=false)
-     */
-    protected $email;
+    <span class="sd">/**</span>
+<span class="sd">     * @Column(type=&quot;string&quot;, length=255, unique=true, nullable=false)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$email</span><span class="p">;</span>
 
-    /**
-     * The @JoinColumn is not necessary in this example. When you do not specify
-     * a @JoinColumn annotation, Doctrine will intelligently determine the join
-     * column based on the entity class name and primary key.
-     *
-     * @ManyToOne(targetEntity="Group")
-     * @JoinColumn(name="group_id", referencedColumnName="id")
-     */
-    protected $group;
-}
+    <span class="sd">/**</span>
+<span class="sd">     * The @JoinColumn is not necessary in this example. When you do not specify</span>
+<span class="sd">     * a @JoinColumn annotation, Doctrine will intelligently determine the join</span>
+<span class="sd">     * column based on the entity class name and primary key.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @ManyToOne(targetEntity=&quot;Group&quot;)</span>
+<span class="sd">     * @JoinColumn(name=&quot;group_id&quot;, referencedColumnName=&quot;id&quot;)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$group</span><span class="p">;</span>
+<span class="p">}</span>
 
-/**
- * @Entity
- * @Table(name="group")
- */
-class Group
-{
-    /**
-     * @Id
-     * @Column(type="integer", nullable=false)
-     * @GeneratedValue(strategy="AUTO")
-     */
-    protected $id;
+<span class="sd">/**</span>
+<span class="sd"> * @Entity</span>
+<span class="sd"> * @Table(name=&quot;group&quot;)</span>
+<span class="sd"> */</span>
+<span class="k">class</span> <span class="nc">Group</span>
+<span class="p">{</span>
+    <span class="sd">/**</span>
+<span class="sd">     * @Id</span>
+<span class="sd">     * @Column(type=&quot;integer&quot;, nullable=false)</span>
+<span class="sd">     * @GeneratedValue(strategy=&quot;AUTO&quot;)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$id</span><span class="p">;</span>
 
-    /**
-     * @Column(type="string", length=32, unique=true, nullable=false)
-     */
-    protected $name;
+    <span class="sd">/**</span>
+<span class="sd">     * @Column(type=&quot;string&quot;, length=32, unique=true, nullable=false)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$name</span><span class="p">;</span>
 
-    /**
-     * @OneToMany(targetEntity="User", mappedBy="group")
-     */
-    protected $users;
-}
-</code></pre>
+    <span class="sd">/**</span>
+<span class="sd">     * @OneToMany(targetEntity=&quot;User&quot;, mappedBy=&quot;group&quot;)</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$users</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
 
 <p>It is important to note that any mapped properties on your Entities need to be either <code>private</code> or <code>protected</code>, otherwise <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/architecture.html#entities">lazy-loading might not work as expected</a>. This means that it is necessary to use Java-styled getter and setter methods:</p>
 
-<pre><code class="language-php">public function setUsername($username)
-{
-    $this-&gt;username = $username;
-}
+<div class="highlight"><pre><code class="language-php"><span class="k">public</span> <span class="k">function</span> <span class="nf">setUsername</span><span class="p">(</span><span class="nv">$username</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">username</span> <span class="o">=</span> <span class="nv">$username</span><span class="p">;</span>
+<span class="p">}</span>
 
-public function getUsername()
-{
-    return $this-&gt;username;
-}
-</code></pre>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">getUsername</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">username</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
 
 <p>Thankfully you can save a lot of time and <a href="https://wildlyinaccurate.com/useful-doctrine-2-console-commands#orm-generate-entities">automatically generate these methods</a> using the <code>orm:generate-entities</code> command.</p>
 
@@ -326,33 +318,32 @@ public function getUsername()
 
 <p>All you need to do is create the file application/doctrine.php and copy the following code into it:</p>
 
-<pre><code class="language-php">&lt;?php
+<div class="highlight"><pre><code class="language-php"><span class="o">&lt;?</span><span class="nx">php</span>
 
-define('APPPATH', dirname(__FILE__) . '/');
-define('BASEPATH', APPPATH . '/../system/');
-define('ENVIRONMENT', 'development');
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;APPPATH&#39;</span><span class="p">,</span> <span class="nb">dirname</span><span class="p">(</span><span class="k">__FILE__</span><span class="p">)</span> <span class="o">.</span> <span class="s1">&#39;/&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">,</span> <span class="nx">APPPATH</span> <span class="o">.</span> <span class="s1">&#39;/../system/&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;ENVIRONMENT&#39;</span><span class="p">,</span> <span class="s1">&#39;development&#39;</span><span class="p">);</span>
 
-chdir(APPPATH);
+<span class="nb">chdir</span><span class="p">(</span><span class="nx">APPPATH</span><span class="p">);</span>
 
-require __DIR__ . '/libraries/Doctrine.php';
+<span class="k">require</span> <span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/libraries/Doctrine.php&#39;</span><span class="p">;</span>
 
-foreach ($GLOBALS as $helperSetCandidate) {
-    if ($helperSetCandidate instanceof \Symfony\Component\Console\Helper\HelperSet) {
-        $helperSet = $helperSetCandidate;
-        break;
-    }
-}
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$GLOBALS</span> <span class="k">as</span> <span class="nv">$helperSetCandidate</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$helperSetCandidate</span> <span class="nx">instanceof</span> <span class="nx">\Symfony\Component\Console\Helper\HelperSet</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$helperSet</span> <span class="o">=</span> <span class="nv">$helperSetCandidate</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-$doctrine = new Doctrine;
-$em = $doctrine-&gt;em;
+<span class="nv">$doctrine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Doctrine</span><span class="p">;</span>
+<span class="nv">$em</span> <span class="o">=</span> <span class="nv">$doctrine</span><span class="o">-&gt;</span><span class="na">em</span><span class="p">;</span>
 
-$helperSet = new \Symfony\Component\Console\Helper\HelperSet(array(
-    'db' =&gt; new \Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper($em-&gt;getConnection()),
-    'em' =&gt; new \Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper($em)
-));
+<span class="nv">$helperSet</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">\Symfony\Component\Console\Helper\HelperSet</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;db&#39;</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">\Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper</span><span class="p">(</span><span class="nv">$em</span><span class="o">-&gt;</span><span class="na">getConnection</span><span class="p">()),</span>
+    <span class="s1">&#39;em&#39;</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">\Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper</span><span class="p">(</span><span class="nv">$em</span><span class="p">)</span>
+<span class="p">));</span>
 
-\Doctrine\ORM\Tools\Console\ConsoleRunner::run($helperSet);
-</code></pre>
+<span class="nx">\Doctrine\ORM\Tools\Console\ConsoleRunner</span><span class="o">::</span><span class="na">run</span><span class="p">(</span><span class="nv">$helperSet</span><span class="p">);</span></code></pre></div>
 
 <p>On a Linux or Mac, you can now run <code>./application/doctrine</code> from the command line.</p>
 
@@ -372,35 +363,33 @@ $helperSet = new \Symfony\Component\Console\Helper\HelperSet(array(
 
 <p>Once your models are set up and your database is built, you can access your models using the Doctrine EntityManager. I like shortcuts, so I always instantiate the EntityManager in MY_Controller:</p>
 
-<pre><code class="language-php">&lt;?php
+<div class="highlight"><pre><code class="language-php"><span class="o">&lt;?</span><span class="nx">php</span>
 
-class MY_Controller extends Controller
-{
-    // Doctrine EntityManager
-    public $em;
+<span class="k">class</span> <span class="nc">MY_Controller</span> <span class="k">extends</span> <span class="nx">Controller</span>
+<span class="p">{</span>
+    <span class="c1">// Doctrine EntityManager</span>
+    <span class="k">public</span> <span class="nv">$em</span><span class="p">;</span>
 
-    function __construct()
-    {
-        parent::__construct();
+    <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
 
-        // Not required if you autoload the library
-        $this-&gt;load-&gt;library('doctrine');
+        <span class="c1">// Not required if you autoload the library</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load</span><span class="o">-&gt;</span><span class="na">library</span><span class="p">(</span><span class="s1">&#39;doctrine&#39;</span><span class="p">);</span>
 
-        $this-&gt;em = $this-&gt;doctrine-&gt;em;
-    }
-}
-</code></pre>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">em</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">doctrine</span><span class="o">-&gt;</span><span class="na">em</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
 
 <p>Instead of the longer <code>$this-&gt;doctrine-&gt;em</code>, this will allow you to access the EntityManager using <code>$this-&gt;em</code>:</p>
 
-<pre><code class="language-php">$user = new Entity\User;
-$user-&gt;setUsername('Joseph');
-$user-&gt;setPassword('secretPassw0rd');
-$user-&gt;setEmail('josephatwildlyinaccuratedotcom');
+<div class="highlight"><pre><code class="language-php"><span class="nv">$user</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Entity\User</span><span class="p">;</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">setUsername</span><span class="p">(</span><span class="s1">&#39;Joseph&#39;</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">setPassword</span><span class="p">(</span><span class="s1">&#39;secretPassw0rd&#39;</span><span class="p">);</span>
+<span class="nv">$user</span><span class="o">-&gt;</span><span class="na">setEmail</span><span class="p">(</span><span class="s1">&#39;josephatwildlyinaccuratedotcom&#39;</span><span class="p">);</span>
 
-$this-&gt;em-&gt;persist($user);
-$this-&gt;em-&gt;flush();
-</code></pre>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">em</span><span class="o">-&gt;</span><span class="na">persist</span><span class="p">(</span><span class="nv">$user</span><span class="p">);</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">em</span><span class="o">-&gt;</span><span class="na">flush</span><span class="p">();</span></code></pre></div>
 
 <h2 id="final-words">Final Words</h2>
 

@@ -78,23 +78,22 @@
 <article class="post-content">
     <p>Using Node.js* you can run a simple “HTTP status as a service” server. This can be useful for quickly checking whether your application handles various status codes.</p>
 
-<pre><code class="language-js">var http = require('http');
+<div class="highlight"><pre><code class="language-js"><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
 
-http.createServer(function (request, response) {
-  var status = request.url.substr(1);
+<span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 
-  if ( ! http.STATUS_CODES[status]) {
-    status = '404';
-  }
+  <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nx">http</span><span class="p">.</span><span class="nx">STATUS_CODES</span><span class="p">[</span><span class="nx">status</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nx">status</span> <span class="o">=</span> <span class="s1">&#39;404&#39;</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  response.writeHead(status, { 'Content-Type': 'text/plain' });
-  response.end(http.STATUS_CODES[status]);
-}).listen(process.env.PORT || 5000);
-</code></pre>
+  <span class="nx">response</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="nx">status</span><span class="p">,</span> <span class="p">{</span> <span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span> <span class="s1">&#39;text/plain&#39;</span> <span class="p">});</span>
+  <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">STATUS_CODES</span><span class="p">[</span><span class="nx">status</span><span class="p">]);</span>
+<span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span> <span class="o">||</span> <span class="mi">5000</span><span class="p">);</span></code></pre></div>
 
 <p>This will create a server on port 5000, or any port that you specify in the <code>PORT</code> environment variable. It will respond to <code>/{CODE}</code> and return the HTTP status that corresponds to <code>{CODE}</code>. Here’s a couple of examples:</p>
 
-<pre><code>$ curl -i http://127.0.0.1:5000/500
+<div class="highlight"><pre><code>$ curl -i http://127.0.0.1:5000/500
 HTTP/1.1 500 Internal Server Error
 Content-Type: text/plain
 Date: Mon, 30 Sep 2013 14:10:10 GMT
@@ -102,8 +101,8 @@ Connection: keep-alive
 Transfer-Encoding: chunked
 
 Internal Server Error%
-</code></pre>
-<pre><code>$ curl -i http://127.0.0.1:5000/404
+</code></pre></div>
+<div class="highlight"><pre><code>$ curl -i http://127.0.0.1:5000/404
 HTTP/1.1 404 Not Found
 Content-Type: text/plain
 Date: Mon, 30 Sep 2013 14:10:32 GMT
@@ -111,7 +110,7 @@ Connection: keep-alive
 Transfer-Encoding: chunked
 
 Not Found%
-</code></pre>
+</code></pre></div>
 
 <p>This is a really simple example, and could easily be extended to let you specify a <code>Location</code> header value for 30X responses.</p>
 

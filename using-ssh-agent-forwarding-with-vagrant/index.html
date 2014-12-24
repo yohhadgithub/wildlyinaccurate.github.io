@@ -80,9 +80,9 @@
 
 <p>Setting this up is fairly straightforward. On the host machine, you need to add the following to <code>~/.ssh/config</code> (which you should create if it doesn’t exist):</p>
 
-<pre><code>host your.domain.com
+<div class="highlight"><pre><code>host your.domain.com
     ForwardAgent yes
-</code></pre>
+</code></pre></div>
 
 <p>You need to replace <code>your.domain.com</code> with either the domain or the IP address of your Vagrant box. You can wildcard this with <code>host *</code>, but this is a <em>really</em> bad idea because it lets every server you SSH to access your keys.</p>
 
@@ -90,8 +90,7 @@
 
 <p>Now, add the following to the config block in your Vagrantfile:</p>
 
-<pre><code class="language-ruby">config.ssh.forward_agent = true
-</code></pre>
+<div class="highlight"><pre><code class="language-ruby"><span class="n">config</span><span class="o">.</span><span class="n">ssh</span><span class="o">.</span><span class="n">forward_agent</span> <span class="o">=</span> <span class="kp">true</span></code></pre></div>
 
 <p>That’s all it takes. You can make sure it worked by comparing the output of <code>ssh-add -L</code> on both the host machine and the guest box.</p>
 

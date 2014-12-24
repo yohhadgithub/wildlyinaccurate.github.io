@@ -78,13 +78,13 @@
 <article class="post-content">
     <p>The <code>find</code> utility’s -exec flag makes it very easy to recursively perform operations on specific files or directories.</p>
 
-<pre><code>find . -type d -exec chmod 755 {} \;
-</code></pre>
+<div class="highlight"><pre><code>find . -type d -exec chmod 755 {} \;
+</code></pre></div>
 
 <p>This command finds all directories (starting at ‘dot’ - the current directory) and sets their permissions to 755 (rwxr-xr-x).</p>
 
-<pre><code>find . -type f -exec chmod 644 {} \;
-</code></pre>
+<div class="highlight"><pre><code>find . -type f -exec chmod 644 {} \;
+</code></pre></div>
 
 <p>Similarly, this command finds all files and sets their permissions to 644 (rw-r–r–).</p>
 

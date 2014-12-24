@@ -80,8 +80,8 @@
 
 <p>Using a combination of <code>git archive</code>, SSH, and Gzip; deploying a Git repository to a remote server can be done quickly and easily:</p>
 
-<pre><code>git archive --format=tar origin/master | gzip -9c | ssh user@yourserver.com "tar --directory=/var/www -xvzf -"
-</code></pre>
+<div class="highlight"><pre><code>git archive --format=tar origin/master | gzip -9c | ssh user@yourserver.com "tar --directory=/var/www -xvzf -"
+</code></pre></div>
 
 <p>Let’s take a look at the different parts of that command.</p>
 

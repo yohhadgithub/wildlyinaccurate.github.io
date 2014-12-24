@@ -93,21 +93,19 @@
 
 <h3>notype.js</h3>
 
-<pre><code>var x = null;
+<div><pre><code>var x = null;
 
-for (var i = 0; i &lt; 1e8; i++) {
+for (var i = 0; i  1e8; i++) {
     x = 1 + x;
-}
-</code></pre>
+}</code></pre></div>
 
 <h3>withtype.js</h3>
 
-<pre><code>var x = 0;
+<div><pre><code>var x = 0;
 
-for (var i = 0; i &lt; 1e8; i++) {
+for (var i = 0; i  1e8; i++) {
     x = 1 + x;
-}
-</code></pre>
+}</code></pre></div>
 
  <a href="/javascript-performance-variable-initialization">(Read more)</a></p>
         </article>
@@ -119,9 +117,9 @@ for (var i = 0; i &lt; 1e8; i++) {
                 <a class="post-summary__link" href="/a-hackers-guide-to-git">A Hacker's Guide to Git</a>
             </h3>
 
-            <p><p><em>A Hacker’s Guide to Git</em> is now available as an e-book. You can purchase it <a>on LeanPub</a>.</p>
+            <p><p><em>A Hacker’s Guide to Git</em> is now available as an e-book. You can purchase it <a href="https://leanpub.com/a-hackers-guide-to-git">on LeanPub</a>.</p>
 
-  
+
 
 <h2>Introduction</h2>
 
@@ -163,7 +161,19 @@ for (var i = 0; i &lt; 1e8; i++) {
 
 <p> </p>
 
-  
+<div>
+    
+
+    
+
+    
+
+    
+    <div>
+        Legibility - Readability - Comprehension
+    </div>
+    
+</div>
 
 <p>At the lowest level is legibility. This is how easily individual characters can be distinguished from each other, and can usually be boiled down to the choice of font, as well as the foreground &amp; background colours.</p>
 
@@ -183,7 +193,7 @@ for (var i = 0; i &lt; 1e8; i++) {
 
             <p><p>Using Node.js* you can run a simple “HTTP status as a service” server. This can be useful for quickly checking whether your application handles various status codes.</p>
 
-<pre><code>var http = require('http');
+<div><pre><code>var http = require('http');
 
 http.createServer(function (request, response) {
   var status = request.url.substr(1);
@@ -194,12 +204,11 @@ http.createServer(function (request, response) {
 
   response.writeHead(status, { 'Content-Type': 'text/plain' });
   response.end(http.STATUS_CODES[status]);
-}).listen(process.env.PORT || 5000);
-</code></pre>
+}).listen(process.env.PORT || 5000);</code></pre></div>
 
 <p>This will create a server on port 5000, or any port that you specify in the <code>PORT</code> environment variable. It will respond to <code>/{CODE}</code> and return the HTTP status that corresponds to <code>{CODE}</code>. Here’s a couple of examples:</p>
 
-<pre><code>$ curl -i http://127.0.0.1:5000/500
+<div><pre><code>$ curl -i http://127.0.0.1:5000/500
 HTTP/1.1 500 Internal Server Error
 Content-Type: text/plain
 Date: Mon, 30 Sep 2013 14:10:10 GMT
@@ -207,8 +216,8 @@ Connection: keep-alive
 Transfer-Encoding: chunked
 
 Internal Server Error%
-</code></pre>
-<pre><code>$ curl -i http://127.0.0.1:5000/404
+</code></pre></div>
+<div><pre><code>$ curl -i http://127.0.0.1:5000/404
 HTTP/1.1 404 Not Found
 Content-Type: text/plain
 Date: Mon, 30 Sep 2013 14:10:32 GMT
@@ -216,7 +225,7 @@ Connection: keep-alive
 Transfer-Encoding: chunked
 
 Not Found%
-</code></pre>
+</code></pre></div>
 
 <p>This is a really simple example, and could easily be extended to let you specify a <code>Location</code> header value for 30X responses.</p>
 
@@ -232,7 +241,7 @@ Not Found%
                 <a class="post-summary__link" href="/converting-bootswatch-themes-to-sass">Converting Bootswatch themes to SASS/SCSS</a>
             </h3>
 
-            <p><p>There’s a fairly quick way to convert Bootswatch themes to Sass (which you might want to do if you use something like <a>sass-bootstrap</a>).</p>
+            <p><p>There’s a fairly quick way to convert Bootswatch themes to Sass (which you might want to do if you use something like <a href="https://github.com/jlong/sass-bootstrap">sass-bootstrap</a>).</p>
 
 <p>Simply download the theme’s variables.less and run the following find/replace patterns against it:</p>
 
@@ -264,13 +273,13 @@ Not Found%
 
 <p>For me, the fix was pretty simple. Edit <code>/etc/com.apple.named.proxy.conf</code> by running <code>sudo nano /etc/com.apple.named.proxy.conf</code> in a terminal, and change</p>
 
-<pre><code>forward first;
-</code></pre>
+<div><pre><code>forward first;
+</code></pre></div>
 
 <p>to</p>
 
-<pre><code>forward only;
-</code></pre>
+<div><pre><code>forward only;
+</code></pre></div>
 
 <p>Then turn Internet Sharing off and on again.</p>
 
@@ -290,8 +299,8 @@ Not Found%
 
 <p>You can get around this quite easily by telling Git to always use https:// instead of git://:</p>
 
-<pre><code>git config --global url.https://.insteadOf git://
-</code></pre>
+<div><pre><code>git config --global url.https://.insteadOf git://
+</code></pre></div>
 
  <a href="/force-bower-to-clone-from-https-instead-of-git">(Read more)</a></p>
         </article>
@@ -303,29 +312,27 @@ Not Found%
                 <a class="post-summary__link" href="/dishonest-comments">Dishonest comments</a>
             </h3>
 
-            <p><p>One of my favourite Ruby Rogues episodes (<a><em>What Makes Beautiful Code</em></a>) has a short section where the Rogues talk about the concept of <em>dishonest code</em>. David Brady wrote a <a>really good piece</a> on this, which I highly recommend reading.</p>
+            <p><p>One of my favourite Ruby Rogues episodes (<a href="http://rubyrogues.com/what-makes-beautiful-code/"><em>What Makes Beautiful Code</em></a>) has a short section where the Rogues talk about the concept of <em>dishonest code</em>. David Brady wrote a <a href="http://chalain.livejournal.com/39332.html">really good piece</a> on this, which I highly recommend reading.</p>
 
 <p>What I want to talk about is a more specific variant of dishonest code: dishonest comments.</p>
 
 <p>Take this code, for example:</p>
 
-<pre><code>$('a').click(function(e) {
+<div><pre><code>$('a').click(function(e) {
     e.stopPropagation();
     e.preventDefault();
-});
-</code></pre>
+});</code></pre></div>
 
 <p>If you’re not familiar with JavaScript events, <code>e.stopPropagation()</code> will stop this event from bubbling up to other event handlers. Now, what if somebody decides that the event <em>should</em> bubble up? They might do something like this:</p>
 
-<pre><code>--- a/example.js
+<div><pre><code>--- a/example.js
 +++ b/example.js
 @@ -1,4 +1,4 @@
  $('a').click(function(e) {
 +    // Let the event bubble up to the next handler
 -    e.stopPropagation();
      e.preventDefault();
- });
-</code></pre>
+ });</code></pre></div>
 
 <p>This is pretty common practice; a developer will leave a comment so that the next person understands why the <code>e.stopPropagation()</code> is gone.</p>
 
@@ -341,22 +348,22 @@ Not Found%
 
             <p><p>Quite often I’ve accidentally typed “git” twice. Usually this is fine, and Git just does something like this:</p>
 
-<pre><code>$ git git diff
+<div><pre><code>$ git git diff
 git: 'git' is not a git command. See 'git --help'.
 
 Did you mean this?
     init
-</code></pre>
+</code></pre></div>
 
 <p>But I recently turned on Git’s autocorrect feature, to see what it was like (<code>git config --global help.autocorrect 1</code>). The results were… <em>interesting</em>:</p>
 
-<pre><code>$ git git diff
+<div><pre><code>$ git git diff
 WARNING: You called a Git command named 'git', which does not exist.
 Continuing under the assumption that you meant 'init' in **0.1 seconds** automatically...
 fatal: internal error: work tree has already been set
 Current worktree: /nfs/personaldev/vagrant/mobileweb-v2
 New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
-</code></pre>
+</code></pre></div>
 
 <p>This is really bizarre behaviour. The fact that it wants to autocorrect it to <code>git init</code> is <em>sort-of</em> okay. But rather than giving me the option to confirm that this is what I want, Git gives me a whole <strong>0.1 seconds</strong> to hit Ctrl+C before it automatically runs the command for me.</p>
 
@@ -378,7 +385,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
             <p><p>When you <code>apt-get install php5</code> on a Debian/Ubuntu server, you’ll notice that APT will automatically install a bunch of <code>apache2</code> packages as well. This can be pretty annoying if you’re planning on using another web server (or no web server at all).</p>
 
-<p>If you take a look at the package dependencies (<a>Debian</a>/<a>Ubuntu</a>) you’ll see why this happens - <code>php5</code> needs one of either <code>libapache2-mod-php5</code>, <code>libapache2-mod-php5filter</code>, <code>php5-cgi</code>, or <code>php5-fpm</code>. APT doesn’t care which package it installs; it just picks the first package that satisfies the dependency, which is why you get the <code>apache2</code> packages.</p>
+<p>If you take a look at the package dependencies (<a href="http://packages.debian.org/wheezy/php5">Debian</a>/<a href="http://packages.ubuntu.com/quantal/php5">Ubuntu</a>) you’ll see why this happens - <code>php5</code> needs one of either <code>libapache2-mod-php5</code>, <code>libapache2-mod-php5filter</code>, <code>php5-cgi</code>, or <code>php5-fpm</code>. APT doesn’t care which package it installs; it just picks the first package that satisfies the dependency, which is why you get the <code>apache2</code> packages.</p>
 
 <p>You can get around this by installing one of the other dependencies <em>before</em> <code>php5</code>. For example, <code>apt-get install php5-fpm php5</code> or <code>apt-get install php5-cgi php5</code>.</p>
 
@@ -392,13 +399,13 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
                 <a class="post-summary__link" href="/using-ssh-agent-forwarding-with-vagrant">Using SSH agent forwarding with Vagrant</a>
             </h3>
 
-            <p><p>Sometimes you’ll want to use your local SSH keys on your Vagrant boxes, so that you don’t have to manage password-less keys for each box. This can be done with SSH agent forwarding, which is <a>explained in great detail on Unixwiz.net</a>.</p>
+            <p><p>Sometimes you’ll want to use your local SSH keys on your Vagrant boxes, so that you don’t have to manage password-less keys for each box. This can be done with SSH agent forwarding, which is <a href="http://www.unixwiz.net/techtips/ssh-agent-forwarding.html">explained in great detail on Unixwiz.net</a>.</p>
 
 <p>Setting this up is fairly straightforward. On the host machine, you need to add the following to <code>~/.ssh/config</code> (which you should create if it doesn’t exist):</p>
 
-<pre><code>host your.domain.com
+<div><pre><code>host your.domain.com
     ForwardAgent yes
-</code></pre>
+</code></pre></div>
 
 <p>You need to replace <code>your.domain.com</code> with either the domain or the IP address of your Vagrant box. You can wildcard this with <code>host *</code>, but this is a <em>really</em> bad idea because it lets every server you SSH to access your keys.</p>
 
@@ -406,8 +413,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 
 <p>Now, add the following to the config block in your Vagrantfile:</p>
 
-<pre><code>config.ssh.forward_agent = true
-</code></pre>
+<div><pre><code>config.ssh.forward_agent = true</code></pre></div>
 
 <p>That’s all it takes. You can make sure it worked by comparing the output of <code>ssh-add -L</code> on both the host machine and the guest box.</p>
 
@@ -421,7 +427,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
                 <a class="post-summary__link" href="/worst-fonts-for-programming">Worst fonts for programming</a>
             </h3>
 
-            <p><p>There are <a>plenty</a> <a>of</a> <a>discussions</a> about which font is the best for programming. The problem is, there are so many “best” fonts that it’s difficult to choose one. Rather than have an exhaustive list of “best” fonts for programming, wouldn’t it be easier to simply know which fonts to avoid?</p>
+            <p><p>There are <a href="http://www.slant.co/topics/67/~what-are-the-best-programming-fonts">plenty</a> <a href="http://hivelogic.com/articles/top-10-programming-fonts">of</a> <a href="https://news.ycombinator.com/item?id=1058946">discussions</a> about which font is the best for programming. The problem is, there are so many “best” fonts that it’s difficult to choose one. Rather than have an exhaustive list of “best” fonts for programming, wouldn’t it be easier to simply know which fonts to avoid?</p>
 
  <a href="/worst-fonts-for-programming">(Read more)</a></p>
         </article>
@@ -433,7 +439,7 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
                 <a class="post-summary__link" href="/when-did-dependency-management-get-so-complicated">When did dependency management get so complicated?</a>
             </h3>
 
-            <p><p>This evening I wanted to start hacking on a <a>project of mine</a>, which is a simple WordPress theme. My main development machine was being used by somebody else, so I decided to boot up my old Sony Vaio running Ubuntu. <em>It’ll be simple</em>, I thought. <em>I’ve just got to clone the repo, run <code>npm install</code>, <code>bower install</code>, and <code>grunt build</code>, and I’ll be good to go</em>. I was wrong.</p>
+            <p><p>This evening I wanted to start hacking on a <a href="https://github.com/wildlyinaccurate/wildly-minimalistic-wordpress-theme">project of mine</a>, which is a simple WordPress theme. My main development machine was being used by somebody else, so I decided to boot up my old Sony Vaio running Ubuntu. <em>It’ll be simple</em>, I thought. <em>I’ve just got to clone the repo, run <code>npm install</code>, <code>bower install</code>, and <code>grunt build</code>, and I’ll be good to go</em>. I was wrong.</p>
 
 <p>First, the version of npm installed on the laptop is apparently so out-of-date that it can’t run the install. So I let it update itself (and all the other packages I have installed - why not?) with <code>sudo npm -g update</code>. Being a Sunday night, my broadband connection is running spectacularly slow, so the update process takes about 10 minutes at 40kB/s. But hey, at least now I can run <code>npm install</code>, right?</p>
 

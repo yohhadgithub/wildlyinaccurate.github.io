@@ -75,13 +75,13 @@
                 <a class="post-summary__link" href="/converting-an-svn-repository-to-git">Converting an SVN repository to Git</a>
             </h3>
 
-            <p><p>Today I found out just how easy it is to convert an SVN repository to Git without losing any commit history. Note that you will need <a>git-svn</a> (<code>apt-get install git-svn</code> on Debian/Ubuntu).</p>
+            <p><p>Today I found out just how easy it is to convert an SVN repository to Git without losing any commit history. Note that you will need <a href="http://schacon.github.com/git/git-svn.html">git-svn</a> (<code>apt-get install git-svn</code> on Debian/Ubuntu).</p>
 
-<pre><code>git svn clone http://mysvnrepo.com/my-project my-project
+<div><pre><code>git svn clone http://mysvnrepo.com/my-project my-project
 cd my-project
 git remote add origin git@mygitrepo.com:/my-project.git
 git push origin master
-</code></pre>
+</code></pre></div>
 
 <p>Et voilà, my-project.git has the full commit history of the my-project SVN repository.</p>
 
@@ -99,7 +99,11 @@ git push origin master
 
             <p><p>Unlike Doctrine 1 with it’s NestedSet behaviour, there is no nested set functionality in the core of Doctrine 2. There are a few extensions available that offer nested set support:</p>
 
-  
+<ul>
+  <li><a href="https://github.com/l3pp4rd/DoctrineExtensions">DoctrineExtensions by Gediminas Morkevicius</a></li>
+  <li><a href="https://github.com/guilhermeblanco/Doctrine2-Hierarchical-Structural-Behavior">Doctrine2 Hierarchical Structural Behavior by Guilherme Blanco</a></li>
+  <li><a href="https://github.com/blt04/doctrine2-nestedset">Doctrine2 NestedSet by Brandon Turner</a></li>
+</ul>
 
 <p>I tried all of these extensions, but none of them felt simple or lightweight enough for my application. What I wanted to do was have a Category entity which could have a tree of sub-categories, e.g:</p>
 
@@ -113,7 +117,7 @@ git push origin master
                 <a class="post-summary__link" href="/writing-good-code-is-easy">Writing good code is easy</a>
             </h3>
 
-            <p><p>Everybody wants to write “good code”, right? So why is it that nearly every time we pick up another developer’s work, our <a>WTF-o-meter</a> goes crazy?</p>
+            <p><p>Everybody wants to write “good code”, right? So why is it that nearly every time we pick up another developer’s work, our <a href="http://www.osnews.com/story/19266/WTFs_m">WTF-o-meter</a> goes crazy?</p>
 
  <a href="/writing-good-code-is-easy">(Read more)</a></p>
         </article>
@@ -125,24 +129,22 @@ git push origin master
                 <a class="post-summary__link" href="/doctrine-2-resolving-unknown-database-type-enum-requested">Doctrine 2: Resolving "unknown database type enum requested"</a>
             </h3>
 
-            <p><p>I came across this recently while I was developing a module for PyroCMS. Some of the PyroCMS tables contain ENUM columns, which Doctrine doesn’t support. You would think that this wouldn’t be an issue since these tables are not mapped, but apparently when Doctrine builds the schema it includes all tables in the database - even if they are not mapped. This has been <a>reported as an issue</a>, but the Doctrine team has given it a low priority.</p>
+            <p><p>I came across this recently while I was developing a module for PyroCMS. Some of the PyroCMS tables contain ENUM columns, which Doctrine doesn’t support. You would think that this wouldn’t be an issue since these tables are not mapped, but apparently when Doctrine builds the schema it includes all tables in the database - even if they are not mapped. This has been <a href="http://www.doctrine-project.org/jira/browse/DDC-1273">reported as an issue</a>, but the Doctrine team has given it a low priority.</p>
 
 <p>The symptom? When using the SchemaTool to create, update, or drop the schema; an exception is thrown:</p>
 
-<pre><code>**Fatal error**: Uncaught exception 'Doctrine\DBAL\DBALException' with message 'Unknown database type enum requested, Doctrine\DBAL\Platforms\MySqlPlatform may not support it.'
-</code></pre>
+<div><pre><code>**Fatal error**: Uncaught exception 'Doctrine\DBAL\DBALException' with message 'Unknown database type enum requested, Doctrine\DBAL\Platforms\MySqlPlatform may not support it.'
+</code></pre></div>
 
-<p>Thankfully, the fix is very easy. There is even a <a>Doctrine Cookbook article</a> about it. All you have to do is register the ENUM type as a Doctrine varchar (string):</p>
+<p>Thankfully, the fix is very easy. There is even a <a href="http://www.doctrine-project.org/docs/orm/2.1/en/cookbook/mysql-enums.html">Doctrine Cookbook article</a> about it. All you have to do is register the ENUM type as a Doctrine varchar (string):</p>
 
-<pre><code>/** @var $em \Doctrine\ORM\EntityManager */
+<div><pre><code>/** @var $em \Doctrine\ORM\EntityManager */
 $platform = $em-&gt;getConnection()-&gt;getDatabasePlatform();
-$platform-&gt;registerDoctrineTypeMapping('enum', 'string');
-</code></pre>
+$platform-&gt;registerDoctrineTypeMapping('enum', 'string');</code></pre></div>
 
 <p>This fix can be applied to any unsupported data type, for example SET (which is also used in PyroCMS):</p>
 
-<pre><code>$platform-&gt;registerDoctrineTypeMapping('set', 'string');
-</code></pre>
+<div><pre><code>$platform-&gt;registerDoctrineTypeMapping('set', 'string');</code></pre></div>
 
  <a href="/doctrine-2-resolving-unknown-database-type-enum-requested">(Read more)</a></p>
         </article>
@@ -156,7 +158,10 @@ $platform-&gt;registerDoctrineTypeMapping('enum', 'string');
 
             <p><p>Girls always say to me, “I want a really great boyfriend, where do I find one?” The answer is simple: you should date a web developer! Why, you ask? There are dozens, even hundreds of good reasons why you should date a web developer:</p>
 
-  
+<ol>
+  <li>Web developers are good with computers</li>
+  <li>…</li>
+</ol>
 
 <p>… So what are you waiting for? Go out and grab yourself a hunky web developer!</p>
 
@@ -174,16 +179,16 @@ $platform-&gt;registerDoctrineTypeMapping('enum', 'string');
 
 <p>Each commit you make has your name and email address attached to it. Git will automatically configure these based on your username and hostname, but this information is usually not a good identifier. It is a good idea to set your real name and email address so that your commits can be identified easily.</p>
 
-<pre><code>git config --global user.name "Your Name"
+<div><pre><code>git config --global user.name "Your Name"
 git config --global user.email you@yourdomain.com
-</code></pre>
+</code></pre></div>
 
 <h2>Global ignore file</h2>
 
 <p>Often there are files or directories that you want Git to ignore globally. These are probably created automatically by your IDE or operating system. Git’s <code>core.excludesfile</code> config allows you to write a global .gitignore so that you don’t have to fill local .gitignore files with clutter.</p>
 
-<pre><code>git config --global core.excludesfile /path/to/.gitignore_global
-</code></pre>
+<div><pre><code>git config --global core.excludesfile /path/to/.gitignore_global
+</code></pre></div>
 
  <a href="/useful-git-configuration-items">(Read more)</a></p>
         </article>
@@ -223,12 +228,12 @@ git config --global user.email you@yourdomain.com
 
 <p>The regular expression below will find all one-liner <code>print</code> and <code>echo</code> statements (e.g. <code>&lt;?php print $var; ?&gt;</code>) and convert them to <code>&lt;?=$var?&gt;</code> statements. It will not match statements containing closing brackets, for example when using ternary operators: <code>&lt;?=($foo == $bar) ? 'Foobar' : 'Foo'?&gt;</code></p>
 
-<pre><code>Find:
+<div><pre><code>Find:
 &lt;\?php[\s]*(print|echo)[\s]*\(?([^&gt;\)]+?)\)?[\s]*;?[\s]*\?&gt;
-</code></pre>
-<pre><code>Replace:
+</code></pre></div>
+<div><pre><code>Replace:
 &lt;?=$2?&gt;
-</code></pre>
+</code></pre></div>
 
  <a href="/convert-print-and-echo-statements-to-short-syntax">(Read more)</a></p>
         </article>
@@ -242,19 +247,19 @@ git config --global user.email you@yourdomain.com
 
             <p><p>The <code>find</code> utility’s -exec flag makes it very easy to recursively perform operations on specific files or directories.</p>
 
-<pre><code>find . -type d -exec chmod 755 {} \;
-</code></pre>
+<div><pre><code>find . -type d -exec chmod 755 {} \;
+</code></pre></div>
 
 <p>This command finds all directories (starting at ‘dot’ - the current directory) and sets their permissions to 755 (rwxr-xr-x).</p>
 
-<pre><code>find . -type f -exec chmod 644 {} \;
-</code></pre>
+<div><pre><code>find . -type f -exec chmod 644 {} \;
+</code></pre></div>
 
 <p>Similarly, this command finds all files and sets their permissions to 644 (rw-r–r–).</p>
 
 <p> </p>
 
-<p>Thanks to <a>moveabletripe</a> for the info.</p>
+<p>Thanks to <a href="http://movabletripe.com/archive/recursively-chmod-directories-only/">moveabletripe</a> for the info.</p>
 
  <a href="/recursively-chmod-directories-only">(Read more)</a></p>
         </article>
@@ -280,11 +285,15 @@ git config --global user.email you@yourdomain.com
                 <a class="post-summary__link" href="/codeigniter-2doctrine-2-installation">CodeIgniter 2/Doctrine 2 Installation</a>
             </h3>
 
-            <p><p>If you want a quick way of getting Doctrine 2 working with CodeIgniter 2, you can download a pre-configured installation <a>from my GitHub repository</a>. There are currently three branches available:</p>
+            <p><p>If you want a quick way of getting Doctrine 2 working with CodeIgniter 2, you can download a pre-configured installation <a href="https://github.com/wildlyinaccurate/CodeIgniter-2-with-Doctrine-2">from my GitHub repository</a>. There are currently three branches available:</p>
 
-  
+<ul>
+  <li><strong>master</strong> - the latest stable versions of CodeIgniter and Doctrine.</li>
+  <li><strong>develop</strong> - the latest development versions of CodeIgniter and Doctrine. Not recommended for production use.</li>
+  <li><strong>doctrine-2.1</strong> - the latest stable version of CodeIgniter, and the latest stable 2.1.X version of Doctrine. This branch is provided as a way of keeping Doctrine 2.1 applications up to date without breaking backwards compatibility.</li>
+</ul>
 
-<p>For more information, read my post on <a>integrating Doctrine 2 with CodeIgniter 2</a></p>
+<p>For more information, read my post on <a href="/integrating-doctrine-2-with-codeigniter-2">integrating Doctrine 2 with CodeIgniter 2</a></p>
 
  <a href="/codeigniter-2doctrine-2-installation">(Read more)</a></p>
         </article>
@@ -298,7 +307,7 @@ git config --global user.email you@yourdomain.com
 
             <p><p>People who enjoy listening to more ‘traditional’ styles of music often believe that electronic music shouldn’t be called ‘real’ music. They believe that producing electronic music must be so easy, because after all, isn’t it just a few loops played over and over? This is one of the common misconceptions about electronic music production.</p>
 
-<p>I have recently been working on a remix of a <a>Shapeshifter</a> song called Longest Day. To give you an idea of the music production process and how it is much more than looping a few sounds, I’m going to share with you some of the work that I’ve put into this remix.</p>
+<p>I have recently been working on a remix of a <a href="http://www.shapeshifter.co.nz">Shapeshifter</a> song called Longest Day. To give you an idea of the music production process and how it is much more than looping a few sounds, I’m going to share with you some of the work that I’ve put into this remix.</p>
 
  <a href="/the-music-production-process">(Read more)</a></p>
         </article>
@@ -310,7 +319,7 @@ git config --global user.email you@yourdomain.com
                 <a class="post-summary__link" href="/useful-doctrine-2-console-commands">Useful Doctrine 2 Console Commands</a>
             </h3>
 
-            <p><p>Doctrine 2’s console is really powerful when you know how to use it. You can generate entity classes and their method stubs, reverse-engineer a database, validate your entity schemas, and much more. In this post, I’m going to cover some of the Doctrine console’s more useful commands and explain how you can use them to reduce development time. For a full overview of the Doctrine 2 console, read the <a>Doctrine Tools</a> documentation.</p>
+            <p><p>Doctrine 2’s console is really powerful when you know how to use it. You can generate entity classes and their method stubs, reverse-engineer a database, validate your entity schemas, and much more. In this post, I’m going to cover some of the Doctrine console’s more useful commands and explain how you can use them to reduce development time. For a full overview of the Doctrine 2 console, read the <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/tools.html">Doctrine Tools</a> documentation.</p>
 
  <a href="/useful-doctrine-2-console-commands">(Read more)</a></p>
         </article>
@@ -322,7 +331,7 @@ git config --global user.email you@yourdomain.com
                 <a class="post-summary__link" href="/beer-review-renaissance-elemental">Beer Review: Renaissance Elemental</a>
             </h3>
 
-            <p><p>I touched briefly on the Renaissance brewery while writing about their Craftsman stout, in <a>My Top Five Beers</a>. Founded by Californians Andy Deuchars and Brian Thiel in 2005, Renaissance is located in the historic Grove Mill in Blenheim, New Zealand. Their beers have been available to the general public since 2006, and have been winning awards ever since. The Elemental porter is Renaissance’s most awarded beer, having won gold medals in New Zealand and Australia. More recently the Elemental received a silver medal at the Australia International Beers Awards in May 2010.</p>
+            <p><p>I touched briefly on the Renaissance brewery while writing about their Craftsman stout, in <a href="https://wildlyinaccurate.com/my-top-five-beers/">My Top Five Beers</a>. Founded by Californians Andy Deuchars and Brian Thiel in 2005, Renaissance is located in the historic Grove Mill in Blenheim, New Zealand. Their beers have been available to the general public since 2006, and have been winning awards ever since. The Elemental porter is Renaissance’s most awarded beer, having won gold medals in New Zealand and Australia. More recently the Elemental received a silver medal at the Australia International Beers Awards in May 2010.</p>
 
  <a href="/beer-review-renaissance-elemental">(Read more)</a></p>
         </article>
