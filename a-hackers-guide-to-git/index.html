@@ -210,14 +210,10 @@ src/
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Git tree graph" src="/assets/tree-graph.png" srcset="/assets/resized/tree-graph-290x225.png 290w, /assets/resized/tree-graph-315x244.png 315w,  /assets/tree-graph.png 591w" />
+    <img class="thumbnail__image" alt="" src="/assets/tree-graph.png" srcset="/assets/resized/tree-graph-290x225.png 290w, /assets/resized/tree-graph-315x244.png 315w,  /assets/tree-graph.png 591w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Git tree graph
-    </div>
     
 </div>
 
@@ -239,15 +235,16 @@ src/
 
 <p>Let’s see a commit object in action by creating a simple repository.</p>
 
-<div class="highlight"><pre><code> $ git init
+<pre>
+ $ git init
 Initialized empty Git repository in /home/demo/simple-repository/.git/
  $ echo 'This is the readme.' &gt; README
  $ git add README
  $ git commit -m "First commit"
-[master (root-commit) **d409ca7**] First commit
+[master (root-commit) <strong>d409ca7</strong>] First commit
  1 file changed, 1 insertion(+)
  create mode 100644 README
-</code></pre></div>
+</pre>
 
 <p>When you create a commit, Git will give you the hash of that commit. Using <code>git show</code> with the <code>--format=raw</code> flag, we can see this newly-created commit’s metadata.</p>
 
@@ -442,14 +439,10 @@ $ git commit -am "Fixed some wording"
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Branching -- hotfix and feature branch" src="/assets/branch-feature-hotfix.png" srcset="/assets/resized/branch-feature-hotfix-290x124.png 290w, /assets/resized/branch-feature-hotfix-315x134.png 315w,  /assets/branch-feature-hotfix.png 631w" />
+    <img class="thumbnail__image" alt="" src="/assets/branch-feature-hotfix.png" srcset="/assets/resized/branch-feature-hotfix-290x124.png 290w, /assets/resized/branch-feature-hotfix-315x134.png 315w,  /assets/branch-feature-hotfix.png 631w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Branching -- hotfix and feature branch
-    </div>
     
 </div>
 
@@ -469,14 +462,10 @@ Fast-forward
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Branching -- after merging hotfix" src="/assets/branch-merge-hotfix.png" srcset="/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w" />
+    <img class="thumbnail__image" alt="" src="/assets/branch-merge-hotfix.png" srcset="/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Branching -- after merging hotfix
-    </div>
     
 </div>
 
@@ -518,14 +507,10 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Branching -- after merging feature-branch" src="/assets/branch-merge-feature.png" srcset="/assets/resized/branch-merge-feature-290x149.png 290w, /assets/resized/branch-merge-feature-315x161.png 315w,  /assets/branch-merge-feature.png 656w" />
+    <img class="thumbnail__image" alt="" src="/assets/branch-merge-feature.png" srcset="/assets/resized/branch-merge-feature-290x149.png 290w, /assets/resized/branch-merge-feature-315x161.png 315w,  /assets/branch-merge-feature.png 656w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Branching -- after merging feature-branch
-    </div>
     
 </div>
 
@@ -533,7 +518,7 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 
 <h2 id="rebasing">Rebasing</h2>
 
-<p>Rebasing is without a doubt one of Git’s most misunderstood features. For most people, <code>git rebase</code> is a command that should be avoided at all costs. This is probably due to the extraordinary amount of scaremongering around rebasing. <em>“Rebase Considered Harmful”</em>, and _“Please, stay away from rebase” _are just two of the many anti-rebase articles you will find in the vast archives of the Internet.</p>
+<p>Rebasing is without a doubt one of Git’s most misunderstood features. For most people, <code>git rebase</code> is a command that should be avoided at all costs. This is probably due to the extraordinary amount of scaremongering around rebasing. <em>“Rebase Considered Harmful”</em>, and <em>“Please, stay away from rebase”</em> are just two of the many anti-rebase articles you will find in the vast archives of the Internet.</p>
 
 <p>But rebase isn’t scary, or dangerous, so long as you understand what it does. But before we get into rebasing, I’m going to take a quick digression, because it’s actually much easier to explain rebasing in the context of cherry-picking.</p>
 
@@ -544,14 +529,10 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Node graph -- before cherry-pick" src="/assets/cherry-pick-before.png" srcset="/assets/resized/cherry-pick-before-290x114.png 290w, /assets/resized/cherry-pick-before-315x123.png 315w,  /assets/cherry-pick-before.png 467w" />
+    <img class="thumbnail__image" alt="" src="/assets/cherry-pick-before.png" srcset="/assets/resized/cherry-pick-before-290x114.png 290w, /assets/resized/cherry-pick-before-315x123.png 315w,  /assets/cherry-pick-before.png 467w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Node graph -- before cherry-pick
-    </div>
     
 </div>
 
@@ -560,14 +541,10 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Node graph -- after cherry-pick" src="/assets/cherry-pick-after.png" srcset="/assets/resized/cherry-pick-after-290x89.png 290w, /assets/resized/cherry-pick-after-315x96.png 315w,  /assets/cherry-pick-after.png 555w" />
+    <img class="thumbnail__image" alt="" src="/assets/cherry-pick-after.png" srcset="/assets/resized/cherry-pick-after-290x89.png 290w, /assets/resized/cherry-pick-after-315x96.png 315w,  /assets/cherry-pick-after.png 555w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Node graph -- after cherry-pick
-    </div>
     
 </div>
 
@@ -578,14 +555,10 @@ committer Joseph Wynn &lt;joseph@wildlyinaccurate.com&gt; 1401134489 +0100
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Node graph -- with branch labels" src="/assets/graph-branch-labels.png" srcset="/assets/resized/graph-branch-labels-290x81.png 290w, /assets/resized/graph-branch-labels-315x88.png 315w,  /assets/graph-branch-labels.png 623w" />
+    <img class="thumbnail__image" alt="" src="/assets/graph-branch-labels.png" srcset="/assets/resized/graph-branch-labels-290x81.png 290w, /assets/resized/graph-branch-labels-315x88.png 315w,  /assets/graph-branch-labels.png 623w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Node graph -- with branch labels
-    </div>
     
 </div>
 
@@ -600,14 +573,10 @@ $ git checkout -b foo-tmp
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Node graph -- after creating foo-tmp" src="/assets/foo-tmp.png" srcset="/assets/resized/foo-tmp-290x81.png 290w, /assets/resized/foo-tmp-315x88.png 315w,  /assets/foo-tmp.png 623w" />
+    <img class="thumbnail__image" alt="" src="/assets/foo-tmp.png" srcset="/assets/resized/foo-tmp-290x81.png 290w, /assets/resized/foo-tmp-315x88.png 315w,  /assets/foo-tmp.png 623w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Node graph -- after creating foo-tmp
-    </div>
     
 </div>
 
@@ -619,14 +588,10 @@ $ git checkout -b foo-tmp
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Node graph -- after cherry-picking C and D" src="/assets/cherry-pick-c-d.png" srcset="/assets/resized/cherry-pick-c-d-290x92.png 290w, /assets/resized/cherry-pick-c-d-315x100.png 315w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w" />
+    <img class="thumbnail__image" alt="" src="/assets/cherry-pick-c-d.png" srcset="/assets/resized/cherry-pick-c-d-290x92.png 290w, /assets/resized/cherry-pick-c-d-315x100.png 315w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Node graph -- after cherry-picking C and D
-    </div>
     
 </div>
 
@@ -642,14 +607,10 @@ $ git branch -D foo-tmp
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Node graph -- after resetting foo" src="/assets/cherry-pick-final.png" srcset="/assets/resized/cherry-pick-final-290x58.png 290w, /assets/resized/cherry-pick-final-315x62.png 315w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w" />
+    <img class="thumbnail__image" alt="" src="/assets/cherry-pick-final.png" srcset="/assets/resized/cherry-pick-final-290x58.png 290w, /assets/resized/cherry-pick-final-315x62.png 315w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Node graph -- after resetting foo
-    </div>
     
 </div>
 
@@ -679,14 +640,10 @@ $ git branch -D foo-tmp
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Branching -- after merging hotfix" src="/assets/branch-merge-hotfix.png" srcset="/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w" />
+    <img class="thumbnail__image" alt="" src="/assets/branch-merge-hotfix.png" srcset="/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Branching -- after merging hotfix
-    </div>
     
 </div>
 
@@ -702,14 +659,10 @@ Applying: Finished the new feature
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Rebasing -- rebase feature-branch with master" src="/assets/rebase-feature.png" srcset="/assets/resized/rebase-feature-290x81.png 290w, /assets/resized/rebase-feature-315x88.png 315w,  /assets/rebase-feature.png 680w" />
+    <img class="thumbnail__image" alt="" src="/assets/rebase-feature.png" srcset="/assets/resized/rebase-feature-290x81.png 290w, /assets/resized/rebase-feature-315x88.png 315w,  /assets/rebase-feature.png 680w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Rebasing -- rebase feature-branch with master
-    </div>
     
 </div>
 
@@ -1230,14 +1183,10 @@ f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
 <div class="thumbnail">
     
 
-    <img class="thumbnail__image" alt="Stashing" src="/assets/stash.png" srcset="/assets/resized/stash-290x153.png 290w, /assets/resized/stash-315x166.png 315w,  /assets/stash.png 504w" />
+    <img class="thumbnail__image" alt="" src="/assets/stash.png" srcset="/assets/resized/stash-290x153.png 290w, /assets/resized/stash-315x166.png 315w,  /assets/stash.png 504w" />
 
     
 
-    
-    <div class="thumbnail__caption">
-        Stashing
-    </div>
     
 </div>
 

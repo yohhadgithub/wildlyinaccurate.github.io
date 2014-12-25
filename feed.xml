@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.github.io/</link>
     <atom:link href="https://wildlyinaccurate.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Dec 2014 23:31:15 +0000</pubDate>
-    <lastBuildDate>Wed, 24 Dec 2014 23:31:15 +0000</lastBuildDate>
+    <pubDate>Thu, 25 Dec 2014 10:46:48 +0000</pubDate>
+    <lastBuildDate>Thu, 25 Dec 2014 10:46:48 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -375,14 +375,10 @@ src/
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Git tree graph&quot; src=&quot;/assets/tree-graph.png&quot; srcset=&quot;/assets/resized/tree-graph-290x225.png 290w, /assets/resized/tree-graph-315x244.png 315w,  /assets/tree-graph.png 591w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/tree-graph.png&quot; srcset=&quot;/assets/resized/tree-graph-290x225.png 290w, /assets/resized/tree-graph-315x244.png 315w,  /assets/tree-graph.png 591w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Git tree graph
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -404,15 +400,16 @@ src/
 
 &lt;p&gt;Let’s see a commit object in action by creating a simple repository.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code&gt; $ git init
+&lt;pre&gt;
+ $ git init
 Initialized empty Git repository in /home/demo/simple-repository/.git/
  $ echo &#39;This is the readme.&#39; &amp;gt; README
  $ git add README
  $ git commit -m &quot;First commit&quot;
-[master (root-commit) **d409ca7**] First commit
+[master (root-commit) &lt;strong&gt;d409ca7&lt;/strong&gt;] First commit
  1 file changed, 1 insertion(+)
  create mode 100644 README
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/pre&gt;
 
 &lt;p&gt;When you create a commit, Git will give you the hash of that commit. Using &lt;code&gt;git show&lt;/code&gt; with the &lt;code&gt;--format=raw&lt;/code&gt; flag, we can see this newly-created commit’s metadata.&lt;/p&gt;
 
@@ -607,14 +604,10 @@ $ git commit -am &quot;Fixed some wording&quot;
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- hotfix and feature branch&quot; src=&quot;/assets/branch-feature-hotfix.png&quot; srcset=&quot;/assets/resized/branch-feature-hotfix-290x124.png 290w, /assets/resized/branch-feature-hotfix-315x134.png 315w,  /assets/branch-feature-hotfix.png 631w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-feature-hotfix.png&quot; srcset=&quot;/assets/resized/branch-feature-hotfix-290x124.png 290w, /assets/resized/branch-feature-hotfix-315x134.png 315w,  /assets/branch-feature-hotfix.png 631w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Branching -- hotfix and feature branch
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -634,14 +627,10 @@ Fast-forward
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- after merging hotfix&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Branching -- after merging hotfix
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -683,14 +672,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- after merging feature-branch&quot; src=&quot;/assets/branch-merge-feature.png&quot; srcset=&quot;/assets/resized/branch-merge-feature-290x149.png 290w, /assets/resized/branch-merge-feature-315x161.png 315w,  /assets/branch-merge-feature.png 656w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-feature.png&quot; srcset=&quot;/assets/resized/branch-merge-feature-290x149.png 290w, /assets/resized/branch-merge-feature-315x161.png 315w,  /assets/branch-merge-feature.png 656w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Branching -- after merging feature-branch
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -698,7 +683,7 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;h2 id=&quot;rebasing&quot;&gt;Rebasing&lt;/h2&gt;
 
-&lt;p&gt;Rebasing is without a doubt one of Git’s most misunderstood features. For most people, &lt;code&gt;git rebase&lt;/code&gt; is a command that should be avoided at all costs. This is probably due to the extraordinary amount of scaremongering around rebasing. &lt;em&gt;“Rebase Considered Harmful”&lt;/em&gt;, and _“Please, stay away from rebase” _are just two of the many anti-rebase articles you will find in the vast archives of the Internet.&lt;/p&gt;
+&lt;p&gt;Rebasing is without a doubt one of Git’s most misunderstood features. For most people, &lt;code&gt;git rebase&lt;/code&gt; is a command that should be avoided at all costs. This is probably due to the extraordinary amount of scaremongering around rebasing. &lt;em&gt;“Rebase Considered Harmful”&lt;/em&gt;, and &lt;em&gt;“Please, stay away from rebase”&lt;/em&gt; are just two of the many anti-rebase articles you will find in the vast archives of the Internet.&lt;/p&gt;
 
 &lt;p&gt;But rebase isn’t scary, or dangerous, so long as you understand what it does. But before we get into rebasing, I’m going to take a quick digression, because it’s actually much easier to explain rebasing in the context of cherry-picking.&lt;/p&gt;
 
@@ -709,14 +694,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- before cherry-pick&quot; src=&quot;/assets/cherry-pick-before.png&quot; srcset=&quot;/assets/resized/cherry-pick-before-290x114.png 290w, /assets/resized/cherry-pick-before-315x123.png 315w,  /assets/cherry-pick-before.png 467w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-before.png&quot; srcset=&quot;/assets/resized/cherry-pick-before-290x114.png 290w, /assets/resized/cherry-pick-before-315x123.png 315w,  /assets/cherry-pick-before.png 467w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Node graph -- before cherry-pick
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -725,14 +706,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after cherry-pick&quot; src=&quot;/assets/cherry-pick-after.png&quot; srcset=&quot;/assets/resized/cherry-pick-after-290x89.png 290w, /assets/resized/cherry-pick-after-315x96.png 315w,  /assets/cherry-pick-after.png 555w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-after.png&quot; srcset=&quot;/assets/resized/cherry-pick-after-290x89.png 290w, /assets/resized/cherry-pick-after-315x96.png 315w,  /assets/cherry-pick-after.png 555w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Node graph -- after cherry-pick
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -743,14 +720,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- with branch labels&quot; src=&quot;/assets/graph-branch-labels.png&quot; srcset=&quot;/assets/resized/graph-branch-labels-290x81.png 290w, /assets/resized/graph-branch-labels-315x88.png 315w,  /assets/graph-branch-labels.png 623w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/graph-branch-labels.png&quot; srcset=&quot;/assets/resized/graph-branch-labels-290x81.png 290w, /assets/resized/graph-branch-labels-315x88.png 315w,  /assets/graph-branch-labels.png 623w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Node graph -- with branch labels
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -765,14 +738,10 @@ $ git checkout -b foo-tmp
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after creating foo-tmp&quot; src=&quot;/assets/foo-tmp.png&quot; srcset=&quot;/assets/resized/foo-tmp-290x81.png 290w, /assets/resized/foo-tmp-315x88.png 315w,  /assets/foo-tmp.png 623w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/foo-tmp.png&quot; srcset=&quot;/assets/resized/foo-tmp-290x81.png 290w, /assets/resized/foo-tmp-315x88.png 315w,  /assets/foo-tmp.png 623w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Node graph -- after creating foo-tmp
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -784,14 +753,10 @@ $ git checkout -b foo-tmp
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after cherry-picking C and D&quot; src=&quot;/assets/cherry-pick-c-d.png&quot; srcset=&quot;/assets/resized/cherry-pick-c-d-290x92.png 290w, /assets/resized/cherry-pick-c-d-315x100.png 315w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-c-d.png&quot; srcset=&quot;/assets/resized/cherry-pick-c-d-290x92.png 290w, /assets/resized/cherry-pick-c-d-315x100.png 315w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Node graph -- after cherry-picking C and D
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -807,14 +772,10 @@ $ git branch -D foo-tmp
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Node graph -- after resetting foo&quot; src=&quot;/assets/cherry-pick-final.png&quot; srcset=&quot;/assets/resized/cherry-pick-final-290x58.png 290w, /assets/resized/cherry-pick-final-315x62.png 315w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-final.png&quot; srcset=&quot;/assets/resized/cherry-pick-final-290x58.png 290w, /assets/resized/cherry-pick-final-315x62.png 315w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Node graph -- after resetting foo
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -844,14 +805,10 @@ $ git branch -D foo-tmp
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Branching -- after merging hotfix&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Branching -- after merging hotfix
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -867,14 +824,10 @@ Applying: Finished the new feature
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Rebasing -- rebase feature-branch with master&quot; src=&quot;/assets/rebase-feature.png&quot; srcset=&quot;/assets/resized/rebase-feature-290x81.png 290w, /assets/resized/rebase-feature-315x88.png 315w,  /assets/rebase-feature.png 680w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/rebase-feature.png&quot; srcset=&quot;/assets/resized/rebase-feature-290x81.png 290w, /assets/resized/rebase-feature-315x88.png 315w,  /assets/rebase-feature.png 680w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Rebasing -- rebase feature-branch with master
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -1395,14 +1348,10 @@ f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Stashing&quot; src=&quot;/assets/stash.png&quot; srcset=&quot;/assets/resized/stash-290x153.png 290w, /assets/resized/stash-315x166.png 315w,  /assets/stash.png 504w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/stash.png&quot; srcset=&quot;/assets/resized/stash-290x153.png 290w, /assets/resized/stash-315x166.png 315w,  /assets/stash.png 504w&quot; /&gt;
 
     
 
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Stashing
-    &lt;/div&gt;
     
 &lt;/div&gt;
 
@@ -1570,7 +1519,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
         <title>Defining readable code</title>
         <description>&lt;p&gt;Code readability is something that I often bring up during code reviews, but I often have trouble explaining &lt;em&gt;why&lt;/em&gt; I find a piece of code to be easy or difficult to read.&lt;/p&gt;
 
-&lt;p&gt;When you ask programmers how to make code easier to read, many of them will mention things like coding standards, descriptive naming, and decomposition. These things actually aid in making code easier to &lt;em&gt;comprehend&lt;/em&gt; rather than easier to &lt;em&gt;read&lt;/em&gt;. For me, _readability _is at a lower level, somewhere between legibility and comprehension.&lt;/p&gt;
+&lt;p&gt;When you ask programmers how to make code easier to read, many of them will mention things like coding standards, descriptive naming, and decomposition. These things actually aid in making code easier to &lt;em&gt;comprehend&lt;/em&gt; rather than easier to &lt;em&gt;read&lt;/em&gt;. For me, &lt;em&gt;readability&lt;/em&gt; is at a lower level, somewhere between legibility and comprehension.&lt;/p&gt;
 
 &lt;p&gt; &lt;/p&gt;
 
