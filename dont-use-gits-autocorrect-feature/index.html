@@ -10,8 +10,8 @@
     <meta name="description" content="Quite often I’ve accidentally typed “git” twice. Usually this is fine, and Git just does something like this:$ git git diffgit: 'git' is not a git command. S...">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="https://wildlyinaccurate.github.io/dont-use-gits-autocorrect-feature">
-    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.github.io/feed.xml">
+    <link rel="canonical" href="https://wildlyinaccurate.com/dont-use-gits-autocorrect-feature">
+    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml">
 </head>
 
 
@@ -19,7 +19,7 @@
 
         <nav class="navbar">
     <div class="container">
-        <a href="https://wildlyinaccurate.github.io" class="navbar__title navbar__link">Wildly Inaccurate</a>
+        <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a>
 
         <ul class="navbar-nav">
         
@@ -103,6 +103,19 @@ New worktree: /nfs/personaldev/vagrant/mobileweb-v2/diff
 <p>Update: m_bright pointed out that the value of <code>help.autocorrect</code> is actually how many tenths of a second Git will wait before automatically executing the command. So something like <code>git config --global help.autocorrect 10</code> would give you 1 second before the command is executed, which is probably slow enough to let you cancel any mistakes, and quick enough to still be useful.</p>
 
 </article>
+
+<div class="post-comments" id="disqus_thread"></div>
+
+<script>
+    var disqus_shortname = 'wildlyinaccurate';
+    var disqus_url = 'https://wildlyinaccurate.com/dont-use-gits-autocorrect-feature';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
 
 
         <footer class="page-footer">

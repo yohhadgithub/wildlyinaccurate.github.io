@@ -10,8 +10,8 @@
     <meta name="description" content="This post assumes you have set up Doctrine 2 with CodeIgniter 2.Load Data from FixturesI could not find a command to load data from fixtures, so I made a ver...">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="https://wildlyinaccurate.github.io/custom-doctrine-2-console-commands">
-    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.github.io/feed.xml">
+    <link rel="canonical" href="https://wildlyinaccurate.com/custom-doctrine-2-console-commands">
+    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml">
 </head>
 
 
@@ -19,7 +19,7 @@
 
         <nav class="navbar">
     <div class="container">
-        <a href="https://wildlyinaccurate.github.io" class="navbar__title navbar__link">Wildly Inaccurate</a>
+        <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a>
 
         <ul class="navbar-nav">
         
@@ -219,6 +219,19 @@
 <p>Now all you need to do is create .sql files in application/fixtures and run the load-data command from the Doctrine Console. Note that on my system, the script catches a PDOException after it executes a SQL file. I can’t work out where the exception is coming from but the script still manages to process all of the files so you can safely ignore it.</p>
 
 </article>
+
+<div class="post-comments" id="disqus_thread"></div>
+
+<script>
+    var disqus_shortname = 'wildlyinaccurate';
+    var disqus_url = 'https://wildlyinaccurate.com/custom-doctrine-2-console-commands';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
 
 
         <footer class="page-footer">

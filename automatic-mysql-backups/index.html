@@ -10,8 +10,8 @@
     <meta name="description" content="It’s really easy to set up automatic MySQL backups using mysqldump. First, you need to set up a user with SELECT and LOCK TABLES privileges. In this example ...">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="https://wildlyinaccurate.github.io/automatic-mysql-backups">
-    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.github.io/feed.xml">
+    <link rel="canonical" href="https://wildlyinaccurate.com/automatic-mysql-backups">
+    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml">
 </head>
 
 
@@ -19,7 +19,7 @@
 
         <nav class="navbar">
     <div class="container">
-        <a href="https://wildlyinaccurate.github.io" class="navbar__title navbar__link">Wildly Inaccurate</a>
+        <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a>
 
         <ul class="navbar-nav">
         
@@ -88,6 +88,19 @@
 <p>Don’t forget to change <strong>dbname</strong> to the name of the database that you want to backup. And that’s it - you’re done! This cron job will create a backup of your database and save it to <code>/var/backups</code> with a filename based on the current date, e.g. <code>/var/backups/**dbname**-20120503.sql.gz</code></p>
 
 </article>
+
+<div class="post-comments" id="disqus_thread"></div>
+
+<script>
+    var disqus_shortname = 'wildlyinaccurate';
+    var disqus_url = 'https://wildlyinaccurate.com/automatic-mysql-backups';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
 
 
         <footer class="page-footer">

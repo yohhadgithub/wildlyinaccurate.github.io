@@ -10,8 +10,8 @@
     <meta name="description" content="After upgrading php-fpm, my PHP-based sites were returning “502 Bad Gateway” errors. This can happen when the php5-fpm package reconfigures itself to listen ...">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="https://wildlyinaccurate.github.io/solving-502-bad-gateway-with-nginx-php-fpm">
-    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.github.io/feed.xml">
+    <link rel="canonical" href="https://wildlyinaccurate.com/solving-502-bad-gateway-with-nginx-php-fpm">
+    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml">
 </head>
 
 
@@ -19,7 +19,7 @@
 
         <nav class="navbar">
     <div class="container">
-        <a href="https://wildlyinaccurate.github.io" class="navbar__title navbar__link">Wildly Inaccurate</a>
+        <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a>
 
         <ul class="navbar-nav">
         
@@ -100,6 +100,19 @@ sudo apt-get install php5 php5-cgi php5-fpm
 <p>Restart php-fpm with <code>sudo service php5-fpm restart</code> and everything should work normally again.</p>
 
 </article>
+
+<div class="post-comments" id="disqus_thread"></div>
+
+<script>
+    var disqus_shortname = 'wildlyinaccurate';
+    var disqus_url = 'https://wildlyinaccurate.com/solving-502-bad-gateway-with-nginx-php-fpm';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
 
 
         <footer class="page-footer">

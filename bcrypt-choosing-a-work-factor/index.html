@@ -10,8 +10,8 @@
     <meta name="description" content="Bcrypt is a Blowfish-based hashing algorithm which is commonly used for password hashing because of its potentially expensive key setup phase. A Bcrypt hash ...">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="https://wildlyinaccurate.github.io/bcrypt-choosing-a-work-factor">
-    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.github.io/feed.xml">
+    <link rel="canonical" href="https://wildlyinaccurate.com/bcrypt-choosing-a-work-factor">
+    <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml">
 </head>
 
 
@@ -19,7 +19,7 @@
 
         <nav class="navbar">
     <div class="container">
-        <a href="https://wildlyinaccurate.github.io" class="navbar__title navbar__link">Wildly Inaccurate</a>
+        <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a>
 
         <ul class="navbar-nav">
         
@@ -135,6 +135,19 @@
 <p>I don’t believe that there is a “correct” work factor; it depends on how strong you want your hashes to be and how much computational power you want to reserve for the hashing process. Keep in mind that as time goes by and you want to increase your hash strength, you can easily increase the work factor and re-hash each user’s password on their next successful login. This also applies if the password hashing procedure is generating too much load; you can reduce the work factor.</p>
 
 </article>
+
+<div class="post-comments" id="disqus_thread"></div>
+
+<script>
+    var disqus_shortname = 'wildlyinaccurate';
+    var disqus_url = 'https://wildlyinaccurate.com/bcrypt-choosing-a-work-factor';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
 
 
         <footer class="page-footer">
