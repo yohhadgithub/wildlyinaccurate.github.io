@@ -80,7 +80,7 @@
 <div class="highlight"><pre><code>$2a$(2 chars work)$(22 chars salt)(31 chars hash)
 </code></pre></div>
 
-<p>The reason that the key setup phase can be potentially expensive is because it is run <code>2&lt;sup&gt;work&lt;/sup&gt;</code> times. As password hashing is usually associated with common tasks like logging a user into a system, it’s important to find the right balance between security and performance. Using a high work factor makes it incredibly difficult to execute a brute-force attack, but can put unnecessary load on the system.</p>
+<p>The reason that the key setup phase can be potentially expensive is because it is run <code>2<sup>work</sup></code> times. As password hashing is usually associated with common tasks like logging a user into a system, it’s important to find the right balance between security and performance. Using a high work factor makes it incredibly difficult to execute a brute-force attack, but can put unnecessary load on the system.</p>
 
 <p>Using <a href="https://gist.github.com/1053158/">Marco Arment’s PHP Bcrypt class</a>, I performed some benchmarks to determine how long it takes to hash a string with various work factors:<!--more--></p>
 

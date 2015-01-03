@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.github.io/</link>
     <atom:link href="https://wildlyinaccurate.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Jan 2015 15:03:42 +0000</pubDate>
-    <lastBuildDate>Thu, 01 Jan 2015 15:03:42 +0000</lastBuildDate>
+    <pubDate>Sat, 03 Jan 2015 20:50:18 +0000</pubDate>
+    <lastBuildDate>Sat, 03 Jan 2015 20:50:18 +0000</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -1547,15 +1547,23 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;Our brains are very good at identifying structure and patterns; we find them pleasing. In the same sense, many people find a lack of structure to be quite displeasing. The effect of structure on readability can be easily demonstrated using an excerpt from this BBC article &lt;a href=&quot;http://www.bbc.co.uk/news/science-environment-25163113&quot;&gt;&lt;em&gt;Indian probe begins journey to Mars&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;India’s mission to Mars has embarked on its 300-day journey to the Red Planet. Early on Sunday the spacecraft fired its main engine for more than 20 minutes, giving it the correct velocity to leave Earth’s orbit. It will now cruise for 680m km (422m miles), setting up an encounter with its target on 24 September 2014.&lt;br /&gt;
-India’s mission to Mars has embarked on its 300-day journey to the Red Planet.&lt;/p&gt;
+&lt;div class=&quot;col-xs-6&quot;&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;India’s mission to Mars has embarked on its 300-day journey to the Red Planet. Early on Sunday the spacecraft fired its main engine for more than 20 minutes, giving it the correct velocity to leave Earth’s orbit. It will now cruise for 680m km (422m miles), setting up an encounter with its target on 24 September 2014.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;
 
-  &lt;p&gt;Early on Sunday the spacecraft fired its main engine for more than 20 minutes, giving it the correct velocity to leave Earth’s orbit.&lt;/p&gt;
+&lt;div class=&quot;col-xs-6&quot;&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;India’s mission to Mars has embarked on its 300-day journey to the Red Planet.&lt;/p&gt;
 
-  &lt;p&gt;It will now cruise for 680m km (422m miles), setting up an encounter with its target on 24 September 2014.&lt;br /&gt;
-&amp;lt;div style=&quot;clear: both;&quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &lt;p&gt;Early on Sunday the spacecraft fired its main engine for more than 20 minutes, giving it the correct velocity to leave Earth’s orbit.&lt;/p&gt;
+
+    &lt;p&gt;It will now cruise for 680m km (422m miles), setting up an encounter with its target on 24 September 2014.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;Without even reading the content, the version on the right should appear more pleasant. The line breaks should give you a visual cue that each paragraph, while relevant, is not directly related to its neighbours. This is important because it lets you digest the text in smaller chunks which are much easier to comprehend by themselves than one big wall of text.&lt;/p&gt;
 
@@ -1634,7 +1642,7 @@ India’s mission to Mars has embarked on its 300-day journey to the Red Planet.
 
 &lt;h2 id=&quot;other-factors&quot;&gt;Other factors&lt;/h2&gt;
 
-&lt;p&gt;&lt;span style=&quot;font-size: 21px; line-height: 1.6;&quot;&gt;There are plenty of other factors involved in code readability. But as with most things, readability is entirely subjective – it’s important not to confuse it with personal preference.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There are plenty of other factors involved in code readability. But as with most things, readability is entirely subjective – it’s important not to confuse it with personal preference.&lt;/p&gt;
 
 &lt;p&gt;Programming is an interesting mix of engineering and craft. As well as borrowing precision and discipline from engineering, we need to remember to also borrow style and ergonomics from visual design.&lt;/p&gt;
 </description>
@@ -1861,7 +1869,7 @@ Not Found%
 
 &lt;p&gt;So really, the only way to avoid dishonest comments is to simply &lt;strong&gt;not write them in the first place&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;span style=&quot;line-height: 1.6;&quot;&gt;In the Ruby Rogues episode I mentioned at the start of this post, there’s a brief discussion about the idea that comments are a code smell. This idea is &lt;/span&gt;&lt;a href=&quot;http://programmers.stackexchange.com/questions/1/comments-are-a-code-smell&quot;&gt;hotly debated&lt;/a&gt;.&lt;span style=&quot;line-height: 1.6;&quot;&gt; However, I do believe that treating comments as a code smell can help you to identify dishonest comments before they become a problem.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In the Ruby Rogues episode I mentioned at the start of this post, there’s a brief discussion about the idea that comments are a code smell. This idea is &lt;a href=&quot;http://programmers.stackexchange.com/questions/1/comments-are-a-code-smell&quot;&gt;hotly debated&lt;/a&gt;. However, I do believe that treating comments as a code smell can help you to identify dishonest comments before they become a problem.&lt;/p&gt;
 
 &lt;p&gt;I think this ends up coming back to the way that syntax highlighting hides comments from us. It’s really difficult to spot dishonest comments because we’ve trained our brains to focus on the bright &amp;amp; colourful text, and ignore the dull grey text.&lt;/p&gt;
 
