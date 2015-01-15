@@ -4,10 +4,10 @@
     <title>Wildly Inaccurate</title>
     <description>A collection of guides &amp;amp; opinions about programming and the state of the web, from a developer at BBC News.
 </description>
-    <link>https://blog.wildlyinaccurate.com/</link>
-    <atom:link href="https://blog.wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Jan 2015 11:43:09 +0000</pubDate>
-    <lastBuildDate>Thu, 08 Jan 2015 11:43:09 +0000</lastBuildDate>
+    <link>https://wildlyinaccurate.com/</link>
+    <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 15 Jan 2015 09:32:17 +0000</pubDate>
+    <lastBuildDate>Thu, 15 Jan 2015 09:32:17 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -151,8 +151,8 @@ The quick brown fox jumps over the lazy fox.
 &lt;p&gt;Once I’ve reached my 100WPM goal and feel comfortable enough using the new layout in a programming context, I’ll start using the new layout at work. The final step to fully converting to the new layout will be to re-learn all of the keyboard shortcuts which are currently part of my muscle memory on a QWERTY layout.&lt;/p&gt;
 </description>
         <pubDate>Fri, 31 Oct 2014 13:44:00 +0000</pubDate>
-        <link>https://blog.wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</guid>
+        <link>https://wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</guid>
         
         <category>colemak</category>
         
@@ -225,8 +225,8 @@ node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
 &lt;p&gt;If this sort of thing interests you, you might enjoy reading Thorsten Lorenz’s collection of &lt;a href=&quot;https://github.com/thlorenz/v8-perf&quot;&gt;V8 performance resources&lt;/a&gt; or Petka Antonov’s &lt;a href=&quot;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&quot;&gt;V8 optimization killers&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 02 Aug 2014 00:10:46 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/javascript-performance-variable-initialization/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/javascript-performance-variable-initialization/</guid>
+        <link>https://wildlyinaccurate.com/javascript-performance-variable-initialization/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/javascript-performance-variable-initialization/</guid>
         
         <category>javascript</category>
         
@@ -1412,8 +1412,8 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 &lt;p&gt;Once the &lt;code&gt;bisect&lt;/code&gt; is finished (or when you want to abort it), be sure to run &lt;code&gt;git bisect reset&lt;/code&gt; to reset &lt;code&gt;HEAD&lt;/code&gt; to where it was before the &lt;code&gt;bisect&lt;/code&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 May 2014 17:12:22 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/a-hackers-guide-to-git/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/a-hackers-guide-to-git/</guid>
+        <link>https://wildlyinaccurate.com/a-hackers-guide-to-git/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/a-hackers-guide-to-git/</guid>
         
         <category>git</category>
         
@@ -1499,8 +1499,8 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 &lt;p&gt;At this point I would recommend going through a few slides of &lt;a href=&quot;http://ejohn.org/apps/learn/#64&quot;&gt;John Resig’s JavaScript Ninja&lt;/a&gt; as they go into more detail about how JavaScript prototypes work, and provide some good interactive examples.&lt;/p&gt;
 </description>
         <pubDate>Fri, 09 May 2014 22:43:39 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</guid>
+        <link>https://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</guid>
         
         <category>classes</category>
         
@@ -1647,8 +1647,8 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 &lt;p&gt;Programming is an interesting mix of engineering and craft. As well as borrowing precision and discipline from engineering, we need to remember to also borrow style and ergonomics from visual design.&lt;/p&gt;
 </description>
         <pubDate>Mon, 10 Mar 2014 12:40:55 +0000</pubDate>
-        <link>https://blog.wildlyinaccurate.com/what-makes-code-readable/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/what-makes-code-readable/</guid>
+        <link>https://wildlyinaccurate.com/what-makes-code-readable/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/what-makes-code-readable/</guid>
         
         <category>readability</category>
         
@@ -1702,8 +1702,8 @@ Not Found%
 &lt;p&gt;&lt;small&gt;*Well, you could use anything really. I’m just using Node.js since JavaScript is my language of choice.&lt;/small&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Sep 2013 15:13:22 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/http-status-as-a-service/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/http-status-as-a-service/</guid>
+        <link>https://wildlyinaccurate.com/http-status-as-a-service/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/http-status-as-a-service/</guid>
         
         <category>http status code</category>
         
@@ -1739,8 +1739,8 @@ Not Found%
 &lt;p&gt;This is all I’ve found in the themes that I’ve tried.&lt;/p&gt;
 </description>
         <pubDate>Fri, 06 Sep 2013 15:24:49 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/converting-bootswatch-themes-to-sass/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/converting-bootswatch-themes-to-sass/</guid>
+        <link>https://wildlyinaccurate.com/converting-bootswatch-themes-to-sass/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/converting-bootswatch-themes-to-sass/</guid>
         
         <category>bootstrap</category>
         
@@ -1772,8 +1772,8 @@ Not Found%
 &lt;p&gt;The annoying thing is that OSX seems to restore the BIND config the next time you turn Internet Sharing off, so you need to remember to change it each time.&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Aug 2013 12:39:55 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/getting-internet-sharing-to-work-on-osx-10-8/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/getting-internet-sharing-to-work-on-osx-10-8/</guid>
+        <link>https://wildlyinaccurate.com/getting-internet-sharing-to-work-on-osx-10-8/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/getting-internet-sharing-to-work-on-osx-10-8/</guid>
         
         <category>BIND</category>
         
@@ -1798,8 +1798,8 @@ Not Found%
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 16 Aug 2013 17:09:28 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/force-bower-to-clone-from-https-instead-of-git/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/force-bower-to-clone-from-https-instead-of-git/</guid>
+        <link>https://wildlyinaccurate.com/force-bower-to-clone-from-https-instead-of-git/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/force-bower-to-clone-from-https-instead-of-git/</guid>
         
         <category>bower</category>
         
@@ -1919,8 +1919,8 @@ Not Found%
 &lt;p&gt;How you deal with dishonest comments in your codebase is up to you. In the end though, it’s down to you and your team to be more thoughtful about the comments that you write. If an honest comment can be turned into a dishonest comment simply by changing the code around it, then you probably need to re-think whether that comment is necessary.&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Aug 2013 22:07:02 +0100</pubDate>
-        <link>https://blog.wildlyinaccurate.com/dishonest-comments/</link>
-        <guid isPermaLink="true">https://blog.wildlyinaccurate.com/dishonest-comments/</guid>
+        <link>https://wildlyinaccurate.com/dishonest-comments/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/dishonest-comments/</guid>
         
         <category>comments</category>
         
