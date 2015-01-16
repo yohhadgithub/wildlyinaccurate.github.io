@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Jan 2015 09:25:05 +0000</pubDate>
-    <lastBuildDate>Fri, 16 Jan 2015 09:25:05 +0000</lastBuildDate>
+    <pubDate>Fri, 16 Jan 2015 09:45:24 +0000</pubDate>
+    <lastBuildDate>Fri, 16 Jan 2015 09:45:24 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -31,7 +31,7 @@
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/resized/ergodox-1024x551-290x156.jpg 290w, /assets/resized/ergodox-1024x551-315x169.jpg 315w, /assets/resized/ergodox-1024x551-720x387.jpg 720w, /assets/resized/ergodox-1024x551-940x506.jpg 940w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/resized/ergodox-1024x551-290x156.jpg 290w, /assets/resized/ergodox-1024x551-315x169.jpg 315w, /assets/resized/ergodox-1024x551-720x387.jpg 720w, /assets/resized/ergodox-1024x551-940x506.jpg 940w, /assets/resized/ergodox-1024x551-780x420.jpg 780w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
 
     
 
@@ -49,7 +49,7 @@
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-qwerty-heatmap-290x111.png 290w, /assets/resized/ergodox-qwerty-heatmap-315x120.png 315w, /assets/resized/ergodox-qwerty-heatmap-720x274.png 720w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-qwerty-heatmap-290x111.png 290w, /assets/resized/ergodox-qwerty-heatmap-315x120.png 315w, /assets/resized/ergodox-qwerty-heatmap-720x274.png 720w, /assets/resized/ergodox-qwerty-heatmap-780x297.png 780w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
 
     
 
@@ -76,7 +76,7 @@
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-heatmap1-290x111.png 290w, /assets/resized/ergodox-colemak-heatmap1-315x120.png 315w, /assets/resized/ergodox-colemak-heatmap1-720x274.png 720w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-heatmap1-290x111.png 290w, /assets/resized/ergodox-colemak-heatmap1-315x120.png 315w, /assets/resized/ergodox-colemak-heatmap1-720x274.png 720w, /assets/resized/ergodox-colemak-heatmap1-780x297.png 780w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
 
     
 
@@ -92,7 +92,7 @@
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-symbolmod-heatmap-290x111.png 290w, /assets/resized/ergodox-colemak-symbolmod-heatmap-315x120.png 315w, /assets/resized/ergodox-colemak-symbolmod-heatmap-720x274.png 720w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-symbolmod-heatmap-290x111.png 290w, /assets/resized/ergodox-colemak-symbolmod-heatmap-315x120.png 315w, /assets/resized/ergodox-colemak-symbolmod-heatmap-720x274.png 720w, /assets/resized/ergodox-colemak-symbolmod-heatmap-780x297.png 780w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
 
     
 
@@ -125,7 +125,7 @@ The quick brown fox jumps over the lazy fox.
 &lt;div class=&quot;thumbnail&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I&#39;m using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-290x169.jpg 290w, /assets/resized/ergodox-layout-guide-1024x598-315x184.jpg 315w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I&#39;m using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-290x169.jpg 290w, /assets/resized/ergodox-layout-guide-1024x598-315x184.jpg 315w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w, /assets/resized/ergodox-layout-guide-1024x598-780x456.jpg 780w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
 
     
 
