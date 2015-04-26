@@ -6,9 +6,64 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Mar 2015 22:39:28 +0000</pubDate>
-    <lastBuildDate>Tue, 10 Mar 2015 22:39:28 +0000</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 21:47:28 +0100</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 21:47:28 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Cabal: Installing readline on OSX</title>
+        <description>&lt;p&gt;I’ve had trouble installing the &lt;code&gt;readline&lt;/code&gt; package on a few separate OSX installations, so I figured it was worth writing the solution down.&lt;/p&gt;
+
+&lt;p&gt;When running &lt;code&gt;cabal install&lt;/code&gt; for a package which depends on &lt;code&gt;readline&lt;/code&gt; (or simply when running &lt;code&gt;cabal install readline&lt;/code&gt;), Cabal exits with errors along the lines of&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code&gt;Configuring readline-1.0.3.0...
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables...
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for GNUreadline.framework... checking for readline... no
+checking for tputs in -lncurses... yes
+checking for readline in -lreadline... yes
+checking for rl_readline_version... yes
+checking for rl_begin_undo_group... no
+configure: error: readline not found, so this package cannot be built
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The problem is that Cabal is not aware of the location of the readline lib. My workaround is to specify the location of the lib whenever running these commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code&gt;$ cabal install readline --extra-include-dirs=/usr/local/Cellar/readline/6.3.8/include/ \
+                         --extra-lib-dirs=/usr/local/Cellar/readline/6.3.8/lib/ \
+                         --configure-option=--with-readline-includes=/usr/local/Cellar/readline/6.3.8/include/readline \
+                         --configure-option=--with-readline-libraries=/usr/local/Cellar/readline/6.3.8/lib/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Your paths may differ slightly if you have a different version of readline installed. You can check this with&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code&gt;$ ls /usr/local/Cellar/readline
+6.3.8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sun, 26 Apr 2015 00:00:00 +0100</pubDate>
+        <link>https://wildlyinaccurate.com/cabal-installing-readline-on-osx/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/cabal-installing-readline-on-osx/</guid>
+        
+        <category>cabal</category>
+        
+        <category>readline</category>
+        
+        <category>osx</category>
+        
+        <category>homebrew</category>
+        
+        
+        <category>haskell</category>
+        
+      </item>
     
       <item>
         <title>Transitioning to a new keyboard layout</title>
@@ -244,32 +299,32 @@ node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
         <description>&lt;p&gt;&lt;em&gt;A Hacker’s Guide to Git&lt;/em&gt; is now available as an e-book. You can purchase it &lt;a href=&quot;https://leanpub.com/a-hackers-guide-to-git&quot;&gt;on LeanPub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#repositories&quot;&gt;Repositories&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tree-objects&quot;&gt;Tree Objects&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#commits&quot;&gt;Commits&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#branches&quot;&gt;Branches&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tags&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#merging&quot;&gt;Merging&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rebasing&quot;&gt;Rebasing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#cherry-picking&quot;&gt;Cherry-Picking&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rebasing-continued&quot;&gt;Rebasing (Continued)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#remotes&quot;&gt;Remotes&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#cloning&quot;&gt;Cloning&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pushing&quot;&gt;Pushing&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#remote-tracking-branches&quot;&gt;Remote-Tracking Branches&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#fetching&quot;&gt;Fetching&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pulling&quot;&gt;Pulling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#repositories&quot; id=&quot;markdown-toc-repositories&quot;&gt;Repositories&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tree-objects&quot; id=&quot;markdown-toc-tree-objects&quot;&gt;Tree Objects&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#commits&quot; id=&quot;markdown-toc-commits&quot;&gt;Commits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#references&quot; id=&quot;markdown-toc-references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#branches&quot; id=&quot;markdown-toc-branches&quot;&gt;Branches&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tags&quot; id=&quot;markdown-toc-tags&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#merging&quot; id=&quot;markdown-toc-merging&quot;&gt;Merging&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rebasing&quot; id=&quot;markdown-toc-rebasing&quot;&gt;Rebasing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#cherry-picking&quot; id=&quot;markdown-toc-cherry-picking&quot;&gt;Cherry-Picking&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rebasing-continued&quot; id=&quot;markdown-toc-rebasing-continued&quot;&gt;Rebasing (Continued)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#remotes&quot; id=&quot;markdown-toc-remotes&quot;&gt;Remotes&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#cloning&quot; id=&quot;markdown-toc-cloning&quot;&gt;Cloning&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pushing&quot; id=&quot;markdown-toc-pushing&quot;&gt;Pushing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#remote-tracking-branches&quot; id=&quot;markdown-toc-remote-tracking-branches&quot;&gt;Remote-Tracking Branches&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fetching&quot; id=&quot;markdown-toc-fetching&quot;&gt;Fetching&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pulling&quot; id=&quot;markdown-toc-pulling&quot;&gt;Pulling&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#toolkit&quot;&gt;Toolkit&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#git-reflog&quot;&gt;git-reflog&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#git-fsck&quot;&gt;git-fsck&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#git-stash&quot;&gt;git-stash&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#git-describe&quot;&gt;git-describe&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#git-rev-parse&quot;&gt;git-rev-parse&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#git-bisect&quot;&gt;git-bisect&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toolkit&quot; id=&quot;markdown-toc-toolkit&quot;&gt;Toolkit&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#git-reflog&quot; id=&quot;markdown-toc-git-reflog&quot;&gt;git-reflog&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#git-fsck&quot; id=&quot;markdown-toc-git-fsck&quot;&gt;git-fsck&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#git-stash&quot; id=&quot;markdown-toc-git-stash&quot;&gt;git-stash&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#git-describe&quot; id=&quot;markdown-toc-git-describe&quot;&gt;git-describe&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#git-rev-parse&quot; id=&quot;markdown-toc-git-rev-parse&quot;&gt;git-rev-parse&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#git-bisect&quot; id=&quot;markdown-toc-git-bisect&quot;&gt;git-bisect&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -1808,123 +1863,6 @@ Not Found%
         
         
         <category>git</category>
-        
-      </item>
-    
-      <item>
-        <title>Dishonest comments</title>
-        <description>&lt;p&gt;One of my favourite Ruby Rogues episodes (&lt;a href=&quot;http://rubyrogues.com/what-makes-beautiful-code/&quot;&gt;&lt;em&gt;What Makes Beautiful Code&lt;/em&gt;&lt;/a&gt;) has a short section where the Rogues talk about the concept of &lt;em&gt;dishonest code&lt;/em&gt;. David Brady wrote a &lt;a href=&quot;http://chalain.livejournal.com/39332.html&quot;&gt;really good piece&lt;/a&gt; on this, which I highly recommend reading.&lt;/p&gt;
-
-&lt;p&gt;What I want to talk about is a more specific variant of dishonest code: dishonest comments.&lt;/p&gt;
-
-&lt;p&gt;Take this code, for example:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stopPropagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;If you’re not familiar with JavaScript events, &lt;code&gt;e.stopPropagation()&lt;/code&gt; will stop this event from bubbling up to other event handlers. Now, what if somebody decides that the event &lt;em&gt;should&lt;/em&gt; bubble up? They might do something like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-diff&quot;&gt;&lt;span class=&quot;gd&quot;&gt;--- a/example.js&lt;/span&gt;
-&lt;span class=&quot;gi&quot;&gt;+++ b/example.js&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;@@ -1,4 +1,4 @@&lt;/span&gt;
- $(&amp;#39;a&amp;#39;).click(function(e) {
-&lt;span class=&quot;gi&quot;&gt;+    // Let the event bubble up to the next handler&lt;/span&gt;
-&lt;span class=&quot;gd&quot;&gt;-    e.stopPropagation();&lt;/span&gt;
-     e.preventDefault();
- });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This is pretty common practice; a developer will leave a comment so that the next person understands why the &lt;code&gt;e.stopPropagation()&lt;/code&gt; is gone.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;So far this isn’t too bad. But what happens when somebody changes their mind again, and doesn’t want the event to bubble up anymore? Quite often, this is what happens:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-diff&quot;&gt;&lt;span class=&quot;gd&quot;&gt;--- a/example.js&lt;/span&gt;
-&lt;span class=&quot;gi&quot;&gt;+++ b/example.js&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;@@ -1,4 +1,5 @@&lt;/span&gt;
- $(&amp;#39;a&amp;#39;).click(function(e) {
-     // Let the event bubble up to the next handler
-&lt;span class=&quot;gi&quot;&gt;+    e.stopPropagation();&lt;/span&gt;
-     e.preventDefault();
- });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The &lt;code&gt;e.stopPropagation()&lt;/code&gt; call is added back in, right where it was before. You can see the problem here: the comment explaining that the event will bubble up is still there.&lt;/p&gt;
-
-&lt;p&gt;A lot of developers tend to ignore comments in code, especially comments that were written by somebody else. Modern text editors and IDEs are partly to blame for this, since their syntax highlighting tends to de-emphasise comments by greying them out.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Let the event bubble up to the next handler&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stopPropagation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;What we’ve ended up with is a comment which says one thing, and some code which does something &lt;em&gt;entirely different&lt;/em&gt;. This is surprisingly common – most codebases are absolutely &lt;em&gt;littered&lt;/em&gt; with dishonest comments.&lt;/p&gt;
-
-&lt;p&gt;The example I’ve given above might seem contrived, but this is an entirely real —although somewhat simplified— example of some code that I had to debug recently.&lt;/p&gt;
-
-&lt;p&gt;Dishonest comments can confuse even the most experienced developers, and make debugging much more difficult than it needs to be. Figuring out what one line of code is &lt;em&gt;supposed&lt;/em&gt; to do can turn into an hour of trawling through version control logs and diffs.&lt;/p&gt;
-
-&lt;p&gt;The worst part about dishonest comments is that the problems they cause aren’t immediately obvious. Unit tests won’t pick them up. A full regression test won’t find them. Once they’re committed to the codebase, they remain hidden right up until the point where you realise that they’re lying to you.&lt;/p&gt;
-
-&lt;p&gt;So really, the only way to avoid dishonest comments is to simply &lt;strong&gt;not write them in the first place&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;In the Ruby Rogues episode I mentioned at the start of this post, there’s a brief discussion about the idea that comments are a code smell. This idea is &lt;a href=&quot;http://programmers.stackexchange.com/questions/1/comments-are-a-code-smell&quot;&gt;hotly debated&lt;/a&gt;. However, I do believe that treating comments as a code smell can help you to identify dishonest comments before they become a problem.&lt;/p&gt;
-
-&lt;p&gt;I think this ends up coming back to the way that syntax highlighting hides comments from us. It’s really difficult to spot dishonest comments because we’ve trained our brains to focus on the bright &amp;amp; colourful text, and ignore the dull grey text.&lt;/p&gt;
-
-&lt;div class=&quot;thumbnail&quot;&gt;
-    
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Greyed-out comments&quot; src=&quot;/assets/hidden-comments.png&quot; srcset=&quot;/assets/resized/hidden-comments-290x276.png 290w, /assets/resized/hidden-comments-315x300.png 315w,  /assets/hidden-comments.png 430w&quot; /&gt;
-
-    
-
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Greyed-out comments
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;If you opened this file to make some changes, chances are you wouldn’t even notice the comments, let alone figure out that they are all lies. But what if the comments stood out more?&lt;/p&gt;
-
-&lt;p&gt;I’m currently experimenting with my own variation of the Monokai colour scheme which draws comments in a bright colour.&lt;/p&gt;
-
-&lt;div class=&quot;thumbnail&quot;&gt;
-    
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Bright comments&quot; src=&quot;/assets/bright-comments.png&quot; srcset=&quot;/assets/resized/bright-comments-290x276.png 290w, /assets/resized/bright-comments-315x300.png 315w,  /assets/bright-comments.png 430w&quot; /&gt;
-
-    
-
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Bright comments
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;Suddenly the comments stand out. They even stand out more than most of the actual code in this file. To me, this is a good thing because comments should only be there to say something important that the code can’t say by itself. If there is a comment in the code, I want it to stand out because it must be telling me something &lt;strong&gt;really important&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Having the comments stand out more also makes it much more obvious when there are too many comments. Usually, seeing a lot of comments tells me that either:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Most of these comments are unnecessary, or,&lt;/li&gt;
-  &lt;li&gt;The code needs to be refactored to be self-documenting&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If the comments are unnecessary, they can be removed. If the code can be more self-documenting, then the comments that &lt;em&gt;were&lt;/em&gt; documenting it can be removed. Either way, you end up with less comments, and less dishonesty.&lt;/p&gt;
-
-&lt;p&gt;How you deal with dishonest comments in your codebase is up to you. In the end though, it’s down to you and your team to be more thoughtful about the comments that you write. If an honest comment can be turned into a dishonest comment simply by changing the code around it, then you probably need to re-think whether that comment is necessary.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 07 Aug 2013 22:07:02 +0100</pubDate>
-        <link>https://wildlyinaccurate.com/dishonest-comments/</link>
-        <guid isPermaLink="true">https://wildlyinaccurate.com/dishonest-comments/</guid>
-        
-        <category>comments</category>
-        
-        
-        <category>thoughts</category>
         
       </item>
     
