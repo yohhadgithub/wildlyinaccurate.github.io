@@ -6,9 +6,58 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Jul 2015 20:08:29 +0100</pubDate>
-    <lastBuildDate>Wed, 08 Jul 2015 20:08:29 +0100</lastBuildDate>
+    <pubDate>Mon, 27 Jul 2015 14:48:54 +0100</pubDate>
+    <lastBuildDate>Mon, 27 Jul 2015 14:48:54 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Functional Programming Resources</title>
+        <description>&lt;p&gt;This post contains a collection of resources for learning about functional programming. These resources cover a range of levels from beginner-friendly introductions right through to more advanced concepts.&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;articles-papers--blog-posts&quot;&gt;Articles, Papers &amp;amp; Blog Posts&lt;/h3&gt;
+
+&lt;h4 id=&quot;why-functional-programming-matters-whyfphttpswwwcskentacukpeoplestaffdatmirandawhyfp90pdf&quot;&gt;&lt;a href=&quot;https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf&quot;&gt;Why Functional Programming Matters (“WhyFP”)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Considered to be “the” paper describing the importance of functional programming.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-why-functional-programming-matters-mattershttpraganwaldcom20141220why-why-functional-programming-matters-mattershtml&quot;&gt;&lt;a href=&quot;http://raganwald.com/2014/12/20/why-why-functional-programming-matters-matters.html&quot;&gt;Why Why Functional Programming Matters Matters&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;A short reflection of &lt;em&gt;Why Functional Programming Matters&lt;/em&gt;, with a particular focus on language design.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-reactive-programminghttppaulstovellcomblogreactive-programming&quot;&gt;&lt;a href=&quot;http://paulstovell.com/blog/reactive-programming&quot;&gt;What is Reactive Programming?&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;A very concise explanation of what (functional) reactive programming is.&lt;/p&gt;
+
+&lt;h3 id=&quot;videos&quot;&gt;Videos&lt;/h3&gt;
+
+&lt;h4 id=&quot;the-essence-of-frphttpbegriffscomposts2015-07-22-essence-of-frphtml&quot;&gt;&lt;a href=&quot;http://begriffs.com/posts/2015-07-22-essence-of-frp.html&quot;&gt;The Essence of FRP&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Conal Elliott talks about how the definition of FPR has recently become more and more misunderstood. He explains the original definition of FRP and the benefits it is intended to provide.&lt;/p&gt;
+
+&lt;h4 id=&quot;lenses-folds-and-traversalshttpswwwyoutubecomwatchvcefnmjtaoly&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cefnmjtAolY&quot;&gt;Lenses, Folds, and Traversals&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;A talk centred around the &lt;a href=&quot;http://hackage.haskell.org/package/lens&quot;&gt;les package&lt;/a&gt;, covering how to compose lenses using Haskell’s regular composition operator (&lt;code&gt;.&lt;/code&gt;), and illustrating a scheme for performing les-based folds and traversals.&lt;/p&gt;
+
+&lt;h4 id=&quot;railway-oriented-programminghttpfsharpforfunandprofitcomrop&quot;&gt;&lt;a href=&quot;http://fsharpforfunandprofit.com/rop/&quot;&gt;Railway Oriented Programming&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Scott Wlaschin explains a functional approach to error handling (F#).&lt;/p&gt;
+
+&lt;h4 id=&quot;functional-programming-design-patternshttpfsharpforfunandprofitcomfppatterns&quot;&gt;&lt;a href=&quot;http://fsharpforfunandprofit.com/fppatterns/&quot;&gt;Functional Programming Design Patterns&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Another talk by Scott Wlaschin where he explains some common functional design patterns.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Jul 2015 00:00:00 +0100</pubDate>
+        <link>https://wildlyinaccurate.com/functional-programming-resources/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/functional-programming-resources/</guid>
+        
+        <category>functional programming</category>
+        
+        
+        <category>functional programming</category>
+        
+        <category>resources</category>
+        
+      </item>
     
       <item>
         <title>Some Git Things</title>
@@ -1914,41 +1963,6 @@ Not Found%
         
         
         <category>web development</category>
-        
-      </item>
-    
-      <item>
-        <title>Getting Internet Sharing to work on OSX 10.8</title>
-        <description>&lt;p&gt;I noticed that the Internet Sharing functionality didn’t work on my Macbook Air (running OSX 10.8 - Mountain Lion). This is because the Air’s DNS server (BIND) isn’t configured correctly.&lt;/p&gt;
-
-&lt;p&gt;For me, the fix was pretty simple. Edit &lt;code&gt;/etc/com.apple.named.proxy.conf&lt;/code&gt; by running &lt;code&gt;sudo nano /etc/com.apple.named.proxy.conf&lt;/code&gt; in a terminal, and change&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code&gt;forward first;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code&gt;forward only;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Then turn Internet Sharing off and on again.&lt;/p&gt;
-
-&lt;p&gt;The annoying thing is that OSX seems to restore the BIND config the next time you turn Internet Sharing off, so you need to remember to change it each time.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 20 Aug 2013 12:39:55 +0100</pubDate>
-        <link>https://wildlyinaccurate.com/getting-internet-sharing-to-work-on-osx-10-8/</link>
-        <guid isPermaLink="true">https://wildlyinaccurate.com/getting-internet-sharing-to-work-on-osx-10-8/</guid>
-        
-        <category>BIND</category>
-        
-        <category>DNS</category>
-        
-        <category>Internet Sharing</category>
-        
-        <category>OSX</category>
-        
-        
-        <category>osx</category>
         
       </item>
     
