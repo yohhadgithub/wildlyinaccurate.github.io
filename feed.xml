@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Jul 2015 16:15:32 +0100</pubDate>
-    <lastBuildDate>Mon, 27 Jul 2015 16:15:32 +0100</lastBuildDate>
+    <pubDate>Tue, 28 Jul 2015 13:18:21 +0100</pubDate>
+    <lastBuildDate>Tue, 28 Jul 2015 13:18:21 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -31,6 +31,20 @@
 &lt;h4 id=&quot;what-is-reactive-programminghttppaulstovellcomblogreactive-programming&quot;&gt;&lt;a href=&quot;http://paulstovell.com/blog/reactive-programming&quot;&gt;What is Reactive Programming?&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;A very concise explanation of what (functional) reactive programming is.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-algebra-and-calculus-of-algebraic-data-typeshttpscodewordsrecursecomissuesthreealgebra-and-calculus-of-algebraic-data-types&quot;&gt;&lt;a href=&quot;https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types&quot;&gt;The algebra (and calculus!) of algebraic data types&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;An intermediate-level article which explores the connection between algebraic data types and elemendary algebra. A basic understanding of Haskell’s data type declaration syntax is assumed.&lt;/p&gt;
+
+&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
+
+&lt;h4 id=&quot;professor-frisbys-mostly-adequate-guide-to-functional-programminghttpdrbooleangitbooksiomostly-adequate-guide&quot;&gt;&lt;a href=&quot;http://drboolean.gitbooks.io/mostly-adequate-guide/&quot;&gt;Professor Frisby’s Mostly Adequate Guide to Functional Programming&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;A general look at the functional paradigm, using JavaScript as the example language. This book is &lt;a href=&quot;https://github.com/DrBoolean/mostly-adequate-guide&quot;&gt;available on GitHub&lt;/a&gt; (under the Attribution-ShareAlike license).&lt;/p&gt;
+
+&lt;h4 id=&quot;structure-and-interpretation-of-computer-programshttpsmitpressmitedusicpfull-textbookbookhtml&quot;&gt;&lt;a href=&quot;https://mitpress.mit.edu/sicp/full-text/book/book.html&quot;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Available for free on MIT Press, this classic textbook covers the foundations of modern programming. Scheme is the main language used, so most of the book is written from a functional perspective.&lt;/p&gt;
 
 &lt;h3 id=&quot;videos&quot;&gt;Videos&lt;/h3&gt;
 
@@ -233,7 +247,7 @@ configure: error: readline not found, so this package cannot be built
         
         <category>readline</category>
         
-        <category>osx</category>
+        <category>OSX</category>
         
         <category>homebrew</category>
         
