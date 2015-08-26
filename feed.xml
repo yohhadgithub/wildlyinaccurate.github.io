@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Aug 2015 23:44:04 +0100</pubDate>
-    <lastBuildDate>Sun, 23 Aug 2015 23:44:04 +0100</lastBuildDate>
+    <pubDate>Wed, 26 Aug 2015 22:40:53 +0100</pubDate>
+    <lastBuildDate>Wed, 26 Aug 2015 22:40:53 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -90,71 +90,126 @@
     
       <item>
         <title>Functional Programming Resources</title>
-        <description>&lt;p&gt;This post contains a collection of resources for learning about functional programming. These resources cover a range of levels from beginner-friendly introductions right through to more advanced concepts.&lt;!--more--&gt;&lt;/p&gt;
+        <description>&lt;h3 id=&quot;articles-papers--blog-posts&quot;&gt;Articles, Papers &amp;amp; Blog Posts&lt;/h3&gt;
 
-&lt;h3 id=&quot;articles-papers--blog-posts&quot;&gt;Articles, Papers &amp;amp; Blog Posts&lt;/h3&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Academic&amp;quot;, &amp;quot;Paper&amp;quot;]&quot; data-category=&quot;Articles, Papers &amp;amp; Blog Posts&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf&quot;&gt;Why Functional Programming Matters (&quot;WhyFP&quot;)&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;Considered to be “the” paper describing the importance of functional programming.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h4 id=&quot;why-functional-programming-matters-whyfphttpswwwcskentacukpeoplestaffdatmirandawhyfp90pdf&quot;&gt;&lt;a href=&quot;https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf&quot;&gt;Why Functional Programming Matters (“WhyFP”)&lt;/a&gt;&lt;/h4&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Blog&amp;quot;]&quot; data-category=&quot;Articles, Papers &amp;amp; Blog Posts&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://raganwald.com/2014/12/20/why-why-functional-programming-matters-matters.html&quot;&gt;Why Why Functional Programming Matters Matters&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A short reflection of &lt;em&gt;Why Functional Programming Matters&lt;/em&gt;, with a particular focus on language design.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Considered to be “the” paper describing the importance of functional programming.&lt;/p&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Academic&amp;quot;, &amp;quot;Paper&amp;quot;]&quot; data-category=&quot;Articles, Papers &amp;amp; Blog Posts&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://nsr.oxfordjournals.org/content/early/2015/07/13/nsr.nwv042.full.pdf&quot;&gt;How Functional Programming Mattered&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;This paper attempts to asses the impact that functional programming has had in the real world, more than 20 years after &lt;em&gt;Why Functional Programming Matters&lt;/em&gt; was written.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h4 id=&quot;why-why-functional-programming-matters-mattershttpraganwaldcom20141220why-why-functional-programming-matters-mattershtml&quot;&gt;&lt;a href=&quot;http://raganwald.com/2014/12/20/why-why-functional-programming-matters-matters.html&quot;&gt;Why Why Functional Programming Matters Matters&lt;/a&gt;&lt;/h4&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Blog&amp;quot;]&quot; data-category=&quot;Articles, Papers &amp;amp; Blog Posts&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://paulstovell.com/blog/reactive-programming&quot;&gt;What is Reactive Programming?&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A very concise explanation of what (functional) reactive programming is.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;A short reflection of &lt;em&gt;Why Functional Programming Matters&lt;/em&gt;, with a particular focus on language design.&lt;/p&gt;
-
-&lt;h4 id=&quot;how-functional-programming-matteredhttpnsroxfordjournalsorgcontentearly20150713nsrnwv042fullpdf&quot;&gt;&lt;a href=&quot;http://nsr.oxfordjournals.org/content/early/2015/07/13/nsr.nwv042.full.pdf&quot;&gt;How Functional Programming Mattered&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;This paper attempts to asses the impact that functional programming has had in the real world, more than 20 years after &lt;em&gt;Why Functional Programming Matters&lt;/em&gt; was written.&lt;/p&gt;
-
-&lt;h4 id=&quot;what-is-reactive-programminghttppaulstovellcomblogreactive-programming&quot;&gt;&lt;a href=&quot;http://paulstovell.com/blog/reactive-programming&quot;&gt;What is Reactive Programming?&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;A very concise explanation of what (functional) reactive programming is.&lt;/p&gt;
-
-&lt;h4 id=&quot;the-algebra-and-calculus-of-algebraic-data-typeshttpscodewordsrecursecomissuesthreealgebra-and-calculus-of-algebraic-data-types&quot;&gt;&lt;a href=&quot;https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types&quot;&gt;The algebra (and calculus!) of algebraic data types&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;An intermediate-level article which explores the connection between algebraic data types and elemendary algebra. A basic understanding of Haskell’s data type declaration syntax is assumed.&lt;/p&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Blog&amp;quot;, &amp;quot;Intermediate&amp;quot;]&quot; data-category=&quot;Articles, Papers &amp;amp; Blog Posts&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types&quot;&gt;The algebra (and calculus!) of algebraic data types&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;An intermediate-level article which explores the connection between algebraic data types and elemendary algebra. A basic understanding of Haskell&#39;s data type declaration syntax is assumed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
 
-&lt;h4 id=&quot;professor-frisbys-mostly-adequate-guide-to-functional-programminghttpdrbooleangitbooksiomostly-adequate-guide&quot;&gt;&lt;a href=&quot;http://drboolean.gitbooks.io/mostly-adequate-guide/&quot;&gt;Professor Frisby’s Mostly Adequate Guide to Functional Programming&lt;/a&gt;&lt;/h4&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Javascript&amp;quot;, &amp;quot;Book&amp;quot;]&quot; data-category=&quot;Books&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://drboolean.gitbooks.io/mostly-adequate-guide/&quot;&gt;Professor Frisby&amp;#39;s Mostly Adequate Guide to Functional Programming&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A general look at the functional paradigm, using JavaScript as the example language. This book is &lt;a href=&quot;https://github.com/DrBoolean/mostly-adequate-guide&quot;&gt;available on GitHub&lt;/a&gt; (under the Attribution-ShareAlike license).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;A general look at the functional paradigm, using JavaScript as the example language. This book is &lt;a href=&quot;https://github.com/DrBoolean/mostly-adequate-guide&quot;&gt;available on GitHub&lt;/a&gt; (under the Attribution-ShareAlike license).&lt;/p&gt;
-
-&lt;h4 id=&quot;structure-and-interpretation-of-computer-programshttpsmitpressmitedusicpfull-textbookbookhtml&quot;&gt;&lt;a href=&quot;https://mitpress.mit.edu/sicp/full-text/book/book.html&quot;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Available for free on MIT Press, this classic textbook covers the foundations of modern programming. Scheme is the main language used, so most of the book is written from a functional perspective.&lt;/p&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Textbook&amp;quot;, &amp;quot;Book&amp;quot;]&quot; data-category=&quot;Books&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://mitpress.mit.edu/sicp/full-text/book/book.html&quot;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;Available for free on MIT Press, this classic textbook covers the foundations of modern programming. Scheme is the main language used, so most of the book is written from a functional perspective.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;videos&quot;&gt;Videos&lt;/h3&gt;
 
-&lt;h4 id=&quot;the-essence-of-frphttpbegriffscomposts2015-07-22-essence-of-frphtml&quot;&gt;&lt;a href=&quot;http://begriffs.com/posts/2015-07-22-essence-of-frp.html&quot;&gt;The Essence of FRP&lt;/a&gt;&lt;/h4&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;FRP&amp;quot;, &amp;quot;Video&amp;quot;]&quot; data-category=&quot;Videos&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://begriffs.com/posts/2015-07-22-essence-of-frp.html&quot;&gt;The Essence of FRP&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;Conal Elliott talks about how the definition of FPR has recently become more and more misunderstood. He explains the original definition of FRP and the benefits it is intended to provide.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Conal Elliott talks about how the definition of FPR has recently become more and more misunderstood. He explains the original definition of FRP and the benefits it is intended to provide.&lt;/p&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Advanced&amp;quot;, &amp;quot;Haskell&amp;quot;, &amp;quot;Video&amp;quot;]&quot; data-category=&quot;Videos&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://skillsmatter.com/skillscasts/4251-lenses-compositional-data-access-and-manipulation&quot;&gt;Lenses: compositional data access and manipulation&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;An introduction to &lt;a href=&quot;http://hackage.haskell.org/package/lens&quot;&gt;lens&lt;/a&gt;, and how lenses can help simplify working with complex data types.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h4 id=&quot;lenses-compositional-data-access-and-manipulationhttpsskillsmattercomskillscasts4251-lenses-compositional-data-access-and-manipulation&quot;&gt;&lt;a href=&quot;https://skillsmatter.com/skillscasts/4251-lenses-compositional-data-access-and-manipulation&quot;&gt;Lenses: compositional data access and manipulation&lt;/a&gt;&lt;/h4&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Advanced&amp;quot;, &amp;quot;Haskell&amp;quot;, &amp;quot;Video&amp;quot;]&quot; data-category=&quot;Videos&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://www.youtube.com/watch?v=cefnmjtAolY&quot;&gt;Lenses, Folds, and Traversals&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A talk centred around the &lt;a href=&quot;http://hackage.haskell.org/package/lens&quot;&gt;lens package&lt;/a&gt;, covering how to compose lenses using Haskell&#39;s regular composition operator (&lt;code&gt;.&lt;/code&gt;), and illustrating a scheme for performing lens-based folds and traversals.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;An introduction to &lt;a href=&quot;http://hackage.haskell.org/package/lens&quot;&gt;lens&lt;/a&gt;, and how lenses can help simplify working with complex data types.&lt;/p&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;F#&amp;quot;, &amp;quot;Video&amp;quot;]&quot; data-category=&quot;Videos&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://fsharpforfunandprofit.com/rop/&quot;&gt;Railway Oriented Programming&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;Scott Wlaschin explains a functional approach to error handling (F#).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h4 id=&quot;lenses-folds-and-traversalshttpswwwyoutubecomwatchvcefnmjtaoly&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cefnmjtAolY&quot;&gt;Lenses, Folds, and Traversals&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;A talk centred around the &lt;a href=&quot;http://hackage.haskell.org/package/lens&quot;&gt;lens package&lt;/a&gt;, covering how to compose lenses using Haskell’s regular composition operator (&lt;code&gt;.&lt;/code&gt;), and illustrating a scheme for performing lens-based folds and traversals.&lt;/p&gt;
-
-&lt;h4 id=&quot;railway-oriented-programminghttpfsharpforfunandprofitcomrop&quot;&gt;&lt;a href=&quot;http://fsharpforfunandprofit.com/rop/&quot;&gt;Railway Oriented Programming&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Scott Wlaschin explains a functional approach to error handling (F#).&lt;/p&gt;
-
-&lt;h4 id=&quot;functional-programming-design-patternshttpfsharpforfunandprofitcomfppatterns&quot;&gt;&lt;a href=&quot;http://fsharpforfunandprofit.com/fppatterns/&quot;&gt;Functional Programming Design Patterns&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Another talk by Scott Wlaschin where he explains some common functional design patterns.&lt;/p&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Video&amp;quot;]&quot; data-category=&quot;Videos&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://fsharpforfunandprofit.com/fppatterns/&quot;&gt;Functional Programming Design Patterns&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;Another talk by Scott Wlaschin where he explains some common functional design patterns.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;other-collections&quot;&gt;Other Collections&lt;/h3&gt;
 
-&lt;h4 id=&quot;functional-programming-in-haskell-and-ocaml-by-exampleshttpsgithubcomcaiorssfunctional-programming&quot;&gt;&lt;a href=&quot;https://github.com/caiorss/Functional-Programming&quot;&gt;Functional Programming in Haskell and OCaml by Examples&lt;/a&gt;&lt;/h4&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Haskell&amp;quot;, &amp;quot;OCaml&amp;quot;]&quot; data-category=&quot;Other Collections&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://github.com/caiorss/Functional-Programming&quot;&gt;Functional Programming in Haskell and OCaml by Examples&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A collection of tutorials which aim to teach functional programming concepts and patterns by example.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;A collection of tutorials which aim to teach functional programming concepts and patterns by example.&lt;/p&gt;
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Haskell&amp;quot;]&quot; data-category=&quot;Other Collections&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://github.com/bitemyapp/learnhaskell&quot;&gt;How to learn Haskell&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A &lt;em&gt;huge&lt;/em&gt; collection of resources for learning Haskell. The &lt;a href=&quot;https://github.com/bitemyapp/learnhaskell/blob/master/specific_topics.md&quot;&gt;&lt;em&gt;Specific topics for Haskell users&lt;/em&gt;&lt;/a&gt; page is especially useful for understanding specific concepts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h4 id=&quot;how-to-learn-haskellhttpsgithubcombitemyapplearnhaskell&quot;&gt;&lt;a href=&quot;https://github.com/bitemyapp/learnhaskell&quot;&gt;How to learn Haskell&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;A &lt;em&gt;huge&lt;/em&gt; collection of resources for learning Haskell. The &lt;a href=&quot;https://github.com/bitemyapp/learnhaskell/blob/master/specific_topics.md&quot;&gt;&lt;em&gt;Specific topics for Haskell users&lt;/em&gt;&lt;/a&gt; page is especially useful for understanding specific concepts.&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Jul 2015 00:00:00 +0100</pubDate>
         <link>https://wildlyinaccurate.com/functional-programming-resources/</link>
