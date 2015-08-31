@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Aug 2015 22:58:42 +0100</pubDate>
-    <lastBuildDate>Wed, 26 Aug 2015 22:58:42 +0100</lastBuildDate>
+    <pubDate>Mon, 31 Aug 2015 12:24:22 +0100</pubDate>
+    <lastBuildDate>Mon, 31 Aug 2015 12:24:22 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -18,10 +18,10 @@
 
 &lt;p&gt;This was my first mechanical keyboard. The soft Cherry MX Brown switches make it my favourites for long periods of typing. Even so, I rarely use it anymore. At the time of writing, this model is still available &lt;a href=&quot;http://www.daskeyboard.com/model-s-ultimate/&quot;&gt;on the Das Keyboard website&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Das Keyboard Model S Ultimate&quot; src=&quot;/assets/das-keyboard.jpg&quot; srcset=&quot;/assets/resized/das-keyboard-290x163.jpg 290w, /assets/resized/das-keyboard-315x177.jpg 315w, /assets/resized/das-keyboard-720x405.jpg 720w, /assets/resized/das-keyboard-940x529.jpg 940w, /assets/resized/das-keyboard-780x439.jpg 780w, /assets/resized/das-keyboard-1280x720.jpg 1280w, /assets/resized/das-keyboard-1360x765.jpg 1360w, /assets/resized/das-keyboard-1680x945.jpg 1680w, /assets/resized/das-keyboard-1840x1035.jpg 1840w,  /assets/das-keyboard.jpg 2048w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Das Keyboard Model S Ultimate&quot; src=&quot;/assets/das-keyboard.jpg&quot; srcset=&quot;/assets/resized/das-keyboard-320x180.jpg 320w, /assets/resized/das-keyboard-360x203.jpg 360w, /assets/resized/das-keyboard-720x405.jpg 720w, /assets/resized/das-keyboard-940x529.jpg 940w, /assets/resized/das-keyboard-1140x641.jpg 1140w, /assets/resized/das-keyboard-1280x720.jpg 1280w, /assets/resized/das-keyboard-1360x765.jpg 1360w, /assets/resized/das-keyboard-1680x945.jpg 1680w, /assets/resized/das-keyboard-1840x1035.jpg 1840w,  /assets/das-keyboard.jpg 2048w&quot; /&gt;
 
     
 
@@ -38,10 +38,10 @@
 
 &lt;p&gt;The CODE has Cherry MX Clear switches, which makes for a much firmer keyboard than the Das. I find the clears preferable for short bursts of typing, but over long periods they tire my hands out.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;CODE keyboard with Keycool rainbow keycaps&quot; src=&quot;/assets/code-keyboard.jpg&quot; srcset=&quot;/assets/resized/code-keyboard-290x163.jpg 290w, /assets/resized/code-keyboard-315x177.jpg 315w, /assets/resized/code-keyboard-720x405.jpg 720w, /assets/resized/code-keyboard-940x529.jpg 940w, /assets/resized/code-keyboard-780x439.jpg 780w, /assets/resized/code-keyboard-1280x720.jpg 1280w, /assets/resized/code-keyboard-1360x765.jpg 1360w, /assets/resized/code-keyboard-1680x945.jpg 1680w, /assets/resized/code-keyboard-1840x1035.jpg 1840w,  /assets/code-keyboard.jpg 2048w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;CODE keyboard with Keycool rainbow keycaps&quot; src=&quot;/assets/code-keyboard.jpg&quot; srcset=&quot;/assets/resized/code-keyboard-320x180.jpg 320w, /assets/resized/code-keyboard-360x203.jpg 360w, /assets/resized/code-keyboard-720x405.jpg 720w, /assets/resized/code-keyboard-940x529.jpg 940w, /assets/resized/code-keyboard-1140x641.jpg 1140w, /assets/resized/code-keyboard-1280x720.jpg 1280w, /assets/resized/code-keyboard-1360x765.jpg 1360w, /assets/resized/code-keyboard-1680x945.jpg 1680w, /assets/resized/code-keyboard-1840x1035.jpg 1840w,  /assets/code-keyboard.jpg 2048w&quot; /&gt;
 
     
 
@@ -58,10 +58,10 @@
 
 &lt;p&gt;My ErgoDox has Cherry MX Clear switches. Somehow the clears on the ErgoDox feel much softer than on the CODE, so I’m able to enjoy the feeling of firm keys without the fatigue I experience with the CODE.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox keyboard&quot; src=&quot;/assets/ergodox.jpg&quot; srcset=&quot;/assets/resized/ergodox-290x163.jpg 290w, /assets/resized/ergodox-315x177.jpg 315w, /assets/resized/ergodox-720x405.jpg 720w, /assets/resized/ergodox-940x529.jpg 940w, /assets/resized/ergodox-780x439.jpg 780w, /assets/resized/ergodox-1280x720.jpg 1280w, /assets/resized/ergodox-1360x765.jpg 1360w, /assets/resized/ergodox-1680x945.jpg 1680w, /assets/resized/ergodox-1840x1035.jpg 1840w,  /assets/ergodox.jpg 2048w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox keyboard&quot; src=&quot;/assets/ergodox.jpg&quot; srcset=&quot;/assets/resized/ergodox-320x180.jpg 320w, /assets/resized/ergodox-360x203.jpg 360w, /assets/resized/ergodox-720x405.jpg 720w, /assets/resized/ergodox-940x529.jpg 940w, /assets/resized/ergodox-1140x641.jpg 1140w, /assets/resized/ergodox-1280x720.jpg 1280w, /assets/resized/ergodox-1360x765.jpg 1360w, /assets/resized/ergodox-1680x945.jpg 1680w, /assets/resized/ergodox-1840x1035.jpg 1840w,  /assets/ergodox.jpg 2048w&quot; /&gt;
 
     
 
@@ -407,10 +407,10 @@ configure: error: readline not found, so this package cannot be built
 
 &lt;p&gt;I built the keyboard in short bursts when I had spare time on the weekends. All up I probably invested about 10 hours over a period of two months. I made good use of the electronics station at &lt;a href=&quot;https://london.hackspace.org.uk/&quot;&gt;London Hackspace&lt;/a&gt;, and learned a lot about soldering and about electronics in general. I’m fairly confident that I could build another ErgoDox in a matter of hours.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/resized/ergodox-1024x551-290x156.jpg 290w, /assets/resized/ergodox-1024x551-315x169.jpg 315w, /assets/resized/ergodox-1024x551-720x387.jpg 720w, /assets/resized/ergodox-1024x551-940x506.jpg 940w, /assets/resized/ergodox-1024x551-780x420.jpg 780w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/resized/ergodox-1024x551-320x172.jpg 320w, /assets/resized/ergodox-1024x551-360x194.jpg 360w, /assets/resized/ergodox-1024x551-720x387.jpg 720w, /assets/resized/ergodox-1024x551-940x506.jpg 940w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
 
     
 
@@ -425,10 +425,10 @@ configure: error: readline not found, so this package cannot be built
 
 &lt;p&gt;Using the ErgoDox, I still felt like my fingers were moving just as much as on a regular keyboard. I used Patrick Gillespie’s amazing &lt;a href=&quot;http://patorjk.com/keyboard-layout-analyzer&quot;&gt;Keyboard Layout Analyzer&lt;/a&gt; to help me figure out what the problem was.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-qwerty-heatmap-290x111.png 290w, /assets/resized/ergodox-qwerty-heatmap-315x120.png 315w, /assets/resized/ergodox-qwerty-heatmap-720x274.png 720w, /assets/resized/ergodox-qwerty-heatmap-780x297.png 780w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-qwerty-heatmap-320x122.png 320w, /assets/resized/ergodox-qwerty-heatmap-360x137.png 360w, /assets/resized/ergodox-qwerty-heatmap-720x274.png 720w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
 
     
 
@@ -452,10 +452,10 @@ configure: error: readline not found, so this package cannot be built
   &lt;li&gt;It felt the most “natural” compared to other popular layouts like Workman, Dvorak, and Programmer Dvorak.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-heatmap1-290x111.png 290w, /assets/resized/ergodox-colemak-heatmap1-315x120.png 315w, /assets/resized/ergodox-colemak-heatmap1-720x274.png 720w, /assets/resized/ergodox-colemak-heatmap1-780x297.png 780w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-heatmap1-320x122.png 320w, /assets/resized/ergodox-colemak-heatmap1-360x137.png 360w, /assets/resized/ergodox-colemak-heatmap1-720x274.png 720w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
 
     
 
@@ -468,10 +468,10 @@ configure: error: readline not found, so this package cannot be built
 
 &lt;p&gt;An article about &lt;a href=&quot;http://jjt.io/2013/11/25/why-any-developer-should-check-out-the-ergodox-keyboard/&quot;&gt;Jason Trill’s experience with the ErgoDox&lt;/a&gt; convinced me at the last minute to use a modified version of Colemak which puts the symbols on a separate layer around the home row, so you don’t need to move your fingers to the top row to type symbols. In case you’re wondering what I mean by a “separate layer”: layers on a keyboard are a way to have one key type different characters. You actually use layers all the time, even if you don’t realise it. When you hold down the Shift key, you’re activating another layer on your keyboard. When you hit the Caps Lock key, you’re toggling that layer. Layers differ from key combinations (like Control + Alt + Delete) in that they’re implemented in the keyboard’s firmware rather than at the software level.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-symbolmod-heatmap-290x111.png 290w, /assets/resized/ergodox-colemak-symbolmod-heatmap-315x120.png 315w, /assets/resized/ergodox-colemak-symbolmod-heatmap-720x274.png 720w, /assets/resized/ergodox-colemak-symbolmod-heatmap-780x297.png 780w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-symbolmod-heatmap-320x122.png 320w, /assets/resized/ergodox-colemak-symbolmod-heatmap-360x137.png 360w, /assets/resized/ergodox-colemak-symbolmod-heatmap-720x274.png 720w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
 
     
 
@@ -501,10 +501,10 @@ The quick brown fox jumps over the lazy fox.
 
 &lt;p&gt;In theory, the more I use each key, the less I’ll have to look at my guide.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I&#39;m using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-290x169.jpg 290w, /assets/resized/ergodox-layout-guide-1024x598-315x184.jpg 315w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w, /assets/resized/ergodox-layout-guide-1024x598-780x456.jpg 780w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I&#39;m using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-320x187.jpg 320w, /assets/resized/ergodox-layout-guide-1024x598-360x210.jpg 360w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
 
     
 
@@ -751,10 +751,10 @@ src/
 
 &lt;p&gt;If we draw the blobs (in green) as well as the tree objects (in blue), we end up with a diagram that looks a lot like our directory structure.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/tree-graph.png&quot; srcset=&quot;/assets/resized/tree-graph-290x225.png 290w, /assets/resized/tree-graph-315x244.png 315w,  /assets/tree-graph.png 591w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/tree-graph.png&quot; width=&quot;591&quot; srcset=&quot;/assets/resized/tree-graph-320x248.png 320w, /assets/resized/tree-graph-360x279.png 360w,  /assets/tree-graph.png 591w&quot; /&gt;
 
     
 
@@ -980,10 +980,10 @@ $ git commit -am &quot;Fixed some wording&quot;
 
 &lt;p&gt;At this point, the history will look something like this.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-feature-hotfix.png&quot; srcset=&quot;/assets/resized/branch-feature-hotfix-290x124.png 290w, /assets/resized/branch-feature-hotfix-315x134.png 315w,  /assets/branch-feature-hotfix.png 631w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-feature-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-feature-hotfix-320x136.png 320w, /assets/resized/branch-feature-hotfix-360x153.png 360w,  /assets/branch-feature-hotfix.png 631w&quot; /&gt;
 
     
 
@@ -1003,10 +1003,10 @@ Fast-forward
 
 &lt;p&gt;Notice how Git mentions &lt;strong&gt;fast-forward&lt;/strong&gt; during the merge. What this means is that all of the commits in &lt;code&gt;hotfix&lt;/code&gt; were directly upstream from &lt;code&gt;master&lt;/code&gt;. This allows Git to simply move the &lt;code&gt;master&lt;/code&gt; pointer up the tree to &lt;code&gt;hotfix&lt;/code&gt;. What you end up with looks like this.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-320x136.png 320w, /assets/resized/branch-merge-hotfix-360x153.png 360w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
 
     
 
@@ -1048,10 +1048,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;This means that our history graph now looks something like this (commit &lt;strong&gt;E&lt;/strong&gt; is the new merge commit).&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-feature.png&quot; srcset=&quot;/assets/resized/branch-merge-feature-290x149.png 290w, /assets/resized/branch-merge-feature-315x161.png 315w,  /assets/branch-merge-feature.png 656w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-feature.png&quot; width=&quot;656&quot; srcset=&quot;/assets/resized/branch-merge-feature-320x164.png 320w, /assets/resized/branch-merge-feature-360x184.png 360w,  /assets/branch-merge-feature.png 656w&quot; /&gt;
 
     
 
@@ -1070,10 +1070,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;What &lt;code&gt;git cherry-pick&lt;/code&gt; does is take one or more commits, and replay them on top of the current commit. Imagine a repository with the following history graph.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-before.png&quot; srcset=&quot;/assets/resized/cherry-pick-before-290x114.png 290w, /assets/resized/cherry-pick-before-315x123.png 315w,  /assets/cherry-pick-before.png 467w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-before.png&quot; width=&quot;467&quot; srcset=&quot;/assets/resized/cherry-pick-before-320x125.png 320w, /assets/resized/cherry-pick-before-360x141.png 360w,  /assets/cherry-pick-before.png 467w&quot; /&gt;
 
     
 
@@ -1082,10 +1082,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;If you are on commit &lt;strong&gt;D&lt;/strong&gt; and you run &lt;code&gt;git cherry-pick F&lt;/code&gt;, Git will take the changes that were introduced in commit &lt;strong&gt;F&lt;/strong&gt; and replay them &lt;em&gt;as a new commit&lt;/em&gt; (shown as &lt;strong&gt;F’&lt;/strong&gt;) on top of commit &lt;strong&gt;D.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-after.png&quot; srcset=&quot;/assets/resized/cherry-pick-after-290x89.png 290w, /assets/resized/cherry-pick-after-315x96.png 315w,  /assets/cherry-pick-after.png 555w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-after.png&quot; width=&quot;555&quot; srcset=&quot;/assets/resized/cherry-pick-after-320x98.png 320w, /assets/resized/cherry-pick-after-360x110.png 360w,  /assets/cherry-pick-after.png 555w&quot; /&gt;
 
     
 
@@ -1096,10 +1096,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;A common workflow in Git is to develop features on small branches, and merge the features one at a time into the master branch. Let’s recreate this scenario by adding some branch labels to the graphs.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/graph-branch-labels.png&quot; srcset=&quot;/assets/resized/graph-branch-labels-290x81.png 290w, /assets/resized/graph-branch-labels-315x88.png 315w,  /assets/graph-branch-labels.png 623w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/graph-branch-labels.png&quot; width=&quot;623&quot; srcset=&quot;/assets/resized/graph-branch-labels-320x89.png 320w, /assets/resized/graph-branch-labels-360x101.png 360w,  /assets/graph-branch-labels.png 623w&quot; /&gt;
 
     
 
@@ -1114,10 +1114,10 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 $ git checkout -b foo-tmp
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/foo-tmp.png&quot; srcset=&quot;/assets/resized/foo-tmp-290x81.png 290w, /assets/resized/foo-tmp-315x88.png 315w,  /assets/foo-tmp.png 623w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/foo-tmp.png&quot; width=&quot;623&quot; srcset=&quot;/assets/resized/foo-tmp-320x89.png 320w, /assets/resized/foo-tmp-360x101.png 360w,  /assets/foo-tmp.png 623w&quot; /&gt;
 
     
 
@@ -1129,10 +1129,10 @@ $ git checkout -b foo-tmp
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code&gt;$ git cherry-pick C D
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-c-d.png&quot; srcset=&quot;/assets/resized/cherry-pick-c-d-290x92.png 290w, /assets/resized/cherry-pick-c-d-315x100.png 315w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-c-d.png&quot; width=&quot;744&quot; srcset=&quot;/assets/resized/cherry-pick-c-d-320x102.png 320w, /assets/resized/cherry-pick-c-d-360x115.png 360w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w&quot; /&gt;
 
     
 
@@ -1148,10 +1148,10 @@ $ git branch -D foo-tmp
 
 &lt;p&gt;This gives the desired result of &lt;code&gt;foo&lt;/code&gt;’s commits being upstream of &lt;code&gt;master&lt;/code&gt;. Note that the original &lt;strong&gt;C&lt;/strong&gt; and &lt;strong&gt;D&lt;/strong&gt; commits are no longer reachable because no branch points to them.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-final.png&quot; srcset=&quot;/assets/resized/cherry-pick-final-290x58.png 290w, /assets/resized/cherry-pick-final-315x62.png 315w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-final.png&quot; width=&quot;751&quot; srcset=&quot;/assets/resized/cherry-pick-final-320x63.png 320w, /assets/resized/cherry-pick-final-360x71.png 360w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w&quot; /&gt;
 
     
 
@@ -1181,10 +1181,10 @@ $ git branch -D foo-tmp
 
 &lt;p&gt;Let’s take a look again at the example graph from &lt;em&gt;Merging&lt;/em&gt; to see how rebasing can prevent us from having to do a non-fast-forward merge.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-290x124.png 290w, /assets/resized/branch-merge-hotfix-315x134.png 315w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-320x136.png 320w, /assets/resized/branch-merge-hotfix-360x153.png 360w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
 
     
 
@@ -1200,10 +1200,10 @@ Applying: Finished the new feature
 
 &lt;p&gt;This has brought &lt;code&gt;feature-branch&lt;/code&gt; directly upstream of &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/rebase-feature.png&quot; srcset=&quot;/assets/resized/rebase-feature-290x81.png 290w, /assets/resized/rebase-feature-315x88.png 315w,  /assets/rebase-feature.png 680w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/rebase-feature.png&quot; width=&quot;680&quot; srcset=&quot;/assets/resized/rebase-feature-320x89.png 320w, /assets/resized/rebase-feature-360x100.png 360w,  /assets/rebase-feature.png 680w&quot; /&gt;
 
     
 
@@ -1723,10 +1723,10 @@ f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
 
 &lt;p&gt;This gives us a history that looks a little like this:&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/stash.png&quot; srcset=&quot;/assets/resized/stash-290x153.png 290w, /assets/resized/stash-315x166.png 315w,  /assets/stash.png 504w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/stash.png&quot; width=&quot;504&quot; srcset=&quot;/assets/resized/stash-320x169.png 320w, /assets/resized/stash-360x190.png 360w,  /assets/stash.png 504w&quot; /&gt;
 
     
 
@@ -1837,10 +1837,10 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;The structure of the &lt;code&gt;Animal&lt;/code&gt; object becomes clear when we inspect it in the console. We can see that the &lt;code&gt;name&lt;/code&gt; property belongs to the object itself, while &lt;code&gt;speak&lt;/code&gt; is part of the &lt;code&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/Animal.png&quot; srcset=&quot;/assets/resized/Animal-290x71.png 290w, /assets/resized/Animal-315x78.png 315w,  /assets/Animal.png 430w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/Animal.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Animal-320x79.png 320w, /assets/resized/Animal-360x89.png 360w,  /assets/Animal.png 430w&quot; /&gt;
 
     
 
@@ -1862,10 +1862,10 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;Let’s take a look at the &lt;code&gt;Cat&lt;/code&gt; object to get a better view of what’s going on.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/Cat.png&quot; srcset=&quot;/assets/resized/Cat-290x90.png 290w, /assets/resized/Cat-315x98.png 315w,  /assets/Cat.png 430w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/Cat.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Cat-320x100.png 320w, /assets/resized/Cat-360x112.png 360w,  /assets/Cat.png 430w&quot; /&gt;
 
     
 
@@ -1901,10 +1901,10 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt; &lt;/p&gt;
 
-&lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Legibility - Readability - Comprehension&quot; src=&quot;/assets/legibility-readability-comprehension.png&quot; srcset=&quot;/assets/resized/legibility-readability-comprehension-290x251.png 290w, /assets/resized/legibility-readability-comprehension-315x273.png 315w,  /assets/legibility-readability-comprehension.png 508w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Legibility - Readability - Comprehension&quot; src=&quot;/assets/legibility-readability-comprehension.png&quot; width=&quot;508&quot; srcset=&quot;/assets/resized/legibility-readability-comprehension-320x277.png 320w, /assets/resized/legibility-readability-comprehension-360x312.png 360w,  /assets/legibility-readability-comprehension.png 508w&quot; /&gt;
 
     
 
