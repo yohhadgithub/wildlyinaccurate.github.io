@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Dec 2015 13:58:25 +0000</pubDate>
-    <lastBuildDate>Thu, 31 Dec 2015 13:58:25 +0000</lastBuildDate>
+    <pubDate>Wed, 13 Jan 2016 20:53:36 +0000</pubDate>
+    <lastBuildDate>Wed, 13 Jan 2016 20:53:36 +0000</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -218,9 +218,9 @@
         <category>functional programming</category>
         
         
-        <category>functional programming</category>
+        <category>Functional Programming</category>
         
-        <category>resources</category>
+        <category>Resources</category>
         
       </item>
     
@@ -346,7 +346,7 @@ dangling blob 6af75568b0a8aee29c47125098b4b6d60a6a8a6f
         <category>git</category>
         
         
-        <category>git</category>
+        <category>Git</category>
         
       </item>
     
