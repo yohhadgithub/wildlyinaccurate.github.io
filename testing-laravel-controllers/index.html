@@ -1,64 +1,81 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Testing Laravel Controllers | Wildly Inaccurate</title> <meta name="description" content="There are a two main things that tripped me up while I was writing functional tests for my Laravel controllers: POST requests, and session state.Laravel’s Controller class has the call() method, which essentially makes a GET request to a controlle..."> <link rel="stylesheet" href="/css/main.e08c89e.css"> <link rel="canonical" href="https://wildlyinaccurate.com/testing-laravel-controllers"> <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml"> </head> <body> <nav class="navbar"> <div class="container"> <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a> <ul class="navbar-nav"> <li class="navbar-nav__item"> <a class="navbar-nav__item-link navbar__link" href="/about/">About</a> </li> <li class="navbar-nav__item"> <a class="navbar-nav__item-link navbar__link" href="/projects/">Projects</a> </li> <li class="navbar-nav__item"> <a class="navbar-nav__item-link navbar__link" href="/search/">Search</a> </li> </ul> </div> </nav> <header class="page-header page-header--no-meta"> <img class="page-header__featured-image" src="/assets/default-featured-image.jpg" srcset="/assets/resized/default-featured-image-320x134.jpg 320w, /assets/resized/default-featured-image-360x150.jpg 360w, /assets/resized/default-featured-image-720x301.jpg 720w, /assets/resized/default-featured-image-940x393.jpg 940w, /assets/resized/default-featured-image-1140x476.jpg 1140w, /assets/resized/default-featured-image-1280x535.jpg 1280w, /assets/resized/default-featured-image-1360x568.jpg 1360w, /assets/resized/default-featured-image-1680x702.jpg 1680w, /assets/resized/default-featured-image-1840x769.jpg 1840w,  /assets/default-featured-image.jpg 2600w"> <div class="container"> <h1 class="page-header__title">Testing Laravel Controllers</h1> <p class="post-meta--header"> Jul 9, 2012 • by Joseph Wynn • posted in <span class="post-meta__data"> [<a href="/category/Laravel/">Laravel</a>, <a href="/category/Unit Testing/">Unit Testing</a>] </span> </p> </div> </header> <article class="post-content"> <p>There are a two main things that tripped me up while I was writing functional tests for my Laravel controllers: POST requests, and session state.</p> <p>Laravel’s Controller class has the <code class="highlighter-rouge">call()</code> method, which essentially makes a GET request to a controller method. In order to make POST requests, it’s necessary to inject some extra parameters into the <code class="highlighter-rouge">HttpFoundation</code> components. To make this easier, I created a <code class="highlighter-rouge">ControllerTestCase</code> class with convenient <code class="highlighter-rouge">get()</code> and <code class="highlighter-rouge">post()</code> methods:<!--more--></p> <p>```php abstract class ControllerTestCase extends PHPUnit_Framework_TestCase {</p> <div class="highlighter-rouge"><pre class="highlight"><code>public function call($destination, $parameters = array(), $method = 'GET')
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Testing Laravel Controllers | Wildly Inaccurate</title> <meta name="description" content="There are a two main things that tripped me up while I was writing functional tests for my Laravel controllers: POST requests, and session state.Laravel’s Controller class has the call() method, which essentially makes a GET request to a controlle..."> <link rel="stylesheet" href="/css/main.a3fe98f.css"> <link rel="canonical" href="https://wildlyinaccurate.com/testing-laravel-controllers"> <link rel="alternate" type="application/atom+xml" title="Wildly Inaccurate" href="https://wildlyinaccurate.com/feed.xml"> </head> <body> <nav class="navbar"> <div class="container"> <a href="https://wildlyinaccurate.com" class="navbar__title navbar__link">Wildly Inaccurate</a> <ul class="navbar-nav"> <li class="navbar-nav__item"> <a class="navbar-nav__item-link navbar__link" href="/about/">About</a> </li> <li class="navbar-nav__item"> <a class="navbar-nav__item-link navbar__link" href="/projects/">Projects</a> </li> <li class="navbar-nav__item"> <a class="navbar-nav__item-link navbar__link" href="/search/">Search</a> </li> </ul> </div> </nav> <header class="page-header page-header--no-meta"> <img class="page-header__featured-image" src="/assets/default-featured-image.jpg" srcset="/assets/resized/default-featured-image-320x134.jpg 320w, /assets/resized/default-featured-image-360x150.jpg 360w, /assets/resized/default-featured-image-720x301.jpg 720w, /assets/resized/default-featured-image-940x393.jpg 940w, /assets/resized/default-featured-image-1140x476.jpg 1140w, /assets/resized/default-featured-image-1280x535.jpg 1280w, /assets/resized/default-featured-image-1360x568.jpg 1360w, /assets/resized/default-featured-image-1680x702.jpg 1680w, /assets/resized/default-featured-image-1840x769.jpg 1840w,  /assets/default-featured-image.jpg 2600w"> <div class="container"> <h1 class="page-header__title">Testing Laravel Controllers</h1> <p class="post-meta--header"> Jul 9, 2012 • by Joseph Wynn • posted in <span class="post-meta__data"> [<a href="/category/Laravel/">Laravel</a>, <a href="/category/Unit Testing/">Unit Testing</a>] </span> </p> </div> </header> <article class="post-content"> <p>There are a two main things that tripped me up while I was writing functional tests for my Laravel controllers: POST requests, and session state.</p> <p>Laravel’s Controller class has the <code class="highlighter-rouge">call()</code> method, which essentially makes a GET request to a controller method. In order to make POST requests, it’s necessary to inject some extra parameters into the <code class="highlighter-rouge">HttpFoundation</code> components. To make this easier, I created a <code class="highlighter-rouge">ControllerTestCase</code> class with convenient <code class="highlighter-rouge">get()</code> and <code class="highlighter-rouge">post()</code> methods:<!--more--></p> <div class="highlighter-rouge"><pre class="highlight"><code>abstract class ControllerTestCase extends PHPUnit_Framework_TestCase
 {
-    $old_method = Request::foundation()-&gt;getMethod();
-    \Laravel\Request::foundation()-&gt;setMethod($method);
-    $response = Controller::call($destination, $parameters);
-    Request::foundation()-&gt;setMethod($old_method);
 
-    return $response;
-}
-
-public function get($destination, $parameters = array())
-{
-    return $this-&gt;call($destination, $parameters, 'GET');
-}
-
-public function post($destination, $post_data, $parameters = array())
-{
-    $this-&gt;clean_request();
-    \Laravel\Request::foundation()-&gt;request-&gt;add($post_data);
-
-    return $this-&gt;call($destination, $parameters, 'POST');
-}
-
-private function clean_request()
-{
-    $request = \Laravel\Request::foundation()-&gt;request;
-
-    foreach ($request-&gt;keys() as $key)
+    public function call($destination, $parameters = array(), $method = 'GET')
     {
-        $request-&gt;remove($key);
+        $old_method = Request::foundation()-&gt;getMethod();
+        \Laravel\Request::foundation()-&gt;setMethod($method);
+        $response = Controller::call($destination, $parameters);
+        Request::foundation()-&gt;setMethod($old_method);
+
+        return $response;
     }
+
+    public function get($destination, $parameters = array())
+    {
+        return $this-&gt;call($destination, $parameters, 'GET');
+    }
+
+    public function post($destination, $post_data, $parameters = array())
+    {
+        $this-&gt;clean_request();
+        \Laravel\Request::foundation()-&gt;request-&gt;add($post_data);
+
+        return $this-&gt;call($destination, $parameters, 'POST');
+    }
+
+    private function clean_request()
+    {
+        $request = \Laravel\Request::foundation()-&gt;request;
+
+        foreach ($request-&gt;keys() as $key)
+        {
+            $request-&gt;remove($key);
+        }
+    }
+
 }
-</code></pre> </div> <p>} ```</p> <p>Note that each POST request must be “cleaned” so that the POST data from previous requests isn’t retained (thanks <a href="https://wildlyinaccurate.com/testing-laravel-controllers/comment-page-1#comment-4153">wahyudinata</a> for this tip!).</p> <p>This makes it easy to write functional tests for Laravel controllers, for example checking the session for errors after a POST request:</p> <p>```php require_once(‘ControllerTestCase.php’);</p> <p>class AccountControllerTest extends ControllerTestCase {</p> <div class="highlighter-rouge"><pre class="highlight"><code>public function testSignupWithNoData()
+</code></pre> </div> <p>Note that each POST request must be “cleaned” so that the POST data from previous requests isn’t retained (thanks <a href="https://wildlyinaccurate.com/testing-laravel-controllers/comment-page-1#comment-4153">wahyudinata</a> for this tip!).</p> <p>This makes it easy to write functional tests for Laravel controllers, for example checking the session for errors after a POST request:</p> <div class="highlighter-rouge"><pre class="highlight"><code>require_once('ControllerTestCase.php');
+
+class AccountControllerTest extends ControllerTestCase
 {
-    $response = $this-&gt;post('account@signup', array());
-    $this-&gt;assertEquals('302', $response-&gt;foundation-&gt;getStatusCode());
 
-    $session_errors = \Laravel\Session::instance()-&gt;get('errors')-&gt;all();
-    $this-&gt;assertNotEmpty($session_errors);
+    public function testSignupWithNoData()
+    {
+        $response = $this-&gt;post('account@signup', array());
+        $this-&gt;assertEquals('302', $response-&gt;foundation-&gt;getStatusCode());
+
+        $session_errors = \Laravel\Session::instance()-&gt;get('errors')-&gt;all();
+        $this-&gt;assertNotEmpty($session_errors);
+    }
+
+    public function testSignupWithValidData()
+    {
+        $response = $this-&gt;post('account@signup', array(
+            'username' =&gt; 'validusername',
+            'email' =&gt; 'some@validemail.com',
+            'password' =&gt; 'passw0rd',
+            'password_confirm' =&gt; 'passw0rd',
+        ));
+        $this-&gt;assertEquals('302', $response-&gt;foundation-&gt;getStatusCode());
+
+        $session_errors = \Laravel\Session::instance()-&gt;get('errors');
+        $this-&gt;assertNull($session_errors);
+    }
+
 }
-
-public function testSignupWithValidData()
+</code></pre> </div> <p>But here is where the session state tripped me up. In <code class="highlighter-rouge">testSignupWithValidData</code>, the Laravel session state from <code class="highlighter-rouge">testSignupWithNoData</code> is retained and the test fails. To get around this, I simply reload the session before each test, in a <code class="highlighter-rouge">setUp</code> method in <code class="highlighter-rouge">ControllerTestCase</code>:</p> <div class="highlighter-rouge"><pre class="highlight"><code>abstract class ControllerTestCase extends PHPUnit_Framework_TestCase
 {
-    $response = $this-&gt;post('account@signup', array(
-        'username' =&gt; 'validusername',
-        'email' =&gt; 'some@validemail.com',
-        'password' =&gt; 'passw0rd',
-        'password_confirm' =&gt; 'passw0rd',
-    ));
-    $this-&gt;assertEquals('302', $response-&gt;foundation-&gt;getStatusCode());
 
-    $session_errors = \Laravel\Session::instance()-&gt;get('errors');
-    $this-&gt;assertNull($session_errors);
-}
-</code></pre> </div> <p>} ```</p> <p>But here is where the session state tripped me up. In <code class="highlighter-rouge">testSignupWithValidData</code>, the Laravel session state from <code class="highlighter-rouge">testSignupWithNoData</code> is retained and the test fails. To get around this, I simply reload the session before each test, in a <code class="highlighter-rouge">setUp</code> method in <code class="highlighter-rouge">ControllerTestCase</code>:</p> <p>```php abstract class ControllerTestCase extends PHPUnit_Framework_TestCase {</p> <div class="highlighter-rouge"><pre class="highlight"><code>// ...
+    // ...
 
-public function setUp()
-{
-    \Laravel\Session::load();
+    public function setUp()
+    {
+        \Laravel\Session::load();
+    }
+
 }
-</code></pre> </div> <p>} ```</p> <p>And that’s it! A fairly simple <code class="highlighter-rouge">ControllerTestCase</code> class which solves the POST request and session state problems. See this Gist for <a href="https://gist.github.com/3079291">the full code with comments</a>.</p> </article> <footer class="post-meta post-meta--footer"> <p> This post was written by <strong>Joseph Wynn</strong> on <strong>9 July, 2012</strong>, and last updated on <strong>15 January, 2015</strong>. It was posted in <span class="post-meta__data"> [<a href="/category/Laravel/">Laravel</a>, <a href="/category/Unit Testing/">Unit Testing</a>] </span> and tagged with <span class="post-meta__data"> [<a href="/tag/controllers/">controllers</a>, <a href="/tag/functional testing/">functional testing</a>, <a href="/tag/laravel/">laravel</a>, <a href="/tag/unit testing/">unit testing</a>] </span> </p> </footer> <div class="post-comments" id="disqus_thread"></div> <script>var disqus_shortname = 'wildlyinaccurate';
+</code></pre> </div> <p>And that’s it! A fairly simple <code class="highlighter-rouge">ControllerTestCase</code> class which solves the POST request and session state problems. See this Gist for <a href="https://gist.github.com/3079291">the full code with comments</a>.</p> </article> <footer class="post-meta post-meta--footer"> <p> This post was written by <strong>Joseph Wynn</strong> on <strong>9 July, 2012</strong>, and last updated on <strong>15 January, 2015</strong>. It was posted in <span class="post-meta__data"> [<a href="/category/Laravel/">Laravel</a>, <a href="/category/Unit Testing/">Unit Testing</a>] </span> and tagged with <span class="post-meta__data"> [<a href="/tag/controllers/">controllers</a>, <a href="/tag/functional testing/">functional testing</a>, <a href="/tag/laravel/">laravel</a>, <a href="/tag/unit testing/">unit testing</a>] </span> </p> </footer> <div class="post-comments" id="disqus_thread"></div> <script>var disqus_shortname = 'wildlyinaccurate';
     var disqus_url = 'https://wildlyinaccurate.com/testing-laravel-controllers';
 
     (function() {

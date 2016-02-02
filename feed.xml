@@ -6,9 +6,9 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Feb 2016 21:05:20 +0000</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2016 21:05:20 +0000</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
+    <pubDate>Tue, 02 Feb 2016 21:24:55 +0000</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2016 21:24:55 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.2</generator>
     
       <item>
         <title>Accidental Keyboard Enthusiasm</title>
@@ -252,52 +252,51 @@
 
 &lt;h3 id=&quot;find-which-commit-a-reference-points-at&quot;&gt;Find which commit a reference points at&lt;/h3&gt;
 
-&lt;p&gt;```
-$ git rev-parse HEAD
-0f64e9e759c904553309858070f444e5e64847c4&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git rev-parse HEAD
+0f64e9e759c904553309858070f444e5e64847c4
 
-&lt;p&gt;$ git rev-parse –short HEAD
+$ git rev-parse --short HEAD
 0f64e9e
-```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;find-which-branches-a-commit-is-in&quot;&gt;Find which branches a commit is in&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git branch --contains HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch --contains HEAD
   master
 * other-branch
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;view-details-of-an-object&quot;&gt;View details of an object&lt;/h3&gt;
 
-&lt;p&gt;```
-$ git cat-file -p HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -p HEAD
 tree af22d0482b89640c95986f3b4663026bcb7f764b
 parent bc3bff555f573ac76f0d3e71f0e54d63f50b8434
-author Foo Bar &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#102;&amp;#111;&amp;#111;&amp;#064;&amp;#098;&amp;#097;&amp;#114;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#102;&amp;#111;&amp;#111;&amp;#064;&amp;#098;&amp;#097;&amp;#114;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1436294582 +0100
-committer Foo Bar &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#102;&amp;#111;&amp;#111;&amp;#064;&amp;#098;&amp;#097;&amp;#114;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#102;&amp;#111;&amp;#111;&amp;#064;&amp;#098;&amp;#097;&amp;#114;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1436294582 +0100&lt;/p&gt;
+author Foo Bar &amp;lt;foo@bar.com&amp;gt; 1436294582 +0100
+committer Foo Bar &amp;lt;foo@bar.com&amp;gt; 1436294582 +0100
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit
-```&lt;/p&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h4 id=&quot;show-an-objects-type&quot;&gt;Show an object’s type&lt;/h4&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git cat-file -t HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -t HEAD
 commit
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h4 id=&quot;show-an-objects-size&quot;&gt;Show an object’s size&lt;/h4&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git cat-file -s HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -s HEAD
 253
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;print-the-tree-of-a-given-reference&quot;&gt;Print the tree of a given reference&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git ls-tree -t -r HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git ls-tree -t -r HEAD
 100644 blob 59e004af21a725c9b378001a1b231967f955b992    .gitignore
 100644 blob 9f5d366d261317d8ff881ee2945ef2c7960fa2ea    .travis.yml
 100644 blob 148fc67781eba8c08bbb4db1fc9e92b9781ec28d    LICENSE
@@ -318,26 +317,27 @@ $ git ls-tree -t -r HEAD
 100644 blob ee61aa5dffca43032b5aeef6f4e79ff1f9f2df85    test/functions.sh
 100644 blob 22fbec9189d2641c590836c4bb19431d3c6d3df3    test/primitives.sh
 100644 blob c455f01b3d88b5d510ff4ebb50e93c5d7f8f0b26    test/types.sh
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;find-the-first-tag-which-contains-a-reference&quot;&gt;Find the first tag which contains a reference&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git describe HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git describe HEAD
 v1.6.1
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;find-dangling-or-unreachable-objects&quot;&gt;Find dangling or unreachable objects&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git fsck --lost-found
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git fsck --lost-found
 Checking object directories: 100% (256/256), done.
 Checking objects: 100% (153/153), done.
 dangling blob b3cc2f0f4666fda6cda0f6527facbb5a7579d29e
 dangling commit a621c6a60383ee430c6d21333026dd5aa7a895b0
 dangling commit 4c0aab20fa5e6ba1ede09efbd9015dd8d1c54228
 dangling blob 6af75568b0a8aee29c47125098b4b6d60a6a8a6f
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Wed, 08 Jul 2015 00:00:00 +0100</pubDate>
         <link>https://wildlyinaccurate.com/some-git-things/</link>
@@ -356,8 +356,7 @@ dangling blob 6af75568b0a8aee29c47125098b4b6d60a6a8a6f
 
 &lt;p&gt;When running &lt;code class=&quot;highlighter-rouge&quot;&gt;cabal install&lt;/code&gt; for a package which depends on &lt;code class=&quot;highlighter-rouge&quot;&gt;readline&lt;/code&gt; (or simply when running &lt;code class=&quot;highlighter-rouge&quot;&gt;cabal install readline&lt;/code&gt;), Cabal exits with errors along the lines of&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-Configuring readline-1.0.3.0...
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuring readline-1.0.3.0...
 checking for gcc... gcc
 checking for C compiler default output file name... a.out
 checking whether the C compiler works... yes
@@ -373,23 +372,24 @@ checking for readline in -lreadline... yes
 checking for rl_readline_version... yes
 checking for rl_begin_undo_group... no
 configure: error: readline not found, so this package cannot be built
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The problem is that Cabal is not aware of the location of the readline lib. My workaround is to specify the location of the lib whenever running these commands:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cabal install readline --extra-include-dirs=/usr/local/Cellar/readline/6.3.8/include/ \
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cabal install readline --extra-include-dirs=/usr/local/Cellar/readline/6.3.8/include/ \
                          --extra-lib-dirs=/usr/local/Cellar/readline/6.3.8/lib/ \
                          --configure-option=--with-readline-includes=/usr/local/Cellar/readline/6.3.8/include/readline \
                          --configure-option=--with-readline-libraries=/usr/local/Cellar/readline/6.3.8/lib/
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Your paths may differ slightly if you have a different version of readline installed. You can check this with&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ ls /usr/local/Cellar/readline
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls /usr/local/Cellar/readline
 6.3.8
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 26 Apr 2015 00:00:00 +0100</pubDate>
         <link>https://wildlyinaccurate.com/cabal-installing-readline-on-osx/</link>
@@ -513,11 +513,11 @@ $ ls /usr/local/Cellar/readline
 
 &lt;p&gt;Before I do anything else, I need to learn how to touch type with the new layout. At the moment I’m relying on a printed guide, which I constantly refer to in order to find the keys I want. To learn how to touch type, I’m going back to basics:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The quick brown fox jumps over the lazy fox.
 The quick brown fox jumps over the lazy fox.
 The quick brown fox jumps over the lazy fox.
-The quick brown fox jumps over the lazy fox.
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;In theory, the more I use each key, the less I’ll have to look at my guide.&lt;/p&gt;
 
@@ -570,34 +570,34 @@ The quick brown fox jumps over the lazy fox.
 
 &lt;h3 id=&quot;notypejs&quot;&gt;notype.js&lt;/h3&gt;
 
-&lt;p&gt;```js
-var x = null;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;p&gt;for (var i = 0; i &amp;lt; 1e8; i++) {
-    x = 1 + x;
-}
-```&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;withtypejs&quot;&gt;withtype.js&lt;/h3&gt;
 
-&lt;p&gt;```js
-var x = 0;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;p&gt;for (var i = 0; i &amp;lt; 1e8; i++) {
-    x = 1 + x;
-}
-```
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;!--more--&gt;
 
 &lt;h3 id=&quot;benchmark-results&quot;&gt;Benchmark Results&lt;/h3&gt;
 
-&lt;p&gt;```
-$ time node notype.js
-node notype.js  &lt;strong&gt;0.30s&lt;/strong&gt; user 0.01s system 100% cpu 0.301 total&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ time node notype.js
+node notype.js  **0.30s** user 0.01s system 100% cpu 0.301 total
 
-&lt;p&gt;$ time node withtype.js
-node withtype.js  &lt;strong&gt;0.10s&lt;/strong&gt; user 0.00s system 99% cpu 0.109 total
-```&lt;/p&gt;
+$ time node withtype.js
+node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This particular benchmark may be trivial, but it demonstrates an important point. In &lt;code class=&quot;highlighter-rouge&quot;&gt;notype.js&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; is initialized as &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;. This makes it impossible for V8 to optimize the arithmetic within the loop, since the type of &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; must be inferred during the first arithmetic operation. By contrast, the compiler can optimize &lt;code class=&quot;highlighter-rouge&quot;&gt;withtype.js&lt;/code&gt; because &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; is known to be a number.&lt;/p&gt;
 
@@ -605,24 +605,24 @@ node withtype.js  &lt;strong&gt;0.10s&lt;/strong&gt; user 0.00s system 99% cpu 0
 
 &lt;h3 id=&quot;notypejs-1&quot;&gt;notype.js&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
- [JavaScript]:
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [JavaScript]:
    ticks  total  nonlib   name
     181   63.3%   71.8%  LazyCompile: * /home/joseph/dev/jsperf/var_init_value/notype.js:1
      68   23.8%   27.0%  Stub: BinaryOpStub_ADD_Alloc_SMI
       1    0.3%    0.4%  LazyCompile: ~PropertyDescriptor native v8natives.js:482
       1    0.3%    0.4%  KeyedLoadIC: A keyed load IC from the snapshot
       1    0.3%    0.4%  CallInitialize: args_count: 3
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;withtypejs-1&quot;&gt;withtype.js&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
- [JavaScript]:
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [JavaScript]:
    ticks  total  nonlib   name
      72   66.7%   98.6%  LazyCompile: * /home/joseph/dev/jsperf/var_init_value/withtype.js:1
       1    0.9%    1.4%  LazyCompile: RegExpConstructor native regexp.js:86
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The profiler doesn’t give us the full picture here, but we can see that &lt;code class=&quot;highlighter-rouge&quot;&gt;notype.js&lt;/code&gt; is spending a fair amount of time in &lt;code class=&quot;highlighter-rouge&quot;&gt;BinaryOpStub_ADD_Alloc_SMI&lt;/code&gt;, which V8 uses to create SMI (small integer) values.&lt;/p&gt;
 
@@ -716,8 +716,7 @@ node withtype.js  &lt;strong&gt;0.10s&lt;/strong&gt; user 0.00s system 99% cpu 0
 
 &lt;p&gt;You can initialize a Git repository anywhere with the &lt;code class=&quot;highlighter-rouge&quot;&gt;git init&lt;/code&gt; command. Take a look inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; folder to get a glimpse of what a repository looks like.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git init
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init
 Initialized empty Git repository in /home/demo/demo-repository/.git/
 $ ls -l .git
 total 32
@@ -729,7 +728,8 @@ drwxrwxr-x 2 demo demo 4096 May 24 20:10 hooks
 drwxrwxr-x 2 demo demo 4096 May 24 20:10 info
 drwxrwxr-x 4 demo demo 4096 May 24 20:10 objects
 drwxrwxr-x 4 demo demo 4096 May 24 20:10 refs
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The important directories are &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/objects&lt;/code&gt;, where Git stores all of its objects; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs&lt;/code&gt;, where Git stores all of its references.&lt;/p&gt;
 
@@ -741,11 +741,11 @@ drwxrwxr-x 4 demo demo 4096 May 24 20:10 refs
 
 &lt;p&gt;Imagine we had a simple repository, with a &lt;code class=&quot;highlighter-rouge&quot;&gt;README&lt;/code&gt; file and a &lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; directory containing a &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-README
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;README
 src/
     hello.c
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This would be represented by two tree objects: one for the root directory, and another for the &lt;code class=&quot;highlighter-rouge&quot;&gt;src/&lt;/code&gt; directory. Here’s what they would look like.&lt;/p&gt;
 
@@ -821,36 +821,34 @@ Initialized empty Git repository in /home/demo/simple-repository/.git/
 
 &lt;p&gt;When you create a commit, Git will give you the hash of that commit. Using &lt;code class=&quot;highlighter-rouge&quot;&gt;git show&lt;/code&gt; with the &lt;code class=&quot;highlighter-rouge&quot;&gt;--format=raw&lt;/code&gt; flag, we can see this newly-created commit’s metadata.&lt;/p&gt;
 
-&lt;p&gt;```
-$ git show –format=raw d409ca7&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git show --format=raw d409ca7
 
-&lt;p&gt;commit d409ca76bc919d9ca797f39ae724b7c65700fd27
+commit d409ca76bc919d9ca797f39ae724b7c65700fd27
 tree 9d073fcdfaf07a39631ef94bcb3b8268bc2106b1
-author Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1400976134 -0400
-committer Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1400976134 -0400&lt;/p&gt;
+author Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1400976134 -0400
+committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1400976134 -0400
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First commit
+    First commit
+
+diff --git a/README b/README
+new file mode 100644
+index 0000000..9761654
+--- /dev/null
++++ b/README
+@@ -0,0 +1 @@
++This is the readme.
+
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;diff –git a/README b/README
-new file mode 100644
-index 0000000..9761654
-— /dev/null
-+++ b/README
-@@ -0,0 +1 @@
-+This is the readme.&lt;/p&gt;
-
-&lt;p&gt;```&lt;/p&gt;
-
 &lt;p&gt;Notice how although we referenced the commit by the partial hash &lt;code class=&quot;highlighter-rouge&quot;&gt;d409ca7&lt;/code&gt;, Git was able to figure out that we actually meant &lt;code class=&quot;highlighter-rouge&quot;&gt;d409ca76bc919d9ca797f39ae724b7c65700fd27&lt;/code&gt;. This is because the hashes that Git assigns to objects are unique enough to be identified by the first few characters. You can see here that Git is able to find this commit with as few as four characters; after which point Git will tell you that the reference is ambiguous.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git show d409c
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git show d409c
 $ git show d409
 $ git show d40
 fatal: ambiguous argument &#39;d40&#39;: unknown revision or path not in the working tree.
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
@@ -860,44 +858,44 @@ fatal: ambiguous argument &#39;d40&#39;: unknown revision or path not in the wor
 
 &lt;p&gt;To carry on the example from &lt;em&gt;Commits&lt;/em&gt;, let’s figure out the hash of “First commit” using references only.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git status
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git status
 On branch master
 nothing to commit, working directory clean
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; has told us that we are on branch &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. As we will learn in a later section, branches are just references. We can see this by looking in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs/heads&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ ls -l .git/refs/heads/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls -l .git/refs/heads/
 total 4
 -rw-rw-r-- 1 demo demo 41 May 24 20:02 master
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;We can easily see which commit &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; points to by reading the file.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/refs/heads/master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/refs/heads/master
 d409ca76bc919d9ca797f39ae724b7c65700fd27
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Sure enough, &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; contains the hash of the “First commit” object.&lt;/p&gt;
 
 &lt;p&gt;Of course, it’s possible to simplify this process. Git can tell us which commit a reference is pointing to with the &lt;code class=&quot;highlighter-rouge&quot;&gt;show&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;rev-parse&lt;/code&gt; commands.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git show --oneline master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git show --oneline master
 d409ca7 First commit
 $ git rev-parse master
 d409ca76bc919d9ca797f39ae724b7c65700fd27
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Git also has a special reference, &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt;. This is a “symbolic” reference which points to the tip of the current branch rather than an actual commit. If we inspect &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt;, we see that it simply points to &lt;code class=&quot;highlighter-rouge&quot;&gt;refs/head/master&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/HEAD
 ref: refs/heads/master
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;It is actually possible for &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; to point directly to a commit object. When this happens, Git will tell you that you are in a “detached HEAD state”. We’ll talk a bit more about this later, but really all this means is that you’re not currently on a branch.&lt;/p&gt;
 
@@ -907,36 +905,36 @@ ref: refs/heads/master
 
 &lt;p&gt;The reason branches are so lightweight in Git is because they’re just references. We saw in &lt;em&gt;References&lt;/em&gt; that the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch was simply a file inside &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs/heads&lt;/code&gt;. Let’s create another branch to see what happens under the hood.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git branch test-branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch test-branch
 $ cat .git/refs/heads/test-branch
 d409ca76bc919d9ca797f39ae724b7c65700fd27
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;It’s as simple as that. Git has created a new entry in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs/heads&lt;/code&gt; and pointed it at the current commit.&lt;/p&gt;
 
 &lt;p&gt;We also saw in &lt;em&gt;References&lt;/em&gt; that &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; is Git’s reference to the current branch. Let’s see that in action by switching to our newly-created branch.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/HEAD
 ref: refs/heads/master
 $ git checkout test-branch
 Switched to branch &#39;test-branch&#39;
 $ cat .git/HEAD
 ref: refs/heads/test-branch
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;When you create a new commit, Git simply changes the current branch to point to the newly-created commit object.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ echo &#39;Some more information here.&#39; &amp;gt;&amp;gt; README
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &#39;Some more information here.&#39; &amp;gt;&amp;gt; README
 $ git add README
 $ git commit -m &quot;Update README in a new branch&quot;
 [test-branch 7604067] Update README in a new branch
  1 file changed, 1 insertion(+)
 $ cat .git/refs/heads/test-branch
 76040677d717fd090e327681064ac6af9f0083fb
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Later on we’ll look at the difference between &lt;strong&gt;local branches&lt;/strong&gt; and &lt;strong&gt;remote-tracking branches&lt;/strong&gt;.&lt;/p&gt;
 
@@ -946,50 +944,50 @@ $ cat .git/refs/heads/test-branch
 
 &lt;p&gt;On the surface, these two types of tags look very similar. Both of them are references stored in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs/tags&lt;/code&gt;. However, that’s about as far as the similarities go. Let’s create a lightweight tag to see how they work.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git tag 1.0-lightweight
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git tag 1.0-lightweight
 $ cat .git/refs/tags/1.0-lightweight
 d409ca76bc919d9ca797f39ae724b7c65700fd27
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;We can see that Git has created a tag reference which points to the current commit. By default, &lt;code class=&quot;highlighter-rouge&quot;&gt;git tag&lt;/code&gt; will create a lightweight tag. Note that this is &lt;strong&gt;not a tag object&lt;/strong&gt;. We can verify this by using &lt;code class=&quot;highlighter-rouge&quot;&gt;git cat-file&lt;/code&gt; to inspect the tag.&lt;/p&gt;
 
-&lt;p&gt;```
-$ git cat-file -p 1.0-lightweight
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -p 1.0-lightweight
 tree 9d073fcdfaf07a39631ef94bcb3b8268bc2106b1
-author Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1400976134 -0400
-committer Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1400976134 -0400&lt;/p&gt;
+author Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1400976134 -0400
+committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1400976134 -0400
 
-&lt;p&gt;First commit
+First commit
 $ git cat-file -p d409ca7
 tree 9d073fcdfaf07a39631ef94bcb3b8268bc2106b1
-author Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1400976134 -0400
-committer Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1400976134 -0400&lt;/p&gt;
+author Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1400976134 -0400
+committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1400976134 -0400
 
-&lt;p&gt;First commit
-```&lt;/p&gt;
+First commit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;You can see that as far as Git is concerned, the &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0-lightweight&lt;/code&gt; tag and the &lt;code class=&quot;highlighter-rouge&quot;&gt;d409ca7&lt;/code&gt; commit are the &lt;em&gt;same object&lt;/em&gt;. That’s because the lightweight tag is &lt;em&gt;only a reference&lt;/em&gt; to the commit object.&lt;/p&gt;
 
 &lt;p&gt;Let’s compare this to an annotated tag.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git tag -a -m &quot;Tagged 1.0&quot; 1.0
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git tag -a -m &quot;Tagged 1.0&quot; 1.0
 $ cat .git/refs/tags/1.0
 10589beae63c6e111e99a0cd631c28479e2d11bf
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;We’ve passed the &lt;code class=&quot;highlighter-rouge&quot;&gt;-a&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;--annotate&lt;/code&gt;) flag to &lt;code class=&quot;highlighter-rouge&quot;&gt;git tag&lt;/code&gt; to create an annotated tag. Notice how Git creates a reference for the tag just like the lightweight tag, but this reference is not pointing to the same object as the lightweight tag. Let’s use &lt;code class=&quot;highlighter-rouge&quot;&gt;git cat-file&lt;/code&gt; again to inspect the object.&lt;/p&gt;
 
-&lt;p&gt;```
-$ git cat-file -p 1.0
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -p 1.0
 object d409ca76bc919d9ca797f39ae724b7c65700fd27
 type commit
 tag 1.0
-tagger Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1401029229 -0400&lt;/p&gt;
+tagger Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401029229 -0400
 
-&lt;p&gt;Tagged 1.0
-```&lt;/p&gt;
+Tagged 1.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This is a &lt;strong&gt;tag object&lt;/strong&gt;, separate to the commit that it points to. As well as containing a pointer to a commit, tag objects also store a tag message and information about the tagger. Tag objects can also be signed with a &lt;a href=&quot;http://en.wikipedia.org/wiki/GNU_Privacy_Guard&quot; title=&quot;GNU Privacy Guard&quot;&gt;GPG key&lt;/a&gt; to prevent commit or email spoofing.&lt;/p&gt;
 
@@ -1003,19 +1001,18 @@ tagger Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp
 
 &lt;p&gt;Merging in Git is the process of joining two histories (usually branches) together. Let’s start with a simple example. Say you’ve created a new feature branch from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, and done some work on it.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git checkout -b feature-branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -b feature-branch
 Switched to a new branch &#39;feature-branch&#39;
 $ vim feature.html
 $ git commit -am &quot;Finished the new feature&quot;
 [feature-branch 0c21359] Finished the new feature
  1 file changed, 1 insertion(+)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;At the same time, you need to fix an urgent bug. So you create a &lt;code class=&quot;highlighter-rouge&quot;&gt;hotfix&lt;/code&gt; branch from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, and do some work in there.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git checkout master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
 Switched to branch &#39;master&#39;
 $ git checkout -b hotfix
 Switched to a new branch &#39;hotfix&#39;
@@ -1023,7 +1020,8 @@ $ vim index.html
 $ git commit -am &quot;Fixed some wording&quot;
 [hotfix 40837f1] Fixed some wording
  1 file changed, 1 insertion(+), 1 deletion(-)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;At this point, the history will look something like this.&lt;/p&gt;
 
@@ -1039,15 +1037,15 @@ $ git commit -am &quot;Fixed some wording&quot;
 
 &lt;p&gt;Now you want to bring the bug fix into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; so that you can tag it and release it.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git checkout master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
 Switched to branch &#39;master&#39;
 $ git merge hotfix
 Updating d939a3a..40837f1
 Fast-forward
  index.html | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Notice how Git mentions &lt;strong&gt;fast-forward&lt;/strong&gt; during the merge. What this means is that all of the commits in &lt;code class=&quot;highlighter-rouge&quot;&gt;hotfix&lt;/code&gt; were directly upstream from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. This allows Git to simply move the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; pointer up the tree to &lt;code class=&quot;highlighter-rouge&quot;&gt;hotfix&lt;/code&gt;. What you end up with looks like this.&lt;/p&gt;
 
@@ -1063,39 +1061,39 @@ Fast-forward
 
 &lt;p&gt;Now let’s try and merge &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git merge feature-branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git merge feature-branch
 Merge made by the &#39;recursive&#39; strategy.
  feature.html | 1 +
  1 file changed, 1 insertion(+)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This time, Git wasn’t able to perform a fast-forward. This is because &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; isn’t directly upstream from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. This is clear on the graph above, where &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; is at commit &lt;strong&gt;D&lt;/strong&gt; which is in a different history tree to &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; at commit &lt;strong&gt;C&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;So how did Git handle this merge? Taking a look at the log, we see that Git has actually created a new ”merge” commit, as well as bringing the commit from &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git log --oneline
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline
 8ad0923 Merge branch &#39;feature-branch&#39;
 0c21359 Finished the new feature
 40837f1 Fixed some wording
 d939a3a Initial commit
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Upon closer inspection, we can see that this is a special kind of commit object – it has &lt;strong&gt;two parent commits&lt;/strong&gt;. This is referred to as a &lt;strong&gt;merge commit&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;```
-$ git show –format=raw 8ad0923&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git show --format=raw 8ad0923
 
-&lt;p&gt;commit 8ad09238b0dff99e8a99c84d68161ebeebbfc714
+commit 8ad09238b0dff99e8a99c84d68161ebeebbfc714
 tree e5ee97c8f9a4173f07aa4c46cb7f26b7a9ff7a17
 parent 40837f14b8122ac6b37c0919743b1fd429b3bbab
 parent 0c21359730915c7888c6144aa8e9063345330f1f
-author Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1401134489 +0100
-committer Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; 1401134489 +0100&lt;/p&gt;
+author Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +0100
+committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +0100
 
-&lt;p&gt;Merge branch ‘feature-branch’
-```&lt;/p&gt;
+ Merge branch &#39;feature-branch&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This means that our history graph now looks something like this (commit &lt;strong&gt;E&lt;/strong&gt; is the new merge commit).&lt;/p&gt;
 
@@ -1161,10 +1159,10 @@ committer Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&
 
 &lt;p&gt;It’s not going to be easy, but we can achieve this with &lt;code class=&quot;highlighter-rouge&quot;&gt;git cherry-pick&lt;/code&gt;. First, we need to create a temporary branch at commit &lt;em&gt;F&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git checkout master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
 $ git checkout -b foo-tmp
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;div class=&quot;thumbnail &quot;&gt;
     
@@ -1178,9 +1176,9 @@ $ git checkout -b foo-tmp
 
 &lt;p&gt;Now that we have a base on commit &lt;em&gt;F&lt;/em&gt;, we can &lt;code class=&quot;highlighter-rouge&quot;&gt;cherry-pick&lt;/code&gt; all of &lt;code class=&quot;highlighter-rouge&quot;&gt;foo&lt;/code&gt;’s commits on top of it.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git cherry-pick C D
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cherry-pick C D
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;div class=&quot;thumbnail &quot;&gt;
     
@@ -1194,11 +1192,11 @@ $ git cherry-pick C D
 
 &lt;p&gt;Now all that’s left to do is point &lt;code class=&quot;highlighter-rouge&quot;&gt;foo&lt;/code&gt; at commit &lt;strong&gt;D’&lt;/strong&gt;, and delete the temporary branch &lt;code class=&quot;highlighter-rouge&quot;&gt;foo-tmp&lt;/code&gt;. We do this with the &lt;code class=&quot;highlighter-rouge&quot;&gt;reset&lt;/code&gt; command, which points &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; (and therefore the current branch) at a specified commit. The &lt;code class=&quot;highlighter-rouge&quot;&gt;--hard&lt;/code&gt; flag ensures our working tree is updated as well.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git checkout foo
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout foo
 $ git reset --hard foo-tmp
 $ git branch -D foo-tmp
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This gives the desired result of &lt;code class=&quot;highlighter-rouge&quot;&gt;foo&lt;/code&gt;’s commits being upstream of &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. Note that the original &lt;strong&gt;C&lt;/strong&gt; and &lt;strong&gt;D&lt;/strong&gt; commits are no longer reachable because no branch points to them.&lt;/p&gt;
 
@@ -1216,20 +1214,20 @@ $ git branch -D foo-tmp
 
 &lt;p&gt;While the example in &lt;em&gt;Cherry-Picking&lt;/em&gt; worked, it’s not practical. In Git, rebasing allows us to replace our verbose cherry-pick workflow…&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git checkout master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
 $ git checkout -b foo-tmp
 $ git cherry-pick C D
 $ git checkout foo
 $ git reset --hard foo-tmp
 $ git branch -D foo-tmp
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;…With a single command.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git rebase master foo
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git rebase master foo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;With the format &lt;code class=&quot;highlighter-rouge&quot;&gt;git rebase &amp;lt;base&amp;gt; &amp;lt;target&amp;gt;&lt;/code&gt;, the &lt;code class=&quot;highlighter-rouge&quot;&gt;rebase&lt;/code&gt; command will take all of the commits from &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;target&amp;gt;&lt;/code&gt; and play them on top of &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;base&amp;gt;&lt;/code&gt; one by one. It does this without actually modifying &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;base&amp;gt;&lt;/code&gt;, so the end result is a linear history in which &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;base&amp;gt;&lt;/code&gt; can be fast-forwarded to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;target&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
@@ -1249,11 +1247,11 @@ $ git rebase master foo
 
 &lt;p&gt;All we have to do to enable a fast-forward merge of &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; is run &lt;code class=&quot;highlighter-rouge&quot;&gt;git rebase master feature-branch&lt;/code&gt; before performing the merge.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git rebase master feature-branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git rebase master feature-branch
 First, rewinding head to replay your work on top of it...
 Applying: Finished the new feature
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This has brought &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; directly upstream of &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
 
@@ -1269,14 +1267,14 @@ Applying: Finished the new feature
 
 &lt;p&gt;Git is now able to perform a fast-forward merge.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git checkout master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
 $ git merge feature-branch
 Updating 40837f1..2a534dd
 Fast-forward
  feature.html | 1 +
  1 file changed, 1 insertion(+)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;remotes&quot;&gt;Remotes&lt;/h2&gt;
 
@@ -1286,8 +1284,7 @@ Fast-forward
 
 &lt;p&gt;It is therefore possible to have a repository which can store your project’s history without actually having a working tree. This is called a &lt;em&gt;bare&lt;/em&gt; repository. Bare repositories are most commonly used as a “central” repository where collaborators can share changes. The mechanism for sharing these changes will be explained in detail in the &lt;em&gt;Pushing&lt;/em&gt; and &lt;em&gt;Pulling&lt;/em&gt; sections. For now, let’s look at creating a bare repository.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git init --bare
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init --bare
 Initialised empty Git repository in /home/demo/bare-repo/
 $ ls -l
 total 12
@@ -1299,14 +1296,14 @@ drwxrwxr-x 1 demo demo 328 May 31 12:58 hooks
 drwxrwxr-x 1 demo demo  14 May 31 12:58 info
 drwxrwxr-x 1 demo demo  16 May 31 12:58 objects
 drwxrwxr-x 1 demo demo  18 May 31 12:58 refs
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Notice how rather than creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; directory for the repository, &lt;code class=&quot;highlighter-rouge&quot;&gt;git init --bare&lt;/code&gt; simply treats the current directory as the &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;There’s really not much to this repository. The only interesting things it contains are a &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; reference which points to the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch (which doesn’t exist yet), and a &lt;code class=&quot;highlighter-rouge&quot;&gt;config&lt;/code&gt; file which has the &lt;code class=&quot;highlighter-rouge&quot;&gt;bare&lt;/code&gt; flag set to &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt;. The other files aren’t of much interest to us.&lt;/p&gt;
 
-&lt;p&gt;```
-$ find . -type f
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ find . -type f
 ./info/exclude
 ./hooks/commit-msg.sample
 ./hooks/pre-commit.sample
@@ -1319,25 +1316,26 @@ $ find . -type f
 ./hooks/update.sample
 ./description
 ./HEAD
-./config&lt;/p&gt;
+./config
 
-&lt;p&gt;$ cat HEAD
+$ cat HEAD
 ref: refs/heads/master
 $ cat config
 [core]
     repositoryformatversion = 0
     filemode = true
-    bare = true&lt;/p&gt;
+    bare = true
 
-&lt;p&gt;```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;So what can we do with this repository? Well, nothing much right now. Git won’t let us modify the repository because it doesn’t have a working tree to modify. (Note: this isn’t strictly true. We could painstakingly use Git’s low-level commands to manually create and store objects in Git’s data store, but that is beyond the scope of this guide. If you’re &lt;em&gt;really&lt;/em&gt; interested, read &lt;a href=&quot;http://git-scm.com/book/en/Git-Internals-Git-Objects&quot;&gt;&lt;em&gt;Git Internals - Git Objects&lt;/em&gt;&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ touch README
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ touch README
 $ git add README
 fatal: This operation must be run in a work tree
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The intended use of this repository is for other collaborators to &lt;code class=&quot;highlighter-rouge&quot;&gt;clone&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;pull&lt;/code&gt; changes from, as well as &lt;code class=&quot;highlighter-rouge&quot;&gt;push&lt;/code&gt; their own changes to.&lt;/p&gt;
 
@@ -1355,18 +1353,17 @@ fatal: This operation must be run in a work tree
 
 &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;clone&lt;/code&gt; command takes a URL and supports a number of transport protocols including HTTP, SSH, and Git’s own protocol. It also supports plain old file paths, which is what we’ll use.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cd ..
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ..
 $ git clone bare-repo/ clone-of-bare-repo
 Cloning into &#39;clone-of-bare-repo&#39;...
 warning: You appear to have cloned an empty repository.
 done.
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Let’s inspect this cloned repository to see how Git has set it up.&lt;/p&gt;
 
-&lt;p&gt;```
-$ cd clone-of-bare-repo/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd clone-of-bare-repo/
 $ find . -type f
 ./.git/info/exclude
 ./.git/hooks/commit-msg.sample
@@ -1380,9 +1377,9 @@ $ find . -type f
 ./.git/hooks/update.sample
 ./.git/description
 ./.git/HEAD
-./.git/config&lt;/p&gt;
+./.git/config
 
-&lt;p&gt;$ cat .git/HEAD
+$ cat .git/HEAD
 ref: refs/heads/master
 $ ls -l .git/refs/heads/
 total 0
@@ -1392,13 +1389,14 @@ $ cat .git/config
     filemode = true
     bare = false
     logallrefupdates = true
-[remote “origin”]
+[remote &quot;origin&quot;]
     url = /home/demo/bare-repo/
-    fetch = +refs/heads/&lt;em&gt;:refs/remotes/origin/&lt;/em&gt;
-[branch “master”]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &quot;master&quot;]
     remote = origin
     merge = refs/heads/master
-```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This is quite literally a clone of &lt;code class=&quot;highlighter-rouge&quot;&gt;bare-repo&lt;/code&gt;. The only difference is that this repository contains a few extra lines in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/config&lt;/code&gt;.&lt;/p&gt;
 
@@ -1410,57 +1408,57 @@ $ cat .git/config
 
 &lt;p&gt;We’ve just cloned a completely empty repository, and we want to start working on it.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ echo &#39;Project v1.0&#39; &amp;gt; README
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &#39;Project v1.0&#39; &amp;gt; README
 $ git add README
 $ git commit -m &quot;Add readme&quot;
 [master (root-commit) 5d591d5] Add readme
  1 file changed, 1 insertion(+)
  create mode 100644 README
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Notice that even though it didn’t &lt;em&gt;technically&lt;/em&gt; exist (there was nothing in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs/heads&lt;/code&gt;), this commit has been made to the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch. That’s because the &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; of this repository pointed to &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, so Git has gone ahead and created the branch for us.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/refs/heads/master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/refs/heads/master
 5d591d5fafd538610291f45bec470d1b4e77891e
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Now that we’ve completed some work, we need to share this with our collaborators who have also cloned this repository. Git makes this really easy.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git push origin master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git push origin master
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 231 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To /home/demo/bare-repo/
  * [new branch] master -&amp;gt; master
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Notice how we specified both the remote (&lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt;) and the branch (&lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;) that we want Git to push. It &lt;em&gt;is&lt;/em&gt; possible to simply run &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt;, but this can be dangerous and is generally advised against. Running &lt;code class=&quot;highlighter-rouge&quot;&gt;git push&lt;/code&gt; without any arguments can (depending on your configuration) push all remote-tracking branches. This is usually okay, but it can result in you pushing changes which you don’t want collaborators to pull. In the worst case, you can destroy other collaborators’ changes if you specify the &lt;code class=&quot;highlighter-rouge&quot;&gt;--force&lt;/code&gt; flag.&lt;/p&gt;
 
 &lt;p&gt;So, let’s take a look at the remote repository to see what happened.&lt;/p&gt;
 
-&lt;p&gt;```
-$ cd ../bare-repo/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ../bare-repo/
 $ cat refs/heads/master
-5d591d5fafd538610291f45bec470d1b4e77891e&lt;/p&gt;
+5d591d5fafd538610291f45bec470d1b4e77891e
 
-&lt;p&gt;$ git show 5d591d5
+$ git show 5d591d5
 commit 5d591d5fafd538610291f45bec470d1b4e77891e
-Author: Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;
-Date: Sat May 31 14:08:34 2014 +0100&lt;/p&gt;
+Author: Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt;
+Date: Sat May 31 14:08:34 2014 +0100
 
-&lt;p&gt;Add readme&lt;/p&gt;
+ Add readme
 
-&lt;p&gt;diff –git a/README b/README
+diff --git a/README b/README
 new file mode 100644
 index 0000000..5cecdfb
-— /dev/null
+--- /dev/null
 +++ b/README
 @@ -0,0 +1 @@
 +Project v1.0
-```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;As we expected, the remote repository now contains a &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch which points to the commit that we just created.&lt;/p&gt;
 
@@ -1470,11 +1468,11 @@ index 0000000..5cecdfb
 
 &lt;p&gt;As we saw in &lt;em&gt;Cloning&lt;/em&gt;, a remote-tracking branch is essentially just a few lines in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/config&lt;/code&gt;. Let’s take a look at those lines again.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-[branch &quot;master&quot;]
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[branch &quot;master&quot;]
     remote = origin
     merge = refs/heads/master
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The line &lt;code class=&quot;highlighter-rouge&quot;&gt;[branch &quot;master&quot;]&lt;/code&gt; denotes that the following configuration applies to the &lt;em&gt;local&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch.&lt;/p&gt;
 
@@ -1488,75 +1486,74 @@ index 0000000..5cecdfb
 
 &lt;p&gt;Recall what a remote’s configuration looks like.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-[remote &quot;origin&quot;]
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[remote &quot;origin&quot;]
     url = /home/demo/bare-repo/
     fetch = +refs/heads/*:refs/remotes/origin/*
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;fetch&lt;/code&gt; parameter here specifies a mapping of &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;remote-refs&amp;gt;:&amp;lt;local-refs&amp;gt;&lt;/code&gt;. The example above simply states that the references found in origin’s &lt;code class=&quot;highlighter-rouge&quot;&gt;refs/heads/*&lt;/code&gt; should be stored locally in &lt;code class=&quot;highlighter-rouge&quot;&gt;refs/remotes/origin/*&lt;/code&gt;. We can see this in the repository that we cloned earlier.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ ls -l .git/refs/remotes/origin/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls -l .git/refs/remotes/origin/
 total 4
 -rw-rw-r-- 1 demo demo 41 May 31 14:12 master
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Let’s see a fetch in action to get a better idea of what happens. First, we’ll create a new branch on the remote repository.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cd ../bare-repo/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ../bare-repo/
 $ git branch feature-branch
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Now we’ll run &lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch&lt;/code&gt; from the clone.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cd ../clone-of-bare-repo/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ../clone-of-bare-repo/
 $ git fetch origin
 From /home/demo/bare-repo
  * [new branch] feature-branch -&amp;gt; origin/feature-branch
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This has done a couple of things. First, it has created a reference for the remote branch in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs/remotes/origin&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/refs/remotes/origin/feature-branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/refs/remotes/origin/feature-branch
 5d591d5fafd538610291f45bec470d1b4e77891e
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;It has also updated a special file, &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/FETCH_HEAD&lt;/code&gt; with some important information. We’ll talk about this file in more detail soon.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/FETCH_HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/FETCH_HEAD
 5d591d5fafd538610291f45bec470d1b4e77891e branch &#39;master&#39; of /home/demo/bare-repo
 5d591d5fafd538610291f45bec470d1b4e77891e not-for-merge branch &#39;feature-branch&#39; of /home/demo/bare-repo
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;What is &lt;em&gt;hasn’t&lt;/em&gt; done is created a local branch. This is because Git understands that even though the remote has a &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;, you might not want it in your local repository.&lt;/p&gt;
 
 &lt;p&gt;But what if we &lt;em&gt;do&lt;/em&gt; want a local branch which tracks the remote &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;? Git makes this easy. If we run &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout feature-branch&lt;/code&gt;, rather than failing because no local &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; exists, Git will see that there is a remote &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; available and create a local branch for us.&lt;/p&gt;
 
-&lt;p&gt;```
-$ git checkout feature-branch&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout feature-branch
 
-&lt;p&gt;Branch feature-branch set up to track remote branch feature-branch from origin.
-Switched to a new branch ‘feature-branch’
-```&lt;/p&gt;
+Branch feature-branch set up to track remote branch feature-branch from origin.
+Switched to a new branch &#39;feature-branch&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Git has done a couple of things for us here. First, it has created a local &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; reference which points to the same commit as the remote &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/refs/remotes/origin/feature-branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/refs/remotes/origin/feature-branch
 5d591d5fafd538610291f45bec470d1b4e77891e
 $ cat .git/refs/heads/feature-branch
 5d591d5fafd538610291f45bec470d1b4e77891e
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;It has also created a remote-tracking branch entry in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/config&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/config
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/config
 [core]
     repositoryformatversion = 0
     filemode = true
@@ -1571,7 +1568,8 @@ $ cat .git/config
 [branch &quot;feature-branch&quot;]
     remote = origin
     merge = refs/heads/feature-branch
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;pulling&quot;&gt;Pulling&lt;/h3&gt;
 
@@ -1587,18 +1585,17 @@ $ cat .git/config
 
 &lt;p&gt;Let’s introduce some new commits to our remote repository so that we can see this in practice.&lt;/p&gt;
 
-&lt;p&gt;```
-$ git clone bare-repo/ new-clone-of-bare-repo
-Cloning into ‘new-clone-of-bare-repo’…
-done.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone bare-repo/ new-clone-of-bare-repo
+Cloning into &#39;new-clone-of-bare-repo&#39;...
+done.
 
-&lt;p&gt;$ cd new-clone-of-bare-repo/
+$ cd new-clone-of-bare-repo/
 $ git checkout feature-branch
 Branch feature-branch set up to track remote branch feature-branch from origin.
-Switched to a new branch ‘feature-branch’&lt;/p&gt;
+Switched to a new branch &#39;feature-branch&#39;
 
-&lt;p&gt;$ echo ‘Some more information.’ » README
-$ git commit -am “Add more information to readme”
+$ echo &#39;Some more information.&#39; &amp;gt;&amp;gt; README
+$ git commit -am &quot;Add more information to readme&quot;
 [feature-branch 7cd83c2] Add more information to readme
  1 file changed, 1 insertion(+)
 $ git push origin feature-branch
@@ -1607,12 +1604,12 @@ Writing objects: 100% (3/3), 298 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To /home/demo/bare-repo/
    5d591d5..7cd83c2  feature-branch -&amp;gt; feature-branch
-```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Now, using the steps outlined earlier, let’s manually perform a &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; on the other clone to pull in the changes we just introduced.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cd ../clone-of-bare-repo/
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ../clone-of-bare-repo/
 $ git fetch origin
 remote: Counting objects: 5, done.
 remote: Total 3 (delta 0), reused 0 (delta 0)
@@ -1622,31 +1619,31 @@ From /home/demo/bare-repo
 $ cat .git/FETCH_HEAD
 7cd83c29d7360dfc432d556fdbf03eb83ec5158d        branch &#39;feature-branch&#39; of /home/demo/bare-repo
 5d591d5fafd538610291f45bec470d1b4e77891e    not-for-merge   branch &#39;master&#39; of /home/demo/bare-repo
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;At this point, Git has updated our local copy of the remote branch, and updated the information in &lt;code class=&quot;highlighter-rouge&quot;&gt;FETCH_HEAD&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ cat .git/refs/heads/feature-branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/refs/heads/feature-branch
 5d591d5fafd538610291f45bec470d1b4e77891e
 $ cat .git/refs/remotes/origin/feature-branch
 7cd83c29d7360dfc432d556fdbf03eb83ec5158d
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;We know from &lt;code class=&quot;highlighter-rouge&quot;&gt;FETCH_HEAD&lt;/code&gt; that the fetch introduced some changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;. So all that’s left to do to complete the “pull” is perform a merge.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git merge FETCH_HEAD
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git merge FETCH_HEAD
 Updating 5d591d5..7cd83c2
 Fast-forward
  README | 1 +
  1 file changed, 1 insertion(+)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;And that’s it – we’ve just performed a &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; without actually running &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;. Of course, it is much easier to let Git take care of these details. Just to be sure that the outcome is the same, we can run &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt; as well.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git reset --hard HEAD^1
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git reset --hard HEAD^1
 HEAD is now at 5d591d5 Add readme
 $ git pull origin feature-branch
 From /home/demo/bare-repo
@@ -1655,7 +1652,8 @@ Updating 5d591d5..7cd83c2
 Fast-forward
  README | 1 +
  1 file changed, 1 insertion(+)
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;toolkit&quot;&gt;Toolkit&lt;/h2&gt;
 
@@ -1667,39 +1665,39 @@ Fast-forward
 
 &lt;p&gt;Let’s say you have a repository with a few commits.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git log --oneline
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline
 d6f2a84 Add empty LICENSE file
 51c4b49 Add some actual content to readme
 3413f46 Add TODO note to readme
 322c826 Add empty readme
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;You decide, for some reason, to perform a destructive action on your &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git reset --hard 3413f46
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git reset --hard 3413f46
 HEAD is now at 3413f46 Add TODO note to readme
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Since performing this action, you’ve realised that you lost some commits and you have no idea what their hashes were. You never pushed the changes; they were only in your local repository. &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; is no help, since the commits are no longer reachable from &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git log --oneline
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline
 3413f46 Add TODO note to readme
 322c826 Add empty readme
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This is where &lt;code class=&quot;highlighter-rouge&quot;&gt;git reflog&lt;/code&gt; can be useful.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git reflog
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git reflog
 3413f46 HEAD@{0}: reset: moving to 3413f46
 d6f2a84 HEAD@{1}: commit: Add empty LICENSE file
 51c4b49 HEAD@{2}: commit: Add some actual content to readme
 3413f46 HEAD@{3}: commit: Add TODO note to readme
 322c826 HEAD@{4}: commit (initial): Add empty readme
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The reflog shows a list of all changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; in reverse chronological order. The hash in the first column is the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; &lt;em&gt;after the action on the right was performed&lt;/em&gt;. We can see, therefore, that we were at commit &lt;code class=&quot;highlighter-rouge&quot;&gt;d6f2a84&lt;/code&gt; before the destructive change.&lt;/p&gt;
 
@@ -1717,23 +1715,23 @@ d6f2a84 HEAD@{1}: commit: Add empty LICENSE file
 
 &lt;p&gt;When a reference (like a branch) is deleted from Git’s index, the object(s) they refer to usually aren’t deleted, even if they are no longer reachable by any other references. Using a simple example, we can see this in practice. Here we have a branch, &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;, which points at &lt;code class=&quot;highlighter-rouge&quot;&gt;f71bb43&lt;/code&gt;. If we delete &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;, the commit will no longer be reachable.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git branch
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git branch
   feature-branch
 * master
 $ git rev-parse --short feature-branch
 f71bb43
 $ git branch -D feature-branch
 Deleted branch feature-branch (was f71bb43).
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;At this point, commit &lt;code class=&quot;highlighter-rouge&quot;&gt;f71bb43&lt;/code&gt; still exists in our repository, but there are no references pointing to it. By searching through the database, &lt;code class=&quot;highlighter-rouge&quot;&gt;git fsck&lt;/code&gt; is able to find it.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git fsck --lost-found
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git fsck --lost-found
 Checking object directories: 100% (256/256), done.
 dangling commit f71bb43907bffe0bce2967504341a0ece7a8cb68
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;For simple cases, &lt;code class=&quot;highlighter-rouge&quot;&gt;git reflog&lt;/code&gt; may be preferred. Where &lt;code class=&quot;highlighter-rouge&quot;&gt;git fsck&lt;/code&gt; excels over &lt;code class=&quot;highlighter-rouge&quot;&gt;git reflog&lt;/code&gt;, though, is when you need to find objects which you never referenced in your local repository (and therefore would not be in your reflog). An example of this is when you delete a remote branch through an interface like GitHub. Assuming the objects haven’t been garbage-collected, you can clone the remote repository and use &lt;code class=&quot;highlighter-rouge&quot;&gt;git fsck&lt;/code&gt; to recover the deleted branch.&lt;/p&gt;
 
@@ -1743,8 +1741,7 @@ dangling commit f71bb43907bffe0bce2967504341a0ece7a8cb68
 
 &lt;p&gt;This seems fairly simple at first, but the mechanism behind the &lt;code class=&quot;highlighter-rouge&quot;&gt;stash&lt;/code&gt; command is actually quite complex. Let’s build a simple repository to see how it works.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git init
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init
 Initialised empty Git repository in /home/demo/demo-repo/.git/
 $ echo &#39;Foo&#39; &amp;gt; test.txt
 $ git add test.txt
@@ -1752,68 +1749,67 @@ $ git commit -m &quot;Initial commit&quot;
 [master (root-commit) 2522332] Initial commit
  1 file changed, 1 insertion(+)
  create mode 100644 test.txt
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Now let’s make some changes, and stash them.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ echo &#39;Bar&#39; &amp;gt;&amp;gt; test.txt
-$ git stash
-Saved working directory and index state WIP on master: 2522332 Initial commit
-HEAD is now at 2522332 Initial commit
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Stashes in Git are put onto a stack, with the most recently-stashed on top. You can list all current stashes with &lt;code class=&quot;highlighter-rouge&quot;&gt;git stash list&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git stash list
-stash@{0}: WIP on master: 2522332 Initial commit
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Right now we only have one stash: &lt;code class=&quot;highlighter-rouge&quot;&gt;stash@{0}&lt;/code&gt;. This is actually a reference, which we can inspect.&lt;/p&gt;
-
-&lt;p&gt;```
-$ git show stash@{0}
-commit f949b46a417a4f1595a9d12773c89cce4454a958
-Merge: 2522332 1fbe1cc
-Author: Joseph Wynn &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#106;&amp;#111;&amp;#115;&amp;#101;&amp;#112;&amp;#104;&amp;#064;&amp;#119;&amp;#105;&amp;#108;&amp;#100;&amp;#108;&amp;#121;&amp;#105;&amp;#110;&amp;#097;&amp;#099;&amp;#099;&amp;#117;&amp;#114;&amp;#097;&amp;#116;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;
-Date:   Sat Jul 5 00:15:51 2014 +0100&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WIP on master: 2522332 Initial commit
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;diff –cc test.txt
+&lt;p&gt;Now let’s make some changes, and stash them.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &#39;Bar&#39; &amp;gt;&amp;gt; test.txt
+$ git stash
+Saved working directory and index state WIP on master: 2522332 Initial commit
+HEAD is now at 2522332 Initial commit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Stashes in Git are put onto a stack, with the most recently-stashed on top. You can list all current stashes with &lt;code class=&quot;highlighter-rouge&quot;&gt;git stash list&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git stash list
+stash@{0}: WIP on master: 2522332 Initial commit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Right now we only have one stash: &lt;code class=&quot;highlighter-rouge&quot;&gt;stash@{0}&lt;/code&gt;. This is actually a reference, which we can inspect.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git show stash@{0}
+commit f949b46a417a4f1595a9d12773c89cce4454a958
+Merge: 2522332 1fbe1cc
+Author: Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt;
+Date:   Sat Jul 5 00:15:51 2014 +0100
+
+    WIP on master: 2522332 Initial commit
+
+diff --cc test.txt
 index bc56c4d,bc56c4d..3b71d5b
-— a/test.txt
+--- a/test.txt
 +++ b/test.txt
 @@@ -1,1 -1,1 +1,2 @@@
   Foo
 ++Bar
-```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;From this we can see that the stash is pointing to a commit object. What’s interesting is that the stash commit is a &lt;strong&gt;merge commit&lt;/strong&gt;. We’ll look into that in a bit, but first: where &lt;em&gt;is&lt;/em&gt; this commit?&lt;/p&gt;
 
-&lt;p&gt;```
-$ git log –oneline
-2522332 Initial commit&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline
+2522332 Initial commit
 
-&lt;p&gt;$ git branch
-* master&lt;/p&gt;
+$ git branch
+* master
 
-&lt;p&gt;$ git fsck –lost-found
+$ git fsck --lost-found
 Checking object directories: 100% (256/256), done.
-```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;It’s not in the current branch, and there are no other branches it could be in. &lt;code class=&quot;highlighter-rouge&quot;&gt;git-fsck&lt;/code&gt; hasn’t found any dangling commits, so it must be referenced somewhere. But &lt;em&gt;where&lt;/em&gt;?&lt;/p&gt;
 
 &lt;p&gt;The answer is simple: Git creates a special reference for the stash which isn’t seen by commands like &lt;code class=&quot;highlighter-rouge&quot;&gt;git branch&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git tag&lt;/code&gt;. This reference lives in &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/refs/stash&lt;/code&gt;. We can verify this with &lt;code class=&quot;highlighter-rouge&quot;&gt;git show-ref&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git show-ref
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git show-ref
 25223321ec2fbcb718b7fbf99485f1cb4d2f2042 refs/heads/master
 f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;So why does Git create a merge commit for a stash? The answer is relatively simple: as well as recording the state of the working tree, &lt;code class=&quot;highlighter-rouge&quot;&gt;git stash&lt;/code&gt; also records the state of the index (also known as the “staging area”). Since it’s possible for the index and the working tree to contain changes to the same file, Git needs to store the states separately.&lt;/p&gt;
 
@@ -1843,50 +1839,50 @@ f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git describe&lt;/code&gt; will take any reference or commit hash, and return the name of the most recent tag. If the tag points at the commit you gave it, &lt;code class=&quot;highlighter-rouge&quot;&gt;git describe&lt;/code&gt; will return only the tag name. Otherwise, it will suffix the tag name with some information including the number of commits since the tag and an abbreviation of the commit hash.&lt;/p&gt;
 
-&lt;p&gt;```
-$ git describe v1.2.15
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git describe v1.2.15
 v1.2.15
 $ git describe 2db66f
-v1.2.15-80-g2db66f5&lt;/p&gt;
+v1.2.15-80-g2db66f5
 
-&lt;p&gt;```&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;If you want to ensure that only the tag name is returned, you can force Git to remove the suffix by passing &lt;code class=&quot;highlighter-rouge&quot;&gt;--abbrev=0&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git describe --abbrev=0 2db66f
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git describe --abbrev=0 2db66f
 v1.2.15
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;git-rev-parse&quot;&gt;git-rev-parse&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git rev-parse&lt;/code&gt; is an ancillary plumbing command which takes a wide range of inputs and returns one or more commit hashes. The most common use case is figuring out which commit a tag or branch points to.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git rev-parse v1.2.15
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git rev-parse v1.2.15
 2a46f5e2fbe83ccb47a1cd42b81f815f2f36ee9d
 $ git rev-parse --short v1.2.15
 2a46f5e
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;git-bisect&quot;&gt;git-bisect&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect&lt;/code&gt; is an indispensable tool when you need to figure out which commit introduced a breaking change. The &lt;code class=&quot;highlighter-rouge&quot;&gt;bisect&lt;/code&gt; command does a binary search through your commit history to help you find the breaking change as quickly as possible. To get started, simply run &lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect start&lt;/code&gt;, and tell Git that the commit you’re currently on is broken with &lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect bad&lt;/code&gt;. Then, you can give Git a commit that you know is working with &lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect good &amp;lt;commit&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git bisect start
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git bisect start
 $ git bisect bad
 $ git bisect good v1.2.15
 Bisecting: 41 revisions left to test after this (roughly 5 steps)
 [b87713687ecaa7a873eeb3b83952ebf95afdd853] docs(misc/index): add header; general links
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Git will then checkout a commit and ask you to test whether it’s broken or not. If the commit is broken, run &lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect bad&lt;/code&gt;. If the commit is fine, run &lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect good&lt;/code&gt;. After doing this a few times, Git will be able to pinpoint the commit which first introduced the breaking change.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-$ git bisect bad
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git bisect bad
 e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Once the &lt;code class=&quot;highlighter-rouge&quot;&gt;bisect&lt;/code&gt; is finished (or when you want to abort it), be sure to run &lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect reset&lt;/code&gt; to reset &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; to where it was before the &lt;code class=&quot;highlighter-rouge&quot;&gt;bisect&lt;/code&gt;.&lt;/p&gt;
 </description>
@@ -1917,28 +1913,28 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;Don’t worry if this doesn’t make sense yet. To see prototypes in action, let’s take a look at the simplest example of a “class” within JavaScript, which is created with a function object:&lt;/p&gt;
 
-&lt;p&gt;```js
-function Animal() {}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
 
-&lt;p&gt;var animal = new Animal();
-```&lt;/p&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;We can add properties to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; class in two ways: either by setting them as &lt;em&gt;instance properties&lt;/em&gt;, or by adding them to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
 
-&lt;p&gt;```js
-function Animal(name) {
-    // Instance properties can be set on each instance of the class
-    this.name = name;
-}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Instance properties can be set on each instance of the class&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;// Prototype properties are shared across all instances of the class. However, they can still be overwritten on a per-instance basis with the &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; keyword.
-Animal.prototype.speak = function() {
-    console.log(“My name is “ + this.name);
-};&lt;/p&gt;
+&lt;span class=&quot;c1&quot;&gt;// Prototype properties are shared across all instances of the class. However, they can still be overwritten on a per-instance basis with the `this` keyword.&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;My name is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 
-&lt;p&gt;var animal = new Animal(‘Monty’);
-animal.speak(); // My name is Monty
-```&lt;/p&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Monty&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// My name is Monty&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The structure of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; object becomes clear when we inspect it in the console. We can see that the &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; property belongs to the object itself, while &lt;code class=&quot;highlighter-rouge&quot;&gt;speak&lt;/code&gt; is part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
 
@@ -1954,16 +1950,16 @@ animal.speak(); // My name is Monty
 
 &lt;p&gt;Now let’s look at how we can extend the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; class to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; class:&lt;/p&gt;
 
-&lt;p&gt;```js
-function Cat(name) {
-    Animal.call(this, name);
-}&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;Cat.prototype = new Animal();&lt;/p&gt;
+&lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 
-&lt;p&gt;var cat = new Cat(‘Monty’);
-cat.speak(); // My name is Monty
-```&lt;/p&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Monty&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// My name is Monty&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;What we are doing here is setting &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s prototype to an instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;, so that &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; inherits all of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&#39;s&lt;/code&gt; properties. We’re also using &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal.call&lt;/code&gt; to inherit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor (sort of like &lt;code class=&quot;highlighter-rouge&quot;&gt;parent&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt; in other languages). &lt;code class=&quot;highlighter-rouge&quot;&gt;call&lt;/code&gt; is a special function which lets us call a function and specify the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; &lt;em&gt;within that function&lt;/em&gt;. So when &lt;code class=&quot;highlighter-rouge&quot;&gt;this.name&lt;/code&gt; is set inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor, it’s the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s name property being set, not the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;’s.&lt;/p&gt;
 
@@ -2054,41 +2050,41 @@ cat.speak(); // My name is Monty
 
 &lt;p&gt;Breaking up large amounts of text into paragraphs is common practice in modern writing. Unfortunately, this practice doesn’t seem to have been adopted by programmers. It’s not uncommon to see code with no more than one sequential line break.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;js
-while(index--) {
-  digit = uid[index].charCodeAt(0);
-  if (digit == 57 /*&#39;9&#39;*/) {
-    uid[index] = &#39;A&#39;;
-    return uid.join(&#39;&#39;);
-  }
-  if (digit == 90  /*&#39;Z&#39;*/) {
-    uid[index] = &#39;0&#39;;
-  } else {
-    uid[index] = String.fromCharCode(digit + 1);
-    return uid.join(&#39;&#39;);
-  }
-}
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;57&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*&#39;9&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;A&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;  &lt;span class=&quot;cm&quot;&gt;/*&#39;Z&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;0&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromCharCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The above is an excerpt from the &lt;a href=&quot;https://github.com/mozilla/persona&quot;&gt;Mozilla Persona&lt;/a&gt; source code. It’s only 14 lines long, but you need to really engage your brain to read and understand it. Without some sort of paragraph structure, we have no way of knowing which lines are related, so we’re forced to digest all 14 lines at once.&lt;/p&gt;
 
-&lt;p&gt;```js
-while(index–) {
-  digit = uid[index].charCodeAt(0);&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-&lt;p&gt;if (digit == 57 /&lt;em&gt;‘9’&lt;/em&gt;/) {
-    uid[index] = ‘A’;
-    return uid.join(‘’);
-  }&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;57&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*&#39;9&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;A&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;if (digit == 90  /&lt;em&gt;‘Z’&lt;/em&gt;/) {
-    uid[index] = ‘0’;
-  } else {
-    uid[index] = String.fromCharCode(digit + 1);
-    return uid.join(‘’);
-  }
-}
-```&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;  &lt;span class=&quot;cm&quot;&gt;/*&#39;Z&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;0&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromCharCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;With only 2 extra line breaks, the code has been changed from a single 14-line block to three distinct blocks, with the largest being only 6 lines. With this added structure, it’s much easier to figure out what each block does: Block #1 sets the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;digit&lt;/code&gt;. Block #2 handles the case of &lt;code class=&quot;highlighter-rouge&quot;&gt;digit&lt;/code&gt; being 57. Block #3 handles the case of &lt;code class=&quot;highlighter-rouge&quot;&gt;digit&lt;/code&gt; being 90, and every other case as well. The difference may be trivial in this example, but applied to larger blocks of code this technique can save hours of time trying to read code.&lt;/p&gt;
 
@@ -2104,38 +2100,38 @@ while(index–) {
 
 &lt;p&gt;Writers will often use &lt;a href=&quot;http://en.wikipedia.org/wiki/Plain_language&quot;&gt;plain language&lt;/a&gt; to reduce the &lt;em&gt;idea density&lt;/em&gt; of their text. This enables readers to quickly skim over text rather than making an effort to understand complex language. Programmers can use similar techniques to reduce what I call the &lt;em&gt;line density&lt;/em&gt; of code. Lines become dense when they contain too much logic. A good example is a complex if-statement.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;js
-if (x == 10 || x == 20 &amp;amp;&amp;amp; y == 2 || y == 5)
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;In this example, the reader must make a significant effort to determine that there are 3 possible “truth” conditions. The reason this requires so much effort is because we are required to read the line character-by-character until we find the &lt;code class=&quot;highlighter-rouge&quot;&gt;||&lt;/code&gt;, which we know separates each condition.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;js
-if (
-  x == 10 ||
-  x == 20 &amp;amp;&amp;amp; y == 2 ||
-  y == 5
-)
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;By moving each condition onto its own line, the overall line density is reduced, thereby reducing the mental effort required to identify the conditions.&lt;/p&gt;
 
 &lt;p&gt;Line density also applies to function calls which take a large number of arguments.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;js
-doSomething(longVariableName, process(anotherVariable), [&#39;array&#39;, &#39;of&#39;, &#39;things&#39;], getSomethingFrom(SOME_CONSTANT))
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;longVariableName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;anotherVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;array&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;of&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;things&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getSomethingFrom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;SOME_CONSTANT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This can be made more readable by moving each argument onto a separate line.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;js
-doSomething(
-  longVariableName,
-  process(anotherVariable),
-  [&#39;array&#39;, &#39;of&#39;, &#39;things&#39;],
-  getSomethingFrom(SOME_CONSTANT)
-)
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;longVariableName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;anotherVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;array&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;of&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;things&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;getSomethingFrom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;SOME_CONSTANT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;other-factors&quot;&gt;Other factors&lt;/h2&gt;
 
@@ -2160,43 +2156,43 @@ doSomething(
         <title>HTTP status as a service</title>
         <description>&lt;p&gt;Using Node.js* you can run a simple “HTTP status as a service” server. This can be useful for quickly checking whether your application handles various status codes.&lt;/p&gt;
 
-&lt;p&gt;```js
-var http = require(‘http’);&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-&lt;p&gt;http.createServer(function (request, response) {
-  var status = request.url.substr(1);&lt;/p&gt;
+&lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-&lt;p&gt;if ( ! http.STATUS_CODES[status]) {
-    status = ‘404’;
-  }&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;STATUS_CODES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;404&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;response.writeHead(status, { ‘Content-Type’: ‘text/plain’ });
-  response.end(http.STATUS_CODES[status]);
-}).listen(process.env.PORT || 5000);
-```&lt;/p&gt;
+  &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeHead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Content-Type&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;text/plain&#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;STATUS_CODES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This will create a server on port 5000, or any port that you specify in the &lt;code class=&quot;highlighter-rouge&quot;&gt;PORT&lt;/code&gt; environment variable. It will respond to &lt;code class=&quot;highlighter-rouge&quot;&gt;/{CODE}&lt;/code&gt; and return the HTTP status that corresponds to &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;CODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;. Here’s a couple of examples:&lt;/p&gt;
 
-&lt;p&gt;```
-$ curl -i http://127.0.0.1:5000/500
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl -i http://127.0.0.1:5000/500
 HTTP/1.1 500 Internal Server Error
 Content-Type: text/plain
 Date: Mon, 30 Sep 2013 14:10:10 GMT
 Connection: keep-alive
-Transfer-Encoding: chunked&lt;/p&gt;
+Transfer-Encoding: chunked
 
-&lt;p&gt;Internal Server Error%
-&lt;code class=&quot;highlighter-rouge&quot;&gt;
-&lt;/code&gt;
-$ curl -i http://127.0.0.1:5000/404
+Internal Server Error%
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl -i http://127.0.0.1:5000/404
 HTTP/1.1 404 Not Found
 Content-Type: text/plain
 Date: Mon, 30 Sep 2013 14:10:32 GMT
 Connection: keep-alive
-Transfer-Encoding: chunked&lt;/p&gt;
+Transfer-Encoding: chunked
 
-&lt;p&gt;Not Found%
-```&lt;/p&gt;
+Not Found%
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This is a really simple example, and could easily be extended to let you specify a &lt;code class=&quot;highlighter-rouge&quot;&gt;Location&lt;/code&gt; header value for 30X responses.&lt;/p&gt;
 
