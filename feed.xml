@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 Feb 2016 21:24:55 +0000</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2016 21:24:55 +0000</lastBuildDate>
+    <pubDate>Sun, 28 Feb 2016 20:54:10 +0000</pubDate>
+    <lastBuildDate>Sun, 28 Feb 2016 20:54:10 +0000</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -121,6 +121,14 @@
         &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://paulstovell.com/blog/reactive-programming&quot;&gt;What is Reactive Programming?&lt;/a&gt;
     &lt;/h4&gt;
     &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A very concise explanation of what (functional) reactive programming is.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div data-collection-item=&quot;&quot; data-tags=&quot;[&amp;quot;Blog&amp;quot;, &amp;quot;Intermediate&amp;quot;, &amp;quot;Haskell&amp;quot;]&quot; data-category=&quot;Articles, Papers &amp;amp; Blog Posts&quot;&gt;
+    &lt;h4&gt;
+        &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html&quot;&gt;Functors, Applicatives, And Monads In Pictures&lt;/a&gt;
+    &lt;/h4&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A great illustrated introduction to functors, applicatives and monads.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
