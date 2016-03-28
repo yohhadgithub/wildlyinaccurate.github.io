@@ -6,9 +6,40 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Feb 2016 20:54:10 +0000</pubDate>
-    <lastBuildDate>Sun, 28 Feb 2016 20:54:10 +0000</lastBuildDate>
+    <pubDate>Mon, 28 Mar 2016 13:29:54 +0100</pubDate>
+    <lastBuildDate>Mon, 28 Mar 2016 13:29:54 +0100</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>How can we fix open source culture?</title>
+        <description>&lt;p&gt;The recent kerfuffle around the &lt;a href=&quot;http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm&quot;&gt;NPM #unpublishgate&lt;/a&gt; and the &lt;a href=&quot;https://medium.com/@boennemann/your-just-considered-harmful-679db7366b95&quot;&gt;Greenkeeper bot impersonation&lt;/a&gt; has got me thinking about the open source community and its culture.&lt;/p&gt;
+
+&lt;p&gt;Sometimes the open source community feels like a wonderful, cooperative, welcoming place. There have been times when maintaining an open source project has given me an enormous sense of satisfaction and wellbeing. On the best days, complete strangers offer valuable feedback and even actively contribute to my projects.&lt;/p&gt;
+
+&lt;p&gt;On the worst days I feel drained, unappreciated, and even abused. Stephan describes this more concicely than I could right at the bottom of &lt;a href=&quot;https://medium.com/@boennemann/your-just-considered-harmful-679db7366b95&quot;&gt;&lt;em&gt;Your “just” considered harmful&lt;/em&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The reactions to the npm #unpublishgate showed me once more just how far spread entitled and toxic behavior is in our community. This has to change and being silent or accepting won’t help.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is the part of the open source culture that we need to fix. &lt;em&gt;Entitled&lt;/em&gt; and &lt;em&gt;toxic&lt;/em&gt; are not words that I associate with welcoming and inclusive communities. Yet they are completely apt descriptions of behaviour which is common within the open source community.&lt;/p&gt;
+
+&lt;p&gt;I don’t have any solutions to offer. I’m merely venting some frustrations which have been building up for quite some time. But &lt;strong&gt;we need to fix this&lt;/strong&gt;. I don’t want to see this toxic behaviour cause another friend, colleague, or community member to suffer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How can we fix open source culture?&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Mar 2016 00:00:00 +0100</pubDate>
+        <link>https://wildlyinaccurate.com/how-can-we-fix-open-source-culture/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/how-can-we-fix-open-source-culture/</guid>
+        
+        <category>open source</category>
+        
+        <category>culture</category>
+        
+        
+        <category>Open Source</category>
+        
+      </item>
     
       <item>
         <title>Accidental Keyboard Enthusiasm</title>
@@ -2157,69 +2188,6 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
         <category>Programming</category>
         
         <category>Thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>HTTP status as a service</title>
-        <description>&lt;p&gt;Using Node.js* you can run a simple “HTTP status as a service” server. This can be useful for quickly checking whether your application handles various status codes.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;STATUS_CODES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;404&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeHead&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Content-Type&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;text/plain&#39;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;STATUS_CODES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PORT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This will create a server on port 5000, or any port that you specify in the &lt;code class=&quot;highlighter-rouge&quot;&gt;PORT&lt;/code&gt; environment variable. It will respond to &lt;code class=&quot;highlighter-rouge&quot;&gt;/{CODE}&lt;/code&gt; and return the HTTP status that corresponds to &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;CODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;. Here’s a couple of examples:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl -i http://127.0.0.1:5000/500
-HTTP/1.1 500 Internal Server Error
-Content-Type: text/plain
-Date: Mon, 30 Sep 2013 14:10:10 GMT
-Connection: keep-alive
-Transfer-Encoding: chunked
-
-Internal Server Error%
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ curl -i http://127.0.0.1:5000/404
-HTTP/1.1 404 Not Found
-Content-Type: text/plain
-Date: Mon, 30 Sep 2013 14:10:32 GMT
-Connection: keep-alive
-Transfer-Encoding: chunked
-
-Not Found%
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This is a really simple example, and could easily be extended to let you specify a &lt;code class=&quot;highlighter-rouge&quot;&gt;Location&lt;/code&gt; header value for 30X responses.&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;*Well, you could use anything really. I’m just using Node.js since JavaScript is my language of choice.&lt;/small&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 30 Sep 2013 15:13:22 +0100</pubDate>
-        <link>https://wildlyinaccurate.com/http-status-as-a-service/</link>
-        <guid isPermaLink="true">https://wildlyinaccurate.com/http-status-as-a-service/</guid>
-        
-        <category>http status code</category>
-        
-        <category>node.js</category>
-        
-        <category>service</category>
-        
-        
-        <category>JavaScript</category>
-        
-        <category>Web Development</category>
         
       </item>
     
