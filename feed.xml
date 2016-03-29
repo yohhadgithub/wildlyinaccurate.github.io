@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Mar 2016 13:29:54 +0100</pubDate>
-    <lastBuildDate>Mon, 28 Mar 2016 13:29:54 +0100</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 10:27:54 +0100</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 10:27:54 +0100</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -269,6 +269,7 @@
   &lt;li&gt;&lt;a href=&quot;#some-notes-on-terminology&quot; id=&quot;markdown-toc-some-notes-on-terminology&quot;&gt;Some notes on terminology&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#find-which-commit-a-reference-points-at&quot; id=&quot;markdown-toc-find-which-commit-a-reference-points-at&quot;&gt;Find which commit a reference points at&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#find-which-branches-a-commit-is-in&quot; id=&quot;markdown-toc-find-which-branches-a-commit-is-in&quot;&gt;Find which branches a commit is in&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#find-commits-which-are-in-one-branch-but-not-another&quot; id=&quot;markdown-toc-find-commits-which-are-in-one-branch-but-not-another&quot;&gt;Find commits which are in one branch but not another&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#view-details-of-an-object&quot; id=&quot;markdown-toc-view-details-of-an-object&quot;&gt;View details of an object&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#print-the-tree-of-a-given-reference&quot; id=&quot;markdown-toc-print-the-tree-of-a-given-reference&quot;&gt;Print the tree of a given reference&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#find-the-first-tag-which-contains-a-reference&quot; id=&quot;markdown-toc-find-the-first-tag-which-contains-a-reference&quot;&gt;Find the first tag which contains a reference&lt;/a&gt;&lt;/li&gt;
@@ -307,6 +308,23 @@ $ git rev-parse --short HEAD
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;h3 id=&quot;find-commits-which-are-in-one-branch-but-not-another&quot;&gt;Find commits which are in one branch but not another&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline --right-only master...hotfix-1
+
+0f64e9e Apply hotfix patch from #2914 to hotfix-1
+bc3bff5 [Cherry-pick] Fix issue #2926
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h5 id=&quot;exclude-commits-which-were-cherry-picked&quot;&gt;Exclude commits which were cherry-picked&lt;/h5&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline --cherry-pick --right-only master...hotfix-1
+
+0f64e9e Apply hotfix patch from #2914 to hotfix-1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;view-details-of-an-object&quot;&gt;View details of an object&lt;/h3&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -p HEAD
@@ -319,14 +337,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h4 id=&quot;show-an-objects-type&quot;&gt;Show an object’s type&lt;/h4&gt;
+&lt;h5 id=&quot;show-an-objects-type&quot;&gt;Show an object’s type&lt;/h5&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -t HEAD
 commit
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h4 id=&quot;show-an-objects-size&quot;&gt;Show an object’s size&lt;/h4&gt;
+&lt;h5 id=&quot;show-an-objects-size&quot;&gt;Show an object’s size&lt;/h5&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git cat-file -s HEAD
 253
