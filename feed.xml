@@ -6,9 +6,268 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Mar 2016 10:27:54 +0100</pubDate>
-    <lastBuildDate>Tue, 29 Mar 2016 10:27:54 +0100</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Sat, 23 Jul 2016 22:44:50 +0100</pubDate>
+    <lastBuildDate>Sat, 23 Jul 2016 22:44:50 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.5</generator>
+    
+      <item>
+        <title>Redefining the BBC News core experience</title>
+        <description>&lt;p&gt;In the beginning of 2012 the BBC Responsive News team wrote about how they provide a “core experience” for users by default, and then progressively enhance the page based on the &lt;a href=&quot;http://responsivenews.co.uk/post/18948466399/cutting-the-mustard&quot;&gt;cut the mustard test&lt;/a&gt;. At the time, this was cutting edge. They were able to build pages which worked on practically any browser without compromising the experience for users on modern browsers. To quote directly from the Responsive News blog:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The first tier of support we call the core experience. This works on everything. I’ve seen it work on a Nokia E65, a Blackberry OS4, Kindle 1, a HTC Touch 2 running Win Mobile 6.5, a Samsung U900 Soul, a Commodore Vic20, my nan’s slipper and a toaster just selotaped to a TV. Likewise, GoogleBot, text-browsers like Lynx, folks that disable JavaScript and so on are all assured a good level of service.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This technique is still in use today, and is an integral part of the front-end strategy for all modern BBC News pages. In 2012 it allowed the team to provide a fast and lightweight experience for users on low-end devices. 7 HTTP requests totalling 21KB was all it took to load the core experience of the BBC News front page. All users benefited from this initially fast load, with modern browsers progressively enhancing the rest of the page after the content was loaded.&lt;/p&gt;
+
+&lt;p&gt;It has been over 4 years since the BBC News core experience was first built, and a lot has changed since then. Today, the core experience consists of 75 HTTP requests totalling over 300KB – over 15x heavier than the original core experience. With JavaScript disabled and tracking pixels blocked, this can be reduced to 33 requests totalling 125KB – still over 6x heavier. This is insane. This is not a core experience.&lt;/p&gt;
+
+&lt;p&gt;The BBC News team is aware of their website’s shortcomings. Back in May 2015 I conducted a huge performance review which I’ve spoken about extensively both &lt;a href=&quot;http://slides.com/wildlyinaccurate/bbc-news-performance-review&quot;&gt;internally&lt;/a&gt; and &lt;a href=&quot;http://slides.com/wildlyinaccurate/bbc-news-performance&quot;&gt;externally&lt;/a&gt; (&lt;a href=&quot;https://www.youtube.com/watch?v=nE4LTRfcr94&quot;&gt;video&lt;/a&gt;). A &lt;em&gt;lot&lt;/em&gt; of work has been done over the last year, and many of the issues mentioned in those slides have already been addressed. Despite this, the elephant in the room is still the core experience.&lt;/p&gt;
+
+&lt;p&gt;That’s why when BBC News ran an internal hack day (where people can form teams to work on whatever they like) I took the opportunity to totally redefine the BBC News core experience.&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-have-a-core-experience&quot;&gt;Why have a core experience?&lt;/h2&gt;
+
+&lt;p&gt;If you’re not already convinced that having a core experience is a good idea, I’ll attempt to sell it to you now.&lt;/p&gt;
+
+&lt;p&gt;Of the 3.6 billion Internet users today, over 2 billion (65%) are accessing the web from developing countries. This percentage will continue to increase over the coming years, as Intenet usage in developing countries is growing over 100x faster than the rest of the world. Yes, you read that right – 100x! In India alone, over 108 million people accessed the Internet for the first time in the last year. That was a 30% increase over the year before.&lt;/p&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Internet growth in India is accelerating at an enormous rate&quot; src=&quot;/assets/internet-growth-in-india.png&quot; width=&quot;800&quot; srcset=&quot;/assets/resized/internet-growth-in-india-320x181.png 320w, /assets/resized/internet-growth-in-india-360x204.png 360w, /assets/resized/internet-growth-in-india-720x408.png 720w,  /assets/internet-growth-in-india.png 800w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        Internet growth in India is accelerating at an enormous rate
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Despite huge Internet growth in developing countries, device capabilities and connection speeds are not improving. A typical smartphone sold in India in 2016 has 512MB of RAM, or about one sixth of a typical 2016 smartphone sold in developed countries. Fast connections are still a precious commodity, with nearly 70% of users in developing countries rely on cellular data to access the Internet. What’s interesting is that while this number is much lower in developed countries (10-20%), it has actually been &lt;em&gt;increasing&lt;/em&gt; -not decreasing- over the last few years.&lt;/p&gt;
+
+&lt;p&gt;So what does all of this have to do with a core experience?&lt;/p&gt;
+
+&lt;p&gt;If the majority of your users access the Internet on a mobile connection, then (hopefully) the last thing you want to do is send them bytes they don’t need. Not only can this be costly for your users (it would take 17 hours of minimum wage work in India to purchase 500MB of mobile data), it can also be costly for your business. At BBC News, the difference between a page loading in 4 seconds versus the same page loading in 8 seconds correlates to a 30% increase in users abandoning the page. This is a big deal for content providers like the BBC, and an even bigger deal for online stores.&lt;/p&gt;
+
+&lt;p&gt;Providing a core experience is about being able to reach users all around the world, regardless of connection speed and device capabilities. It’s about thinking beyond the USA &amp;amp; Europe, and welcoming the other 65% of the Internet to your website.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-definition&quot;&gt;The definition&lt;/h2&gt;
+
+&lt;p&gt;A core experience should be made up of these five things, in order of importance:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The page content.&lt;/li&gt;
+  &lt;li&gt;The markup required to make the page accessible.&lt;/li&gt;
+  &lt;li&gt;Minimal styling to make the content easily readable – grids, typography, etc.&lt;/li&gt;
+  &lt;li&gt;Minimal styling to brand the page – logo, colours.&lt;/li&gt;
+  &lt;li&gt;The means to enhance the page where appropriate.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A core experience should be &lt;em&gt;just&lt;/em&gt; these things. Everything else is an enhancement.&lt;/p&gt;
+
+&lt;p&gt;The way this has been achieved so far at the BBC has been to create a small &lt;code class=&quot;highlighter-rouge&quot;&gt;core.css&lt;/code&gt; stylesheet containing just the styles for points 3 and 4. Then, provided the browser cuts the mustard, some JavaScript inserts an &lt;code class=&quot;highlighter-rouge&quot;&gt;enhanced.css&lt;/code&gt; stylesheet into the page which contains the rest of the styling. This JavaScript is also responsible for downloading and initialising other JavaScript enhancements, like live updates and localisation services.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem-with-the-bbc-news-core-experience&quot;&gt;The problem with the BBC News core experience&lt;/h2&gt;
+
+&lt;p&gt;Cutting the mustard to provide an enhanced experience is great from a web developer’s point of view: browsers which use &lt;code class=&quot;highlighter-rouge&quot;&gt;enhanced.css&lt;/code&gt; can use modern (in browser terms) standards like CSS3. Likewise, modern JavaScript can be used without the need for polyfills or compatability libraries. But there’s a problem with this approach: the user has no say in which experience they get.&lt;/p&gt;
+
+&lt;p&gt;The fact that a user has a modern browser does not mean that they have a fast or reliable connection. Providing a core experience is useless if users are going to be forced onto the enhanced experience anyway. Loading the enhanced BBC News front page on a mobile device will cost about 500KB (or 10 minutes of minimum wage work). Opening an article page from there will cost another 370KB. That’s a cost of nearly 1MB of data just to read a single article.&lt;/p&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC News core experience on a wide screen&quot; src=&quot;/assets/bbc-news-core.png&quot; width=&quot;640&quot; srcset=&quot;/assets/resized/bbc-news-core-320x351.png 320w, /assets/resized/bbc-news-core-360x395.png 360w,  /assets/bbc-news-core.png 640w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        The BBC News core experience on a wide screen
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Another issue I have with the BBC News core experience is that it was designed to work well on small smartphones and feature phones. The content is forced into a single column layout, and the main image size is hardcoded to 200px. It doesn’t look so good on anything larger than a small phone. This is problematic if we consider that people may want to receive the core experience on a larger device. It is unfair that they should have a degraded experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;starting-from-scratch&quot;&gt;Starting from scratch&lt;/h2&gt;
+
+&lt;p&gt;Earlier this week, I started thinking about how I would approach the core experience for BBC News if I was given the opportunity to build it from scratch.&lt;/p&gt;
+
+&lt;p&gt;What I came up with was a hand rolled CSS framework using Sass mixins from &lt;a href=&quot;https://github.com/twbs/bootstrap/tree/v4-dev&quot;&gt;Bootstrap v4&lt;/a&gt;, which allowed me to build a page with very minimal markup. The results were promising:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A 7KB HTML document containing all the core content and styles – 80% smaller than the current 36KB core experience.&lt;/li&gt;
+  &lt;li&gt;2 HTTP requests totalling 27KB – 73 fewer requests and 90% fewer bytes.&lt;/li&gt;
+  &lt;li&gt;A fully responsive page which works at all device widths.&lt;/li&gt;
+  &lt;li&gt;Responsive images for browsers which support &lt;code class=&quot;highlighter-rouge&quot;&gt;srcset&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;100ms first paint time – 150ms faster (60%) than the current core experience.&lt;/li&gt;
+  &lt;li&gt;460ms first paint time – 440ms faster (50%).&lt;/li&gt;
+  &lt;li&gt;A much smaller CPU profile.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The CPU profile of the lightweight prototype&quot; src=&quot;/assets/lightweight-cpu-profile.png&quot; width=&quot;619&quot; srcset=&quot;/assets/resized/lightweight-cpu-profile-320x42.png 320w, /assets/resized/lightweight-cpu-profile-360x47.png 360w,  /assets/lightweight-cpu-profile.png 619w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        The CPU profile of the lightweight prototype
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The CPU profile of the current BBC News core experience&quot; src=&quot;/assets/bbc-news-core-cpu-profile.png&quot; srcset=&quot;/assets/resized/bbc-news-core-cpu-profile-320x26.png 320w, /assets/resized/bbc-news-core-cpu-profile-360x29.png 360w, /assets/resized/bbc-news-core-cpu-profile-720x58.png 720w, /assets/resized/bbc-news-core-cpu-profile-940x76.png 940w,  /assets/bbc-news-core-cpu-profile.png 999w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        The CPU profile of the current BBC News core experience
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Obviously I’ve cheated a lot. There is no white “BBC bar” at the top (which accounts for much of the page weight on the core experience). There is no site navigation, and about 15% of the content is missing. However, I’m confident that the navigation and remaining content can be added to the pagein just a couple more bytes of HTML and CSS.&lt;/p&gt;
+
+&lt;p&gt;Here is the finished product on a wide screen:&lt;/p&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The lightweight core experience prototype&quot; src=&quot;/assets/redefining-core-prototype.png&quot; srcset=&quot;/assets/resized/redefining-core-prototype-320x267.png 320w, /assets/resized/redefining-core-prototype-360x300.png 360w, /assets/resized/redefining-core-prototype-720x601.png 720w,  /assets/redefining-core-prototype.png 912w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        The lightweight core experience prototype
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;You can find the (minified) code &lt;a href=&quot;https://github.com/wildlyinaccurate/lightweight-progressive-news&quot;&gt;on GitHub&lt;/a&gt;, and view the live prototype at &lt;a href=&quot;https://wildlyinaccurate.com/lightweight-progressive-news/&quot;&gt;https://wildlyinaccurate.com/lightweight-progressive-news/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As well as creating a truly lightweight core experience, I also wanted to think about how we can put people back in control of their own web experience. We can give people a core experience when we think they need it -for example by detecting screen width or connection speed- and also them give them the controls to progressively enhance the page themselves.&lt;/p&gt;
+
+&lt;p&gt;I’ve started to explore these ideas by implementing two controls:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A button which (lazily) loads the remaining images on the page. This requires basic JavaScript support, so can be used by most users.&lt;/li&gt;
+  &lt;li&gt;Buttons to prefetch article content. This requires a browser with Service Worker support.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I think there’s certainly more to explore in this area, especially around minimising the amount of interaction required to receive the optimal or desired experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-isnt-the-core-experience-already-like-this&quot;&gt;Why isn’t the core experience already like this?&lt;/h2&gt;
+
+&lt;p&gt;When I presented this prototype to the BBC News technical teams, the responses were mostly along the lines of &lt;em&gt;“why isn’t the core experience already like that?”&lt;/em&gt;. I may be trivialising it slightly, but I think that the answer to that question is pretty simple: feature creep, and a lack of monitoring.&lt;/p&gt;
+
+&lt;p&gt;I cannot stress enough how important monitoring is for performance. The BBC’s lack of performance monitoring is probably one of the biggest reasons behind the deteriation of the BBC News core experience. Good monitoring enables realistic performance budgets, which in turn enables automated warnings when performance budgets are broken.&lt;/p&gt;
+
+&lt;p&gt;Today the BBC uses &lt;a href=&quot;https://speedcurve.com/&quot;&gt;SpeedCurve&lt;/a&gt; to run over 22,000 performance tests each month. These tests notify us when we approach our performance budgets, and allow us to address problems before they become a serious concern.&lt;/p&gt;
+
+&lt;p&gt;Feature creep is a harder problem to address. At the BBC, it has mostly come in the form of the “white BBC bar” at the top of every page. This is an area of the page which used to have a very good core experience, but over the last few years it has expanded to include features from internal products around the BBC. These include:&lt;/p&gt;
+
+&lt;h4 id=&quot;bbc-id&quot;&gt;BBC ID&lt;/h4&gt;
+
+&lt;p&gt;The ID service allows you to sign in so that you can do things like post comments and receive notifications. It adds 13 HTTP requests to the page -8 of which are scripts- totalling 25KB.&lt;/p&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC ID button&quot; src=&quot;/assets/bbc-id.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-id-320x20.png 320w, /assets/resized/bbc-id-360x22.png 360w,  /assets/bbc-id.png 617w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        The BBC ID button
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h4 id=&quot;notifications&quot;&gt;Notifications&lt;/h4&gt;
+
+&lt;p&gt;The notifications service is the little bell icon at the top. When you’re signed in, it will notify you when your favourite TV shows and radio programmes are updated. Notifications adds 7 HTTP requests to the page, with a weight of 37KB. 2 of these requests are scripts, and 4 are individual SVG icons.&lt;/p&gt;
+
+&lt;p&gt;Clicking the icon results in another 2 requests being made, including a 47KB webfont.&lt;/p&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC Notifications popover&quot; src=&quot;/assets/bbc-notifications.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-notifications-320x126.png 320w, /assets/resized/bbc-notifications-360x141.png 360w,  /assets/bbc-notifications.png 617w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        The BBC Notifications popover
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h4 id=&quot;search&quot;&gt;Search&lt;/h4&gt;
+
+&lt;p&gt;Search is the simple text input at the top-right of the page. Only, it’s not simple. When you start to type into the input, you’re presented with a lookahead-esque search interface. The BBC Search interface adds 4 HTTP requests to the page, totalling 14KB.&lt;/p&gt;
+
+&lt;p&gt;Beginning to type into the search input triggers &lt;code class=&quot;highlighter-rouge&quot;&gt;app.min.js&lt;/code&gt; to be loaded in the page, weighing in at a hefty 86KB – or 320KB without compression! Furthermore, two HTTP requests at 4KB each are made on the (debounced) &lt;code class=&quot;highlighter-rouge&quot;&gt;onchange&lt;/code&gt; event. Simply typing the word &lt;em&gt;“bears”&lt;/em&gt; resulted in my browser making 10 additional requests totalling 43KB.&lt;/p&gt;
+
+&lt;div class=&quot;thumbnail &quot;&gt;
+    
+
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC Search interface&quot; src=&quot;/assets/bbc-search.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-search-320x224.png 320w, /assets/resized/bbc-search-360x252.png 360w,  /assets/bbc-search.png 617w&quot; /&gt;
+
+    
+
+    
+    &lt;div class=&quot;thumbnail__caption&quot;&gt;
+        The BBC Search interface
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Not a single one of these products provides a core experience. And, unfortunately for the BBC News development teams, including these products in the page is not optional.&lt;/p&gt;
+
+&lt;p&gt;Every website will have its own unique set of challenges around feature creep. My advice is to have good monitoring, and take your performance bugdets seriously. In short:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Don’t&lt;/strong&gt; increase the budget to accommodate new features.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Do&lt;/strong&gt; compromise by removing or optimising old features.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;where-to-from-here&quot;&gt;Where to from here?&lt;/h2&gt;
+
+&lt;p&gt;I want the BBC to start taking the core experience seriously again. Prototyes like this will help to remind people just how fast and light a page can be when you focus on the content.&lt;/p&gt;
+
+&lt;p&gt;BBC World Service is expanding to reach a wider audience by 2020, and most of the users in that audience will come from developing countries. This is a fantastic opportunity to reinvent the BBC’s web experience and tailor it for the users we &lt;em&gt;have&lt;/em&gt; (people using underpowered phones on mobile connections), rather than the users we &lt;em&gt;want&lt;/em&gt; (people using Macbooks on cable connections).&lt;/p&gt;
+
+&lt;p&gt;With HTTPS Everywhere being &lt;a href=&quot;http://www.bbc.co.uk/blogs/internet/entries/f6f50d1f-a879-4999-bc6d-6634a71e2e60&quot;&gt;rolled out across the BBC&lt;/a&gt; later this year, the ability to use Service Workers on BBC websites is finally a reality. This opens up another set of opportunities around progressive enhancement and performance.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Jul 2016 00:00:00 +0100</pubDate>
+        <link>https://wildlyinaccurate.com/redefining-the-bcc-news-core-experience/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/redefining-the-bcc-news-core-experience/</guid>
+        
+        <category>performance</category>
+        
+        <category>bbc news</category>
+        
+        <category>core experience</category>
+        
+        <category>cut the mustard</category>
+        
+        
+        <category>BBC News</category>
+        
+      </item>
     
       <item>
         <title>How can we fix open source culture?</title>
@@ -627,7 +886,7 @@ The quick brown fox jumps over the lazy fox.
 
 &lt;h3 id=&quot;notypejs&quot;&gt;notype.js&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -637,7 +896,7 @@ The quick brown fox jumps over the lazy fox.
 
 &lt;h3 id=&quot;withtypejs&quot;&gt;withtype.js&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1970,7 +2229,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;Don’t worry if this doesn’t make sense yet. To see prototypes in action, let’s take a look at the simplest example of a “class” within JavaScript, which is created with a function object:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -1978,7 +2237,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;We can add properties to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; class in two ways: either by setting them as &lt;em&gt;instance properties&lt;/em&gt;, or by adding them to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// Instance properties can be set on each instance of the class&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -2007,7 +2266,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;Now let’s look at how we can extend the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; class to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; class:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
@@ -2050,162 +2309,6 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
         
         
         <category>JavaScript</category>
-        
-      </item>
-    
-      <item>
-        <title>Defining readable code</title>
-        <description>&lt;p&gt;Code readability is something that I often bring up during code reviews, but I often have trouble explaining &lt;em&gt;why&lt;/em&gt; I find a piece of code to be easy or difficult to read.&lt;/p&gt;
-
-&lt;p&gt;When you ask programmers how to make code easier to read, many of them will mention things like coding standards, descriptive naming, and decomposition. These things actually aid in making code easier to &lt;em&gt;comprehend&lt;/em&gt; rather than easier to &lt;em&gt;read&lt;/em&gt;. For me, &lt;em&gt;readability&lt;/em&gt; is at a lower level, somewhere between legibility and comprehension.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;div class=&quot;thumbnail &quot;&gt;
-    
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Legibility - Readability - Comprehension&quot; src=&quot;/assets/legibility-readability-comprehension.png&quot; width=&quot;508&quot; srcset=&quot;/assets/resized/legibility-readability-comprehension-320x277.png 320w, /assets/resized/legibility-readability-comprehension-360x312.png 360w,  /assets/legibility-readability-comprehension.png 508w&quot; /&gt;
-
-    
-
-    
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Legibility - Readability - Comprehension
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;At the lowest level is legibility. This is how easily individual characters can be distinguished from each other, and can usually be boiled down to the choice of font, as well as the foreground &amp;amp; background colours.&lt;/p&gt;
-
-&lt;p&gt;At the highest level is comprehension, which is the ease in which a block of code can be fully understood. Decomposition, naming conventions and comments are just a few of the many ways to improve comprehension.&lt;/p&gt;
-
-&lt;p&gt;Readability sits between these two. This level is a little harder to define, but I believe it comes down to two main factors: &lt;strong&gt;structure&lt;/strong&gt; and &lt;strong&gt;line density&lt;/strong&gt;.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;structure&quot;&gt;Structure&lt;/h2&gt;
-
-&lt;p&gt;Our brains are very good at identifying structure and patterns; we find them pleasing. In the same sense, many people find a lack of structure to be quite displeasing. The effect of structure on readability can be easily demonstrated using an excerpt from this BBC article &lt;a href=&quot;http://www.bbc.co.uk/news/science-environment-25163113&quot;&gt;&lt;em&gt;Indian probe begins journey to Mars&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;col-xs-6&quot;&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;India’s mission to Mars has embarked on its 300-day journey to the Red Planet. Early on Sunday the spacecraft fired its main engine for more than 20 minutes, giving it the correct velocity to leave Earth’s orbit. It will now cruise for 680m km (422m miles), setting up an encounter with its target on 24 September 2014.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;col-xs-6&quot;&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;India’s mission to Mars has embarked on its 300-day journey to the Red Planet.&lt;/p&gt;
-
-    &lt;p&gt;Early on Sunday the spacecraft fired its main engine for more than 20 minutes, giving it the correct velocity to leave Earth’s orbit.&lt;/p&gt;
-
-    &lt;p&gt;It will now cruise for 680m km (422m miles), setting up an encounter with its target on 24 September 2014.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;Without even reading the content, the second version should appear more pleasant. The line breaks should give you a visual cue that each paragraph, while relevant, is not directly related to its neighbours. This is important because it lets you digest the text in smaller chunks which are much easier to comprehend by themselves than one big wall of text.&lt;/p&gt;
-
-&lt;p&gt;Breaking up large amounts of text into paragraphs is common practice in modern writing. Unfortunately, this practice doesn’t seem to have been adopted by programmers. It’s not uncommon to see code with no more than one sequential line break.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;57&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*&#39;9&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;A&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;  &lt;span class=&quot;cm&quot;&gt;/*&#39;Z&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;0&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromCharCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The above is an excerpt from the &lt;a href=&quot;https://github.com/mozilla/persona&quot;&gt;Mozilla Persona&lt;/a&gt; source code. It’s only 14 lines long, but you need to really engage your brain to read and understand it. Without some sort of paragraph structure, we have no way of knowing which lines are related, so we’re forced to digest all 14 lines at once.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;57&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/*&#39;9&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;A&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;  &lt;span class=&quot;cm&quot;&gt;/*&#39;Z&#39;*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;0&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fromCharCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;With only 2 extra line breaks, the code has been changed from a single 14-line block to three distinct blocks, with the largest being only 6 lines. With this added structure, it’s much easier to figure out what each block does: Block #1 sets the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;digit&lt;/code&gt;. Block #2 handles the case of &lt;code class=&quot;highlighter-rouge&quot;&gt;digit&lt;/code&gt; being 57. Block #3 handles the case of &lt;code class=&quot;highlighter-rouge&quot;&gt;digit&lt;/code&gt; being 90, and every other case as well. The difference may be trivial in this example, but applied to larger blocks of code this technique can save hours of time trying to read code.&lt;/p&gt;
-
-&lt;p&gt;There aren’t any solid rules on when to separate blocks of code. Usually you should trust your gut and split code into blocks of related lines. As a guideline though, I tend to treat the following as separate blocks:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Initialization &amp;amp; assignment&lt;/li&gt;
-  &lt;li&gt;Control flow&lt;/li&gt;
-  &lt;li&gt;Data transformations&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;line-density&quot;&gt;Line density&lt;/h2&gt;
-
-&lt;p&gt;Writers will often use &lt;a href=&quot;http://en.wikipedia.org/wiki/Plain_language&quot;&gt;plain language&lt;/a&gt; to reduce the &lt;em&gt;idea density&lt;/em&gt; of their text. This enables readers to quickly skim over text rather than making an effort to understand complex language. Programmers can use similar techniques to reduce what I call the &lt;em&gt;line density&lt;/em&gt; of code. Lines become dense when they contain too much logic. A good example is a complex if-statement.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In this example, the reader must make a significant effort to determine that there are 3 possible “truth” conditions. The reason this requires so much effort is because we are required to read the line character-by-character until we find the &lt;code class=&quot;highlighter-rouge&quot;&gt;||&lt;/code&gt;, which we know separates each condition.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;By moving each condition onto its own line, the overall line density is reduced, thereby reducing the mental effort required to identify the conditions.&lt;/p&gt;
-
-&lt;p&gt;Line density also applies to function calls which take a large number of arguments.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;longVariableName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;anotherVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;array&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;of&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;things&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getSomethingFrom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;SOME_CONSTANT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This can be made more readable by moving each argument onto a separate line.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;longVariableName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;anotherVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;array&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;of&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;things&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;getSomethingFrom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;SOME_CONSTANT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;other-factors&quot;&gt;Other factors&lt;/h2&gt;
-
-&lt;p&gt;There are plenty of other factors involved in code readability. But as with most things, readability is entirely subjective – it’s important not to confuse it with personal preference.&lt;/p&gt;
-
-&lt;p&gt;Programming is an interesting mix of engineering and craft. As well as borrowing precision and discipline from engineering, we need to remember to also borrow style and ergonomics from visual design.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 10 Mar 2014 12:40:55 +0000</pubDate>
-        <link>https://wildlyinaccurate.com/what-makes-code-readable/</link>
-        <guid isPermaLink="true">https://wildlyinaccurate.com/what-makes-code-readable/</guid>
-        
-        <category>readability</category>
-        
-        
-        <category>Programming</category>
-        
-        <category>Thoughts</category>
         
       </item>
     
