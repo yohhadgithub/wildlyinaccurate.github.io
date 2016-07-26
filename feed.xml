@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Jul 2016 18:50:04 +0100</pubDate>
-    <lastBuildDate>Sun, 24 Jul 2016 18:50:04 +0100</lastBuildDate>
+    <pubDate>Tue, 26 Jul 2016 18:01:17 +0100</pubDate>
+    <lastBuildDate>Tue, 26 Jul 2016 18:01:17 +0100</lastBuildDate>
     <generator>Jekyll v3.0.5</generator>
     
       <item>
@@ -46,7 +46,7 @@
     
 &lt;/div&gt;
 
-&lt;p&gt;Despite huge Internet growth in developing countries, device capabilities and connection speeds are not improving. A typical smartphone sold in India in 2016 has 512MB of RAM, or about one sixth of a typical 2016 smartphone sold in developed countries. Fast connections are still a precious commodity, with nearly 70% of users in developing countries rely on cellular data to access the Internet. What’s interesting is that while this number is much lower in developed countries (10-20%), it has actually been &lt;em&gt;increasing&lt;/em&gt; -not decreasing- over the last few years.&lt;/p&gt;
+&lt;p&gt;Despite huge Internet growth in developing countries, device capabilities and connection speeds are not improving. A typical smartphone sold in India in 2016 has 512MB of RAM, or about one sixth of a typical 2016 smartphone sold in developed countries. Fast connections are still a precious commodity, with nearly 70% of users in developing countries relying on cellular data to access the Internet. What’s interesting is that while this number is much lower in developed countries (10-20%), it has actually been &lt;em&gt;increasing&lt;/em&gt; –not decreasing– over the last few years.&lt;/p&gt;
 
 &lt;p&gt;So what does all of this have to do with a core experience?&lt;/p&gt;
 
@@ -74,7 +74,7 @@
 
 &lt;p&gt;Cutting the mustard to provide an enhanced experience is great from a web developer’s point of view: browsers that use &lt;code class=&quot;highlighter-rouge&quot;&gt;enhanced.css&lt;/code&gt; can use modern (in browser terms) standards like CSS3. Likewise, modern JavaScript can be used without the need for polyfills or compatibility libraries. But there’s a problem with this approach: the user has no say in which experience they get.&lt;/p&gt;
 
-&lt;p&gt;The fact that a user has a modern browser does not mean that they have a fast or reliable connection. Providing a core experience is useless if users are going to be forced onto the enhanced experience anyway. Loading the enhanced BBC News front page on a mobile device will cost about 500KB (or 10 minutes of minimum wage work). Opening an article page from there will cost another 370KB. That’s a cost of nearly 1MB of data just to read a single article.&lt;/p&gt;
+&lt;p&gt;The fact that a user has a modern browser does not mean that they have a fast or reliable connection. Providing a core experience is useless if users are going to be forced onto the enhanced experience anyway. Loading the enhanced BBC News front page on a mobile device will cost about 500KB. Opening an article page from there will cost another 370KB. That’s a cost of nearly 1MB of data (or 20 minutes of minimum wage work) just to read a single article.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail &quot;&gt;
     
@@ -105,7 +105,7 @@
   &lt;li&gt;Responsive images for browsers which support &lt;code class=&quot;highlighter-rouge&quot;&gt;srcset&lt;/code&gt;, with fallbacks to a sensibly-sized &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;100ms first paint time – 150ms faster (60%) than the current core experience.&lt;/li&gt;
   &lt;li&gt;460ms first paint time – 440ms faster (50%).&lt;/li&gt;
-  &lt;li&gt;A much smaller CPU profile.&lt;/li&gt;
+  &lt;li&gt;A much better CPU profile.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;thumbnail &quot;&gt;
@@ -154,7 +154,7 @@
     
 &lt;/div&gt;
 
-&lt;p&gt;As well as creating a truly lightweight core experience, I also wanted to think about how we can put people back in control of their own web experience. We can give people a core experience when we think they need it -for example by detecting screen width or connection speed- and also them give them the controls to progressively enhance the page themselves.&lt;/p&gt;
+&lt;p&gt;As well as creating a truly lightweight core experience, I also wanted to think about how we can put people back in control of their own web experience. We can give people a core experience when we think they need it –for example by detecting screen width or connection speed– and also them give them the controls to progressively enhance the page themselves.&lt;/p&gt;
 
 &lt;p&gt;I’ve started to explore these ideas by implementing two controls:&lt;/p&gt;
 
@@ -177,20 +177,20 @@
 
 &lt;p&gt;Feature creep is a harder problem to address. At the BBC, it has mostly come in the form of the “white BBC bar” at the top of every page. This is an area of the page which used to have a very good core experience, but over the last few years it has expanded to include features from internal products around the BBC. These include:&lt;/p&gt;
 
-&lt;h4 id=&quot;bbc-id&quot;&gt;BBC ID&lt;/h4&gt;
+&lt;h4 id=&quot;bbc-id&quot;&gt;BBC iD&lt;/h4&gt;
 
 &lt;p&gt;The ID service allows you to sign in so that you can do things like post comments and receive notifications. It adds 13 HTTP requests to the page –8 of which are scripts– totalling 25KB.&lt;/p&gt;
 
 &lt;div class=&quot;thumbnail &quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC ID button&quot; src=&quot;/assets/bbc-id.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-id-320x20.png 320w, /assets/resized/bbc-id-360x22.png 360w,  /assets/bbc-id.png 617w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC iD button&quot; src=&quot;/assets/bbc-id.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-id-320x20.png 320w, /assets/resized/bbc-id-360x22.png 360w,  /assets/bbc-id.png 617w&quot; /&gt;
 
     
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The BBC ID button
+        The BBC iD button
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -246,7 +246,7 @@
 
 &lt;h2 id=&quot;where-to-from-here&quot;&gt;Where to from here?&lt;/h2&gt;
 
-&lt;p&gt;I want the BBC to start taking the core experience seriously again. Prototypes like this will help to remind people just how fast and light a page can be when you focus on the content.&lt;/p&gt;
+&lt;p&gt;I want the BBC to start taking the core experience seriously again. The prototype that I have built serves as a reminder that web pages &lt;em&gt;can&lt;/em&gt; be fast, but only when the emphasis is on the content.&lt;/p&gt;
 
 &lt;p&gt;BBC World Service is expanding to reach a wider audience by 2020, and most of the users in that audience will come from developing countries. This is a fantastic opportunity to reinvent the BBC’s web experience and tailor it for the users we &lt;em&gt;have&lt;/em&gt; (people using underpowered phones on mobile connections), rather than the users we &lt;em&gt;want&lt;/em&gt; (people using Macbooks on cable connections).&lt;/p&gt;
 
