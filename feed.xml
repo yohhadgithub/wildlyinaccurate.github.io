@@ -6,9 +6,9 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Sep 2016 15:38:55 +0100</pubDate>
-    <lastBuildDate>Sun, 04 Sep 2016 15:38:55 +0100</lastBuildDate>
-    <generator>Jekyll v3.0.5</generator>
+    <pubDate>Mon, 26 Dec 2016 18:39:31 +1300</pubDate>
+    <lastBuildDate>Mon, 26 Dec 2016 18:39:31 +1300</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Redefining the BBC News core experience</title>
@@ -257,7 +257,7 @@
 
 &lt;p&gt;With HTTPS everywhere being &lt;a href=&quot;http://www.bbc.co.uk/blogs/internet/entries/f6f50d1f-a879-4999-bc6d-6634a71e2e60&quot;&gt;rolled out across the BBC&lt;/a&gt; later this year, the BBC’s web teams have a whole new set of opportunities before them. One of the things I’m most excited about is the ability to start using the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API&quot;&gt;service worker API&lt;/a&gt; to provide a better and more resilient web experience.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 22 Jul 2016 00:00:00 +0100</pubDate>
+        <pubDate>Fri, 22 Jul 2016 00:00:00 +1200</pubDate>
         <link>https://wildlyinaccurate.com/redefining-the-bcc-news-core-experience/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/redefining-the-bcc-news-core-experience/</guid>
         
@@ -292,7 +292,7 @@
 
 &lt;p&gt;&lt;strong&gt;How can we fix open source culture?&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 28 Mar 2016 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 28 Mar 2016 00:00:00 +1300</pubDate>
         <link>https://wildlyinaccurate.com/how-can-we-fix-open-source-culture/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/how-can-we-fix-open-source-culture/</guid>
         
@@ -368,7 +368,7 @@
 &lt;/div&gt;
 
 </description>
-        <pubDate>Sun, 23 Aug 2015 00:00:00 +0100</pubDate>
+        <pubDate>Sun, 23 Aug 2015 00:00:00 +1200</pubDate>
         <link>https://wildlyinaccurate.com/accidental-keyboard-enthusiasm/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/accidental-keyboard-enthusiasm/</guid>
         
@@ -431,7 +431,7 @@
     &lt;h4&gt;
         &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types&quot;&gt;The algebra (and calculus!) of algebraic data types&lt;/a&gt;
     &lt;/h4&gt;
-    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;An intermediate-level article which explores the connection between algebraic data types and elemendary algebra. A basic understanding of Haskell&#39;s data type declaration syntax is assumed.&lt;/p&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;An intermediate-level article which explores the connection between algebraic data types and elemendary algebra. A basic understanding of Haskell's data type declaration syntax is assumed.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -475,7 +475,7 @@
     &lt;h4&gt;
         &lt;a data-title=&quot;&quot; data-url=&quot;&quot; href=&quot;https://www.youtube.com/watch?v=cefnmjtAolY&quot;&gt;Lenses, Folds, and Traversals&lt;/a&gt;
     &lt;/h4&gt;
-    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A talk centred around the &lt;a href=&quot;http://hackage.haskell.org/package/lens&quot;&gt;lens package&lt;/a&gt;, covering how to compose lenses using Haskell&#39;s regular composition operator (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;), and illustrating a scheme for performing lens-based folds and traversals.&lt;/p&gt;
+    &lt;div data-description=&quot;&quot;&gt;&lt;p&gt;A talk centred around the &lt;a href=&quot;http://hackage.haskell.org/package/lens&quot;&gt;lens package&lt;/a&gt;, covering how to compose lenses using Haskell's regular composition operator (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;), and illustrating a scheme for performing lens-based folds and traversals.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -514,7 +514,7 @@
 &lt;/div&gt;
 
 </description>
-        <pubDate>Mon, 27 Jul 2015 00:00:00 +0100</pubDate>
+        <pubDate>Mon, 27 Jul 2015 00:00:00 +1200</pubDate>
         <link>https://wildlyinaccurate.com/functional-programming-resources/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/functional-programming-resources/</guid>
         
@@ -660,7 +660,7 @@ dangling blob 6af75568b0a8aee29c47125098b4b6d60a6a8a6f
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Wed, 08 Jul 2015 00:00:00 +0100</pubDate>
+        <pubDate>Wed, 08 Jul 2015 00:00:00 +1200</pubDate>
         <link>https://wildlyinaccurate.com/some-git-things/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/some-git-things/</guid>
         
@@ -712,7 +712,7 @@ configure: error: readline not found, so this package cannot be built
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sun, 26 Apr 2015 00:00:00 +0100</pubDate>
+        <pubDate>Sun, 26 Apr 2015 00:00:00 +1200</pubDate>
         <link>https://wildlyinaccurate.com/cabal-installing-readline-on-osx/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/cabal-installing-readline-on-osx/</guid>
         
@@ -845,13 +845,13 @@ The quick brown fox jumps over the lazy fox.
 &lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
     
 
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I&#39;m using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-320x187.jpg 320w, /assets/resized/ergodox-layout-guide-1024x598-360x210.jpg 360w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
+    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I'm using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-320x187.jpg 320w, /assets/resized/ergodox-layout-guide-1024x598-360x210.jpg 360w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
 
     
 
     
     &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The layout guide I&#39;m using to type at the moment
+        The layout guide I'm using to type at the moment
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -870,7 +870,7 @@ The quick brown fox jumps over the lazy fox.
 
 &lt;p&gt;Once I’ve reached my 100WPM goal and feel comfortable enough using the new layout in a programming context, I’ll start using the new layout at work. The final step to fully converting to the new layout will be to re-learn all of the keyboard shortcuts which are currently part of my muscle memory on a QWERTY layout.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 31 Oct 2014 13:44:00 +0000</pubDate>
+        <pubDate>Sat, 01 Nov 2014 02:44:00 +1300</pubDate>
         <link>https://wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</guid>
         
@@ -951,7 +951,7 @@ node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
 
 &lt;p&gt;If this sort of thing interests you, you might enjoy reading Thorsten Lorenz’s collection of &lt;a href=&quot;https://github.com/thlorenz/v8-perf&quot;&gt;V8 performance resources&lt;/a&gt; or Petka Antonov’s &lt;a href=&quot;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&quot;&gt;V8 optimization killers&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 02 Aug 2014 00:10:46 +0100</pubDate>
+        <pubDate>Sat, 02 Aug 2014 11:10:46 +1200</pubDate>
         <link>https://wildlyinaccurate.com/javascript-performance-variable-initialization/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/javascript-performance-variable-initialization/</guid>
         
@@ -967,7 +967,7 @@ node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
       </item>
     
       <item>
-        <title>A Hacker&#39;s Guide to Git</title>
+        <title>A Hacker's Guide to Git</title>
         <description>&lt;p&gt;&lt;em&gt;A Hacker’s Guide to Git&lt;/em&gt; is now available as an e-book. You can purchase it &lt;a href=&quot;https://leanpub.com/a-hackers-guide-to-git&quot;&gt;on Leanpub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -1132,7 +1132,7 @@ src/
 &lt;pre&gt;
  $ git init
 Initialized empty Git repository in /home/demo/simple-repository/.git/
- $ echo &#39;This is the readme.&#39; &amp;gt; README
+ $ echo 'This is the readme.' &amp;gt; README
  $ git add README
  $ git commit -m &quot;First commit&quot;
 [master (root-commit) &lt;strong&gt;d409ca7&lt;/strong&gt;] First commit
@@ -1167,7 +1167,7 @@ index 0000000..9761654
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git show d409c
 $ git show d409
 $ git show d40
-fatal: ambiguous argument &#39;d40&#39;: unknown revision or path not in the working tree.
+fatal: ambiguous argument 'd40': unknown revision or path not in the working tree.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1239,7 +1239,7 @@ d409ca76bc919d9ca797f39ae724b7c65700fd27
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/HEAD
 ref: refs/heads/master
 $ git checkout test-branch
-Switched to branch &#39;test-branch&#39;
+Switched to branch 'test-branch'
 $ cat .git/HEAD
 ref: refs/heads/test-branch
 &lt;/code&gt;&lt;/pre&gt;
@@ -1247,7 +1247,7 @@ ref: refs/heads/test-branch
 
 &lt;p&gt;When you create a new commit, Git simply changes the current branch to point to the newly-created commit object.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &#39;Some more information here.&#39; &amp;gt;&amp;gt; README
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo 'Some more information here.' &amp;gt;&amp;gt; README
 $ git add README
 $ git commit -m &quot;Update README in a new branch&quot;
 [test-branch 7604067] Update README in a new branch
@@ -1323,7 +1323,7 @@ Tagged 1.0
 &lt;p&gt;Merging in Git is the process of joining two histories (usually branches) together. Let’s start with a simple example. Say you’ve created a new feature branch from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, and done some work on it.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout -b feature-branch
-Switched to a new branch &#39;feature-branch&#39;
+Switched to a new branch 'feature-branch'
 $ vim feature.html
 $ git commit -am &quot;Finished the new feature&quot;
 [feature-branch 0c21359] Finished the new feature
@@ -1334,9 +1334,9 @@ $ git commit -am &quot;Finished the new feature&quot;
 &lt;p&gt;At the same time, you need to fix an urgent bug. So you create a &lt;code class=&quot;highlighter-rouge&quot;&gt;hotfix&lt;/code&gt; branch from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, and do some work in there.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
-Switched to branch &#39;master&#39;
+Switched to branch 'master'
 $ git checkout -b hotfix
-Switched to a new branch &#39;hotfix&#39;
+Switched to a new branch 'hotfix'
 $ vim index.html
 $ git commit -am &quot;Fixed some wording&quot;
 [hotfix 40837f1] Fixed some wording
@@ -1359,7 +1359,7 @@ $ git commit -am &quot;Fixed some wording&quot;
 &lt;p&gt;Now you want to bring the bug fix into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; so that you can tag it and release it.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout master
-Switched to branch &#39;master&#39;
+Switched to branch 'master'
 $ git merge hotfix
 Updating d939a3a..40837f1
 Fast-forward
@@ -1383,7 +1383,7 @@ Fast-forward
 &lt;p&gt;Now let’s try and merge &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; into &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git merge feature-branch
-Merge made by the &#39;recursive&#39; strategy.
+Merge made by the 'recursive' strategy.
  feature.html | 1 +
  1 file changed, 1 insertion(+)
 &lt;/code&gt;&lt;/pre&gt;
@@ -1394,7 +1394,7 @@ Merge made by the &#39;recursive&#39; strategy.
 &lt;p&gt;So how did Git handle this merge? Taking a look at the log, we see that Git has actually created a new ”merge” commit, as well as bringing the commit from &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git log --oneline
-8ad0923 Merge branch &#39;feature-branch&#39;
+8ad0923 Merge branch 'feature-branch'
 0c21359 Finished the new feature
 40837f1 Fixed some wording
 d939a3a Initial commit
@@ -1412,7 +1412,7 @@ parent 0c21359730915c7888c6144aa8e9063345330f1f
 author Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +0100
 committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +0100
 
- Merge branch &#39;feature-branch&#39;
+ Merge branch 'feature-branch'
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1676,7 +1676,7 @@ fatal: This operation must be run in a work tree
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cd ..
 $ git clone bare-repo/ clone-of-bare-repo
-Cloning into &#39;clone-of-bare-repo&#39;...
+Cloning into 'clone-of-bare-repo'...
 warning: You appear to have cloned an empty repository.
 done.
 &lt;/code&gt;&lt;/pre&gt;
@@ -1729,7 +1729,7 @@ $ cat .git/config
 
 &lt;p&gt;We’ve just cloned a completely empty repository, and we want to start working on it.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &#39;Project v1.0&#39; &amp;gt; README
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo 'Project v1.0' &amp;gt; README
 $ git add README
 $ git commit -m &quot;Add readme&quot;
 [master (root-commit) 5d591d5] Add readme
@@ -1847,8 +1847,8 @@ From /home/demo/bare-repo
 &lt;p&gt;It has also updated a special file, &lt;code class=&quot;highlighter-rouge&quot;&gt;.git/FETCH_HEAD&lt;/code&gt; with some important information. We’ll talk about this file in more detail soon.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat .git/FETCH_HEAD
-5d591d5fafd538610291f45bec470d1b4e77891e branch &#39;master&#39; of /home/demo/bare-repo
-5d591d5fafd538610291f45bec470d1b4e77891e not-for-merge branch &#39;feature-branch&#39; of /home/demo/bare-repo
+5d591d5fafd538610291f45bec470d1b4e77891e branch 'master' of /home/demo/bare-repo
+5d591d5fafd538610291f45bec470d1b4e77891e not-for-merge branch 'feature-branch' of /home/demo/bare-repo
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1859,7 +1859,7 @@ From /home/demo/bare-repo
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git checkout feature-branch
 
 Branch feature-branch set up to track remote branch feature-branch from origin.
-Switched to a new branch &#39;feature-branch&#39;
+Switched to a new branch 'feature-branch'
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1907,15 +1907,15 @@ $ cat .git/refs/heads/feature-branch
 &lt;p&gt;Let’s introduce some new commits to our remote repository so that we can see this in practice.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git clone bare-repo/ new-clone-of-bare-repo
-Cloning into &#39;new-clone-of-bare-repo&#39;...
+Cloning into 'new-clone-of-bare-repo'...
 done.
 
 $ cd new-clone-of-bare-repo/
 $ git checkout feature-branch
 Branch feature-branch set up to track remote branch feature-branch from origin.
-Switched to a new branch &#39;feature-branch&#39;
+Switched to a new branch 'feature-branch'
 
-$ echo &#39;Some more information.&#39; &amp;gt;&amp;gt; README
+$ echo 'Some more information.' &amp;gt;&amp;gt; README
 $ git commit -am &quot;Add more information to readme&quot;
 [feature-branch 7cd83c2] Add more information to readme
  1 file changed, 1 insertion(+)
@@ -1938,8 +1938,8 @@ Unpacking objects: 100% (3/3), done.
 From /home/demo/bare-repo
    5d591d5..7cd83c2  feature-branch -&amp;gt; origin/feature-branch
 $ cat .git/FETCH_HEAD
-7cd83c29d7360dfc432d556fdbf03eb83ec5158d        branch &#39;feature-branch&#39; of /home/demo/bare-repo
-5d591d5fafd538610291f45bec470d1b4e77891e    not-for-merge   branch &#39;master&#39; of /home/demo/bare-repo
+7cd83c29d7360dfc432d556fdbf03eb83ec5158d        branch 'feature-branch' of /home/demo/bare-repo
+5d591d5fafd538610291f45bec470d1b4e77891e    not-for-merge   branch 'master' of /home/demo/bare-repo
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -2064,7 +2064,7 @@ dangling commit f71bb43907bffe0bce2967504341a0ece7a8cb68
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init
 Initialised empty Git repository in /home/demo/demo-repo/.git/
-$ echo &#39;Foo&#39; &amp;gt; test.txt
+$ echo 'Foo' &amp;gt; test.txt
 $ git add test.txt
 $ git commit -m &quot;Initial commit&quot;
 [master (root-commit) 2522332] Initial commit
@@ -2075,7 +2075,7 @@ $ git commit -m &quot;Initial commit&quot;
 
 &lt;p&gt;Now let’s make some changes, and stash them.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo &#39;Bar&#39; &amp;gt;&amp;gt; test.txt
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ echo 'Bar' &amp;gt;&amp;gt; test.txt
 $ git stash
 Saved working directory and index state WIP on master: 2522332 Initial commit
 HEAD is now at 2522332 Initial commit
@@ -2207,7 +2207,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;Once the &lt;code class=&quot;highlighter-rouge&quot;&gt;bisect&lt;/code&gt; is finished (or when you want to abort it), be sure to run &lt;code class=&quot;highlighter-rouge&quot;&gt;git bisect reset&lt;/code&gt; to reset &lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; to where it was before the &lt;code class=&quot;highlighter-rouge&quot;&gt;bisect&lt;/code&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 25 May 2014 17:12:22 +0100</pubDate>
+        <pubDate>Mon, 26 May 2014 04:12:22 +1200</pubDate>
         <link>https://wildlyinaccurate.com/a-hackers-guide-to-git/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/a-hackers-guide-to-git/</guid>
         
@@ -2228,7 +2228,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;First, it’s important to understand that while JavaScript is an object-oriented language, it is prototype-based and does not implement a traditional class system. Keep in mind that when I mention a &lt;em&gt;class&lt;/em&gt; in this post, I am simply referring to JavaScript objects and the prototype chain – more on this in a bit.&lt;/p&gt;
 
-&lt;p&gt;Almost everything in JavaScript is an object, which you can think of as sort of like associative arrays - objects contain named properties which can be accessed with &lt;code class=&quot;highlighter-rouge&quot;&gt;obj.propName&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;obj[&#39;propName&#39;]&lt;/code&gt;. Each object has an internal property called &lt;em&gt;prototype&lt;/em&gt;, which links to another object. The prototype object has a prototype object of its own, and so on – this is referred to as the &lt;em&gt;prototype chain&lt;/em&gt;. If you follow an object’s prototype chain, you will eventually reach the core &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt; prototype whose prototype is &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;, signalling the end of the chain.&lt;/p&gt;
+&lt;p&gt;Almost everything in JavaScript is an object, which you can think of as sort of like associative arrays - objects contain named properties which can be accessed with &lt;code class=&quot;highlighter-rouge&quot;&gt;obj.propName&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;obj['propName']&lt;/code&gt;. Each object has an internal property called &lt;em&gt;prototype&lt;/em&gt;, which links to another object. The prototype object has a prototype object of its own, and so on – this is referred to as the &lt;em&gt;prototype chain&lt;/em&gt;. If you follow an object’s prototype chain, you will eventually reach the core &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt; prototype whose prototype is &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;, signalling the end of the chain.&lt;/p&gt;
 
 &lt;p&gt;So what is the prototype chain used for? When you request a property which the object does not contain, JavaScript will look down the prototype chain until it either finds the requested property, or until it reaches the end of the chain. This behaviour is what allows us to create “classes”, and implement inheritance.&lt;!--more--&gt;&lt;/p&gt;
 
@@ -2252,7 +2252,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
     &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;My name is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Monty&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Monty'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// My name is Monty&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -2277,12 +2277,12 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Monty&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Monty'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// My name is Monty&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;What we are doing here is setting &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s prototype to an instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;, so that &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; inherits all of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&#39;s&lt;/code&gt; properties. We’re also using &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal.call&lt;/code&gt; to inherit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor (sort of like &lt;code class=&quot;highlighter-rouge&quot;&gt;parent&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt; in other languages). &lt;code class=&quot;highlighter-rouge&quot;&gt;call&lt;/code&gt; is a special function which lets us call a function and specify the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; &lt;em&gt;within that function&lt;/em&gt;. So when &lt;code class=&quot;highlighter-rouge&quot;&gt;this.name&lt;/code&gt; is set inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor, it’s the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s name property being set, not the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;’s.&lt;/p&gt;
+&lt;p&gt;What we are doing here is setting &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s prototype to an instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;, so that &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; inherits all of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal's&lt;/code&gt; properties. We’re also using &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal.call&lt;/code&gt; to inherit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor (sort of like &lt;code class=&quot;highlighter-rouge&quot;&gt;parent&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt; in other languages). &lt;code class=&quot;highlighter-rouge&quot;&gt;call&lt;/code&gt; is a special function which lets us call a function and specify the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; &lt;em&gt;within that function&lt;/em&gt;. So when &lt;code class=&quot;highlighter-rouge&quot;&gt;this.name&lt;/code&gt; is set inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor, it’s the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s name property being set, not the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;’s.&lt;/p&gt;
 
 &lt;p&gt;Let’s take a look at the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; object to get a better view of what’s going on.&lt;/p&gt;
 
@@ -2300,7 +2300,7 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;At this point I would recommend going through a few slides of &lt;a href=&quot;http://ejohn.org/apps/learn/#64&quot;&gt;John Resig’s JavaScript Ninja&lt;/a&gt; as they go into more detail about how JavaScript prototypes work, and provide some good interactive examples.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 09 May 2014 22:43:39 +0100</pubDate>
+        <pubDate>Sat, 10 May 2014 09:43:39 +1200</pubDate>
         <link>https://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</link>
         <guid isPermaLink="true">https://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</guid>
         
