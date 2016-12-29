@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Dec 2016 18:39:31 +1300</pubDate>
-    <lastBuildDate>Mon, 26 Dec 2016 18:39:31 +1300</lastBuildDate>
+    <pubDate>Thu, 29 Dec 2016 17:05:23 +1300</pubDate>
+    <lastBuildDate>Thu, 29 Dec 2016 17:05:23 +1300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -38,16 +38,14 @@
 
 &lt;p&gt;Of the 3.6 billion Internet users today, over 2 billion (65%) are accessing the web from developing countries. This percentage will continue to increase over the coming years, as Internet usage in developing countries is growing over 100x faster than the rest of the world. Yes, you read that right – 100x! In India alone, over 108 million people accessed the Internet for the first time in the last year. That was a 30% increase over the year before.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Internet growth in India is accelerating at an enormous rate&quot; src=&quot;/assets/internet-growth-in-india.png&quot; width=&quot;800&quot; srcset=&quot;/assets/resized/internet-growth-in-india-320x181.png 320w, /assets/resized/internet-growth-in-india-360x204.png 360w, /assets/resized/internet-growth-in-india-720x408.png 720w,  /assets/internet-growth-in-india.png 800w&quot; /&gt;
-
+    &lt;img alt=&quot;Internet growth in India is accelerating at an enormous rate&quot; src=&quot;/assets/internet-growth-in-india.png&quot; width=&quot;800&quot; srcset=&quot;/assets/resized/internet-growth-in-india-320x181.png 320w, /assets/resized/internet-growth-in-india-360x204.png 360w, /assets/resized/internet-growth-in-india-720x408.png 720w,  /assets/internet-growth-in-india.png 800w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Internet growth in India is accelerating at an enormous rate
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;Internet growth in India is accelerating at an enormous rate&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -82,16 +80,14 @@
 
 &lt;p&gt;The fact that a user has a modern browser does not mean that they have a fast or reliable connection. Providing a core experience is useless if users are going to be forced onto the enhanced experience anyway. Loading the enhanced BBC News front page on a mobile device will cost about 500KB. Opening an article page from there will cost another 370KB. That’s a cost of nearly 1MB of data (or 20 minutes of minimum wage work) just to read a single article.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC News core experience on a wide screen&quot; src=&quot;/assets/bbc-news-core.png&quot; width=&quot;640&quot; srcset=&quot;/assets/resized/bbc-news-core-320x351.png 320w, /assets/resized/bbc-news-core-360x395.png 360w,  /assets/bbc-news-core.png 640w&quot; /&gt;
-
+    &lt;img alt=&quot;The BBC News core experience on a wide screen&quot; src=&quot;/assets/bbc-news-core.png&quot; width=&quot;640&quot; srcset=&quot;/assets/resized/bbc-news-core-320x351.png 320w, /assets/resized/bbc-news-core-360x395.png 360w,  /assets/bbc-news-core.png 640w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The BBC News core experience on a wide screen
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The BBC News core experience on a wide screen&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -108,16 +104,14 @@
 
 &lt;p&gt;The ID service allows you to sign in so that you can do things like post comments and receive notifications. It adds 13 HTTP requests to the page –8 of which are scripts– totalling 25KB.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC iD button&quot; src=&quot;/assets/bbc-id.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-id-320x20.png 320w, /assets/resized/bbc-id-360x22.png 360w,  /assets/bbc-id.png 617w&quot; /&gt;
-
+    &lt;img alt=&quot;The BBC iD button&quot; src=&quot;/assets/bbc-id.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-id-320x20.png 320w, /assets/resized/bbc-id-360x22.png 360w,  /assets/bbc-id.png 617w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The BBC iD button
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The BBC iD button&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -128,16 +122,14 @@
 
 &lt;p&gt;Clicking the icon results in another 2 requests being made, including a 47KB font.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC Notifications popover&quot; src=&quot;/assets/bbc-notifications.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-notifications-320x126.png 320w, /assets/resized/bbc-notifications-360x141.png 360w,  /assets/bbc-notifications.png 617w&quot; /&gt;
-
+    &lt;img alt=&quot;The BBC Notifications popover&quot; src=&quot;/assets/bbc-notifications.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-notifications-320x126.png 320w, /assets/resized/bbc-notifications-360x141.png 360w,  /assets/bbc-notifications.png 617w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The BBC Notifications popover
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The BBC Notifications popover&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -148,16 +140,14 @@
 
 &lt;p&gt;Beginning to type into the search input triggers &lt;code class=&quot;highlighter-rouge&quot;&gt;app.min.js&lt;/code&gt; to be loaded in the page, weighing in at a hefty 86KB – or 320KB without compression! Furthermore, two HTTP requests at 4KB each are made on the (debounced) &lt;code class=&quot;highlighter-rouge&quot;&gt;onchange&lt;/code&gt; event. Simply typing the word &lt;em&gt;“bears”&lt;/em&gt; resulted in my browser making 10 additional requests totalling 43KB.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The BBC Search interface&quot; src=&quot;/assets/bbc-search.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-search-320x224.png 320w, /assets/resized/bbc-search-360x252.png 360w,  /assets/bbc-search.png 617w&quot; /&gt;
-
+    &lt;img alt=&quot;The BBC Search interface&quot; src=&quot;/assets/bbc-search.png&quot; width=&quot;617&quot; srcset=&quot;/assets/resized/bbc-search-320x224.png 320w, /assets/resized/bbc-search-360x252.png 360w,  /assets/bbc-search.png 617w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The BBC Search interface
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The BBC Search interface&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -184,30 +174,26 @@
   &lt;li&gt;A much better CPU profile.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The CPU profile of the lightweight prototype&quot; src=&quot;/assets/lightweight-cpu-profile.png&quot; width=&quot;619&quot; srcset=&quot;/assets/resized/lightweight-cpu-profile-320x42.png 320w, /assets/resized/lightweight-cpu-profile-360x47.png 360w,  /assets/lightweight-cpu-profile.png 619w&quot; /&gt;
-
+    &lt;img alt=&quot;The CPU profile of the lightweight prototype&quot; src=&quot;/assets/lightweight-cpu-profile.png&quot; width=&quot;619&quot; srcset=&quot;/assets/resized/lightweight-cpu-profile-320x42.png 320w, /assets/resized/lightweight-cpu-profile-360x47.png 360w,  /assets/lightweight-cpu-profile.png 619w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The CPU profile of the lightweight prototype
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The CPU profile of the lightweight prototype&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The CPU profile of the current BBC News core experience&quot; src=&quot;/assets/bbc-news-core-cpu-profile.png&quot; srcset=&quot;/assets/resized/bbc-news-core-cpu-profile-320x26.png 320w, /assets/resized/bbc-news-core-cpu-profile-360x29.png 360w, /assets/resized/bbc-news-core-cpu-profile-720x58.png 720w, /assets/resized/bbc-news-core-cpu-profile-940x76.png 940w,  /assets/bbc-news-core-cpu-profile.png 999w&quot; /&gt;
-
+    &lt;img alt=&quot;The CPU profile of the current BBC News core experience&quot; src=&quot;/assets/bbc-news-core-cpu-profile.png&quot; srcset=&quot;/assets/resized/bbc-news-core-cpu-profile-320x26.png 320w, /assets/resized/bbc-news-core-cpu-profile-360x29.png 360w, /assets/resized/bbc-news-core-cpu-profile-720x58.png 720w, /assets/resized/bbc-news-core-cpu-profile-940x76.png 940w,  /assets/bbc-news-core-cpu-profile.png 999w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The CPU profile of the current BBC News core experience
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The CPU profile of the current BBC News core experience&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -218,16 +204,14 @@
 
 &lt;p&gt;Here is the finished product on a wide screen:&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The lightweight core experience prototype&quot; src=&quot;/assets/redefining-core-prototype.png&quot; srcset=&quot;/assets/resized/redefining-core-prototype-320x252.png 320w, /assets/resized/redefining-core-prototype-360x283.png 360w, /assets/resized/redefining-core-prototype-720x566.png 720w,  /assets/redefining-core-prototype.png 900w&quot; /&gt;
-
+    &lt;img alt=&quot;The lightweight core experience prototype&quot; src=&quot;/assets/redefining-core-prototype.png&quot; srcset=&quot;/assets/resized/redefining-core-prototype-320x252.png 320w, /assets/resized/redefining-core-prototype-360x283.png 360w, /assets/resized/redefining-core-prototype-720x566.png 720w,  /assets/redefining-core-prototype.png 900w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The lightweight core experience prototype
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The lightweight core experience prototype&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -313,16 +297,14 @@
 
 &lt;p&gt;This was my first mechanical keyboard. The soft Cherry MX Brown switches make it my favourites for long periods of typing. Even so, I rarely use it any more. At the time of writing, this model is still available &lt;a href=&quot;http://www.daskeyboard.com/model-s-ultimate/&quot;&gt;on the Das Keyboard website&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;Das Keyboard Model S Ultimate&quot; src=&quot;/assets/das-keyboard.jpg&quot; srcset=&quot;/assets/resized/das-keyboard-320x180.jpg 320w, /assets/resized/das-keyboard-360x203.jpg 360w, /assets/resized/das-keyboard-720x405.jpg 720w, /assets/resized/das-keyboard-940x529.jpg 940w, /assets/resized/das-keyboard-1140x641.jpg 1140w, /assets/resized/das-keyboard-1280x720.jpg 1280w, /assets/resized/das-keyboard-1360x765.jpg 1360w, /assets/resized/das-keyboard-1680x945.jpg 1680w, /assets/resized/das-keyboard-1840x1035.jpg 1840w,  /assets/das-keyboard.jpg 2048w&quot; /&gt;
-
+    &lt;img alt=&quot;Das Keyboard Model S Ultimate&quot; src=&quot;/assets/das-keyboard.jpg&quot; srcset=&quot;/assets/resized/das-keyboard-320x180.jpg 320w, /assets/resized/das-keyboard-360x203.jpg 360w, /assets/resized/das-keyboard-720x405.jpg 720w, /assets/resized/das-keyboard-940x529.jpg 940w, /assets/resized/das-keyboard-1140x641.jpg 1140w, /assets/resized/das-keyboard-1280x720.jpg 1280w, /assets/resized/das-keyboard-1360x765.jpg 1360w, /assets/resized/das-keyboard-1680x945.jpg 1680w, /assets/resized/das-keyboard-1840x1035.jpg 1840w,  /assets/das-keyboard.jpg 2048w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        Das Keyboard Model S Ultimate
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;Das Keyboard Model S Ultimate&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -333,16 +315,14 @@
 
 &lt;p&gt;The CODE has Cherry MX Clear switches, which makes for a much firmer keyboard than the Das. I find the clears preferable for short bursts of typing, but over long periods they tire my hands out.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;CODE keyboard with Keycool rainbow keycaps&quot; src=&quot;/assets/code-keyboard.jpg&quot; srcset=&quot;/assets/resized/code-keyboard-320x180.jpg 320w, /assets/resized/code-keyboard-360x203.jpg 360w, /assets/resized/code-keyboard-720x405.jpg 720w, /assets/resized/code-keyboard-940x529.jpg 940w, /assets/resized/code-keyboard-1140x641.jpg 1140w, /assets/resized/code-keyboard-1280x720.jpg 1280w, /assets/resized/code-keyboard-1360x765.jpg 1360w, /assets/resized/code-keyboard-1680x945.jpg 1680w, /assets/resized/code-keyboard-1840x1035.jpg 1840w,  /assets/code-keyboard.jpg 2048w&quot; /&gt;
-
+    &lt;img alt=&quot;CODE keyboard with Keycool rainbow keycaps&quot; src=&quot;/assets/code-keyboard.jpg&quot; srcset=&quot;/assets/resized/code-keyboard-320x180.jpg 320w, /assets/resized/code-keyboard-360x203.jpg 360w, /assets/resized/code-keyboard-720x405.jpg 720w, /assets/resized/code-keyboard-940x529.jpg 940w, /assets/resized/code-keyboard-1140x641.jpg 1140w, /assets/resized/code-keyboard-1280x720.jpg 1280w, /assets/resized/code-keyboard-1360x765.jpg 1360w, /assets/resized/code-keyboard-1680x945.jpg 1680w, /assets/resized/code-keyboard-1840x1035.jpg 1840w,  /assets/code-keyboard.jpg 2048w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        CODE keyboard with Keycool rainbow keycaps
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;CODE keyboard with Keycool rainbow keycaps&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -353,16 +333,14 @@
 
 &lt;p&gt;My ErgoDox has Cherry MX Clear switches. Somehow the clears on the ErgoDox feel much softer than on the CODE, so I’m able to enjoy the feeling of firm keys without the fatigue I experience with the CODE.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox keyboard&quot; src=&quot;/assets/ergodox.jpg&quot; srcset=&quot;/assets/resized/ergodox-320x180.jpg 320w, /assets/resized/ergodox-360x203.jpg 360w, /assets/resized/ergodox-720x405.jpg 720w, /assets/resized/ergodox-940x529.jpg 940w, /assets/resized/ergodox-1140x641.jpg 1140w, /assets/resized/ergodox-1280x720.jpg 1280w, /assets/resized/ergodox-1360x765.jpg 1360w, /assets/resized/ergodox-1680x945.jpg 1680w, /assets/resized/ergodox-1840x1035.jpg 1840w,  /assets/ergodox.jpg 2048w&quot; /&gt;
-
+    &lt;img alt=&quot;ErgoDox keyboard&quot; src=&quot;/assets/ergodox.jpg&quot; srcset=&quot;/assets/resized/ergodox-320x180.jpg 320w, /assets/resized/ergodox-360x203.jpg 360w, /assets/resized/ergodox-720x405.jpg 720w, /assets/resized/ergodox-940x529.jpg 940w, /assets/resized/ergodox-1140x641.jpg 1140w, /assets/resized/ergodox-1280x720.jpg 1280w, /assets/resized/ergodox-1360x765.jpg 1360w, /assets/resized/ergodox-1680x945.jpg 1680w, /assets/resized/ergodox-1840x1035.jpg 1840w,  /assets/ergodox.jpg 2048w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        ErgoDox keyboard
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;ErgoDox keyboard&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -747,16 +725,14 @@ configure: error: readline not found, so this package cannot be built
 
 &lt;p&gt;I built the keyboard in short bursts when I had spare time on the weekends. All up I probably invested about 10 hours over a period of two months. I made good use of the electronics station at &lt;a href=&quot;https://london.hackspace.org.uk/&quot;&gt;London Hackspace&lt;/a&gt;, and learned a lot about soldering and about electronics in general. I’m fairly confident that I could build another ErgoDox in a matter of hours.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/resized/ergodox-1024x551-320x172.jpg 320w, /assets/resized/ergodox-1024x551-360x194.jpg 360w, /assets/resized/ergodox-1024x551-720x387.jpg 720w, /assets/resized/ergodox-1024x551-940x506.jpg 940w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
-
+    &lt;img alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/resized/ergodox-1024x551-320x172.jpg 320w, /assets/resized/ergodox-1024x551-360x194.jpg 360w, /assets/resized/ergodox-1024x551-720x387.jpg 720w, /assets/resized/ergodox-1024x551-940x506.jpg 940w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The finished ErgoDox
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The finished ErgoDox&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -765,16 +741,14 @@ configure: error: readline not found, so this package cannot be built
 
 &lt;p&gt;Using the ErgoDox, I still felt like my fingers were moving just as much as on a regular keyboard. I used Patrick Gillespie’s amazing &lt;a href=&quot;http://patorjk.com/keyboard-layout-analyzer&quot;&gt;Keyboard Layout Analyzer&lt;/a&gt; to help me figure out what the problem was.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-qwerty-heatmap-320x122.png 320w, /assets/resized/ergodox-qwerty-heatmap-360x137.png 360w, /assets/resized/ergodox-qwerty-heatmap-720x274.png 720w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
-
+    &lt;img alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-qwerty-heatmap-320x122.png 320w, /assets/resized/ergodox-qwerty-heatmap-360x137.png 360w, /assets/resized/ergodox-qwerty-heatmap-720x274.png 720w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        ErgoDox QWERTY Layout Heat Map
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;ErgoDox QWERTY Layout Heat Map&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -792,32 +766,28 @@ configure: error: readline not found, so this package cannot be built
   &lt;li&gt;It felt the most “natural” compared to other popular layouts like Workman, Dvorak, and Programmer Dvorak.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-heatmap1-320x122.png 320w, /assets/resized/ergodox-colemak-heatmap1-360x137.png 360w, /assets/resized/ergodox-colemak-heatmap1-720x274.png 720w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
-
+    &lt;img alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-heatmap1-320x122.png 320w, /assets/resized/ergodox-colemak-heatmap1-360x137.png 360w, /assets/resized/ergodox-colemak-heatmap1-720x274.png 720w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The heat map for a Colemak layout on the ErgoDox
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The heat map for a Colemak layout on the ErgoDox&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
 
 &lt;p&gt;An article about &lt;a href=&quot;http://jjt.io/2013/11/25/why-any-developer-should-check-out-the-ergodox-keyboard/&quot;&gt;Jason Trill’s experience with the ErgoDox&lt;/a&gt; convinced me at the last minute to use a modified version of Colemak which puts the symbols on a separate layer around the home row, so you don’t need to move your fingers to the top row to type symbols. In case you’re wondering what I mean by a “separate layer”: layers on a keyboard are a way to have one key type different characters. You actually use layers all the time, even if you don’t realise it. When you hold down the Shift key, you’re activating another layer on your keyboard. When you hit the Caps Lock key, you’re toggling that layer. Layers differ from key combinations (like Control + Alt + Delete) in that they’re implemented in the keyboard’s firmware rather than at the software level.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-symbolmod-heatmap-320x122.png 320w, /assets/resized/ergodox-colemak-symbolmod-heatmap-360x137.png 360w, /assets/resized/ergodox-colemak-symbolmod-heatmap-720x274.png 720w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
-
+    &lt;img alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/resized/ergodox-colemak-symbolmod-heatmap-320x122.png 320w, /assets/resized/ergodox-colemak-symbolmod-heatmap-360x137.png 360w, /assets/resized/ergodox-colemak-symbolmod-heatmap-720x274.png 720w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -842,16 +812,14 @@ The quick brown fox jumps over the lazy fox.
 
 &lt;p&gt;In theory, the more I use each key, the less I’ll have to look at my guide.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail thumbnail--bleed&quot;&gt;
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;The layout guide I'm using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-320x187.jpg 320w, /assets/resized/ergodox-layout-guide-1024x598-360x210.jpg 360w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
-
+    &lt;img alt=&quot;The layout guide I'm using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/resized/ergodox-layout-guide-1024x598-320x187.jpg 320w, /assets/resized/ergodox-layout-guide-1024x598-360x210.jpg 360w, /assets/resized/ergodox-layout-guide-1024x598-720x420.jpg 720w, /assets/resized/ergodox-layout-guide-1024x598-940x549.jpg 940w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
     
 
     
-    &lt;div class=&quot;thumbnail__caption&quot;&gt;
-        The layout guide I'm using to type at the moment
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The layout guide I'm using to type at the moment&lt;/i&gt;&lt;/small&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -1101,11 +1069,9 @@ src/
 
 &lt;p&gt;If we draw the blobs (in green) as well as the tree objects (in blue), we end up with a diagram that looks a lot like our directory structure.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/tree-graph.png&quot; width=&quot;591&quot; srcset=&quot;/assets/resized/tree-graph-320x248.png 320w, /assets/resized/tree-graph-360x279.png 360w,  /assets/tree-graph.png 591w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/tree-graph.png&quot; width=&quot;591&quot; srcset=&quot;/assets/resized/tree-graph-320x248.png 320w, /assets/resized/tree-graph-360x279.png 360w,  /assets/tree-graph.png 591w&quot; /&gt;
     
 
     
@@ -1346,11 +1312,9 @@ $ git commit -am &quot;Fixed some wording&quot;
 
 &lt;p&gt;At this point, the history will look something like this.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-feature-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-feature-hotfix-320x136.png 320w, /assets/resized/branch-feature-hotfix-360x153.png 360w,  /assets/branch-feature-hotfix.png 631w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/branch-feature-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-feature-hotfix-320x136.png 320w, /assets/resized/branch-feature-hotfix-360x153.png 360w,  /assets/branch-feature-hotfix.png 631w&quot; /&gt;
     
 
     
@@ -1370,11 +1334,9 @@ Fast-forward
 
 &lt;p&gt;Notice how Git mentions &lt;strong&gt;fast-forward&lt;/strong&gt; during the merge. What this means is that all of the commits in &lt;code class=&quot;highlighter-rouge&quot;&gt;hotfix&lt;/code&gt; were directly upstream from &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. This allows Git to simply move the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; pointer up the tree to &lt;code class=&quot;highlighter-rouge&quot;&gt;hotfix&lt;/code&gt;. What you end up with looks like this.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-320x136.png 320w, /assets/resized/branch-merge-hotfix-360x153.png 360w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-320x136.png 320w, /assets/resized/branch-merge-hotfix-360x153.png 360w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
     
 
     
@@ -1418,11 +1380,9 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;This means that our history graph now looks something like this (commit &lt;strong&gt;E&lt;/strong&gt; is the new merge commit).&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-feature.png&quot; width=&quot;656&quot; srcset=&quot;/assets/resized/branch-merge-feature-320x164.png 320w, /assets/resized/branch-merge-feature-360x184.png 360w,  /assets/branch-merge-feature.png 656w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/branch-merge-feature.png&quot; width=&quot;656&quot; srcset=&quot;/assets/resized/branch-merge-feature-320x164.png 320w, /assets/resized/branch-merge-feature-360x184.png 360w,  /assets/branch-merge-feature.png 656w&quot; /&gt;
     
 
     
@@ -1440,11 +1400,9 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;What &lt;code class=&quot;highlighter-rouge&quot;&gt;git cherry-pick&lt;/code&gt; does is take one or more commits, and replay them on top of the current commit. Imagine a repository with the following history graph.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-before.png&quot; width=&quot;467&quot; srcset=&quot;/assets/resized/cherry-pick-before-320x125.png 320w, /assets/resized/cherry-pick-before-360x141.png 360w,  /assets/cherry-pick-before.png 467w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/cherry-pick-before.png&quot; width=&quot;467&quot; srcset=&quot;/assets/resized/cherry-pick-before-320x125.png 320w, /assets/resized/cherry-pick-before-360x141.png 360w,  /assets/cherry-pick-before.png 467w&quot; /&gt;
     
 
     
@@ -1452,11 +1410,9 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;If you are on commit &lt;strong&gt;D&lt;/strong&gt; and you run &lt;code class=&quot;highlighter-rouge&quot;&gt;git cherry-pick F&lt;/code&gt;, Git will take the changes that were introduced in commit &lt;strong&gt;F&lt;/strong&gt; and replay them &lt;em&gt;as a new commit&lt;/em&gt; (shown as &lt;strong&gt;F’&lt;/strong&gt;) on top of commit &lt;strong&gt;D.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-after.png&quot; width=&quot;555&quot; srcset=&quot;/assets/resized/cherry-pick-after-320x98.png 320w, /assets/resized/cherry-pick-after-360x110.png 360w,  /assets/cherry-pick-after.png 555w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/cherry-pick-after.png&quot; width=&quot;555&quot; srcset=&quot;/assets/resized/cherry-pick-after-320x98.png 320w, /assets/resized/cherry-pick-after-360x110.png 360w,  /assets/cherry-pick-after.png 555w&quot; /&gt;
     
 
     
@@ -1466,11 +1422,9 @@ committer Joseph Wynn &amp;lt;joseph@wildlyinaccurate.com&amp;gt; 1401134489 +01
 
 &lt;p&gt;A common workflow in Git is to develop features on small branches, and merge the features one at a time into the master branch. Let’s recreate this scenario by adding some branch labels to the graphs.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/graph-branch-labels.png&quot; width=&quot;623&quot; srcset=&quot;/assets/resized/graph-branch-labels-320x89.png 320w, /assets/resized/graph-branch-labels-360x101.png 360w,  /assets/graph-branch-labels.png 623w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/graph-branch-labels.png&quot; width=&quot;623&quot; srcset=&quot;/assets/resized/graph-branch-labels-320x89.png 320w, /assets/resized/graph-branch-labels-360x101.png 360w,  /assets/graph-branch-labels.png 623w&quot; /&gt;
     
 
     
@@ -1485,11 +1439,9 @@ $ git checkout -b foo-tmp
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/foo-tmp.png&quot; width=&quot;623&quot; srcset=&quot;/assets/resized/foo-tmp-320x89.png 320w, /assets/resized/foo-tmp-360x101.png 360w,  /assets/foo-tmp.png 623w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/foo-tmp.png&quot; width=&quot;623&quot; srcset=&quot;/assets/resized/foo-tmp-320x89.png 320w, /assets/resized/foo-tmp-360x101.png 360w,  /assets/foo-tmp.png 623w&quot; /&gt;
     
 
     
@@ -1501,11 +1453,9 @@ $ git checkout -b foo-tmp
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-c-d.png&quot; width=&quot;744&quot; srcset=&quot;/assets/resized/cherry-pick-c-d-320x102.png 320w, /assets/resized/cherry-pick-c-d-360x115.png 360w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/cherry-pick-c-d.png&quot; width=&quot;744&quot; srcset=&quot;/assets/resized/cherry-pick-c-d-320x102.png 320w, /assets/resized/cherry-pick-c-d-360x115.png 360w, /assets/resized/cherry-pick-c-d-720x229.png 720w,  /assets/cherry-pick-c-d.png 744w&quot; /&gt;
     
 
     
@@ -1521,11 +1471,9 @@ $ git branch -D foo-tmp
 
 &lt;p&gt;This gives the desired result of &lt;code class=&quot;highlighter-rouge&quot;&gt;foo&lt;/code&gt;’s commits being upstream of &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;. Note that the original &lt;strong&gt;C&lt;/strong&gt; and &lt;strong&gt;D&lt;/strong&gt; commits are no longer reachable because no branch points to them.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/cherry-pick-final.png&quot; width=&quot;751&quot; srcset=&quot;/assets/resized/cherry-pick-final-320x63.png 320w, /assets/resized/cherry-pick-final-360x71.png 360w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/cherry-pick-final.png&quot; width=&quot;751&quot; srcset=&quot;/assets/resized/cherry-pick-final-320x63.png 320w, /assets/resized/cherry-pick-final-360x71.png 360w, /assets/resized/cherry-pick-final-720x143.png 720w,  /assets/cherry-pick-final.png 751w&quot; /&gt;
     
 
     
@@ -1556,11 +1504,9 @@ $ git branch -D foo-tmp
 
 &lt;p&gt;Let’s take a look again at the example graph from &lt;em&gt;Merging&lt;/em&gt; to see how rebasing can prevent us from having to do a non-fast-forward merge.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-320x136.png 320w, /assets/resized/branch-merge-hotfix-360x153.png 360w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/branch-merge-hotfix.png&quot; width=&quot;631&quot; srcset=&quot;/assets/resized/branch-merge-hotfix-320x136.png 320w, /assets/resized/branch-merge-hotfix-360x153.png 360w,  /assets/branch-merge-hotfix.png 631w&quot; /&gt;
     
 
     
@@ -1576,11 +1522,9 @@ Applying: Finished the new feature
 
 &lt;p&gt;This has brought &lt;code class=&quot;highlighter-rouge&quot;&gt;feature-branch&lt;/code&gt; directly upstream of &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/rebase-feature.png&quot; width=&quot;680&quot; srcset=&quot;/assets/resized/rebase-feature-320x89.png 320w, /assets/resized/rebase-feature-360x100.png 360w,  /assets/rebase-feature.png 680w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/rebase-feature.png&quot; width=&quot;680&quot; srcset=&quot;/assets/resized/rebase-feature-320x89.png 320w, /assets/resized/rebase-feature-360x100.png 360w,  /assets/rebase-feature.png 680w&quot; /&gt;
     
 
     
@@ -2136,11 +2080,9 @@ f949b46a417a4f1595a9d12773c89cce4454a958 refs/stash
 
 &lt;p&gt;This gives us a history that looks a little like this:&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/stash.png&quot; width=&quot;504&quot; srcset=&quot;/assets/resized/stash-320x169.png 320w, /assets/resized/stash-360x190.png 360w,  /assets/stash.png 504w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/stash.png&quot; width=&quot;504&quot; srcset=&quot;/assets/resized/stash-320x169.png 320w, /assets/resized/stash-360x190.png 360w,  /assets/stash.png 504w&quot; /&gt;
     
 
     
@@ -2259,11 +2201,9 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;The structure of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; object becomes clear when we inspect it in the console. We can see that the &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; property belongs to the object itself, while &lt;code class=&quot;highlighter-rouge&quot;&gt;speak&lt;/code&gt; is part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/Animal.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Animal-320x79.png 320w, /assets/resized/Animal-360x89.png 360w,  /assets/Animal.png 430w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/Animal.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Animal-320x79.png 320w, /assets/resized/Animal-360x89.png 360w,  /assets/Animal.png 430w&quot; /&gt;
     
 
     
@@ -2286,11 +2226,9 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
 
 &lt;p&gt;Let’s take a look at the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; object to get a better view of what’s going on.&lt;/p&gt;
 
-&lt;div class=&quot;thumbnail &quot;&gt;
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
     
-
-    &lt;img class=&quot;thumbnail__image&quot; alt=&quot;&quot; src=&quot;/assets/Cat.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Cat-320x100.png 320w, /assets/resized/Cat-360x112.png 360w,  /assets/Cat.png 430w&quot; /&gt;
-
+    &lt;img alt=&quot;&quot; src=&quot;/assets/Cat.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Cat-320x100.png 320w, /assets/resized/Cat-360x112.png 360w,  /assets/Cat.png 430w&quot; /&gt;
     
 
     
