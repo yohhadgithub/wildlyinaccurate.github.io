@@ -7886,7 +7886,7 @@ var _wildlyinaccurate$wildlyinaccuratedotgithubdotio$Item$tagView = function (ta
 		_elm_lang$html$Html$span,
 		_elm_lang$core$Native_List.fromArray(
 			[
-				_elm_lang$html$Html_Attributes$class('item-tag label label-default')
+				_elm_lang$html$Html_Attributes$class('item-tag badge badge-default')
 			]),
 		_elm_lang$core$Native_List.fromArray(
 			[
