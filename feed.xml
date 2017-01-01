@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jan 2017 20:31:33 +1300</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2017 20:31:33 +1300</lastBuildDate>
+    <pubDate>Sun, 01 Jan 2017 21:10:45 +1300</pubDate>
+    <lastBuildDate>Sun, 01 Jan 2017 21:10:45 +1300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -20,6 +20,7 @@
   &lt;li&gt;&lt;a href=&quot;#teams--projects&quot; id=&quot;markdown-toc-teams--projects&quot;&gt;Teams &amp;amp; projects&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#learning--personal-development&quot; id=&quot;markdown-toc-learning--personal-development&quot;&gt;Learning &amp;amp; personal development&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#working-hours--annual-leave&quot; id=&quot;markdown-toc-working-hours--annual-leave&quot;&gt;Working hours &amp;amp; annual leave&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#working-environment&quot; id=&quot;markdown-toc-working-environment&quot;&gt;Working environment&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#technologies&quot; id=&quot;markdown-toc-technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#other-perks--local-discounts&quot; id=&quot;markdown-toc-other-perks--local-discounts&quot;&gt;Other perks &amp;amp; local discounts&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -73,20 +74,28 @@
 
 &lt;p&gt;Taking annual leave is never an issue, provided you give enough notice. If you work on a project with a “hard” deadline like an election or sporting event, your manager might ask you to avoid taking leave in the weeks leading up to the deadline, but this is not mandatory.&lt;/p&gt;
 
+&lt;h2 id=&quot;working-environment&quot;&gt;Working environment&lt;/h2&gt;
+
+&lt;p&gt;All BBC News engineering staff are located in &lt;a href=&quot;http://www.bbc.co.uk/broadcastinghouse/&quot;&gt;New Broadcasting House&lt;/a&gt;. The entire building is accessible, and has the usual amenities including showers, toilets, and tea points, which are all also accessible.&lt;/p&gt;
+
+&lt;p&gt;The engineering teams work in open plan spaces shared with a variety of other teams including journalists. They are currently spread out across two floors of the building which, if anything, acts as motivation to leave your desk and stretch your muscles out.&lt;/p&gt;
+
+&lt;p&gt;If, like me, you find open spaces are detrimental to your productivity, then there are many quiet spaces available throughout the building which can be used at any time. Soundproof rooms can also be booked through an automated web system.&lt;/p&gt;
+
 &lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
 
-&lt;p&gt;Most of the software we write is written in Ruby, JavaScript, and PHP. Teams have the freedom to use whichever technologies they like, provided there is sufficient justification. Here’s a sample of technologies I’ve worked with so far at BBC News:&lt;/p&gt;
+&lt;p&gt;Most of our products are web-based and are written in Ruby, JavaScript, and PHP alongside the usual HTML &amp;amp; CSS (usually Sass). We also have some non-web projects which tend to be written in Java and Scala. Teams have the freedom to use whichever technologies they like, provided there is sufficient justification. Here’s a sample of technologies which I’ve personally worked with so far at BBC News:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Responsive News is PHP application which uses &lt;a href=&quot;http://responsivenews.co.uk/post/123104512468/13-tips-for-making-responsive-web-design&quot;&gt;a range of interesting techniques&lt;/a&gt; to support all of the World Service languages and scripts.&lt;/li&gt;
-  &lt;li&gt;The BBC News &lt;a href=&quot;https://www.ampproject.org/&quot;&gt;AMP project&lt;/a&gt; and many of the worldwide elections components are powered by an open-source &lt;a href=&quot;https://en.wikipedia.org/wiki/Broker_Pattern&quot;&gt;broker-renderer&lt;/a&gt; framework called &lt;a href=&quot;https://github.com/BBC-News/alephant&quot;&gt;Alephant&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;The BBC News front page is being rebuilt using React on a &lt;a href=&quot;https://www.youtube.com/watch?v=pxmXiKlh5OU&quot;&gt;highly-scalable Node.js platform&lt;/a&gt; developed by BBC Sport.&lt;/li&gt;
+  &lt;li&gt;The BBC News &lt;a href=&quot;https://www.ampproject.org/&quot;&gt;AMP project&lt;/a&gt; and many of the worldwide elections components are powered by an open-source &lt;a href=&quot;https://en.wikipedia.org/wiki/Broker_Pattern&quot;&gt;broker-renderer&lt;/a&gt; Ruby framework called &lt;a href=&quot;https://github.com/BBC-News/alephant&quot;&gt;Alephant&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;The BBC News front page is being rebuilt using React and Node.js on a platform developed by BBC Sport.&lt;/li&gt;
   &lt;li&gt;One of our page composition systems is powered by services written in Ruby and Go.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;other-perks--local-discounts&quot;&gt;Other perks &amp;amp; local discounts&lt;/h2&gt;
 
-&lt;p&gt;All BBC News engineering staff are located in &lt;a href=&quot;http://www.bbc.co.uk/broadcastinghouse/&quot;&gt;New Broadcasting House&lt;/a&gt;, just down the road from Oxford Circus. This puts us somewhat dangerously close to dozens of really great shops, restaurants, cafés, and bars. Many of them offer a discount to BBC employees.&lt;/p&gt;
+&lt;p&gt;Being just down the road from Oxford Circus puts us somewhat dangerously close to dozens of really great shops, restaurants, cafés, and bars. Many of them offer a discount to BBC employees.&lt;/p&gt;
 
 &lt;p&gt;The BBC runs a centralised benefits scheme which offers things like:&lt;/p&gt;
 
@@ -97,6 +106,8 @@
   &lt;li&gt;Access to &lt;a href=&quot;https://www.cyclescheme.co.uk/&quot;&gt;Cyclescheme&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;The ability to buy and sell annual leave.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Secure bike storage is available, or you can just lock your bike to the railing outside the building.&lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Dec 2016 00:00:00 +1300</pubDate>
         <link>https://wildlyinaccurate.com/working-as-a-developer-at-bbc-news/</link>
