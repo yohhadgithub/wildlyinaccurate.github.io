@@ -6,9 +6,110 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jan 2017 12:49:50 +1300</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2017 12:49:50 +1300</lastBuildDate>
+    <pubDate>Sun, 01 Jan 2017 20:21:08 +1300</pubDate>
+    <lastBuildDate>Sun, 01 Jan 2017 20:21:08 +1300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>What it's like to work as a developer at BBC News</title>
+        <description>&lt;p&gt;The BBC is a pretty large organisation. Today it employs around 20,000 people (actually around 35,000 when you include part-time and fixed-term contract employees) across a huge number of divisions. The &lt;a href=&quot;http://careerssearch.bbc.co.uk/&quot;&gt;BBC Careers website&lt;/a&gt; typically has over 100 vacancies posted on any given day. Before I joined the BBC, I found the sheer scale of it a bit intimidating. Usually I can get an idea of what it’s like to work for a company by reading their job advertisements and their engineering blogs, but with the BBC I was almost completely clueless.&lt;/p&gt;
+
+&lt;p&gt;In this post I hope to shed some light on what it’s like to work as a developer or tester for BBC News. It’s worth noting that from an engineering perspective, the BBC is not like most other companies — it’s more like dozens of smaller companies, each with their own engineering department, working towards a common goal. &lt;a href=&quot;http://www.bbc.com/news&quot;&gt;News&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.com/sport&quot;&gt;Sport&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/programmes&quot;&gt;Programmes&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/iplayer&quot;&gt;iPlayer&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/radio&quot;&gt;Radio&lt;/a&gt;… As digital products, these are all built mostly independently of each other. I work for BBC News, so a lot of what I’ve written may not apply outside of BBC News.&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#teams--projects&quot; id=&quot;markdown-toc-teams--projects&quot;&gt;Teams &amp;amp; projects&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#learning--personal-development&quot; id=&quot;markdown-toc-learning--personal-development&quot;&gt;Learning &amp;amp; personal development&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#working-hours--annual-leave&quot; id=&quot;markdown-toc-working-hours--annual-leave&quot;&gt;Working hours &amp;amp; annual leave&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#technologies&quot; id=&quot;markdown-toc-technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#other-perks--local-discounts&quot; id=&quot;markdown-toc-other-perks--local-discounts&quot;&gt;Other perks &amp;amp; local discounts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;teams--projects&quot;&gt;Teams &amp;amp; projects&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: When I say “BBC News”, I mean “BBC News and BBC World Service”. The &lt;a href=&quot;http://www.bbc.co.uk/ws/languages&quot;&gt;30 or so World Service sites&lt;/a&gt; run on the same &lt;strong&gt;Responsive News&lt;/strong&gt; codebase as BBC News. For this reason, the World Service and News teams consider themselves to be part of the same overarching team.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are about 6 BBC News development teams at any one time. Teams tend to form around projects which can last anywhere between a month (building a small routing service for the BBC’s RSS feeds) to 9 months (rebuilding the BBC News front page with a new technology stack). As well as developers, each team typically also has a dedicated tester, business analyst, project manager, and product owner.&lt;/p&gt;
+
+&lt;p&gt;In the past, teams were relatively static and people didn’t move around much between projects. More recently though, the teams have been shuffling a lot more. We don’t have a formal team rotation system in place at the moment, but it’s easy to move between teams if you want to work on something new. I’ve worked on 3 different teams over the last two years.&lt;/p&gt;
+
+&lt;p&gt;As well as collaboration between these BBC News teams, we also regularly collaborate with teams from all around the BBC. In the last 3 months alone, my team has worked with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Local News team in Cardiff.&lt;/li&gt;
+  &lt;li&gt;The Sport and Live teams and the Accessibility Champions group in Manchester.&lt;/li&gt;
+  &lt;li&gt;The Worldwide team in West London.&lt;/li&gt;
+  &lt;li&gt;The Weather, Programmes, and Radio teams in Central London.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;learning--personal-development&quot;&gt;Learning &amp;amp; personal development&lt;/h2&gt;
+
+&lt;p&gt;BBC staff can attend &lt;a href=&quot;http://www.bbc.co.uk/academy&quot;&gt;BBC Academy&lt;/a&gt; courses for free. There are &lt;em&gt;so many&lt;/em&gt; courses available covering subjects across journalism, broadcasting, technology, management, and personal development — just to name a few. You can even earn a MSCS (Masters of Science in Computer Science) by completing Academy courses over a 22-month period.&lt;/p&gt;
+
+&lt;p&gt;We give a &lt;a href=&quot;https://www.pluralsight.com/&quot;&gt;Pluralsight&lt;/a&gt; license to every new starter.&lt;/p&gt;
+
+&lt;p&gt;We have an office library, and an annual budget for purchasing new books.&lt;/p&gt;
+
+&lt;p&gt;We run a &lt;em&gt;developer gathering&lt;/em&gt; every month where developers and testers from BBC News and other teams around the BBC give technical talks and open the floor to discussions.&lt;/p&gt;
+
+&lt;p&gt;We run a similar but less technical &lt;em&gt;town hall&lt;/em&gt; every fortnight where people from all around BBC News (including editorial staff) give 5 minute lightning talks about what’s going on in their world.&lt;/p&gt;
+
+&lt;p&gt;There is a budget for attending external events &amp;amp; conferences.&lt;/p&gt;
+
+&lt;p&gt;Most teams have a dedicated &lt;em&gt;learning day&lt;/em&gt; once every two weeks where everybody is encouraged to spend their time learning something new.&lt;/p&gt;
+
+&lt;p&gt;On top of learning days, most managers will encourage you to dedicate at least a few days each month to personal development.&lt;/p&gt;
+
+&lt;p&gt;We have regular personal development reviews where your manager will recommend training courses and learning resources to help you achieve your personal goals.&lt;/p&gt;
+
+&lt;h2 id=&quot;working-hours--annual-leave&quot;&gt;Working hours &amp;amp; annual leave&lt;/h2&gt;
+
+&lt;p&gt;The BBC has a “core hours” system where you are required to work between 10am and 4pm. Other than that, you can pretty much work whichever hours you like so long as you work all of your contracted hours (usually 35 hours per week). I come in at 8am every day and leave at 4pm. Some of my colleagues come in at 10am and leave at 6pm.&lt;/p&gt;
+
+&lt;p&gt;Working from home is common, and is done at your manager’s discretion. Many people regularly work from home one day each week.&lt;/p&gt;
+
+&lt;p&gt;Overtime is actively discouraged. No project is more important than your wellbeing!&lt;/p&gt;
+
+&lt;p&gt;Taking annual leave is never an issue, provided you give enough notice. If you work on a project with a “hard” deadline like an election or sporting event, your manager might ask you to avoid taking leave in the weeks leading up to the deadline, but this is not mandatory.&lt;/p&gt;
+
+&lt;h2 id=&quot;technologies&quot;&gt;Technologies&lt;/h2&gt;
+
+&lt;p&gt;Most of the software we write is written in Ruby, JavaScript, and PHP. Teams have the freedom to use whichever technologies they like, provided there is sufficient justification. Here’s a sample of technologies I’ve worked with so far at BBC News:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Responsive News is PHP application which uses &lt;a href=&quot;http://responsivenews.co.uk/post/123104512468/13-tips-for-making-responsive-web-design&quot;&gt;a range of interesting techniques&lt;/a&gt; to support all of the World Service languages and scripts.&lt;/li&gt;
+  &lt;li&gt;The BBC News &lt;a href=&quot;https://www.ampproject.org/&quot;&gt;AMP project&lt;/a&gt; and many of the worldwide elections components are powered by an open-source &lt;a href=&quot;https://en.wikipedia.org/wiki/Broker_Pattern&quot;&gt;broker-renderer&lt;/a&gt; framework called &lt;a href=&quot;https://github.com/BBC-News/alephant&quot;&gt;Alephant&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;The BBC News front page is being rebuilt using React on a &lt;a href=&quot;https://www.youtube.com/watch?v=pxmXiKlh5OU&quot;&gt;highly-scalable Node.js platform&lt;/a&gt; developed by BBC Sport.&lt;/li&gt;
+  &lt;li&gt;One of our page composition systems is powered by services written in Ruby and Go.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other-perks--local-discounts&quot;&gt;Other perks &amp;amp; local discounts&lt;/h2&gt;
+
+&lt;p&gt;All BBC News engineering staff are located in &lt;a href=&quot;http://www.bbc.co.uk/broadcastinghouse/&quot;&gt;New Broadcasting House&lt;/a&gt;, just down the road from Oxford Circus. This puts us somewhat dangerously close to dozens of really great shops, restaurants, cafés, and bars. Many of them offer a discount to BBC employees.&lt;/p&gt;
+
+&lt;p&gt;The BBC runs a centralised benefits scheme which offers things like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A great pension plan.&lt;/li&gt;
+  &lt;li&gt;Dental, health, and travel insurance.&lt;/li&gt;
+  &lt;li&gt;Childcare vouchers.&lt;/li&gt;
+  &lt;li&gt;Access to &lt;a href=&quot;https://www.cyclescheme.co.uk/&quot;&gt;Cyclescheme&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;The ability to buy and sell annual leave.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 26 Dec 2016 00:00:00 +1300</pubDate>
+        <link>https://wildlyinaccurate.com/working-at-bbc-news/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/working-at-bbc-news/</guid>
+        
+        <category>bbc news</category>
+        
+        <category>culture</category>
+        
+        
+        <category>BBC News</category>
+        
+      </item>
     
       <item>
         <title>Redefining the BBC News core experience</title>
@@ -2161,97 +2262,6 @@ e145a8df72f309d5fb80eaa6469a6148b532c821 is the first bad commit
         
         
         <category>Git</category>
-        
-      </item>
-    
-      <item>
-        <title>Understanding JavaScript: Inheritance and the prototype chain</title>
-        <description>&lt;p&gt;&lt;em&gt;This is the first post in a series on JavaScript. In this post I’m going to explain how JavaScript’s prototype chain works, and how you can use it to achieve inheritance.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;First, it’s important to understand that while JavaScript is an object-oriented language, it is prototype-based and does not implement a traditional class system. Keep in mind that when I mention a &lt;em&gt;class&lt;/em&gt; in this post, I am simply referring to JavaScript objects and the prototype chain – more on this in a bit.&lt;/p&gt;
-
-&lt;p&gt;Almost everything in JavaScript is an object, which you can think of as sort of like associative arrays - objects contain named properties which can be accessed with &lt;code class=&quot;highlighter-rouge&quot;&gt;obj.propName&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;obj['propName']&lt;/code&gt;. Each object has an internal property called &lt;em&gt;prototype&lt;/em&gt;, which links to another object. The prototype object has a prototype object of its own, and so on – this is referred to as the &lt;em&gt;prototype chain&lt;/em&gt;. If you follow an object’s prototype chain, you will eventually reach the core &lt;code class=&quot;highlighter-rouge&quot;&gt;Object&lt;/code&gt; prototype whose prototype is &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;, signalling the end of the chain.&lt;/p&gt;
-
-&lt;p&gt;So what is the prototype chain used for? When you request a property which the object does not contain, JavaScript will look down the prototype chain until it either finds the requested property, or until it reaches the end of the chain. This behaviour is what allows us to create “classes”, and implement inheritance.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;Don’t worry if this doesn’t make sense yet. To see prototypes in action, let’s take a look at the simplest example of a “class” within JavaScript, which is created with a function object:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We can add properties to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; class in two ways: either by setting them as &lt;em&gt;instance properties&lt;/em&gt;, or by adding them to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Instance properties can be set on each instance of the class&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Prototype properties are shared across all instances of the class. However, they can still be overwritten on a per-instance basis with the `this` keyword.&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;My name is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Monty'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// My name is Monty&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The structure of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; object becomes clear when we inspect it in the console. We can see that the &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; property belongs to the object itself, while &lt;code class=&quot;highlighter-rouge&quot;&gt;speak&lt;/code&gt; is part of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; prototype.&lt;/p&gt;
-
-&lt;div class=&quot;my-4 ta-c &quot;&gt;
-    
-    &lt;img alt=&quot;&quot; src=&quot;/assets/Animal.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Animal-320x79.png 320w, /assets/resized/Animal-360x89.png 360w,  /assets/Animal.png 430w&quot; /&gt;
-    
-
-    
-&lt;/div&gt;
-
-&lt;p&gt;Now let’s look at how we can extend the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; class to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; class:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Monty'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// My name is Monty&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;What we are doing here is setting &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s prototype to an instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;, so that &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; inherits all of &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal's&lt;/code&gt; properties. We’re also using &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal.call&lt;/code&gt; to inherit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor (sort of like &lt;code class=&quot;highlighter-rouge&quot;&gt;parent&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt; in other languages). &lt;code class=&quot;highlighter-rouge&quot;&gt;call&lt;/code&gt; is a special function which lets us call a function and specify the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; &lt;em&gt;within that function&lt;/em&gt;. So when &lt;code class=&quot;highlighter-rouge&quot;&gt;this.name&lt;/code&gt; is set inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; constructor, it’s the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt;’s name property being set, not the &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;’s.&lt;/p&gt;
-
-&lt;p&gt;Let’s take a look at the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; object to get a better view of what’s going on.&lt;/p&gt;
-
-&lt;div class=&quot;my-4 ta-c &quot;&gt;
-    
-    &lt;img alt=&quot;&quot; src=&quot;/assets/Cat.png&quot; width=&quot;430&quot; srcset=&quot;/assets/resized/Cat-320x100.png 320w, /assets/resized/Cat-360x112.png 360w,  /assets/Cat.png 430w&quot; /&gt;
-    
-
-    
-&lt;/div&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; object has its own &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; instance property, like we expected. When we look at the object’s prototype we see that it has also inherited &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; instance property as well as the &lt;code class=&quot;highlighter-rouge&quot;&gt;speak&lt;/code&gt; prototype property. This is where the prototype chain comes in – when we request &lt;code class=&quot;highlighter-rouge&quot;&gt;cat.name&lt;/code&gt;, JavaScript finds the &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; instance property and doesn’t bother going down the prototype chain. However when we request &lt;code class=&quot;highlighter-rouge&quot;&gt;cat.speak&lt;/code&gt;, JavaScript has to travel down the prototype chain until it finds the &lt;code class=&quot;highlighter-rouge&quot;&gt;speak&lt;/code&gt; property inherited from &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;At this point I would recommend going through a few slides of &lt;a href=&quot;http://ejohn.org/apps/learn/#64&quot;&gt;John Resig’s JavaScript Ninja&lt;/a&gt; as they go into more detail about how JavaScript prototypes work, and provide some good interactive examples.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 10 May 2014 09:43:39 +1200</pubDate>
-        <link>https://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</link>
-        <guid isPermaLink="true">https://wildlyinaccurate.com/understanding-javascript-inheritance-and-the-prototype-chain/</guid>
-        
-        <category>classes</category>
-        
-        <category>inheritance</category>
-        
-        <category>javascript</category>
-        
-        <category>prototype</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
