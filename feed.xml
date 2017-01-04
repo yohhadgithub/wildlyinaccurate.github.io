@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jan 2017 21:10:45 +1300</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2017 21:10:45 +1300</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 22:09:37 +1300</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 22:09:37 +1300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -23,6 +23,7 @@
   &lt;li&gt;&lt;a href=&quot;#working-environment&quot; id=&quot;markdown-toc-working-environment&quot;&gt;Working environment&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#technologies&quot; id=&quot;markdown-toc-technologies&quot;&gt;Technologies&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#other-perks--local-discounts&quot; id=&quot;markdown-toc-other-perks--local-discounts&quot;&gt;Other perks &amp;amp; local discounts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-joel-test&quot; id=&quot;markdown-toc-the-joel-test&quot;&gt;The Joel Test&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;teams--projects&quot;&gt;Teams &amp;amp; projects&lt;/h2&gt;
@@ -108,6 +109,61 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Secure bike storage is available, or you can just lock your bike to the railing outside the building.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-joel-test&quot;&gt;The Joel Test&lt;/h2&gt;
+
+&lt;p&gt;Here’s how BBC News scores on &lt;a href=&quot;https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/&quot;&gt;The Joel Test&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you use source control?&lt;/strong&gt;&lt;br /&gt;
+ Yes. We use Git for almost everything, and SVN for a small number of legacy systems.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Can you make a build in one step?&lt;/strong&gt;&lt;br /&gt;
+ Yes, all applications can be built in one step. Older applications have a separate deployment process, while newer applications are deployed to integration environments automatically.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you make daily builds?&lt;/strong&gt;&lt;br /&gt;
+ We practice continuous integration, so there are usually hundreds of builds happening every day.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you have a bug database?&lt;/strong&gt;&lt;br /&gt;
+ Yes. We aim to keep the backlog tidy, and will often close minor bugs which are not likely to be fixed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you fix bugs before writing new code?&lt;/strong&gt;&lt;br /&gt;
+ Most teams prioritise bugs which affect more than 1% of users. Other bugs are prioritised on a case-by-case basis.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you have an up-to-date schedule?&lt;/strong&gt;&lt;br /&gt;
+ Yes. Schedules range from broad 1-2 year goals to month-by-month feature delivery.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you have a spec?&lt;/strong&gt;&lt;br /&gt;
+ We have Business Analysts who work within our teams to define specifications and acceptance criteria.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do programmers have quiet working conditions?&lt;/strong&gt;&lt;br /&gt;
+ Not by default, but quiet areas are available.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you use the best tools money can buy?&lt;/strong&gt;&lt;br /&gt;
+ Yes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you have testers?&lt;/strong&gt;&lt;br /&gt;
+ Yes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do new candidates write code during their interview?&lt;/strong&gt;&lt;br /&gt;
+ Yes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do you do hallway usability testing?&lt;/strong&gt;&lt;br /&gt;
+ Yes. UI changes are reviewed by our UX teams, and &lt;em&gt;Accessibility Champions&lt;/em&gt; are embedded in each team.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Mon, 26 Dec 2016 00:00:00 +1300</pubDate>
         <link>https://wildlyinaccurate.com/working-as-a-developer-at-bbc-news/</link>
