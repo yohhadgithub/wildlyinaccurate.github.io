@@ -6,15 +6,15 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Jan 2017 22:09:37 +1300</pubDate>
-    <lastBuildDate>Wed, 04 Jan 2017 22:09:37 +1300</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 22:20:19 +1300</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 22:20:19 +1300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>What it's like to work as a developer at BBC News</title>
-        <description>&lt;p&gt;The BBC is a pretty large organisation. Today it employs around 20,000 people (actually around 35,000 when you include part-time and fixed-term contract employees) across a huge number of divisions. The &lt;a href=&quot;http://careerssearch.bbc.co.uk/&quot;&gt;BBC Careers website&lt;/a&gt; typically has over 100 vacancies posted on any given day. Before I joined the BBC, I found the sheer scale of it a bit intimidating. Usually I can get an idea of what it’s like to work for a company by reading their job advertisements and their engineering blogs, but with the BBC I was almost completely clueless.&lt;/p&gt;
+        <description>&lt;p&gt;The BBC is a pretty large organisation. Today it employs around 20,000 people (actually around 35,000 when you include part-time and fixed-term contract employees) across a huge number of divisions. The &lt;a href=&quot;http://careerssearch.bbc.co.uk/&quot;&gt;BBC Careers website&lt;/a&gt; typically has over 100 vacancies posted on any given day. Before I joined the BBC, I found the sheer scale of it a bit intimidating. Usually I can get an idea of what it’s like to work for a company by reading their job advertisements and their engineering blogs, but with the BBC I was almost completely clueless. In this post I hope to shed some light on what it’s like to work as a developer or tester for BBC News.&lt;/p&gt;
 
-&lt;p&gt;In this post I hope to shed some light on what it’s like to work as a developer or tester for BBC News. It’s worth noting that from an engineering perspective, the BBC is not like most other companies — it’s more like dozens of smaller companies, each with their own engineering department, working towards a common goal. &lt;a href=&quot;http://www.bbc.com/news&quot;&gt;News&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.com/sport&quot;&gt;Sport&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/programmes&quot;&gt;Programmes&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/iplayer&quot;&gt;iPlayer&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/radio&quot;&gt;Radio&lt;/a&gt;… As digital products, these are all built mostly independently of each other. I work for BBC News, so a lot of what I’ve written may not apply outside of BBC News.&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;Just a small disclaimer first: from an engineering perspective, the BBC is not like most other companies — it’s more like dozens of smaller companies, each with their own engineering department, working towards a common goal. &lt;a href=&quot;http://www.bbc.com/news&quot;&gt;News&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.com/sport&quot;&gt;Sport&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/programmes&quot;&gt;Programmes&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/iplayer&quot;&gt;iPlayer&lt;/a&gt;, &lt;a href=&quot;http://www.bbc.co.uk/radio&quot;&gt;Radio&lt;/a&gt;… As digital products, these are all built mostly independently of each other. I work for BBC News, so a lot of what I’ve written may not apply outside of BBC News.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#teams--projects&quot; id=&quot;markdown-toc-teams--projects&quot;&gt;Teams &amp;amp; projects&lt;/a&gt;&lt;/li&gt;
