@@ -6,14 +6,68 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Feb 2017 14:14:21 +0000</pubDate>
-    <lastBuildDate>Mon, 13 Feb 2017 14:14:21 +0000</lastBuildDate>
+    <pubDate>Thu, 16 Feb 2017 21:16:49 +0000</pubDate>
+    <lastBuildDate>Thu, 16 Feb 2017 21:16:49 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Web development technologies to adopt in 2017</title>
+        <description>&lt;p&gt;I started 2016 feeling quite overwhelmed by the sheer number of new technologies that were being introduced. This year I feel like many of those technologies have matured, so I have collated a list of the ones that I think deserve your attention. My focus for the last couple of years has been on performance, so I’ve made an effort to ensure that all of the technologies mentioned are either “performance-friendly” or are directly related to performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;preact--preactjscom&quot;&gt;Preact — &lt;a href=&quot;https://preactjs.com/&quot;&gt;preactjs.com&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;A fast 3kB alternative to React with the same ES6 API. For projects which use React’s other APIs, &lt;a href=&quot;https://github.com/developit/preact-compat&quot;&gt;preact-compat&lt;/a&gt; exists as a compatibility layer allowing Preact to be a drop-in replacement for React in any project.&lt;/p&gt;
+
+&lt;p&gt;As well as being smaller than React, Preact is also much faster. I measured the impact of migrating to Preact in three projects and saw a 3-4x reduction in JavaScript execution times in all of them.&lt;/p&gt;
+
+&lt;h3 id=&quot;webpack--webpackjsorg&quot;&gt;Webpack — &lt;a href=&quot;https://webpack.js.org/&quot;&gt;webpack.js.org&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Bundle your scripts, images, styles, assets… I was initially put off Webpack because I thought it did too much. With the help of &lt;a href=&quot;https://github.com/petehunt/webpack-howto&quot;&gt;Pete Hunt’s webpack-howto&lt;/a&gt; I realised that Webpack can be as simple or as complex as you want it to be.&lt;/p&gt;
+
+&lt;p&gt;These days I recommend that people use Webpack even for trivial projects because it’s easy to set up, the defaults are good, and it opens up a huge number of possibilities for optimising your application.&lt;/p&gt;
+
+&lt;h3 id=&quot;offline-plugin--githubcomnekroffline-plugin&quot;&gt;offline-plugin — &lt;a href=&quot;https://github.com/NekR/offline-plugin&quot;&gt;github.com/NekR/offline-plugin&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;A highly-configurable Webpack plugin that provides an offline experience for your application using ServiceWorker, with AppCache as a fallback.&lt;/p&gt;
+
+&lt;p&gt;If there’s one thing on this list that you consider adopting, it should be this. The number of people around the world whose sole means of accessing the Internet on a mobile phone is &lt;em&gt;increasing&lt;/em&gt;. We can improve their experience on the web immeasurably by utilising technologies like ServiceWorker &amp;amp; AppCache, and this plugin is a ridiculously way to do that.&lt;/p&gt;
+
+&lt;h3 id=&quot;tachyons--tachyonsio&quot;&gt;Tachyons — &lt;a href=&quot;http://tachyons.io/&quot;&gt;tachyons.io&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Functional CSS for humans. Tachyons is a mobile-first responsive CSS framework with a focus on accessibility. Its single-purpose class structure is very scalable and practically removes the need to write any custom CSS.&lt;/p&gt;
+
+&lt;p&gt;Tachyons has a relatively small footprint, and is extremely modular so you can easily include only what you need.&lt;/p&gt;
+
+&lt;h3 id=&quot;lighthouse--githubcomgooglechromelighthouse&quot;&gt;Lighthouse — &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;github.com/GoogleChrome/lighthouse&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Built by some of the industry’s foremost web performance evangelists, Lighthouse is an automated tool that analyses your web application’s performance and provides insights on developer best practices.&lt;/p&gt;
+
+&lt;p&gt;While it’s useful as a once-in-a-while test, I would recommend running Lighthouse on a regular basis — perhaps part of a daily build. Its insights are broad enough to cover a wide range of issues from accessibility to performance, but specific enough that any issues are easily actionable.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+        <link>https://wildlyinaccurate.com/web-development-technologies-to-adopt-in-2017/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/web-development-technologies-to-adopt-in-2017/</guid>
+        
+        <category>preact</category>
+        
+        <category>react</category>
+        
+        <category>webpack</category>
+        
+        <category>service worker</category>
+        
+        <category>performance</category>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
     
       <item>
         <title>How we assemble web pages at BBC News</title>
         <description>&lt;blockquote&gt;
-  &lt;p&gt;This post is about the Web Application Framework in use by some teams at the BBC. It is not strictly a framework in that specifies the contracts between components, rather than providing concrete implementations of the components. For this reason, I prefer to think of it as the Web Application &lt;em&gt;Specification&lt;/em&gt;.&lt;/p&gt;
+  &lt;p&gt;This post is about the Web Application Framework in use by some teams at the BBC. It is not strictly a framework in that it specifies the contracts between components, rather than providing concrete implementations of the components. For this reason, I prefer to think of it as the Web Application &lt;em&gt;Specification&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;At the beginning of 2015, a group of developers and technical architects from around the BBC got together with the goal of designing a system for sharing web page components between teams. This came from an acceptance that most of the BBC’s public-facing web products have a similar look &amp;amp; feel, and a desire to improve efficiency through sharing rather than building similar things over and over again.&lt;/p&gt;
@@ -1124,87 +1178,6 @@ The quick brown fox jumps over the lazy fox.
         
         
         <category>Keyboards</category>
-        
-      </item>
-    
-      <item>
-        <title>JavaScript Performance: Variable Initialization</title>
-        <description>&lt;p&gt;Initializing variables properly in JavaScript can have significant performance benefits. This can be shown with a simple synthetic benchmark.&lt;/p&gt;
-
-&lt;h3 id=&quot;notypejs&quot;&gt;notype.js&lt;/h3&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;withtypejs&quot;&gt;withtype.js&lt;/h3&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;!--more--&gt;
-
-&lt;h3 id=&quot;benchmark-results&quot;&gt;Benchmark Results&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ time node notype.js
-node notype.js  **0.30s** user 0.01s system 100% cpu 0.301 total
-
-$ time node withtype.js
-node withtype.js  **0.10s** user 0.00s system 99% cpu 0.109 total
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This particular benchmark may be trivial, but it demonstrates an important point. In &lt;code class=&quot;highlighter-rouge&quot;&gt;notype.js&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; is initialized as &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;. This makes it impossible for V8 to optimize the arithmetic within the loop, since the type of &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; must be inferred during the first arithmetic operation. By contrast, the compiler can optimize &lt;code class=&quot;highlighter-rouge&quot;&gt;withtype.js&lt;/code&gt; because &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; is known to be a number.&lt;/p&gt;
-
-&lt;p&gt;Running these scripts again with V8’s profiler enabled, we can gain some additional insight into what’s going on under the hood.&lt;/p&gt;
-
-&lt;h3 id=&quot;notypejs-1&quot;&gt;notype.js&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [JavaScript]:
-   ticks  total  nonlib   name
-    181   63.3%   71.8%  LazyCompile: * /home/joseph/dev/jsperf/var_init_value/notype.js:1
-     68   23.8%   27.0%  Stub: BinaryOpStub_ADD_Alloc_SMI
-      1    0.3%    0.4%  LazyCompile: ~PropertyDescriptor native v8natives.js:482
-      1    0.3%    0.4%  KeyedLoadIC: A keyed load IC from the snapshot
-      1    0.3%    0.4%  CallInitialize: args_count: 3
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;withtypejs-1&quot;&gt;withtype.js&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [JavaScript]:
-   ticks  total  nonlib   name
-     72   66.7%   98.6%  LazyCompile: * /home/joseph/dev/jsperf/var_init_value/withtype.js:1
-      1    0.9%    1.4%  LazyCompile: RegExpConstructor native regexp.js:86
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The profiler doesn’t give us the full picture here, but we can see that &lt;code class=&quot;highlighter-rouge&quot;&gt;notype.js&lt;/code&gt; is spending a fair amount of time in &lt;code class=&quot;highlighter-rouge&quot;&gt;BinaryOpStub_ADD_Alloc_SMI&lt;/code&gt;, which V8 uses to create SMI (small integer) values.&lt;/p&gt;
-
-&lt;p&gt;It’s possible to dig into this even further by having V8 output the Hydrogen code (the intermediate language which V8 uses to represent the JavaScript code’s abstract syntax tree), or &lt;em&gt;even&lt;/em&gt; further by having V8 output the final assembly code. However, both of these things are outside the scope of this post. (If you’re &lt;em&gt;really&lt;/em&gt; interested, I’ve posted the output &lt;a href=&quot;https://gist.github.com/wildlyinaccurate/423294822c2729743490&quot;&gt;on GitHub&lt;/a&gt;.)&lt;/p&gt;
-
-&lt;p&gt;If this sort of thing interests you, you might enjoy reading Thorsten Lorenz’s collection of &lt;a href=&quot;https://github.com/thlorenz/v8-perf&quot;&gt;V8 performance resources&lt;/a&gt; or Petka Antonov’s &lt;a href=&quot;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&quot;&gt;V8 optimization killers&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 02 Aug 2014 00:10:46 +0100</pubDate>
-        <link>https://wildlyinaccurate.com/javascript-performance-variable-initialization/</link>
-        <guid isPermaLink="true">https://wildlyinaccurate.com/javascript-performance-variable-initialization/</guid>
-        
-        <category>javascript</category>
-        
-        <category>performance</category>
-        
-        <category>v8</category>
-        
-        
-        <category>JavaScript</category>
         
       </item>
     
