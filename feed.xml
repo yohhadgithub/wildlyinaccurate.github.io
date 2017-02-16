@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Feb 2017 21:16:49 +0000</pubDate>
-    <lastBuildDate>Thu, 16 Feb 2017 21:16:49 +0000</lastBuildDate>
+    <pubDate>Thu, 16 Feb 2017 21:29:32 +0000</pubDate>
+    <lastBuildDate>Thu, 16 Feb 2017 21:29:32 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -16,9 +16,9 @@
 
 &lt;h3 id=&quot;preact--preactjscom&quot;&gt;Preact — &lt;a href=&quot;https://preactjs.com/&quot;&gt;preactjs.com&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;A fast 3kB alternative to React with the same ES6 API. For projects which use React’s other APIs, &lt;a href=&quot;https://github.com/developit/preact-compat&quot;&gt;preact-compat&lt;/a&gt; exists as a compatibility layer allowing Preact to be a drop-in replacement for React in any project.&lt;/p&gt;
+&lt;p&gt;A fast 3kB alternative to React with the same ES6 API. For projects that use React’s other APIs, &lt;a href=&quot;https://github.com/developit/preact-compat&quot;&gt;preact-compat&lt;/a&gt; exists as a compatibility layer allowing Preact to be a complete drop-in replacement for React.&lt;/p&gt;
 
-&lt;p&gt;As well as being smaller than React, Preact is also much faster. I measured the impact of migrating to Preact in three projects and saw a 3-4x reduction in JavaScript execution times in all of them.&lt;/p&gt;
+&lt;p&gt;As well as being smaller than React, Preact is also much faster. I measured the impact of migrating to Preact in three projects and saw a 3-4x reduction in JavaScript execution times in all of them &lt;small&gt;(&lt;a href=&quot;https://github.com/wildlyinaccurate/resume/pull/4&quot;&gt;some data and profiler screenshots for one project&lt;/a&gt;)&lt;/small&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;webpack--webpackjsorg&quot;&gt;Webpack — &lt;a href=&quot;https://webpack.js.org/&quot;&gt;webpack.js.org&lt;/a&gt;&lt;/h3&gt;
 
@@ -30,19 +30,19 @@
 
 &lt;p&gt;A highly-configurable Webpack plugin that provides an offline experience for your application using ServiceWorker, with AppCache as a fallback.&lt;/p&gt;
 
-&lt;p&gt;If there’s one thing on this list that you consider adopting, it should be this. The number of people around the world whose sole means of accessing the Internet on a mobile phone is &lt;em&gt;increasing&lt;/em&gt;. We can improve their experience on the web immeasurably by utilising technologies like ServiceWorker &amp;amp; AppCache, and this plugin is a ridiculously way to do that.&lt;/p&gt;
+&lt;p&gt;If there’s one thing on this list that you consider adopting, it should be this. The number of people around the world whose sole means of accessing the Internet on a mobile phone is &lt;em&gt;increasing&lt;/em&gt;. We can improve their experience on the web immeasurably by utilising technologies like ServiceWorker &amp;amp; AppCache, and this plugin is a ridiculously easy way to do that.&lt;/p&gt;
 
 &lt;h3 id=&quot;tachyons--tachyonsio&quot;&gt;Tachyons — &lt;a href=&quot;http://tachyons.io/&quot;&gt;tachyons.io&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;Functional CSS for humans. Tachyons is a mobile-first responsive CSS framework with a focus on accessibility. Its single-purpose class structure is very scalable and practically removes the need to write any custom CSS.&lt;/p&gt;
+&lt;p&gt;Functional CSS for humans. Tachyons is a mobile-first responsive CSS framework with a focus on accessibility. Its single-purpose class structure is scalable and practically removes the need to write any custom CSS.&lt;/p&gt;
 
-&lt;p&gt;Tachyons has a relatively small footprint, and is extremely modular so you can easily include only what you need.&lt;/p&gt;
+&lt;p&gt;Tachyons has a relatively small footprint, and is extremely modular so you can easily include only what you need. It’s a good, powerful alternative to heavier frameworks like Bootstrap or Foundation.&lt;/p&gt;
 
 &lt;h3 id=&quot;lighthouse--githubcomgooglechromelighthouse&quot;&gt;Lighthouse — &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;github.com/GoogleChrome/lighthouse&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;Built by some of the industry’s foremost web performance evangelists, Lighthouse is an automated tool that analyses your web application’s performance and provides insights on developer best practices.&lt;/p&gt;
+&lt;p&gt;Built by some of the industry’s foremost web performance evangelists, Lighthouse is an automated tool for analysing your web application’s performance and providing insights on developer best practices.&lt;/p&gt;
 
-&lt;p&gt;While it’s useful as a once-in-a-while test, I would recommend running Lighthouse on a regular basis — perhaps part of a daily build. Its insights are broad enough to cover a wide range of issues from accessibility to performance, but specific enough that any issues are easily actionable.&lt;/p&gt;
+&lt;p&gt;As well as using it as a once-in-a-while test, I also recommend running Lighthouse on a regular basis — perhaps part of a daily build. Its insights are broad enough to cover a wide range of issues from accessibility to performance, but specific enough that any issues are easily actionable.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
