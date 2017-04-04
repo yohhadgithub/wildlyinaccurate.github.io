@@ -6,15 +6,15 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Apr 2017 21:28:20 +0100</pubDate>
-    <lastBuildDate>Tue, 04 Apr 2017 21:28:20 +0100</lastBuildDate>
+    <pubDate>Tue, 04 Apr 2017 21:52:41 +0100</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 21:52:41 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>Introducing a faster BBC News front page</title>
         <description>&lt;p&gt;Web performance is something I care deeply about both as a developer whose work affects millions of people around the world, and as a user who often accesses the web on slow &amp;amp; unreliable connections. I have regularly and loudly complained that &lt;a href=&quot;/redefining-the-bcc-news-core-experience/&quot;&gt;the BBC News website is unnecessarily slow&lt;/a&gt;, so when I was given the opportunity to help rebuild one of the most visited pages of BBC News —the front page— I jumped at the chance.&lt;/p&gt;
 
-&lt;p&gt;That was April 2016. Now, a whole year later, we’re ready to begin a phased rollout of the new front page. Starting with a small percentage of users in the UK, we will gradually move everybody to the new front page over the course of several weeks. If you’re eager to see it before then, you can see it at &lt;a href=&quot;http://www.bbc.co.uk/news/0&quot;&gt;www.bbc.co.uk/news/0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;That was April 2016. Now, a whole year later, we’re ready to begin a phased rollout of the new front page. Starting with a small percentage of users in the UK, we will gradually move everybody to the new front page over the course of several weeks. If you’re eager to see it before the rollout is complete, it is available at &lt;a href=&quot;http://www.bbc.co.uk/news/0&quot;&gt;www.bbc.co.uk/news/0&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;quick-facts-about-the-new-front-page&quot;&gt;Quick facts about the new front page&lt;/h2&gt;
 
@@ -22,8 +22,8 @@
   &lt;li&gt;It is lighter and faster than the old one:
     &lt;ul&gt;
       &lt;li&gt;First meaningful paint happens up to &lt;strong&gt;50% sooner&lt;/strong&gt; on mobile devices&lt;sup&gt;&lt;a href=&quot;#footnotes&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-      &lt;li&gt;“Enhanced” content like images is loaded &lt;strong&gt;150% faster&lt;/strong&gt; on mobile, and &lt;strong&gt;70% faster&lt;/strong&gt; on desktop.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;50% fewer bytes&lt;/strong&gt; are downloaded on mobile. &lt;strong&gt;75% fewer bytes&lt;/strong&gt; are downloaded on desktop.&lt;/li&gt;
+      &lt;li&gt;Page enhancements like lazy-loaded images load &lt;strong&gt;150% faster&lt;/strong&gt; on mobile, and &lt;strong&gt;70% faster&lt;/strong&gt; on desktop.&lt;/li&gt;
+      &lt;li&gt;The total bytes downloaded is &lt;strong&gt;50% less&lt;/strong&gt; on mobile and &lt;strong&gt;75% less&lt;/strong&gt; on desktop.&lt;/li&gt;
       &lt;li&gt;CPU busy time has been reduced by &lt;strong&gt;30%&lt;/strong&gt; on mobile and by &lt;strong&gt;50%&lt;/strong&gt; on desktop.&lt;/li&gt;
       &lt;li&gt;Performance monitoring has been automated with &lt;a href=&quot;https://speedcurve.com/&quot;&gt;SpeedCurve&lt;/a&gt; from the beginning of the project.&lt;/li&gt;
     &lt;/ul&gt;
