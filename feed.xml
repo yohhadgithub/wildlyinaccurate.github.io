@@ -6,8 +6,8 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Apr 2017 20:40:17 +0100</pubDate>
-    <lastBuildDate>Tue, 04 Apr 2017 20:40:17 +0100</lastBuildDate>
+    <pubDate>Tue, 04 Apr 2017 20:43:56 +0100</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 20:43:56 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -21,7 +21,7 @@
 &lt;ul&gt;
   &lt;li&gt;It is lighter and faster than the old one:
     &lt;ul&gt;
-      &lt;li&gt;First meaningful paint happens up to &lt;strong&gt;50% sooner&lt;/strong&gt; on mobile devices&lt;sup&gt;1&lt;/sup&gt;.&lt;/li&gt;
+      &lt;li&gt;First meaningful paint happens up to &lt;strong&gt;50% sooner&lt;/strong&gt; on mobile devices&lt;sup&gt;&lt;a href=&quot;#footnotes&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
       &lt;li&gt;“Enhanced” content like images is loaded &lt;strong&gt;150% faster&lt;/strong&gt; on mobile, and &lt;strong&gt;70% faster&lt;/strong&gt; on desktop.&lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;50% fewer bytes&lt;/strong&gt; are downloaded on mobile. &lt;strong&gt;75% fewer bytes&lt;/strong&gt; are downloaded on desktop.&lt;/li&gt;
       &lt;li&gt;CPU busy time has been reduced by &lt;strong&gt;30%&lt;/strong&gt; on mobile and by &lt;strong&gt;50%&lt;/strong&gt; on desktop.&lt;/li&gt;
@@ -31,7 +31,7 @@
   &lt;li&gt;It is available over HTTPS, and we have plans to redirect insecure traffic to HTTPS in the not-so-distant future.&lt;/li&gt;
   &lt;li&gt;The page is built from React components that are styled with the BBC’s ITCSS framework, &lt;a href=&quot;https://github.com/bbc/grandstand&quot;&gt;Grandstand&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;The React components are rendered by the BBC’s React-component-as-an-API-endpoint service.&lt;/li&gt;
-  &lt;li&gt;React only used on the server. We do not load it in the browser&lt;sup&gt;2&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;React only used on the server. We do not load it in the browser&lt;sup&gt;&lt;a href=&quot;#footnotes&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
   &lt;li&gt;Each component is a self-contained horizontal “slice” of the page. Components fetch their own data and are styled with the same framework, allowing them to be easily dropped into any page.&lt;/li&gt;
   &lt;li&gt;The development team consists of 5 developers and 1 tester, but we have collaborated with over 60 other developers and testers from all around the BBC to build this page.&lt;/li&gt;
 &lt;/ul&gt;
