@@ -6,9 +6,148 @@
 </description>
     <link>https://wildlyinaccurate.com/</link>
     <atom:link href="https://wildlyinaccurate.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Feb 2017 21:29:32 +0000</pubDate>
-    <lastBuildDate>Thu, 16 Feb 2017 21:29:32 +0000</lastBuildDate>
+    <pubDate>Tue, 04 Apr 2017 20:40:17 +0100</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 20:40:17 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Introducing a faster BBC News front page</title>
+        <description>&lt;p&gt;Web performance is something I care deeply about both as a developer whose work affects millions of people around the world, and as a user who often accesses the web on slow &amp;amp; unreliable connections. I have regularly and loudly complained that &lt;a href=&quot;/redefining-the-bcc-news-core-experience/&quot;&gt;the BBC News website is unnecessarily slow&lt;/a&gt;, so when I was given the opportunity to help rebuild one of the most visited pages of BBC News —the front page— I jumped at the chance.&lt;/p&gt;
+
+&lt;p&gt;That was April 2016. Now, a whole year later, we’re ready to begin a phased rollout of the new front page. Starting with a small percentage of users in the UK, we will gradually move everybody to the new front page over the course of several weeks. If you’re eager to see it before then, you can see it at &lt;a href=&quot;http://www.bbc.co.uk/news/0&quot;&gt;www.bbc.co.uk/news/0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;quick-facts-about-the-new-front-page&quot;&gt;Quick facts about the new front page&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It is lighter and faster than the old one:
+    &lt;ul&gt;
+      &lt;li&gt;First meaningful paint happens up to &lt;strong&gt;50% sooner&lt;/strong&gt; on mobile devices&lt;sup&gt;1&lt;/sup&gt;.&lt;/li&gt;
+      &lt;li&gt;“Enhanced” content like images is loaded &lt;strong&gt;150% faster&lt;/strong&gt; on mobile, and &lt;strong&gt;70% faster&lt;/strong&gt; on desktop.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;50% fewer bytes&lt;/strong&gt; are downloaded on mobile. &lt;strong&gt;75% fewer bytes&lt;/strong&gt; are downloaded on desktop.&lt;/li&gt;
+      &lt;li&gt;CPU busy time has been reduced by &lt;strong&gt;30%&lt;/strong&gt; on mobile and by &lt;strong&gt;50%&lt;/strong&gt; on desktop.&lt;/li&gt;
+      &lt;li&gt;Performance monitoring has been automated with &lt;a href=&quot;https://speedcurve.com/&quot;&gt;SpeedCurve&lt;/a&gt; from the beginning of the project.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;It is available over HTTPS, and we have plans to redirect insecure traffic to HTTPS in the not-so-distant future.&lt;/li&gt;
+  &lt;li&gt;The page is built from React components that are styled with the BBC’s ITCSS framework, &lt;a href=&quot;https://github.com/bbc/grandstand&quot;&gt;Grandstand&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;The React components are rendered by the BBC’s React-component-as-an-API-endpoint service.&lt;/li&gt;
+  &lt;li&gt;React only used on the server. We do not load it in the browser&lt;sup&gt;2&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;Each component is a self-contained horizontal “slice” of the page. Components fetch their own data and are styled with the same framework, allowing them to be easily dropped into any page.&lt;/li&gt;
+  &lt;li&gt;The development team consists of 5 developers and 1 tester, but we have collaborated with over 60 other developers and testers from all around the BBC to build this page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h2&gt;
+
+&lt;p&gt;The version of the front page we’re rolling out is an MVP, a &lt;em&gt;phase one&lt;/em&gt;. We will be changing it considerably over the next several months. Here’s an idea of what you can expect to see:&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;performance-improvements&quot;&gt;Performance improvements&lt;/h3&gt;
+
+&lt;p&gt;While we have managed to improve the performance of the front page considerably, there is still a lot of work to do:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The first meaningful paint time is still too high. We can improve it by loading the core CSS sooner.&lt;/li&gt;
+  &lt;li&gt;We still send too many bytes to the client. A good portion of this is from inline styles that are only used on IE8. (Update: We already have a pull request open to drop the IE8-only styles, which should reduce the amount of inline styles by about a third).&lt;/li&gt;
+  &lt;li&gt;Style recalculations and layouts take too long on low-powered devices. This still needs some investigation.&lt;/li&gt;
+  &lt;li&gt;We are essentially hamstrung by the “white BBC bar” at the top of the page. This bar contains components from other parts of the BBC like Search, Notifications, and BBC ID. All of these components load their own blocking CSS &amp;amp; JavaScript before any of the BBC News assets. While this is unlikely to change in the short term, we’re hoping to work with the teams that own these components to reduce their impact.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design-enhancements&quot;&gt;Design enhancements&lt;/h3&gt;
+
+&lt;p&gt;In order to ship the new front page sooner, we made a lot of compromises with both the UX and editorial teams around the design of the page. Once we’re finished with the rollout, we will be improving the visual treatment of story cards (promos) to highlight correspondent stories and feature pieces. The current designs look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
+    
+    &lt;img alt=&quot;The plain promo design for the MVP launch&quot; src=&quot;/assets/news-front-page-promo-current.png&quot; srcset=&quot;/assets/r/320/news-front-page-promo-current.png 320w, /assets/r/380/news-front-page-promo-current.png 380w, /assets/r/420/news-front-page-promo-current.png 420w, /assets/r/640/news-front-page-promo-current.png 640w, /assets/r/768/news-front-page-promo-current.png 768w, /assets/r/1024/news-front-page-promo-current.png 1024w, /assets/r/510/news-front-page-promo-current.png 510w, /assets/r/690/news-front-page-promo-current.png 690w, /assets/r/930/news-front-page-promo-current.png 930w, /assets/r/1110/news-front-page-promo-current.png 1110w,  /assets/news-front-page-promo-current.png 1267w&quot; /&gt;
+    
+
+    
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;The plain promo design for the MVP launch&lt;/i&gt;&lt;/small&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;And below is one of the proposals for how we might display other types of promo:&lt;/p&gt;
+
+&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
+    
+    &lt;img alt=&quot;An example of potential visual treatments for special types of promo&quot; src=&quot;/assets/news-front-page-promo-variation.png&quot; srcset=&quot;/assets/r/320/news-front-page-promo-variation.png 320w, /assets/r/380/news-front-page-promo-variation.png 380w, /assets/r/420/news-front-page-promo-variation.png 420w, /assets/r/640/news-front-page-promo-variation.png 640w, /assets/r/768/news-front-page-promo-variation.png 768w, /assets/r/1024/news-front-page-promo-variation.png 1024w, /assets/r/510/news-front-page-promo-variation.png 510w, /assets/r/690/news-front-page-promo-variation.png 690w, /assets/r/930/news-front-page-promo-variation.png 930w, /assets/r/1110/news-front-page-promo-variation.png 1110w,  /assets/news-front-page-promo-variation.png 1264w&quot; /&gt;
+    
+
+    
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;An example of potential visual treatments for special types of promo&lt;/i&gt;&lt;/small&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;react-in-the-browser&quot;&gt;React in the browser&lt;/h3&gt;
+
+&lt;p&gt;We decided early on in the project that using React in the browser was overkill for a page that is predominantly static text and images. The performance impact of bundling so much JavaScript and executing it in the browser is also unacceptably high: Even making use of server-side rendering, emulated mobile devices spend nearly 4 times as long executing scripts and performing layouts &amp;amp; paints when React was run on the page.&lt;/p&gt;
+
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
+    
+    &lt;img alt=&quot;A timeline of the server side rendered page without React in the browser&quot; src=&quot;/assets/news-front-page-timeline-static.png&quot; width=&quot;636&quot; srcset=&quot;/assets/r/320/news-front-page-timeline-static.png 320w, /assets/r/380/news-front-page-timeline-static.png 380w, /assets/r/420/news-front-page-timeline-static.png 420w, /assets/r/510/news-front-page-timeline-static.png 510w,  /assets/news-front-page-timeline-static.png 636w&quot; /&gt;
+    
+
+    
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;A timeline of the server side rendered page without React in the browser&lt;/i&gt;&lt;/small&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;div class=&quot;my-4 ta-c &quot;&gt;
+    
+    &lt;img alt=&quot;A timeline showing the impact of running React in the browser&quot; src=&quot;/assets/news-front-page-timeline-react.png&quot; width=&quot;636&quot; srcset=&quot;/assets/r/320/news-front-page-timeline-react.png 320w, /assets/r/380/news-front-page-timeline-react.png 380w, /assets/r/420/news-front-page-timeline-react.png 420w, /assets/r/510/news-front-page-timeline-react.png 510w,  /assets/news-front-page-timeline-react.png 636w&quot; /&gt;
+    
+
+    
+    &lt;div class=&quot;c-gl&quot;&gt;
+        &lt;small&gt;&lt;i&gt;A timeline showing the impact of running React in the browser&lt;/i&gt;&lt;/small&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Our current approach to running JavaScript in the browser is to build a good ol’ fashioned bundle, completely separate from the React components. However, we realise that this isn’t going to scale for very long, and that eventually we will have to find a way to run our React components in the browser without impacting the user experience. Solutions that we’re looking into include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using &lt;a href=&quot;https://preactjs.com/&quot;&gt;Preact&lt;/a&gt; in place of React.&lt;/li&gt;
+  &lt;li&gt;Converting our components to &lt;a href=&quot;https://preactjs.com/guide/types-of-components#stateless-functional-components&quot;&gt;stateless functional components&lt;/a&gt; where possible to reduce their size.&lt;/li&gt;
+  &lt;li&gt;Smarter &lt;a href=&quot;https://webpack.js.org/guides/code-splitting/&quot;&gt;code splitting&lt;/a&gt; so that we can load non-essential code on-demand.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;acknowledgements&quot;&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;Firstly, to everybody involved: &lt;strong&gt;thank you&lt;/strong&gt;. Rarely have I had the chance to work with so many talented, patient, dedicated, and caring people. From documentation tweaks to requirements gathering, from bug fixes to building entire components; regardless of the size of your contribution, we wouldn’t have reached this point without you. So again: thank you, and congratulations on reaching this milestone.&lt;/p&gt;
+
+&lt;p&gt;To the design team and editorial staff: thank you for helping us find a balance between perfection and a fast launch.&lt;/p&gt;
+
+&lt;p&gt;To the project managers, business analysts, and product owners: I don’t think you get enough credit. Thank you for working extraordinarily hard to smooth out all of the bumps in this project, and for providing the development team with a clear path.&lt;/p&gt;
+
+&lt;p&gt;And finally, to my team: You are amazing. I’m so proud of what we’ve built together. On a more personal level, you’ve made coming into work feel like coming home to a second family, and I’m eternally grateful for that. The doughnuts are on me 💜.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mobile device testing was performed using the “Mobile - Emerging Markets” setting on &lt;a href=&quot;https://www.webpagetest.org/&quot;&gt;WebPagetest&lt;/a&gt; (&lt;em&gt;Chrome Beta on a Motorola G (gen 4) tested from Dulles, Virginia on a 400 Kbps 3G connection with 400ms of latency&lt;/em&gt;).&lt;/li&gt;
+  &lt;li&gt;BBC News does not load React in the browser, but some other page components (like the BBC-wide search bar in the top-right) do load React.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 04 Apr 2017 00:00:00 +0100</pubDate>
+        <link>https://wildlyinaccurate.com/introducing-a-faster-bbc-news-front-page/</link>
+        <guid isPermaLink="true">https://wildlyinaccurate.com/introducing-a-faster-bbc-news-front-page/</guid>
+        
+        <category>bbc news</category>
+        
+        <category>performance</category>
+        
+        
+        <category>BBC News</category>
+        
+      </item>
     
       <item>
         <title>Web development technologies to adopt in 2017</title>
@@ -1032,152 +1171,6 @@ configure: error: readline not found, so this package cannot be built
         
         
         <category>Haskell</category>
-        
-      </item>
-    
-      <item>
-        <title>Transitioning to a new keyboard layout</title>
-        <description>&lt;p&gt;I’ve long been considering switching to a different keyboard layout. I tend to type with mostly my forefinger and middle finger, only using my ring and pinky fingers occasionally to stretch out to the modifier keys. Despite this, I still manage to type at around 120WPM on a staggered QWERTY keyboard.&lt;/p&gt;
-
-&lt;p&gt;Thinking back, I probably started teaching myself to type at a reasonable speed around age 10. I’m now in my mid-twenties. My typing technique (or lack thereof) never really bothered me, but 15 years of typing with poor technique has started to take its toll. Recently I’ve started experiencing hand fatigue, and I’m beginning to see early signs of RSI. So I figure now is the perfect time to make some changes to the way I type.&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;My first idea was to start using an ergonomic keyboard. The three keyboards which seemed to be most popular at the time were the &lt;a href=&quot;http://www.microsoft.com/hardware/en-gb/p/natural-ergonomic-keyboard-4000&quot;&gt;Microsoft Natural Ergonomic&lt;/a&gt;, the &lt;a href=&quot;https://www.trulyergonomic.com/store/index.php&quot;&gt;Truly Ergonomic&lt;/a&gt;, and the soon-to-be-released &lt;a href=&quot;http://matias.ca/ergopro/pc/&quot;&gt;Matias Ergo Pro&lt;/a&gt;. After trying some keyboards out, I realised that if I was going to do this properly, I would need a split-hand keyboard. This is mostly due to having quite broad shoulders, which means that when my hands are close together (like on a keyboard), my shoulders need to be bunched up in order for my hands to take the correct position. This can be quite uncomfortable, and I often find myself stretching and cracking my shoulders throughout the day.&lt;/p&gt;
-
-&lt;p&gt;The Ergo Pro is the only one of the keyboards I was evaluating which had a split-hand design. Unfortunately it didn’t take long for me to realise that despite the split-hand design, the Ergo Pro wasn’t suitable either. A lot of the pain I get in my hands is due to over-stretching the ring and pinky fingers. The Ergo Pro still follows a fairly standard keyboard layout, which places the modifier keys in a position where you must reach your pinkies out in order to hit them.&lt;/p&gt;
-
-&lt;p&gt;For a while, I was defeated.&lt;/p&gt;
-
-&lt;p&gt;Then, I stumbled across the &lt;a href=&quot;http://ergodox.org/&quot;&gt;ErgoDox&lt;/a&gt;. At a glance, this looked like the perfect keyboard for me. The split-hand design would relieve the tension from my shoulders, the thumb keys would reduce the need to stretch my pinkies to reach the modifier keys, and the non-staggered layout would help reduce the distance my fingers need to travel when changing rows. The fact that the keyboard is fully programmable with open-source firmware was what finally sold me.&lt;/p&gt;
-
-&lt;p&gt;So I ordered myself an &lt;a href=&quot;https://www.massdrop.com/buy/ergodox&quot;&gt;ErgoDox kit from Massdrop&lt;/a&gt;, and set around to building my keyboard.&lt;/p&gt;
-
-&lt;p&gt;I built the keyboard in short bursts when I had spare time on the weekends. All up I probably invested about 10 hours over a period of two months. I made good use of the electronics station at &lt;a href=&quot;https://london.hackspace.org.uk/&quot;&gt;London Hackspace&lt;/a&gt;, and learned a lot about soldering and about electronics in general. I’m fairly confident that I could build another ErgoDox in a matter of hours.&lt;/p&gt;
-
-&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
-    
-    &lt;img alt=&quot;The finished ErgoDox&quot; src=&quot;/assets/ergodox-1024x551.jpg&quot; srcset=&quot;/assets/r/320/ergodox-1024x551.jpg 320w, /assets/r/380/ergodox-1024x551.jpg 380w, /assets/r/420/ergodox-1024x551.jpg 420w, /assets/r/640/ergodox-1024x551.jpg 640w, /assets/r/768/ergodox-1024x551.jpg 768w, /assets/r/510/ergodox-1024x551.jpg 510w, /assets/r/690/ergodox-1024x551.jpg 690w, /assets/r/930/ergodox-1024x551.jpg 930w,  /assets/ergodox-1024x551.jpg 1024w&quot; /&gt;
-    
-
-    
-    &lt;div class=&quot;c-gl&quot;&gt;
-        &lt;small&gt;&lt;i&gt;The finished ErgoDox&lt;/i&gt;&lt;/small&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;While the open-source firmware has &lt;a href=&quot;https://github.com/wildlyinaccurate/ergodox-firmware/tree/master/src/keyboard/ergodox/layout&quot;&gt;several layouts available&lt;/a&gt;, Massdrop provides the binary firmware for a QWERTY layout to get you started. I didn’t particularly feel like learning a completely new keyboard layout so I stuck with QWERTY, figuring that the layout of the ErgoDox would solve the fatigue problems I was having. I was wrong.&lt;/p&gt;
-
-&lt;p&gt;Using the ErgoDox, I still felt like my fingers were moving just as much as on a regular keyboard. I used Patrick Gillespie’s amazing &lt;a href=&quot;http://patorjk.com/keyboard-layout-analyzer&quot;&gt;Keyboard Layout Analyzer&lt;/a&gt; to help me figure out what the problem was.&lt;/p&gt;
-
-&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
-    
-    &lt;img alt=&quot;ErgoDox QWERTY Layout Heat Map&quot; src=&quot;/assets/ergodox-qwerty-heatmap.png&quot; srcset=&quot;/assets/r/320/ergodox-qwerty-heatmap.png 320w, /assets/r/380/ergodox-qwerty-heatmap.png 380w, /assets/r/420/ergodox-qwerty-heatmap.png 420w, /assets/r/640/ergodox-qwerty-heatmap.png 640w, /assets/r/768/ergodox-qwerty-heatmap.png 768w, /assets/r/510/ergodox-qwerty-heatmap.png 510w, /assets/r/690/ergodox-qwerty-heatmap.png 690w,  /assets/ergodox-qwerty-heatmap.png 929w&quot; /&gt;
-    
-
-    
-    &lt;div class=&quot;c-gl&quot;&gt;
-        &lt;small&gt;&lt;i&gt;ErgoDox QWERTY Layout Heat Map&lt;/i&gt;&lt;/small&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;The heat map above shows how the QWERTY layout requires you to constantly move your fingers between rows. For me, this was a major cause of discomfort. I decided that I needed to find a more efficient keyboard layout.&lt;/p&gt;
-
-&lt;p&gt;Learning a new keyboard layout isn’t something you can take lightly. There’s a huge time investment required not only to learn the new layout, but to become proficient with it. For me, “proficient” means being able to type at least 100WPM – hopefully even more. So finding the “right” layout was a fairly daunting task.&lt;/p&gt;
-
-&lt;p&gt;After some experimenting and reading others’ thoughts, I finally settled on Colemak. There were a few reasons for this:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The layout scores highly in the layout analyser when analysing code (which I spend more time typing than English).&lt;/li&gt;
-  &lt;li&gt;The heat map shows reduced movement between rows.&lt;/li&gt;
-  &lt;li&gt;Keys used for common keyboard shortcuts (Q, W, Z, X, C, V) remain unchanged.&lt;/li&gt;
-  &lt;li&gt;It felt the most “natural” compared to other popular layouts like Workman, Dvorak, and Programmer Dvorak.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
-    
-    &lt;img alt=&quot;The heat map for a Colemak layout on the ErgoDox&quot; src=&quot;/assets/ergodox-colemak-heatmap1.png&quot; srcset=&quot;/assets/r/320/ergodox-colemak-heatmap1.png 320w, /assets/r/380/ergodox-colemak-heatmap1.png 380w, /assets/r/420/ergodox-colemak-heatmap1.png 420w, /assets/r/640/ergodox-colemak-heatmap1.png 640w, /assets/r/768/ergodox-colemak-heatmap1.png 768w, /assets/r/510/ergodox-colemak-heatmap1.png 510w, /assets/r/690/ergodox-colemak-heatmap1.png 690w,  /assets/ergodox-colemak-heatmap1.png 929w&quot; /&gt;
-    
-
-    
-    &lt;div class=&quot;c-gl&quot;&gt;
-        &lt;small&gt;&lt;i&gt;The heat map for a Colemak layout on the ErgoDox&lt;/i&gt;&lt;/small&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;An article about &lt;a href=&quot;http://jjt.io/2013/11/25/why-any-developer-should-check-out-the-ergodox-keyboard/&quot;&gt;Jason Trill’s experience with the ErgoDox&lt;/a&gt; convinced me at the last minute to use a modified version of Colemak which puts the symbols on a separate layer around the home row, so you don’t need to move your fingers to the top row to type symbols. In case you’re wondering what I mean by a “separate layer”: layers on a keyboard are a way to have one key type different characters. You actually use layers all the time, even if you don’t realise it. When you hold down the Shift key, you’re activating another layer on your keyboard. When you hit the Caps Lock key, you’re toggling that layer. Layers differ from key combinations (like Control + Alt + Delete) in that they’re implemented in the keyboard’s firmware rather than at the software level.&lt;/p&gt;
-
-&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
-    
-    &lt;img alt=&quot;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&quot; src=&quot;/assets/ergodox-colemak-symbolmod-heatmap.png&quot; srcset=&quot;/assets/r/320/ergodox-colemak-symbolmod-heatmap.png 320w, /assets/r/380/ergodox-colemak-symbolmod-heatmap.png 380w, /assets/r/420/ergodox-colemak-symbolmod-heatmap.png 420w, /assets/r/640/ergodox-colemak-symbolmod-heatmap.png 640w, /assets/r/768/ergodox-colemak-symbolmod-heatmap.png 768w, /assets/r/510/ergodox-colemak-symbolmod-heatmap.png 510w, /assets/r/690/ergodox-colemak-symbolmod-heatmap.png 690w,  /assets/ergodox-colemak-symbolmod-heatmap.png 929w&quot; /&gt;
-    
-
-    
-    &lt;div class=&quot;c-gl&quot;&gt;
-        &lt;small&gt;&lt;i&gt;The &amp;quot;symbolmod&amp;quot; Colemak layout reduces finger movement even further&lt;/i&gt;&lt;/small&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;As you can probably tell from the heat map above, the “Alt Gr” key enables the symbol layer, allowing me to type common symbols without my fingers leaving the home row.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-now&quot;&gt;What now?&lt;/h2&gt;
-
-&lt;p&gt;As of today, I’ve only clocked up about an hour of typing with the new layout. I can only manage about 5WPM at the moment so it can be frustrating to use it for any more than a few minutes at a time.&lt;/p&gt;
-
-&lt;p&gt;Rather than just trying to use the new layout for my day-to-day tasks, I’ve come up with a plan to help me become productive with it first.&lt;/p&gt;
-
-&lt;h3 id=&quot;stage-1---touch-typing&quot;&gt;Stage 1 - Touch Typing&lt;/h3&gt;
-
-&lt;p&gt;Before I do anything else, I need to learn how to touch type with the new layout. At the moment I’m relying on a printed guide, which I constantly refer to in order to find the keys I want. To learn how to touch type, I’m going back to basics:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The quick brown fox jumps over the lazy fox.
-The quick brown fox jumps over the lazy fox.
-The quick brown fox jumps over the lazy fox.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;In theory, the more I use each key, the less I’ll have to look at my guide.&lt;/p&gt;
-
-&lt;div class=&quot;my-4 ta-c thumbnail--bleed&quot;&gt;
-    
-    &lt;img alt=&quot;The layout guide I'm using to type at the moment&quot; src=&quot;/assets/ergodox-layout-guide-1024x598.jpg&quot; srcset=&quot;/assets/r/320/ergodox-layout-guide-1024x598.jpg 320w, /assets/r/380/ergodox-layout-guide-1024x598.jpg 380w, /assets/r/420/ergodox-layout-guide-1024x598.jpg 420w, /assets/r/640/ergodox-layout-guide-1024x598.jpg 640w, /assets/r/768/ergodox-layout-guide-1024x598.jpg 768w, /assets/r/510/ergodox-layout-guide-1024x598.jpg 510w, /assets/r/690/ergodox-layout-guide-1024x598.jpg 690w, /assets/r/930/ergodox-layout-guide-1024x598.jpg 930w,  /assets/ergodox-layout-guide-1024x598.jpg 1024w&quot; /&gt;
-    
-
-    
-    &lt;div class=&quot;c-gl&quot;&gt;
-        &lt;small&gt;&lt;i&gt;The layout guide I'm using to type at the moment&lt;/i&gt;&lt;/small&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;h3 id=&quot;stage-2---speed&quot;&gt;Stage 2 - Speed&lt;/h3&gt;
-
-&lt;p&gt;Once I’m familiar enough with the layout, I’ll need to get my speed up. There are plenty of tools available online which give you a list of randomly-chosen words to type, and report your speed at the end. I’ve found that &lt;a href=&quot;http://10fastfingers.com/typing-test/english&quot;&gt;10FastFingers&lt;/a&gt; is good enough for my needs. Hopefully doing this for a week or two will get me typing at least 60WPM again.&lt;/p&gt;
-
-&lt;h3 id=&quot;stage-3---programming&quot;&gt;Stage 3 - Programming&lt;/h3&gt;
-
-&lt;p&gt;I spend a lot of my waking life programming, so I’ll need to become proficient with this new layout in a programming context. Up until this point I will have been typing mostly English words and some symbols on the new layout, so I’ll need some practice programming before I’m ready to use this layout for my day-to-day work.&lt;/p&gt;
-
-&lt;p&gt;At the same time I will be continuing to use the typing speed tools and hopefully get closer to 100WPM.&lt;/p&gt;
-
-&lt;h3 id=&quot;stage-4---shortcuts&quot;&gt;Stage 4 - Shortcuts&lt;/h3&gt;
-
-&lt;p&gt;Once I’ve reached my 100WPM goal and feel comfortable enough using the new layout in a programming context, I’ll start using the new layout at work. The final step to fully converting to the new layout will be to re-learn all of the keyboard shortcuts which are currently part of my muscle memory on a QWERTY layout.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 31 Oct 2014 13:44:00 +0000</pubDate>
-        <link>https://wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</link>
-        <guid isPermaLink="true">https://wildlyinaccurate.com/transitioning-to-a-new-keyboard-layout/</guid>
-        
-        <category>colemak</category>
-        
-        <category>ergodox</category>
-        
-        <category>keyboard</category>
-        
-        
-        <category>Keyboards</category>
         
       </item>
     
